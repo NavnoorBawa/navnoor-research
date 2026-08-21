@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-08-20",
+  "sources": [
+    {
+      "id": "archive",
+      "label": "Published research corpus",
+      "status": "enabled",
+      "allowed_hosts": [
+        "navnoorthapar.github.io"
+      ],
+      "allowed_fields": [
+        "title",
+        "subtitle",
+        "summary",
+        "date",
+        "url",
+        "source",
+        "family",
+        "topics",
+        "entities",
+        "access",
+        "coverage",
+        "revision"
+      ],
+      "prohibited_fields": [
+        "article_body",
+        "member_preview",
+        "parser_observations",
+        "position",
+        "return",
+        "recommendation"
+      ],
+      "attribution": "Navnoor Bawa",
+      "poll_interval_seconds": 0,
+      "retention_days": 0,
+      "note": "Read-only local import of article metadata. Body text, member previews and parser observations are never read."
+    },
+    {
+      "id": "sec-edgar",
+      "label": "U.S. Securities and Exchange Commission",
+      "status": "reviewed",
+      "allowed_hosts": [
+        "www.sec.gov",
+        "data.sec.gov"
+      ],
+      "allowed_fields": [
+        "cik",
+        "ticker",
+        "exchange",
+        "name",
+        "accession",
+        "form",
+        "filing_date",
+        "report_date",
+        "url"
+      ],
+      "prohibited_fields": [
+        "filing_body",
+        "image"
+      ],
+      "attribution": "U.S. Securities and Exchange Commission",
+      "poll_interval_seconds": 86400,
+      "retention_days": 0,
+      "note": "Rights-cleared and not yet wired to an adapter. Enabling it is the next planned source; see README 'Planned sources'."
+    },
+    {
+      "id": "gdelt-doc-v2",
+      "label": "GDELT Project",
+      "status": "enabled",
+      "allowed_hosts": [
+        "api.gdeltproject.org"
+      ],
+      "allowed_fields": [
+        "title",
+        "url",
+        "domain",
+        "seen_at",
+        "language",
+        "source_country"
+      ],
+      "prohibited_fields": [
+        "article_body",
+        "snippet",
+        "image",
+        "tone"
+      ],
+      "attribution": "Discovery data: GDELT Project",
+      "poll_interval_seconds": 3600,
+      "retention_days": 90
+    },
+    {
+      "id": "federal-reserve-rss",
+      "label": "Federal Reserve Board",
+      "status": "enabled",
+      "allowed_hosts": [
+        "www.federalreserve.gov"
+      ],
+      "allowed_fields": [
+        "guid",
+        "title",
+        "url",
+        "published_at",
+        "summary",
+        "category"
+      ],
+      "prohibited_fields": [
+        "image",
+        "seal",
+        "attachment"
+      ],
+      "attribution": "Federal Reserve Board",
+      "poll_interval_seconds": 3600,
+      "retention_days": 365
+    },
+    {
+      "id": "cftc-rss",
+      "label": "U.S. Commodity Futures Trading Commission",
+      "status": "enabled",
+      "allowed_hosts": [
+        "www.cftc.gov"
+      ],
+      "allowed_fields": [
+        "guid",
+        "title",
+        "url",
+        "published_at",
+        "summary",
+        "category"
+      ],
+      "prohibited_fields": [
+        "image",
+        "seal",
+        "attachment"
+      ],
+      "attribution": "U.S. Commodity Futures Trading Commission",
+      "poll_interval_seconds": 3600,
+      "retention_days": 365
+    }
+  ]
+}

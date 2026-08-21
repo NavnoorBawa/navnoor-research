@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "reviewed_at": "2026-08-21",
+  "note": "Topics are assigned deterministically. An article scores a topic when its title, subtitle or summary matches the topic's keywords, or when it mentions one of the topic's entity ids. Highest score wins; ties break on the order below. Articles matching nothing are labelled 'general'.",
+  "topics": [
+    {
+      "id": "hedge-funds",
+      "label": "Hedge funds",
+      "keywords": ["hedge fund", "allocator", "capital raise", "fund launch", "pod ", "portfolio manager", "seeding", "redemption", "subscription", "inflow", "outflow"],
+      "entities": ["citadel", "millennium", "de-shaw", "renaissance", "bridgewater", "elliott", "point72", "two-sigma", "balyasny", "exoduspoint", "brevan-howard", "marshall-wace", "man-group", "multi-strategy", "aum"]
+    },
+    {
+      "id": "volatility",
+      "label": "Volatility & options",
+      "keywords": ["volatility", "options", "gamma", "vega", "variance", "skew", "vol surface", "straddle", "hedging", "convexity"],
+      "entities": ["vix", "volatility", "options", "tail-risk", "universa", "ljm", "qvr"]
+    },
+    {
+      "id": "market-structure",
+      "label": "Market structure",
+      "keywords": ["market structure", "order flow", "liquidity", "market maker", "exchange", "latency", "execution", "payment for order flow", "dark pool", "settlement"],
+      "entities": ["hft", "liquidity", "cme", "cboe", "nyse", "nasdaq-exchange", "nse", "jane-street", "virtu", "optiver", "imc", "drw", "hrt", "xtx", "susquehanna", "jump-trading", "tower-research"]
+    },
+    {
+      "id": "regulation",
+      "label": "Regulation & enforcement",
+      "keywords": ["enforcement", "fine", "penalty", "settlement order", "investigation", "lawsuit", "charged", "violation", "compliance", "fraud", "scandal", "manipulation", "whistleblower"],
+      "entities": ["sec", "cftc", "sebi", "finra", "fca", "esma", "market-manipulation"]
+    },
+    {
+      "id": "quant-methods",
+      "label": "Quant methods",
+      "keywords": ["backtest", "model", "signal", "alpha", "factor", "regression", "estimator", "calibration", "simulation", "forecast", "overfit", "leakage", "walk-forward", "cross-validation"],
+      "entities": ["stat-arb", "factor-investing", "machine-learning", "backtesting", "sharpe", "aqr"]
+    },
+    {
+      "id": "rates-macro",
+      "label": "Rates & macro",
+      "keywords": ["interest rate", "yield curve", "inflation", "central bank", "monetary policy", "rate cut", "rate hike", "bond market", "duration", "sovereign debt", "recession"],
+      "entities": ["federal-reserve", "bank-of-england", "ecb", "bis", "imf", "us-treasury", "treasuries", "jgb", "tlt", "ldi", "fx"]
+    },
+    {
+      "id": "commodities",
+      "label": "Commodities & energy",
+      "keywords": ["commodity", "oil", "crude", "natural gas", "gold", "energy", "refinery", "OPEC", "barrel", "pipeline", "electricity", "power market"],
+      "entities": ["oil", "natural-gas", "gold", "bp"]
+    },
+    {
+      "id": "crypto",
+      "label": "Crypto & digital assets",
+      "keywords": ["crypto", "bitcoin", "ethereum", "blockchain", "stablecoin", "digital asset", "token", "on-chain", "exchange hack"],
+      "entities": ["btc", "eth"]
+    },
+    {
+      "id": "equities",
+      "label": "Equities",
+      "keywords": ["equity", "stock", "earnings", "share price", "buyback", "valuation", "index fund", "small cap", "large cap", "sector rotation"],
+      "entities": ["spx", "ndx", "rut", "djia", "msci", "etf", "ipo", "rklb", "asts"]
+    },
+    {
+      "id": "blowups",
+      "label": "Blow-ups & risk",
+      "keywords": ["collapse", "blowup", "blow-up", "unwind", "liquidation", "margin call", "wiped out", "lost billions", "failure", "default", "contagion", "crisis", "post-mortem"],
+      "entities": ["ltcm", "leverage", "crowding", "tail-risk"]
+    },
+    {
+      "id": "prediction-markets",
+      "label": "Prediction markets",
+      "keywords": ["prediction market", "betting market", "odds", "forecast tournament", "calibration"],
+      "entities": ["prediction-markets"]
+    }
+  ]
+}
