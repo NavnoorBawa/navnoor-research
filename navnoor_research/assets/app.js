@@ -451,45 +451,48 @@
   function researchRow(record, queryTokens, level) {
     var tags = entityButtons(record);
     var metadata = [
-      '<time datetime="' + esc(record.published) + '">' + esc(formatDate(record.published, false)) + "</time>",
-      '<button type="button" class="tag-button dot" data-topic="' + esc(record.topic) + '">' +
+      '<button type="button" class="tag-button" data-topic="' + esc(record.topic) + '">' +
         esc(record._topicLabel) + "</button>",
       '<span class="dot">' + esc(record._sourceLabel) + "</span>"
     ].concat(tags.map(function (tag) { return '<span class="dot">' + tag + "</span>"; }));
-    return '<li class="row"><div class="row__top"><h' + level + '><a href="' + esc(record.url) +
+    return '<li class="row"><div class="row__date"><time datetime="' + esc(record.published) + '">' +
+      esc(formatDate(record.published, false)) + '</time></div><div class="row__body">' +
+      '<div class="row__top"><h' + level + '><a href="' + esc(record.url) +
       '" target="_blank" rel="noopener noreferrer">' + highlight(record.title, queryTokens) +
       "</a></h" + level + '><span class="badge badge--' + esc(record.access) + '">' +
       esc(record.access) + "</span></div>" +
       (record.summary ? '<p class="row__summary">' + highlight(record.summary, queryTokens) + "</p>" : "") +
-      '<div class="row__meta">' + metadata.join("") + "</div></li>";
+      '<div class="row__meta">' + metadata.join("") + "</div></div></li>";
   }
 
   function newsRow(record, queryTokens, level) {
     var tags = entityButtons(record);
     var metadata = [
-      '<time datetime="' + esc(record.published) + '">' + esc(formatDate(record.published, true)) + "</time>",
-      '<span class="dot publisher">Publisher: ' + esc(record.publisher) + "</span>",
+      '<span class="publisher">Publisher: ' + esc(record.publisher) + "</span>",
       '<span class="dot">' + discoveryAttribution(
         record.source_id, record.attribution, "Discovery source: "
       ) + "</span>",
       '<button type="button" class="tag-button dot" data-topic="' + esc(record.topic) + '">' +
         esc(record._topicLabel) + "</button>"
     ].concat(tags.map(function (tag) { return '<span class="dot">' + tag + "</span>"; }));
-    return '<li class="row"><div class="row__top"><h' + level + '><a href="' + esc(record.url) +
+    return '<li class="row"><div class="row__date"><time datetime="' + esc(record.published) + '">' +
+      esc(formatDate(record.published, true)) + '</time></div><div class="row__body">' +
+      '<div class="row__top"><h' + level + '><a href="' + esc(record.url) +
       '" target="_blank" rel="noopener noreferrer">' + highlight(record.title, queryTokens) +
-      "</a></h" + level + '></div><div class="row__meta">' + metadata.join("") + "</div></li>";
+      "</a></h" + level + '></div><div class="row__meta">' + metadata.join("") +
+      "</div></div></li>";
   }
 
   function companyRows(companies, level) {
     return '<ul class="companies">' + companies.map(function (company) {
       var secUrl = "https://www.sec.gov/edgar/browse/?CIK=" + encodeURIComponent(company.cik);
-      return '<li class="company-row"><div><h' + level + '><span class="ticker">' +
-        esc(company.ticker) + "</span>" + esc(company.name) + "</h" + level +
+      return '<li class="company-row"><span class="ticker">' + esc(company.ticker) +
+        '</span><div class="company-row__body"><h' + level + ">" + esc(company.name) + "</h" + level +
         '><div class="company-meta"><span>' + esc(company.exchange || "Exchange not listed") +
         '</span><span class="dot">CIK ' + esc(company.cik) + '</span><a class="dot" href="' +
         esc(secUrl) + '" target="_blank" rel="noopener noreferrer">SEC record</a></div></div>' +
         '<button type="button" class="company-select" data-company="' + company.index +
-        '">Search this company</button></li>';
+        '" aria-label="Search ' + esc(company.name) + '">Search this company</button></li>';
     }).join("") + "</ul>";
   }
 
@@ -521,7 +524,7 @@
 
   function renderSourceStates() {
     var ids = Object.keys(data.newsStates).sort();
-    return '<div class="source-states" aria-label="Market news source status">' + ids.map(function (id) {
+    return '<ul class="source-states" aria-label="Market news source status">' + ids.map(function (id) {
       var source = data.newsStates[id];
       var detail;
       if (source.status === "ok") {
@@ -536,10 +539,11 @@
       } else {
         detail = "No completed check yet";
       }
-      return '<div class="source-state source-state--' + esc(source.status) + '"><strong>' +
+      return '<li class="source-state source-state--' + esc(source.status) + '"><span ' +
+        'class="source-state__dot" aria-hidden="true"></span><div><strong>' +
         discoveryAttribution(id, source.label, "") + "</strong><span>" +
-        esc(detail) + "</span></div>";
-    }).join("") + "</div>";
+        esc(detail) + "</span></div></li>";
+    }).join("") + "</ul>";
   }
 
   function renderSearch(query) {
@@ -630,6 +634,8 @@
     if (!data.ready) { return; }
     setViewCopy();
     var query = parseQuery();
+    document.body.dataset.view = state.view;
+    document.body.dataset.query = query.raw ? "active" : "empty";
     if (state.view === "search") { renderSearch(query); }
     else { renderDedicated(query, state.view === "news" ? "news" : "research"); }
     el.clear.hidden = !state.query;
@@ -694,17 +700,31 @@
       });
     });
     el.topicFilter.addEventListener("change", function () {
-      state.topic = el.topicFilter.value; state.limit = PAGE_SIZE; render(); announceAndFocus();
+      state.topic = el.topicFilter.value; state.limit = PAGE_SIZE; render();
     });
     el.accessFilter.addEventListener("change", function () {
-      state.access = el.accessFilter.value; state.limit = PAGE_SIZE; render(); announceAndFocus();
+      state.access = el.accessFilter.value; state.limit = PAGE_SIZE; render();
     });
     el.sortFilter.addEventListener("change", function () {
-      state.sort = el.sortFilter.value; state.limit = PAGE_SIZE; render(); announceAndFocus();
+      state.sort = el.sortFilter.value; state.limit = PAGE_SIZE; render();
     });
     el.results.addEventListener("click", function (event) {
       var more = event.target.closest("#more");
-      if (more) { state.limit += PAGE_SIZE; render(); more = document.getElementById("more"); if (more) { more.focus(); } return; }
+      if (more) {
+        var previousLimit = state.limit;
+        state.limit += PAGE_SIZE;
+        render();
+        more = document.getElementById("more");
+        if (more) {
+          more.focus();
+        } else {
+          var revealedLinks = el.results.querySelectorAll(".row__top a");
+          if (revealedLinks.length) {
+            revealedLinks[Math.min(previousLimit, revealedLinks.length - 1)].focus();
+          }
+        }
+        return;
+      }
       var companyButton = event.target.closest("[data-company]");
       if (companyButton) {
         state.company = data.companies[Number(companyButton.dataset.company)] || null;
@@ -803,6 +823,7 @@
   if (typeof module !== "undefined" && module.exports) {
     module.exports = {
       coreCompanyName: coreCompanyName,
+      companyRows: companyRows,
       data: data,
       discoveryAttribution: discoveryAttribution,
       install: install,

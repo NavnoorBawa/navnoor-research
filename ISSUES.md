@@ -105,6 +105,27 @@ Last updated: 2026-08-23
   `validate_release.py`, and the source-rights documentation enforce the
   corrected operational and disclosure contracts.
 
+### NR-010 — The launch interface lacked an institutional visual hierarchy
+
+- **Severity:** P1
+- **Evidence:** The initial shell relied on generic rounded controls, a filled
+  tab treatment, undifferentiated full-width lists, and weak separation between
+  publication dates, titles, source metadata, entity context, and operational
+  source status. Small muted text and form boundaries also missed the intended
+  contrast margin.
+- **Resolution:** Rebuilt the interface as a system-font editorial research
+  ledger: midnight masthead and hero, warm paper workspace, restrained brass
+  accent, visible archive coverage, command-style local search, responsive
+  overview grid, date-led result rows, a high-contrast entity brief, operational
+  source rail, and a structured colophon. Search announcements are now visible
+  outside hidden filters; filter focus is retained; the final pagination action
+  has a deterministic focus successor; and mobile, reduced-motion,
+  forced-colors, dark, and print modes have explicit treatments.
+- **Verification:** `test_build_site.py`, `test_client_runtime.py`,
+  `validate_release.py`, the full release suite, and exact local HTTP smoke
+  enforce the premium shell, accessible names/status, responsive modes, and
+  unchanged privacy/data boundaries.
+
 ## Open operational issues
 
 ### NR-005 — CFTC feed is unavailable through verified TLS

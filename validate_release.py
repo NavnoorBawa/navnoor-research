@@ -64,6 +64,7 @@ def validate(expected_revision: str) -> tuple[dict[str, Any], list[str]]:
     for exact in (
         ">Search</button>", ">Research</button>", ">Market News</button>",
         'aria-label="Search controls"', '<label class="search-label" for="query">Search</label>',
+        'class="brand__mark"', 'class="coverage"', 'class="toolbar"', 'class="footer"',
         "your query stays in this page",
         "No quotes, holdings, scores, or investment recommendations",
     ):
@@ -134,9 +135,22 @@ def validate(expected_revision: str) -> tuple[dict[str, Any], list[str]]:
             "discoveryAttribution(id, source.label",
             "discoveryAttribution(\n        record.source_id, record.attribution",
             'rel="noopener noreferrer"',
+            "document.body.dataset.view = state.view",
+            'aria-label="Search ',
         ):
             if exact not in script:
-                problems.append(f"client is missing linked GDELT attribution {exact!r}")
+                problems.append(f"client UI contract is missing {exact!r}")
+
+    css_name = names.get("css", "")
+    if css_name:
+        style = (site / css_name).read_text(encoding="utf-8", errors="strict")
+        for exact in (
+            '.intro__layout', 'body[data-view="search"] #results',
+            '@media (max-width: 1080px)', '@media (prefers-reduced-motion: reduce)',
+            '@media (forced-colors: active)', '@media print',
+        ):
+            if exact not in style:
+                problems.append(f"premium responsive style contract is missing {exact!r}")
 
     listed = {entry.get("path") for entry in release.get("files", []) if isinstance(entry, dict)}
     expected_files = {".nojekyll", "index.html", *names.values()}

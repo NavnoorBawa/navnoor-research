@@ -155,6 +155,21 @@ assert.equal(
 );
 """)
 
+    def test_company_action_has_a_specific_accessible_name(self):
+        self.run_js(r"""
+const html = app.companyRows(app.data.companies, 4);
+assert.match(html, /<span class="ticker">NVDA<\/span>/);
+assert.match(html, /<h4>NVIDIA CORP<\/h4>/);
+assert.match(html, /aria-label="Search NVIDIA CORP">Search this company<\/button>/);
+const escaped = app.companyRows([{
+  cik: "0000000001", ticker: "ACME", exchange: "NYSE",
+  name: 'ACME & Co "A"', index: 7
+}], 4);
+assert.match(escaped, /<h4>ACME &amp; Co &quot;A&quot;<\/h4>/);
+assert.match(escaped,
+  /aria-label="Search ACME &amp; Co &quot;A&quot;">Search this company<\/button>/);
+""")
+
     def test_payload_validators_reject_prohibited_or_impossible_metadata(self):
         self.run_js(r"""
 const clone = (value) => JSON.parse(JSON.stringify(value));

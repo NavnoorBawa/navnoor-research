@@ -33,6 +33,12 @@ class TestRender(unittest.TestCase):
 
     def setUp(self):
         self.html = render.render(self.ASSETS, REVISION, 568, 10_403, 20)
+        self.css = (ROOT / "navnoor_research" / "assets" / "app.css").read_text(
+            encoding="utf-8"
+        )
+        self.js = (ROOT / "navnoor_research" / "assets" / "app.js").read_text(
+            encoding="utf-8"
+        )
 
     def test_public_information_architecture_is_exact(self):
         self.assertIn(">Search</button>", self.html)
@@ -69,6 +75,48 @@ class TestRender(unittest.TestCase):
         tainted = dict(self.ASSETS, css='a"><script>x</script>')
         html = render.render(tainted, REVISION, 0, 0, 0)
         self.assertNotIn("<script>x</script>", html)
+
+    def test_premium_shell_keeps_status_and_skip_targets_accessible(self):
+        for exact in (
+            'class="brand__mark"', 'class="coverage"', 'class="toolbar"',
+            'class="footer"', '<main class="main" id="main" tabindex="-1">',
+            'id="load-status" role="status" aria-live="polite" hidden',
+        ):
+            self.assertIn(exact, self.html)
+        filters = re.search(r'<div class="filters".*?</div>', self.html, re.DOTALL)
+        self.assertIsNotNone(filters)
+        self.assertNotIn('id="result-count"', filters.group(0))
+        self.assertEqual(self.html.count('id="result-count"'), 1)
+        self.assertIn('id="result-count" role="status" aria-live="polite"', self.html)
+        result_status = re.search(r'<span class="result-count"[^>]+>', self.html)
+        self.assertIsNotNone(result_status)
+        self.assertNotIn("hidden", result_status.group(0))
+
+    def test_premium_styles_preserve_responsive_accessibility_modes(self):
+        for exact in (
+            '.intro__layout', 'body[data-view="search"] #results',
+            '@media (max-width: 1080px)', '@media (max-width: 420px)',
+            '@media (prefers-reduced-motion: reduce)',
+            '@media (forced-colors: active)', '@media print',
+            '.search-input:focus-visible',
+        ):
+            self.assertIn(exact, self.css)
+        self.assertNotIn("@font-face", self.css)
+        self.assertNotIn("https://", self.css)
+        self.assertEqual(self.css.count("@media (forced-colors: active)"), 1)
+        self.assertEqual(self.css.count("@media print"), 1)
+        reduced = self.css.split("@media (prefers-reduced-motion: reduce)", 1)[1]
+        self.assertIn("scroll-behavior: auto !important", reduced)
+        self.assertIn("transition-duration: .01ms !important", reduced)
+        forced = self.css.split("@media (forced-colors: active)", 1)[1]
+        self.assertIn("outline: 3px solid Highlight", forced)
+        self.assertIn("border: 2px solid CanvasText", forced)
+        printed = self.css.split("@media print", 1)[1]
+        self.assertIn("break-inside: avoid", printed)
+        self.assertIn(".toolbar,", printed)
+        self.assertIn(".source-states { grid-template-columns: minmax(0, 1fr); }", self.css)
+        self.assertIn(".company-meta a { text-decoration: underline", self.css)
+        self.assertNotIn('class="dot publisher"', self.js)
 
 
 class TestBuild(unittest.TestCase):
