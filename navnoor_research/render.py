@@ -30,6 +30,8 @@ def render(
     research_count: int,
     company_count: int,
     headline_count: int,
+    source_count: int,
+    source_issue_count: int,
 ) -> str:
     """Render a small shell; every searchable record stays in fingerprinted JSON."""
     og = ""
@@ -48,7 +50,7 @@ def render(
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="{escape(DESCRIPTION)}">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0b1b29">
+<meta name="theme-color" content="#07131e">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Navnoor Research">
 <meta property="og:description" content="{escape(DESCRIPTION)}">
@@ -65,11 +67,11 @@ def render(
 <header class="masthead">
   <div class="shell masthead__inner">
     <a class="brand" href="./" aria-label="Navnoor Research home">
-      <span class="brand__mark" aria-hidden="true">NR</span>
-      <span class="brand__wordmark"><strong>Navnoor</strong><span>Research</span></span>
+      <span class="brand__wordmark"><strong>NAVNOOR RESEARCH</strong>
+        <span>Independent research archive</span></span>
     </a>
     <div class="masthead__actions">
-      <span class="edition">Independent public index</span>
+      <span class="edition">Metadata &amp; provenance</span>
       <nav class="views" aria-label="Primary">
         <button type="button" class="view-button" data-view="search"
                 aria-pressed="true">Search</button>
@@ -82,26 +84,32 @@ def render(
   </div>
 </header>
 
+<section class="index-bar" aria-label="Archive status">
+  <div class="shell index-bar__inner">
+    <dl class="market-strip">
+      <div><dt>Research</dt><dd><data value="{research_count}">{research_count:,}</data></dd></div>
+      <div><dt>SEC associations</dt><dd>
+        <data value="{company_count}">{company_count:,}</data></dd></div>
+      <div><dt>Checked headlines</dt><dd>
+        <data value="{headline_count}">{headline_count:,}</data></dd></div>
+      <div><dt>Source coverage</dt><dd>
+        {source_issue_count} / {source_count} flagged</dd></div>
+    </dl>
+  </div>
+</section>
+
 <main class="main" id="main" tabindex="-1">
   <section class="hero" aria-labelledby="page-title">
     <div class="shell hero__inner">
       <div class="intro__layout">
         <div class="intro">
-          <p class="eyebrow">Source-linked intelligence</p>
+          <p class="eyebrow">Research archive</p>
           <h1 id="page-title">Search</h1>
           <p class="lede" id="view-description">
-            Find research, SEC company/ticker associations, and checked market news
-            from one local search.
+            Search publication metadata, SEC company and ticker associations,
+            and checked source headlines. Queries remain local to this page.
           </p>
         </div>
-        <aside class="coverage" aria-label="Archive coverage">
-          <p class="coverage__label">Current index</p>
-          <dl>
-            <div><dt>Research</dt><dd>{research_count:,}</dd></div>
-            <div><dt>Companies</dt><dd>{company_count:,}</dd></div>
-            <div><dt>Headlines</dt><dd>{headline_count:,}</dd></div>
-          </dl>
-        </aside>
       </div>
 
       <section class="search-panel" aria-label="Search controls">
@@ -112,13 +120,16 @@ def render(
         <div class="search-row">
           <input id="query" class="search-input" type="search" autocomplete="off"
                  autocapitalize="off" spellcheck="false" enterkeyhint="search"
-                 placeholder="Company, ticker, fund, regulator, or topic">
+                 aria-keyshortcuts="/" aria-describedby="search-privacy search-scope"
+                 placeholder="Issuer, $ticker, fund, regulator, or thesis">
           <button type="button" class="clear-button" id="clear" hidden>Clear</button>
         </div>
-        <p class="privacy-note">
-          <span class="privacy-dot" aria-hidden="true"></span>
+        <p class="privacy-note" id="search-privacy">
           Private by design: your query stays in this page.
           It is never sent, stored, logged, or added to the URL.
+        </p>
+        <p class="search-scope" id="search-scope">
+          Coverage: ticker, issuer, fund, regulator, and topic terms.
         </p>
       </section>
     </div>
@@ -131,7 +142,8 @@ def render(
         <label id="access-wrap">Access <select id="access-filter"></select></label>
         <label>Order <select id="sort-filter"></select></label>
       </div>
-      <span class="result-count" id="result-count" role="status" aria-live="polite"></span>
+      <span class="result-count" id="result-count" role="status"
+            aria-live="polite" aria-atomic="true"></span>
     </div>
 
     <div class="load-status" id="load-status" role="status" aria-live="polite" hidden>
@@ -155,15 +167,12 @@ def render(
 <footer class="footer">
   <div class="shell colophon">
     <div class="colophon__identity">
-      <span class="colophon__mark" aria-hidden="true">NR</span>
-      <div><strong>Navnoor Research</strong>
-        <p>{research_count:,} research records ·
-           {company_count:,} company/ticker associations ·
-           {headline_count:,} checked headlines</p>
-      </div>
+      <strong>NAVNOOR RESEARCH</strong>
+      <span>Independent research archive</span>
     </div>
-    <p class="colophon__limits">Metadata and source links only.<br>
-       No quotes, holdings, scores, or investment recommendations.<br>
+    <p class="colophon__limits">Metadata and source links only ·
+       No quotes, holdings, scores, or investment recommendations</p>
+    <p class="colophon__release"><span>Local-query architecture</span>
        Build <code>{escape(revision[:12])}</code></p>
   </div>
 </footer>

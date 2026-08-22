@@ -26,7 +26,12 @@
     access: "",
     sort: "newest",
     limit: PAGE_SIZE,
-    company: null
+    company: null,
+    searchLimits: {
+      companies: SEARCH_GROUP_SIZE,
+      research: SEARCH_GROUP_SIZE,
+      news: SEARCH_GROUP_SIZE
+    }
   };
   var data = {
     ready: false,
@@ -42,6 +47,12 @@
   var el = {};
   var bound = false;
   var loading = false;
+
+  function resetSearchLimits() {
+    state.searchLimits.companies = SEARCH_GROUP_SIZE;
+    state.searchLimits.research = SEARCH_GROUP_SIZE;
+    state.searchLimits.news = SEARCH_GROUP_SIZE;
+  }
 
   function esc(value) {
     return String(value == null ? "" : value)
@@ -327,6 +338,11 @@
     return includeTime && text.length >= 16 ? result + " · " + text.slice(11, 16) + " UTC" : result;
   }
 
+  function timeMarkup(value, includeTime) {
+    if (!value) { return "not available"; }
+    return '<time datetime="' + esc(value) + '">' + esc(formatDate(value, includeTime)) + "</time>";
+  }
+
   function highlight(value, queryTokens) {
     var safe = esc(value);
     var pattern = queryTokens.filter(function (token) { return token.length > 1; })
@@ -437,6 +453,7 @@
       state.topic = topicId;
     }
     state.limit = PAGE_SIZE;
+    resetSearchLimits();
     return true;
   }
 
@@ -490,14 +507,16 @@
         '</span><div class="company-row__body"><h' + level + ">" + esc(company.name) + "</h" + level +
         '><div class="company-meta"><span>' + esc(company.exchange || "Exchange not listed") +
         '</span><span class="dot">CIK ' + esc(company.cik) + '</span><a class="dot" href="' +
-        esc(secUrl) + '" target="_blank" rel="noopener noreferrer">SEC record</a></div></div>' +
+        esc(secUrl) + '" target="_blank" rel="noopener noreferrer" aria-label="Open SEC record for ' +
+        esc(company.name) + '">SEC record</a></div></div>' +
         '<button type="button" class="company-select" data-company="' + company.index +
-        '" aria-label="Search ' + esc(company.name) + '">Search this company</button></li>';
+        '" aria-label="Search ' + esc(company.name) + '">View matches <span aria-hidden="true">→</span></button></li>';
     }).join("") + "</ul>";
   }
 
-  function group(title, kicker, count, body) {
-    return '<section class="group"><div class="group__head"><div><div class="group__kicker">' +
+  function group(title, kicker, count, body, kind) {
+    return '<section class="group group--' + esc(kind) +
+      '"><div class="group__head"><div><div class="group__kicker">' +
       esc(kicker) + "</div><h3>" + esc(title) + "</h3></div><span>" +
       count.toLocaleString() + "</span></div>" + body + "</section>";
   }
@@ -516,10 +535,11 @@
       ? company.ticker + (company.exchange ? " · " + company.exchange : "") + " · CIK " + company.cik
       : "Resolved from the reviewed entity and alias table.";
     el.profile.hidden = false;
-    el.profile.innerHTML = '<div class="profile__kind">' + esc(kind) + '</div><h2 id="profile-title">' +
-      esc(title) + "</h2><p>" + esc(detail) + '</p><div class="profile__stats"><span class="stat"><strong>' +
-      research.length.toLocaleString() + '</strong> research</span><span class="stat"><strong>' +
-      news.length.toLocaleString() + "</strong> market news</span></div>";
+    el.profile.innerHTML = '<div class="profile__main"><div class="profile__kind">' + esc(kind) +
+      '</div><h2 id="profile-title">' + esc(title) + "</h2><p>" + esc(detail) +
+      '</p></div><dl class="profile__stats"><div><dt>Research</dt><dd>' +
+      research.length.toLocaleString() + '</dd></div><div><dt>Market news</dt><dd>' +
+      news.length.toLocaleString() + "</dd></div></dl>";
   }
 
   function renderSourceStates() {
@@ -528,22 +548,31 @@
       var source = data.newsStates[id];
       var detail;
       if (source.status === "ok") {
-        detail = "Checked " + formatDate(source.last_success_at, true) + " · " +
-          source.item_count.toLocaleString() + " retained";
+        detail = "Checked " + timeMarkup(source.last_success_at, true) + " · " +
+          esc(source.item_count.toLocaleString()) + " retained";
       } else if (source.status === "partial") {
-        detail = "Partially checked " + formatDate(source.last_attempt_at, true) +
-          " · last complete check " + (source.last_success_at ? formatDate(source.last_success_at, true) : "not available");
+        detail = "Partially checked " + timeMarkup(source.last_attempt_at, true) +
+          " · last complete check " + timeMarkup(source.last_success_at, true);
       } else if (source.status === "error") {
-        detail = "Check failed " + formatDate(source.last_attempt_at, true) +
-          " · last successful check " + (source.last_success_at ? formatDate(source.last_success_at, true) : "not available");
+        detail = "Check failed " + timeMarkup(source.last_attempt_at, true) +
+          " · last successful check " + timeMarkup(source.last_success_at, true);
       } else {
         detail = "No completed check yet";
       }
       return '<li class="source-state source-state--' + esc(source.status) + '"><span ' +
         'class="source-state__dot" aria-hidden="true"></span><div><strong>' +
-        discoveryAttribution(id, source.label, "") + "</strong><span>" +
-        esc(detail) + "</span></div></li>";
+        discoveryAttribution(id, source.label, "") + '</strong><span class="source-state__status">' +
+        esc(source.status) + '</span><span class="source-state__detail">' +
+        detail + "</span></div></li>";
     }).join("") + "</ul>";
+  }
+
+  function searchMoreButton(kind, shown, total) {
+    if (shown >= total) { return ""; }
+    var next = Math.min(SEARCH_GROUP_SIZE, total - shown);
+    return '<button type="button" class="more-button search-more" data-more-group="' +
+      esc(kind) + '">Show ' + next.toLocaleString() + " more · " +
+      shown.toLocaleString() + " of " + total.toLocaleString() + " shown</button>";
   }
 
   function renderSearch(query) {
@@ -558,24 +587,35 @@
     renderProfile(query, research, news);
     el.resultsHeading.textContent = query.raw ? "Search results" : "Explore the latest metadata";
     var html = "";
+    var companyShown = Math.min(state.searchLimits.companies, companies.length);
+    var researchShown = Math.min(state.searchLimits.research, research.length);
+    var newsShown = Math.min(state.searchLimits.news, news.length);
     if (query.raw) {
       html += group(
         "Companies and tickers", "SEC company/ticker associations", companies.length,
-        companies.length ? companyRows(companies.slice(0, SEARCH_GROUP_SIZE), 4) :
-          '<div class="empty"><p>No SEC company or ticker association matches this text.</p></div>'
+        companies.length ? companyRows(companies.slice(0, companyShown), 4) +
+          searchMoreButton("companies", companyShown, companies.length) :
+          '<div class="empty"><p>No SEC company or ticker association matches this text.</p></div>',
+        "companies"
       );
     }
     html += group(
       "Research", "Published metadata", research.length,
-      research.length ? '<ul class="rows">' + research.slice(0, SEARCH_GROUP_SIZE).map(function (record) {
+      research.length ? '<ul class="rows">' + research.slice(0, researchShown).map(function (record) {
         return researchRow(record, query.tokens, 4);
-      }).join("") + "</ul>" : '<div class="empty"><p>No research metadata matches this search.</p></div>'
+      }).join("") + "</ul>" + searchMoreButton("research", researchShown, research.length) :
+        '<div class="empty"><p>No research metadata matches this search.</p></div>',
+      "research"
     );
+    var newsBody = renderSourceStates();
+    newsBody += news.length ? '<ul class="rows">' + news.slice(0, newsShown).map(function (record) {
+      return newsRow(record, query.tokens, 4);
+    }).join("") + "</ul>" + searchMoreButton("news", newsShown, news.length) :
+      '<div class="empty"><p>No retained checked headline matches this search.</p></div>';
     html += group(
       "Market News", "Checked public-source metadata", news.length,
-      news.length ? '<ul class="rows">' + news.slice(0, SEARCH_GROUP_SIZE).map(function (record) {
-        return newsRow(record, query.tokens, 4);
-      }).join("") + "</ul>" : '<div class="empty"><p>No retained checked headline matches this search.</p></div>'
+      newsBody,
+      "news"
     );
     el.results.innerHTML = html;
     el.resultCount.textContent = (research.length + news.length + companies.length).toLocaleString() +
@@ -614,15 +654,15 @@
 
   function setViewCopy() {
     var copy = {
-      search: ["Search", "Find research, SEC company/ticker associations, and checked market news from one local search."],
-      research: ["Research", "Search the complete published research metadata index. Open the source when you need the article itself."],
-      news: ["Market News", "Scan delayed, checked headline metadata. Each source reports its own last attempt and last success."]
+      search: ["Search", "Search publication metadata, SEC company and ticker associations, and checked source headlines. Queries remain local to this page."],
+      research: ["Research", "Browse the complete published research metadata index and open each source directly."],
+      news: ["Market News", "Review delayed, checked headline metadata with each source's latest attempt and successful check."]
     }[state.view];
     el.pageTitle.textContent = copy[0];
     el.viewDescription.textContent = copy[1];
     el.query.placeholder = state.view === "news"
-      ? "Company, regulator, or market topic"
-      : "Company, ticker, fund, regulator, or topic";
+      ? "Issuer, regulator, policy body, or market topic"
+      : "Issuer, $ticker, fund, regulator, or thesis";
     el.views.forEach(function (button) {
       button.setAttribute("aria-pressed", String(button.dataset.view === state.view));
     });
@@ -677,8 +717,15 @@
     state.query = "";
     state.company = null;
     state.limit = PAGE_SIZE;
+    resetSearchLimits();
     el.query.value = "";
     render();
+  }
+
+  function shouldFocusSearch(event, target) {
+    var editable = target && (/^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName) || target.isContentEditable);
+    return event.key === "/" && !event.altKey && !event.ctrlKey && !event.metaKey &&
+      !event.shiftKey && !editable;
   }
 
   function bind() {
@@ -688,6 +735,7 @@
       state.query = el.query.value;
       state.company = null;
       state.limit = PAGE_SIZE;
+      resetSearchLimits();
       render();
     }, 80));
     el.clear.addEventListener("click", function () { clearQuery(); el.query.focus(); });
@@ -696,6 +744,7 @@
         if (!data.ready) { return; }
         state.view = button.dataset.view;
         state.limit = PAGE_SIZE;
+        resetSearchLimits();
         render();
       });
     });
@@ -709,19 +758,34 @@
       state.sort = el.sortFilter.value; state.limit = PAGE_SIZE; render();
     });
     el.results.addEventListener("click", function (event) {
+      var searchMore = event.target.closest("[data-more-group]");
+      if (searchMore) {
+        var kind = searchMore.dataset.moreGroup;
+        if (!Object.prototype.hasOwnProperty.call(state.searchLimits, kind)) { return; }
+        var previousSearchLimit = state.searchLimits[kind];
+        state.searchLimits[kind] += SEARCH_GROUP_SIZE;
+        render();
+        var nextSearchMore = el.results.querySelector('[data-more-group="' + kind + '"]');
+        var searchGroup = el.results.querySelector(".group--" + kind);
+        var revealed = searchGroup ? searchGroup.querySelectorAll(".row__top a, .company-select") : [];
+        if (revealed.length > previousSearchLimit) {
+          revealed[previousSearchLimit].focus();
+        } else if (nextSearchMore) {
+          nextSearchMore.focus();
+        }
+        return;
+      }
       var more = event.target.closest("#more");
       if (more) {
         var previousLimit = state.limit;
         state.limit += PAGE_SIZE;
         render();
         more = document.getElementById("more");
-        if (more) {
+        var revealedLinks = el.results.querySelectorAll(".row__top a");
+        if (revealedLinks.length > previousLimit) {
+          revealedLinks[previousLimit].focus();
+        } else if (more) {
           more.focus();
-        } else {
-          var revealedLinks = el.results.querySelectorAll(".row__top a");
-          if (revealedLinks.length) {
-            revealedLinks[Math.min(previousLimit, revealedLinks.length - 1)].focus();
-          }
         }
         return;
       }
@@ -729,14 +793,14 @@
       if (companyButton) {
         state.company = data.companies[Number(companyButton.dataset.company)] || null;
         if (state.company) { state.query = state.company.name; el.query.value = state.query; }
-        state.limit = PAGE_SIZE; render(); announceAndFocus(); return;
+        state.limit = PAGE_SIZE; resetSearchLimits(); render(); announceAndFocus(); return;
       }
       var entityButton = event.target.closest("[data-entity]");
       if (entityButton && data.entities[entityButton.dataset.entity]) {
         state.query = data.entities[entityButton.dataset.entity].label;
         state.company = null;
         el.query.value = state.query;
-        state.limit = PAGE_SIZE; render(); announceAndFocus(); return;
+        state.limit = PAGE_SIZE; resetSearchLimits(); render(); announceAndFocus(); return;
       }
       var topicButton = event.target.closest("[data-topic]");
       if (topicButton && selectTopic(topicButton.dataset.topic)) {
@@ -750,8 +814,7 @@
     });
     document.addEventListener("keydown", function (event) {
       var target = event.target;
-      var editable = target && (/^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName) || target.isContentEditable);
-      if (event.key === "/" && !editable) { event.preventDefault(); el.query.focus(); }
+      if (shouldFocusSearch(event, target)) { event.preventDefault(); el.query.focus(); }
       if (event.key === "Escape" && document.activeElement === el.query && state.query) {
         event.preventDefault(); clearQuery();
       }
@@ -830,8 +893,12 @@
       matchingCompanies: matchingCompanies,
       normalize: normalize,
       parseQuery: parseQuery,
+      resetSearchLimits: resetSearchLimits,
+      renderSourceStates: renderSourceStates,
+      searchMoreButton: searchMoreButton,
       selectTopic: selectTopic,
       selectRecords: selectRecords,
+      shouldFocusSearch: shouldFocusSearch,
       state: state,
       validateCompanies: validateCompanies,
       validateNews: validateNews,

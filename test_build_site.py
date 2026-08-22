@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import struct
 import subprocess
 import sys
 import tempfile
@@ -32,7 +33,7 @@ class TestRender(unittest.TestCase):
     }
 
     def setUp(self):
-        self.html = render.render(self.ASSETS, REVISION, 568, 10_403, 20)
+        self.html = render.render(self.ASSETS, REVISION, 568, 10_403, 20, 2, 1)
         self.css = (ROOT / "navnoor_research" / "assets" / "app.css").read_text(
             encoding="utf-8"
         )
@@ -41,9 +42,18 @@ class TestRender(unittest.TestCase):
         )
 
     def test_public_information_architecture_is_exact(self):
-        self.assertIn(">Search</button>", self.html)
-        self.assertIn(">Research</button>", self.html)
-        self.assertIn(">Market News</button>", self.html)
+        views = re.findall(
+            r'class="view-button" data-view="([^"]+)"\s+aria-pressed="([^"]+)">([^<]+)</button>',
+            self.html,
+        )
+        self.assertEqual(
+            views,
+            [
+                ("search", "true", "Search"),
+                ("research", "false", "Research"),
+                ("news", "false", "Market News"),
+            ],
+        )
         self.assertNotIn('role="tab"', self.html)
         self.assertNotIn('role="tablist"', self.html)
         self.assertEqual(self.html.count("<h1"), 1)
@@ -69,33 +79,66 @@ class TestRender(unittest.TestCase):
         self.assertIn(render.PUBLIC_ORIGIN + self.ASSETS["og"], self.html)
         self.assertIn(f'<link rel="canonical" href="{render.PUBLIC_ORIGIN}">', self.html)
 
+    def test_social_preview_is_a_bounded_landscape_asset(self):
+        payload = (ROOT / "navnoor_research" / "assets" / "og.png").read_bytes()
+        self.assertTrue(payload.startswith(b"\x89PNG\r\n\x1a\n"))
+        width, height = struct.unpack(">II", payload[16:24])
+        self.assertGreaterEqual(width, 1_200)
+        self.assertGreaterEqual(height, 630)
+        self.assertGreaterEqual(width / height, 1.4)
+        self.assertLessEqual(width / height, 2.0)
+        self.assertLessEqual(len(payload), 1_500_000)
+
     def test_every_asset_name_is_escaped_and_present(self):
         for name in self.ASSETS.values():
             self.assertIn(name, self.html)
         tainted = dict(self.ASSETS, css='a"><script>x</script>')
-        html = render.render(tainted, REVISION, 0, 0, 0)
+        html = render.render(tainted, REVISION, 0, 0, 0, 0, 0)
         self.assertNotIn("<script>x</script>", html)
 
-    def test_premium_shell_keeps_status_and_skip_targets_accessible(self):
+    def test_institutional_shell_keeps_status_and_skip_targets_accessible(self):
         for exact in (
-            'class="brand__mark"', 'class="coverage"', 'class="toolbar"',
+            '<strong>NAVNOOR RESEARCH</strong>', 'Independent research archive',
+            'Metadata &amp; provenance', 'class="index-bar"', 'class="market-strip"',
+            'class="toolbar"',
             'class="footer"', '<main class="main" id="main" tabindex="-1">',
             'id="load-status" role="status" aria-live="polite" hidden',
+            'aria-keyshortcuts="/" aria-describedby="search-privacy search-scope"',
+            'Coverage: ticker, issuer, fund, regulator, and topic terms.',
+            '<dt>Source coverage</dt><dd>\n        1 / 2 flagged</dd>',
         ):
             self.assertIn(exact, self.html)
+        for theatrical in (
+            "Public intelligence desk", "Content-addressed release",
+            "Cross-source research intelligence", "Index mandate",
+            "Supported syntax", "01 / Query", "Query handling", "Local to page",
+        ):
+            self.assertNotIn(theatrical, self.html)
+        self.assertNotIn('class="terminal-id"', self.html)
+        self.assertNotIn('class="coverage"', self.html)
+        self.assertNotIn('class="edition"><i', self.html)
+        self.assertNotIn('class="privacy-dot"', self.html)
+        for value in (568, 10_403, 20):
+            self.assertIn(f'<data value="{value}">', self.html)
         filters = re.search(r'<div class="filters".*?</div>', self.html, re.DOTALL)
         self.assertIsNotNone(filters)
         self.assertNotIn('id="result-count"', filters.group(0))
         self.assertEqual(self.html.count('id="result-count"'), 1)
-        self.assertIn('id="result-count" role="status" aria-live="polite"', self.html)
-        result_status = re.search(r'<span class="result-count"[^>]+>', self.html)
+        result_status = re.search(r'<span class="result-count"[^>]+>', self.html, re.DOTALL)
         self.assertIsNotNone(result_status)
         self.assertNotIn("hidden", result_status.group(0))
+        self.assertIn('role="status"', result_status.group(0))
+        self.assertIn('aria-live="polite"', result_status.group(0))
+        self.assertIn('aria-atomic="true"', result_status.group(0))
 
-    def test_premium_styles_preserve_responsive_accessibility_modes(self):
+    def test_institutional_styles_preserve_responsive_accessibility_modes(self):
         for exact in (
             '.intro__layout', 'body[data-view="search"] #results',
-            '@media (max-width: 1080px)', '@media (max-width: 420px)',
+            '.group--research', '.group--news', '.source-state__status',
+            'repeat(auto-fit, minmax(280px, 1fr))',
+            '@media (max-width: 1240px)', '@media (max-width: 900px)',
+            '@media (max-width: 720px)',
+            '@media (max-width: 420px)',
             '@media (prefers-reduced-motion: reduce)',
             '@media (forced-colors: active)', '@media print',
             '.search-input:focus-visible',
@@ -103,6 +146,10 @@ class TestRender(unittest.TestCase):
             self.assertIn(exact, self.css)
         self.assertNotIn("@font-face", self.css)
         self.assertNotIn("https://", self.css)
+        self.assertNotIn(".terminal-id", self.css)
+        self.assertNotIn(".coverage", self.css)
+        self.assertNotIn(".privacy-dot", self.css)
+        self.assertIn("::selection { background: var(--accent); color: #ffffff; }", self.css)
         self.assertEqual(self.css.count("@media (forced-colors: active)"), 1)
         self.assertEqual(self.css.count("@media print"), 1)
         reduced = self.css.split("@media (prefers-reduced-motion: reduce)", 1)[1]
@@ -114,9 +161,65 @@ class TestRender(unittest.TestCase):
         printed = self.css.split("@media print", 1)[1]
         self.assertIn("break-inside: avoid", printed)
         self.assertIn(".toolbar,", printed)
+        self.assertIn(".index-bar,", printed)
+        self.assertIn("color-scheme: light", printed)
+        self.assertIn('body[data-view="search"] #results { display: block; }', printed)
         self.assertIn(".source-states { grid-template-columns: minmax(0, 1fr); }", self.css)
         self.assertIn(".company-meta a { text-decoration: underline", self.css)
+        mobile = self.css.split("@media (max-width: 420px)", 1)[1]
+        self.assertIn(
+            ".index-bar__inner { display: grid; grid-template-columns: minmax(0, 1fr); }",
+            mobile,
+        )
+        self.assertIn(".market-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }", mobile)
+        self.assertIn("flex: 1 1 0", mobile)
         self.assertNotIn('class="dot publisher"', self.js)
+
+        compact = self.css.split("@media (max-width: 1240px)", 1)[1].split(
+            "@media (max-width: 900px)", 1
+        )[0]
+        self.assertRegex(
+            compact,
+            r"\.market-strip div\s*{[^}]*display:\s*grid;[^}]*gap:\s*5px;",
+        )
+        self.assertRegex(compact, r"\.market-strip dt\s*{[^}]*white-space:\s*normal;")
+        self.assertRegex(compact, r"\.market-strip dd\s*{[^}]*white-space:\s*nowrap;")
+
+        font_declarations = re.findall(r"(?:font-size|font):\s*([^;]+);", self.css)
+        pixel_sizes = [
+            float(match.group(1))
+            for declaration in font_declarations
+            if (match := re.search(r"(\d+(?:\.\d+)?)px", declaration))
+        ]
+        self.assertTrue(pixel_sizes)
+        self.assertGreaterEqual(min(pixel_sizes), 11)
+
+    def test_css_variables_are_defined_and_core_contrast_is_measurable(self):
+        definitions = set(re.findall(r"--([a-z0-9-]+)\s*:", self.css))
+        uses = set(re.findall(r"var\(--([a-z0-9-]+)\)", self.css))
+        self.assertEqual(uses - definitions, set())
+
+        root = re.search(r":root\s*{(.*?)}", self.css, re.DOTALL)
+        self.assertIsNotNone(root)
+        colors = dict(re.findall(r"--([a-z0-9-]+):\s*(#[0-9a-fA-F]{6});", root.group(1)))
+
+        def luminance(value):
+            channels = [int(value[index:index + 2], 16) / 255 for index in (1, 3, 5)]
+            linear = [
+                channel / 12.92 if channel <= 0.04045
+                else ((channel + 0.055) / 1.055) ** 2.4
+                for channel in channels
+            ]
+            return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+
+        def contrast(left, right):
+            high, low = sorted((luminance(colors[left]), luminance(colors[right])), reverse=True)
+            return (high + 0.05) / (low + 0.05)
+
+        for background in ("bg", "surface", "surface-strong"):
+            self.assertGreaterEqual(contrast("subtle", background), 4.5)
+            self.assertGreaterEqual(contrast("line", background), 3.0)
+            self.assertGreaterEqual(contrast("focus", background), 3.0)
 
 
 class TestBuild(unittest.TestCase):
@@ -177,6 +280,16 @@ class TestBuild(unittest.TestCase):
             interactive = sum(entry["bytes"] for entry in release["files"]
                               if not entry["path"].startswith("og-"))
             self.assertLessEqual(interactive, validate_release.INTERACTIVE_BUDGET)
+
+    def test_social_card_bytes_are_bound_to_the_current_release_counts(self):
+        payload = build_site.checked_social_card(build_site.SOCIAL_CARD_COUNTS)
+        self.assertEqual(
+            build_site.sha256_hex(payload),
+            build_site.SOCIAL_CARD_SHA256,
+        )
+        for drifted in ((569, 10_403, 20), (568, 10_404, 20), (568, 10_403, 19)):
+            with self.assertRaisesRegex(ValueError, "do not match"):
+                build_site.checked_social_card(drifted)
 
     def test_cli_has_no_output_path_control(self):
         with tempfile.TemporaryDirectory() as tmp:

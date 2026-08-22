@@ -120,11 +120,45 @@ Last updated: 2026-08-23
   source rail, and a structured colophon. Search announcements are now visible
   outside hidden filters; filter focus is retained; the final pagination action
   has a deterministic focus successor; and mobile, reduced-motion,
-  forced-colors, dark, and print modes have explicit treatments.
+  forced-colors, light, and print modes have explicit treatments.
 - **Verification:** `test_build_site.py`, `test_client_runtime.py`,
   `validate_release.py`, the full release suite, and exact local HTTP smoke
   enforce the premium shell, accessible names/status, responsive modes, and
   unchanged privacy/data boundaries.
+
+### NR-011 — The first premium pass read as editorial luxury, not an investment desk
+
+- **Severity:** P1
+- **Evidence:** Direct product feedback found that the oversized serif hero,
+  warm-paper and copper palette, floating search-card shadow, decorative
+  monograms, and narrative result rows still resembled a premium newsletter.
+  They delayed the archive, weakened column alignment, and did not communicate
+  the density, provenance, and operational precision expected by institutional
+  allocators and hedge-fund research teams.
+- **Resolution:** Replaced the editorial language with a calm allocator-grade
+  research portal: a navy masthead, light archival workspace, exact-count
+  ledger, restrained sans and mono typography, compact local search, ruled
+  research, news, and issuer records, a semantic entity brief,
+  machine-readable source health, and a provenance footer. Removed the
+  floating card, display serif, gold/copper treatment, decorative profile art,
+  rounded badges, hover movement, faux-terminal labels, ornamental status dot,
+  and unsupported query-syntax claim. The result grid now avoids a compressed
+  news rail, source health adapts to the number of sources, and all public type
+  remains at least 11px. Search groups expose explicit incremental continuation
+  instead of silently stopping at eight records, and source exceptions appear
+  both in the top ledger and beside every Search view news group. Archive ledger
+  cells stack their labels and values from the 1240px breakpoint to prevent
+  tablet and narrow-screen collisions.
+  Refreshed the social card as a quiet factual title plate without invented
+  market, AUM, holding, performance, or recommendation data; its reviewed bytes
+  are bound to the exact three counts printed in the card, so a changing dataset
+  fails closed instead of publishing stale figures.
+- **Verification:** Release validation now enforces exact navigation and metric
+  values, complete CSS variables, measured text and control-boundary contrast,
+  320px index-rail containment, semantic metric/check-time markup, unmodified
+  search shortcuts, issuer-specific SEC labels, one-column print output,
+  forced-colors, reduced motion, count-bound social-card facts, collision-free
+  mobile metrics, and the unchanged local-query privacy boundary.
 
 ## Open operational issues
 

@@ -160,14 +160,75 @@ assert.equal(
 const html = app.companyRows(app.data.companies, 4);
 assert.match(html, /<span class="ticker">NVDA<\/span>/);
 assert.match(html, /<h4>NVIDIA CORP<\/h4>/);
-assert.match(html, /aria-label="Search NVIDIA CORP">Search this company<\/button>/);
+assert.match(html,
+  /aria-label="Search NVIDIA CORP">View matches <span aria-hidden="true">→<\/span><\/button>/);
+assert.match(html, /aria-label="Open SEC record for NVIDIA CORP">SEC record<\/a>/);
 const escaped = app.companyRows([{
   cik: "0000000001", ticker: "ACME", exchange: "NYSE",
   name: 'ACME & Co "A"', index: 7
 }], 4);
 assert.match(escaped, /<h4>ACME &amp; Co &quot;A&quot;<\/h4>/);
 assert.match(escaped,
-  /aria-label="Search ACME &amp; Co &quot;A&quot;">Search this company<\/button>/);
+  /aria-label="Search ACME &amp; Co &quot;A&quot;">View matches/);
+assert.match(escaped,
+  /aria-label="Open SEC record for ACME &amp; Co &quot;A&quot;">SEC record<\/a>/);
+""")
+
+    def test_search_shortcut_requires_an_unmodified_non_editable_target(self):
+        self.run_js(r"""
+const target = {tagName: "DIV", isContentEditable: false};
+const plain = {key: "/", altKey: false, ctrlKey: false, metaKey: false, shiftKey: false};
+assert.equal(app.shouldFocusSearch(plain, target), true);
+for (const modifier of ["altKey", "ctrlKey", "metaKey", "shiftKey"]) {
+  const event = {...plain, [modifier]: true};
+  assert.equal(app.shouldFocusSearch(event, target), false);
+}
+for (const editable of [
+  {tagName: "INPUT", isContentEditable: false},
+  {tagName: "TEXTAREA", isContentEditable: false},
+  {tagName: "SELECT", isContentEditable: false},
+  {tagName: "DIV", isContentEditable: true}
+]) {
+  assert.equal(app.shouldFocusSearch(plain, editable), false);
+}
+assert.equal(app.shouldFocusSearch({...plain, key: "?"}, target), false);
+""")
+
+    def test_source_health_exposes_machine_readable_check_times(self):
+        self.run_js(r"""
+app.data.newsStates = {
+  "federal-reserve-rss": {
+    attribution: "Federal Reserve Board", item_count: 3,
+    label: "Federal Reserve Board", last_attempt_at: "2026-08-20T15:00:00Z",
+    last_success_at: "2026-08-20T15:00:00Z", status: "ok"
+  },
+  "gdelt-doc-v2": {
+    attribution: "Discovery metadata: GDELT Project", item_count: 0,
+    label: "GDELT Project", last_attempt_at: "2026-08-20T16:00:00Z",
+    last_success_at: null, status: "error"
+  }
+};
+const html = app.renderSourceStates();
+assert.match(html, /class="source-state__status">ok<\/span>/);
+assert.match(html, /datetime="2026-08-20T15:00:00Z"/);
+assert.match(html, /class="source-state__status">error<\/span>/);
+assert.match(html, /datetime="2026-08-20T16:00:00Z"/);
+assert.match(html, /last successful check not available/);
+""")
+
+    def test_search_group_pagination_is_explicit_and_resettable(self):
+        self.run_js(r"""
+assert.equal(
+  app.searchMoreButton("companies", 8, 168),
+  '<button type="button" class="more-button search-more" data-more-group="companies">' +
+    "Show 8 more · 8 of 168 shown</button>"
+);
+assert.equal(app.searchMoreButton("research", 8, 8), "");
+app.state.searchLimits.companies = 32;
+app.state.searchLimits.research = 24;
+app.state.searchLimits.news = 16;
+app.resetSearchLimits();
+assert.deepEqual(app.state.searchLimits, {companies: 8, research: 8, news: 8});
 """)
 
     def test_payload_validators_reject_prohibited_or_impossible_metadata(self):
@@ -259,7 +320,15 @@ for (let index = 0; index < validators.length; index += 1) {
     def test_bundle_has_no_query_persistence_or_navigation_channel(self):
         source = APP.read_text(encoding="utf-8")
         self.assertEqual(source.count("fetch("), 1)
-        for channel in ("localStorage", "sessionStorage", "history.", "sendBeacon"):
+        self.assertIn("var newsBody = renderSourceStates();", source)
+        self.assertIn('data-more-group="', source)
+        self.assertIn("revealed.length > previousSearchLimit", source)
+        self.assertIn("revealedLinks.length > previousLimit", source)
+        for channel in (
+            "localStorage", "sessionStorage", "history.", "sendBeacon",
+            "document.cookie", "indexedDB", "serviceWorker", "URLSearchParams",
+            "window.location.search", "window.location.hash", "caches.",
+        ):
             self.assertNotIn(channel, source)
 
 
