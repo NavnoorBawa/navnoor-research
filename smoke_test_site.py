@@ -1,31 +1,25 @@
 #!/usr/bin/env python3
-"""Serve a built bundle and verify it over HTTP the way a reader would get it.
-
-    python3 smoke_test_site.py --site _site
-
-Starts a local server on an ephemeral port, requests every file the manifest
-lists, and checks the shell's guarantees: a content security policy is present,
-every referenced asset resolves, and no off-origin host is requested.
-"""
+"""Verify a local or deployed release exactly as served over HTTP."""
 
 from __future__ import annotations
 
 import argparse
 import http.server
-import json
 import re
 import socketserver
 import sys
 import threading
+import urllib.error
 import urllib.request
 from functools import partial
-from pathlib import Path
+from typing import Any
+from urllib.parse import urljoin, urlsplit
 
-from navnoor_research import manifest
+from navnoor_research import jsonio, manifest, paths
 from navnoor_research.fingerprint import sha256_hex
 
-# Any absolute URL in the shell or its assets would be an off-origin request.
-OFFSITE_RE = re.compile(rb"""(?:src|href)\s*=\s*["'](https?:)?//""", re.IGNORECASE)
+MAX_FILE_BYTES = 2_000_000
+MAX_RELEASE_BYTES = 20_000
 
 
 class _QuietHandler(http.server.SimpleHTTPRequestHandler):
@@ -33,87 +27,132 @@ class _QuietHandler(http.server.SimpleHTTPRequestHandler):
         pass
 
 
-def serve(site_dir: Path):
-    handler = partial(_QuietHandler, directory=str(site_dir))
-    httpd = socketserver.TCPServer(("127.0.0.1", 0), handler)
-    thread = threading.Thread(target=httpd.serve_forever, daemon=True)
-    thread.start()
-    return httpd, httpd.server_address[1]
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):  # noqa: ANN001
+        raise urllib.error.URLError(f"redirect refused: {newurl}")
 
 
-def get(base: str, path: str) -> bytes:
-    with urllib.request.urlopen(f"{base}/{path}", timeout=10) as response:
-        if response.status != 200:
-            raise AssertionError(f"{path}: HTTP {response.status}")
-        return response.read()
+OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}), _NoRedirect())
 
 
-def main(argv: list) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--site", type=Path, required=True)
-    args = parser.parse_args(argv)
+def _serve() -> tuple[socketserver.TCPServer, str]:
+    handler = partial(_QuietHandler, directory=str(paths.DEFAULT_SITE_DIR))
+    server = socketserver.TCPServer(("127.0.0.1", 0), handler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    return server, f"http://127.0.0.1:{server.server_address[1]}/"
 
-    site_dir = args.site
-    release = json.loads((site_dir / manifest.MANIFEST_NAME).read_text(encoding="utf-8"))
 
-    httpd, port = serve(site_dir)
-    base = f"http://127.0.0.1:{port}"
+def _base_url(value: str) -> str:
+    text = value.rstrip("/") + "/"
+    parts = urlsplit(text)
+    if parts.username or parts.password or parts.query or parts.fragment:
+        raise ValueError("smoke URL must not contain credentials, query, or fragment")
+    if parts.scheme == "https" and parts.hostname:
+        return text
+    if parts.scheme == "http" and parts.hostname in {"127.0.0.1", "localhost", "::1"}:
+        return text
+    raise ValueError("smoke URL must be HTTPS or loopback HTTP")
+
+
+def _get(base: str, name: str, maximum: int) -> tuple[bytes, str]:
+    url = urljoin(base, name)
+    with OPENER.open(url, timeout=20) as response:
+        if response.status != 200 or response.geturl() != url:
+            raise ValueError(f"{name}: response was not exact HTTP 200")
+        payload = response.read(maximum + 1)
+        if len(payload) > maximum:
+            raise ValueError(f"{name}: served body exceeds {maximum} bytes")
+        return payload, response.headers.get_content_type().lower()
+
+
+def check(base: str, expected_revision: str) -> tuple[dict[str, Any], list[str]]:
     failures: list[str] = []
-
     try:
-        index = get(base, "index.html")
+        release_bytes, release_type = _get(base, manifest.MANIFEST_NAME, MAX_RELEASE_BYTES)
+        release = jsonio.loads_strict(release_bytes)
+    except (OSError, ValueError, jsonio.JsonError, urllib.error.URLError) as exc:
+        return {}, [f"release.json could not be read exactly: {exc}"]
+    if release_type != "application/json":
+        failures.append(f"release.json content type is {release_type!r}")
+    structure = manifest.validate_document(release, expected_revision)
+    if structure:
+        envelope = release if isinstance(release, dict) else {}
+        return envelope, failures + [f"served {problem}" for problem in structure]
+    files = release["files"]
 
-        if b"Content-Security-Policy" not in index:
-            failures.append("index.html does not declare a Content-Security-Policy")
-        if OFFSITE_RE.search(index):
-            failures.append("index.html references an off-origin asset")
+    served: dict[str, bytes] = {}
+    for entry in files:
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            failures.append("release contains an invalid file entry")
+            continue
+        name = entry["path"]
+        maximum = MAX_FILE_BYTES
+        try:
+            payload, content_type = _get(base, name, maximum)
+        except (OSError, ValueError, urllib.error.URLError) as exc:
+            failures.append(f"{name}: not served exactly ({exc})")
+            continue
+        served[name] = payload
+        if len(payload) != entry.get("bytes") or sha256_hex(payload) != entry.get("sha256"):
+            failures.append(f"{name}: served bytes do not match the release manifest")
+        if name.endswith(".json") and content_type != "application/json":
+            failures.append(f"{name}: JSON content type is {content_type!r}")
+        if name.endswith(".js") and content_type not in {
+            "application/javascript", "text/javascript",
+        }:
+            failures.append(f"{name}: JavaScript content type is {content_type!r}")
+        if name.endswith(".css") and content_type != "text/css":
+            failures.append(f"{name}: CSS content type is {content_type!r}")
 
-        # Every file the manifest lists must be served, byte for byte.
-        for entry in release["files"]:
-            if entry["path"] == ".nojekyll":
-                continue
-            payload = get(base, entry["path"])
-            if sha256_hex(payload) != entry["sha256"]:
-                failures.append(f"{entry['path']}: served bytes do not match the manifest")
+    index = served.get("index.html", b"")
+    if b"Content-Security-Policy" not in index:
+        failures.append("served shell is missing its Content-Security-Policy")
+    for label in (b">Search</button>", b">Research</button>", b">Market News</button>"):
+        if label not in index:
+            failures.append(f"served shell is missing {label!r}")
+    references = {
+        match.decode("utf-8")
+        for match in re.findall(
+            rb'(?:src|href|data-(?:research|companies|news|taxonomy))="([a-z0-9.-]+\.(?:css|js|json))"',
+            index,
+        )
+    }
+    if not references.issubset(served):
+        failures.append("served shell references an asset outside the exact release")
+    return release, failures
 
-        # Everything the shell points at must resolve.
-        referenced = set(re.findall(rb'(?:src|href|data-[a-z]+)="([^"]+\.(?:css|js|json))"', index))
-        for name in sorted(referenced):
-            target = name.decode("utf-8")
-            try:
-                payload = get(base, target)
-            except Exception as exc:  # noqa: BLE001
-                failures.append(f"{target}: referenced by the shell but not served ({exc})")
-                continue
-            if target.endswith(".json"):
-                try:
-                    json.loads(payload)
-                except json.JSONDecodeError as exc:
-                    failures.append(f"{target}: not valid JSON ({exc})")
-            if target.endswith(".js") and OFFSITE_RE.search(payload):
-                failures.append(f"{target}: contains an off-origin reference")
 
-        counts = release.get("counts", {})
-        articles = json.loads(get(base, [e["path"] for e in release["files"]
-                                         if e["path"].startswith("articles-")][0]))
-        if len(articles.get("articles", [])) != counts.get("articles"):
-            failures.append("articles payload does not match the manifest count")
-
-        print(f"served    : {base}")
-        print(f"files     : {len(release['files'])}")
-        print(f"articles  : {counts.get('articles')}")
-        print(f"headlines : {counts.get('headlines')}")
-        print(f"referenced: {len(referenced)} assets resolved")
+def main(argv: list[str]) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--expected-revision", required=True)
+    parser.add_argument("--url", default="", help="deployed site root; omit for fixed local _site")
+    args = parser.parse_args(argv)
+    server = None
+    try:
+        if args.url:
+            base = _base_url(args.url)
+        else:
+            if not paths.DEFAULT_SITE_DIR.is_dir():
+                raise ValueError("fixed _site bundle is missing")
+            server, base = _serve()
+        release, failures = check(base, args.expected_revision)
+    except (OSError, ValueError) as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
     finally:
-        httpd.shutdown()
-        httpd.server_close()
+        if server is not None:
+            server.shutdown()
+            server.server_close()
 
+    print(f"served    : {base}")
+    print(f"revision  : {release.get('revision')}")
+    print(f"files     : {release.get('file_count')}")
     for failure in failures:
         print(f"error     : {failure}", file=sys.stderr)
     if failures:
         print(f"\nFAILED with {len(failures)} problem(s)", file=sys.stderr)
         return 1
-    print("\nsmoke test passed")
+    print("\nexact HTTP smoke passed")
     return 0
 
 

@@ -1,9 +1,4 @@
-"""The HTML shell.
-
-One page, rendered once at build time. It carries no content of its own beyond
-the frame: the article, headline and taxonomy payloads arrive as separate
-content-addressed JSON so the shell stays small and cacheable.
-"""
+"""Deterministic HTML shell for the three-surface public product."""
 
 from __future__ import annotations
 
@@ -14,104 +9,136 @@ CSP = (
     "script-src 'self'; "
     "style-src 'self'; "
     "connect-src 'self'; "
-    "img-src 'self' data:; "
+    "img-src 'self'; "
+    "font-src 'none'; "
+    "object-src 'none'; "
+    "frame-src 'none'; "
     "base-uri 'none'; "
     "form-action 'none'"
-    # frame-ancestors is deliberately absent: it is ignored when delivered in a
-    # meta element, and GitHub Pages already sends X-Frame-Options for the host.
 )
 
 DESCRIPTION = (
-    "Search published research by keyword, company, ticker or topic, and scan "
-    "checked market headlines from reviewed public sources."
+    "Search source-linked research metadata, discover SEC company/ticker associations, "
+    "and scan checked market news from reviewed public sources."
 )
-
-SEARCH_ICON = (
-    '<svg class="search__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" '
-    'stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">'
-    '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
-)
+PUBLIC_ORIGIN = "https://navnoorbawa.github.io/navnoor-research/"
 
 
-def render(assets: dict[str, str], revision: str, article_count: int,
-           headline_count: int) -> str:
-    """Build the shell. `assets` maps logical names to fingerprinted filenames."""
-    css = escape(assets["css"])
-    js = escape(assets["js"])
-
+def render(
+    assets: dict[str, str],
+    revision: str,
+    research_count: int,
+    company_count: int,
+    headline_count: int,
+) -> str:
+    """Render a small shell; every searchable record stays in fingerprinted JSON."""
+    og = ""
+    if assets.get("og"):
+        og_name = escape(assets["og"])
+        og = (
+            f'<meta property="og:image" content="{PUBLIC_ORIGIN}{og_name}">\n'
+            f'<meta name="twitter:image" content="{PUBLIC_ORIGIN}{og_name}">\n'
+        )
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
-<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="referrer" content="no-referrer">
 <meta name="description" content="{escape(DESCRIPTION)}">
 <meta name="robots" content="index, follow">
-<title>Navnoor Research — article search and market news</title>
-<link rel="stylesheet" href="{css}">
+<meta name="theme-color" content="#f4f2ed">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Navnoor Research">
+<meta property="og:description" content="{escape(DESCRIPTION)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Navnoor Research">
+<meta name="twitter:description" content="{escape(DESCRIPTION)}">
+<meta property="og:url" content="{PUBLIC_ORIGIN}">
+<link rel="canonical" href="{PUBLIC_ORIGIN}">
+{og}<title>Navnoor Research — Search, Research, Market News</title>
+<link rel="stylesheet" href="{escape(assets['css'])}">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="shell masthead__inner">
-    <a class="brand" href="./">Navnoor Research</a>
-    <nav class="tabs" id="tabs" role="tablist" aria-label="Sections">
-      <button type="button" class="tab" role="tab" data-tab="articles"
-              aria-selected="true">Articles</button>
-      <button type="button" class="tab" role="tab" data-tab="news"
-              aria-selected="false">News</button>
+    <a class="brand" href="./" aria-label="Navnoor Research home">Navnoor Research</a>
+    <nav class="views" aria-label="Primary">
+      <button type="button" class="view-button" data-view="search"
+              aria-pressed="true">Search</button>
+      <button type="button" class="view-button" data-view="research"
+              aria-pressed="false">Research</button>
+      <button type="button" class="view-button" data-view="news"
+              aria-pressed="false">Market News</button>
     </nav>
   </div>
 </header>
 
-<main class="shell" id="main">
-  <div class="search">
-    <label class="search__field">
-      <span class="sr-only" hidden>Search</span>
-      {SEARCH_ICON}
-      <input class="search__input" id="input" type="search" autocomplete="off"
-             spellcheck="false" enterkeyhint="search"
-             placeholder="Search {article_count} articles by keyword, company, ticker or topic…">
-      <kbd class="search__hint" id="hint">/</kbd>
-      <button type="button" class="search__clear" id="clear" hidden>Clear</button>
-    </label>
+<main class="shell main" id="main">
+  <section class="intro" aria-labelledby="page-title">
+    <p class="eyebrow">Source-linked public metadata</p>
+    <h1 id="page-title">Search</h1>
+    <p class="lede" id="view-description">
+      Find research, SEC company/ticker associations, and checked market news
+      from one local search.
+    </p>
+  </section>
+
+  <section class="search-panel" aria-label="Search controls">
+    <label class="search-label" for="query">Search</label>
+    <div class="search-row">
+      <input id="query" class="search-input" type="search" autocomplete="off"
+             autocapitalize="off" spellcheck="false" enterkeyhint="search"
+             placeholder="Company, ticker, fund, regulator, or topic">
+      <button type="button" class="clear-button" id="clear" hidden>Clear</button>
+    </div>
+    <p class="privacy-note">
+      Private by design: your query stays in this page.
+      It is never sent, stored, logged, or added to the URL.
+    </p>
+  </section>
+
+  <div class="filters" id="filters" hidden>
+    <label>Topic <select id="topic-filter"></select></label>
+    <label id="access-wrap">Access <select id="access-filter"></select></label>
+    <label>Order <select id="sort-filter"></select></label>
+    <span class="result-count" id="result-count" role="status" aria-live="polite"></span>
   </div>
 
-  <div class="filters">
-    <select class="select" id="topicFilter" aria-label="Filter by topic"></select>
-    <select class="select" id="accessFilter" aria-label="Filter by access"></select>
-    <select class="select" id="sortFilter" aria-label="Sort results"></select>
-    <span class="filters__spacer"></span>
-    <span class="count" id="count" role="status" aria-live="polite"></span>
+  <div class="load-status" id="load-status" role="status" aria-live="polite">
+    Verifying this release…
   </div>
-
-  <section class="discovery" id="discovery" hidden aria-label="Discovery"></section>
-
   <noscript>
-    <div class="empty">
-      <p class="empty__title">Search needs JavaScript</p>
-      <p>This page runs its search locally in your browser, so nothing you type
-         is ever sent anywhere. That requires JavaScript to be enabled.</p>
+    <div class="notice"><h2>JavaScript is required</h2>
+      <p>Search runs only in your browser over this release’s static,
+         source-linked metadata.</p>
     </div>
   </noscript>
 
-  <ul class="results" id="results"></ul>
-  <div class="empty" id="empty" hidden></div>
-  <button type="button" class="more" id="more" hidden></button>
+  <section class="profile" id="profile" hidden aria-labelledby="profile-title"></section>
+  <section id="content" aria-labelledby="results-heading">
+    <h2 class="results-heading" id="results-heading" tabindex="-1">Results</h2>
+    <div id="results"></div>
+  </section>
 </main>
 
 <footer class="shell colophon">
-  <span>{article_count} articles · {headline_count} checked headlines ·
-        <span id="checked-at"></span></span>
-  <span>Metadata and links only. Not investment advice.
-        Build <code>{escape(revision[:12])}</code></span>
+  <p>{research_count:,} research records ·
+     {company_count:,} SEC company/ticker associations ·
+     {headline_count:,} checked headlines</p>
+  <p>Metadata and source links only.
+     No quotes, holdings, scores, or investment recommendations.
+     Build <code>{escape(revision[:12])}</code></p>
 </footer>
 
 <div id="payloads" hidden
-     data-articles="{escape(assets['articles'])}"
+     data-research="{escape(assets['research'])}"
+     data-companies="{escape(assets['companies'])}"
      data-news="{escape(assets['news'])}"
      data-taxonomy="{escape(assets['taxonomy'])}"></div>
-<script src="{js}" defer></script>
+<script src="{escape(assets['js'])}" defer></script>
 </body>
 </html>
 """

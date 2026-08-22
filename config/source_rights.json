@@ -1,27 +1,30 @@
 {
-  "schema_version": 1,
-  "reviewed_at": "2026-08-20",
+  "schema_version": 2,
+  "reviewed_at": "2026-08-23",
   "sources": [
     {
       "id": "archive",
       "label": "Published research corpus",
       "status": "enabled",
-      "allowed_hosts": [
-        "navnoorthapar.github.io"
+      "adapter": "seed",
+      "allowed_hosts": [],
+      "link_hosts": [
+        "navnoorbawa.substack.com",
+        "medium.com",
+        "www.fxempire.com",
+        "www.patreon.com"
       ],
       "allowed_fields": [
-        "title",
-        "subtitle",
-        "summary",
-        "date",
-        "url",
-        "source",
-        "family",
-        "topics",
-        "entities",
         "access",
-        "coverage",
-        "revision"
+        "alternate_urls",
+        "canonical_url",
+        "id",
+        "published_at",
+        "slug",
+        "source",
+        "source_id",
+        "subtitle",
+        "title"
       ],
       "prohibited_fields": [
         "article_body",
@@ -34,25 +37,25 @@
       "attribution": "Navnoor Bawa",
       "poll_interval_seconds": 0,
       "retention_days": 0,
-      "note": "Read-only local import of article metadata. Body text, member previews and parser observations are never read."
+      "note": "Exact-revision tar import from the local archive checkout. The importer lexically skips every unreviewed JSON value and writes only this metadata projection."
     },
     {
       "id": "sec-edgar",
       "label": "U.S. Securities and Exchange Commission",
-      "status": "reviewed",
+      "status": "enabled",
+      "adapter": "sec",
       "allowed_hosts": [
-        "www.sec.gov",
-        "data.sec.gov"
+        "www.sec.gov"
+      ],
+      "link_hosts": [
+        "www.sec.gov"
       ],
       "allowed_fields": [
+        "id",
         "cik",
         "ticker",
         "exchange",
         "name",
-        "accession",
-        "form",
-        "filing_date",
-        "report_date",
         "url"
       ],
       "prohibited_fields": [
@@ -62,15 +65,17 @@
       "attribution": "U.S. Securities and Exchange Commission",
       "poll_interval_seconds": 86400,
       "retention_days": 0,
-      "note": "Rights-cleared and not yet wired to an adapter. Enabling it is the next planned source; see README 'Planned sources'."
+      "note": "One daily request to the fixed SEC company/ticker association file. Only company identity metadata and a derived SEC browse link are retained; no filings are fetched."
     },
     {
       "id": "gdelt-doc-v2",
       "label": "GDELT Project",
       "status": "enabled",
+      "adapter": "gdelt",
       "allowed_hosts": [
         "api.gdeltproject.org"
       ],
+      "link_hosts": [],
       "allowed_fields": [
         "title",
         "url",
@@ -85,7 +90,7 @@
         "image",
         "tone"
       ],
-      "attribution": "Discovery data: GDELT Project",
+      "attribution": "Discovery metadata: GDELT Project",
       "poll_interval_seconds": 3600,
       "retention_days": 90
     },
@@ -93,7 +98,11 @@
       "id": "federal-reserve-rss",
       "label": "Federal Reserve Board",
       "status": "enabled",
+      "adapter": "rss",
       "allowed_hosts": [
+        "www.federalreserve.gov"
+      ],
+      "link_hosts": [
         "www.federalreserve.gov"
       ],
       "allowed_fields": [
@@ -116,8 +125,12 @@
     {
       "id": "cftc-rss",
       "label": "U.S. Commodity Futures Trading Commission",
-      "status": "enabled",
+      "status": "disabled",
+      "adapter": "rss",
       "allowed_hosts": [
+        "www.cftc.gov"
+      ],
+      "link_hosts": [
         "www.cftc.gov"
       ],
       "allowed_fields": [
@@ -135,7 +148,8 @@
       ],
       "attribution": "U.S. Commodity Futures Trading Commission",
       "poll_interval_seconds": 3600,
-      "retention_days": 365
+      "retention_days": 365,
+      "note": "Reviewed metadata fields, but disabled at launch because the official feed does not currently present a certificate chain that this verified standard-library client can authenticate."
     }
   ]
 }

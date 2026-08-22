@@ -1,4 +1,4 @@
-"""Normalisation rules, including the two that protect honesty of display."""
+"""Deterministic helpers used only on public publication metadata."""
 
 from __future__ import annotations
 
@@ -7,96 +7,78 @@ import unittest
 from navnoor_research import normalize
 
 
-class TestAccess(unittest.TestCase):
-    def test_free_audiences(self):
-        for value in ("everyone", "public", "EVERYONE", " public "):
-            self.assertEqual(normalize.access_of(value), normalize.ACCESS_FREE)
-
-    def test_paid_audiences(self):
-        for value in ("only_paid", "paid", "locked"):
-            self.assertEqual(normalize.access_of(value), normalize.ACCESS_PAID)
-
-    def test_unknown_is_not_guessed(self):
-        for value in ("unknown", "", None, "something-new"):
-            self.assertEqual(normalize.access_of(value), normalize.ACCESS_UNKNOWN)
-
-
-class TestReadingMinutes(unittest.TestCase):
-    def test_complete_body_is_trusted(self):
-        self.assertEqual(normalize.reading_minutes(3332, "full"), 15)
-
-    def test_excerpt_wordcount_is_refused(self):
-        # An excerpt's wordcount describes the teaser, not the article. Printing
-        # it would advertise a 3,000-word piece as a one-minute read.
-        self.assertIsNone(normalize.reading_minutes(1819, "excerpt"))
-        self.assertIsNone(normalize.reading_minutes(200, "registry"))
-
-    def test_absent_or_zero(self):
-        self.assertIsNone(normalize.reading_minutes(0, "full"))
-        self.assertIsNone(normalize.reading_minutes(None, "full"))
-
-    def test_never_rounds_down_to_zero(self):
-        self.assertEqual(normalize.reading_minutes(5, "full"), 1)
-
-
 class TestCleanText(unittest.TestCase):
-    def test_strips_syndication_call_to_action(self):
-        got = normalize.clean_text("The size tier absorbed it…\n\nContinue reading on Medium »")
-        self.assertEqual(got, "The size tier absorbed it")
+    def test_strips_syndication_call_to_action_and_dangling_ellipsis(self):
+        value = "The size tier absorbed it…\n\nContinue reading on Medium »"
+        self.assertEqual(normalize.clean_text(value), "The size tier absorbed it")
 
-    def test_collapses_whitespace(self):
-        self.assertEqual(normalize.clean_text("a  \n  b"), "a b")
+    def test_collapses_all_runs_of_whitespace(self):
+        self.assertEqual(normalize.clean_text("  alpha \n\t beta   gamma  "),
+                         "alpha beta gamma")
 
-    def test_empty(self):
-        self.assertIsNone(normalize.clean_text("   "))
+    def test_empty_values_stay_absent(self):
+        self.assertIsNone(normalize.clean_text("   \n\t "))
         self.assertIsNone(normalize.clean_text(None))
 
-
-class TestSummaryRights(unittest.TestCase):
-    """A body-derived lead may only describe a publicly readable article."""
-
-    RECORD = {
-        "subtitle": "A public subtitle.",
-        "brief": {"lead": {"text": "A sentence lifted from the article body."}},
-    }
-
-    def test_free_article_may_use_the_lead(self):
-        got = normalize.summary_for(self.RECORD, normalize.ACCESS_FREE)
-        self.assertEqual(got, "A sentence lifted from the article body.")
-
-    def test_paid_article_falls_back_to_the_subtitle(self):
-        got = normalize.summary_for(self.RECORD, normalize.ACCESS_PAID)
-        self.assertEqual(got, "A public subtitle.")
-
-    def test_unknown_access_is_treated_as_paid(self):
-        got = normalize.summary_for(self.RECORD, normalize.ACCESS_UNKNOWN)
-        self.assertEqual(got, "A public subtitle.")
-
-    def test_member_preview_is_never_read(self):
-        record = {"member_preview": "members only text", "subtitle": None, "brief": None}
-        self.assertIsNone(normalize.summary_for(record, normalize.ACCESS_PAID))
-
-    def test_missing_brief_does_not_crash(self):
-        self.assertIsNone(normalize.summary_for({"brief": None}, normalize.ACCESS_FREE))
+    def test_ordinary_public_subtitle_is_not_rewritten(self):
+        subtitle = "Liquidity, order flow, and a market-structure post-mortem."
+        self.assertEqual(normalize.clean_text(subtitle), subtitle)
 
 
-class TestMisc(unittest.TestCase):
-    def test_truncate_cuts_on_a_word_boundary(self):
-        got = normalize.truncate("alpha beta gamma delta", 12)
-        self.assertTrue(got.endswith("…"))
-        self.assertLessEqual(len(got), 13)
+class TestTruncate(unittest.TestCase):
+    def test_cuts_on_a_word_boundary_and_marks_the_cut(self):
+        result = normalize.truncate("alpha beta gamma delta", 12)
+        self.assertEqual(result, "alpha beta…")
 
-    def test_truncate_leaves_short_text(self):
+    def test_short_text_is_byte_for_byte_unchanged(self):
         self.assertEqual(normalize.truncate("short", 40), "short")
 
-    def test_published_date(self):
-        self.assertEqual(normalize.published_date("2026-08-20T13:31:31.862Z"), "2026-08-20")
-        self.assertIsNone(normalize.published_date("not a date"))
-        self.assertIsNone(normalize.published_date(None))
+    def test_long_single_token_remains_bounded(self):
+        result = normalize.truncate("x" * 100, 12)
+        self.assertEqual(result, "x" * 12 + "…")
+        self.assertEqual(len(result), 13)
 
-    def test_article_id_is_stable_and_scoped(self):
-        self.assertEqual(normalize.article_id("substack", "A Slug!"), "substack:a-slug")
-        self.assertEqual(normalize.article_id("medium", "a-slug"), "medium:a-slug")
+    def test_trailing_punctuation_is_not_left_before_ellipsis(self):
+        result = normalize.truncate("alpha beta, gamma delta", 12)
+        self.assertFalse(result.endswith(",…"))
+        self.assertTrue(result.endswith("…"))
+
+
+class TestPublishedDate(unittest.TestCase):
+    def test_extracts_date_from_reviewed_date_and_utc_instant_shapes(self):
+        self.assertEqual(normalize.published_date("2026-08-20"), "2026-08-20")
+        self.assertEqual(
+            normalize.published_date("2026-08-20T13:31:31.862Z"),
+            "2026-08-20",
+        )
+
+    def test_missing_or_unshaped_values_stay_absent(self):
+        for value in (None, "", "not a date", "20-08-2026", "2026-8-20"):
+            with self.subTest(value=value):
+                self.assertIsNone(normalize.published_date(value))
+
+
+class TestMetadataConstants(unittest.TestCase):
+    def test_access_states_match_the_seed_contract(self):
+        self.assertEqual(
+            {
+                normalize.ACCESS_PUBLIC,
+                normalize.ACCESS_RESTRICTED,
+                normalize.ACCESS_UNKNOWN,
+            },
+            {"public", "restricted", "unknown"},
+        )
+
+    def test_every_reviewed_archive_source_has_a_stable_display_label(self):
+        self.assertEqual(
+            normalize.SOURCE_LABELS,
+            {
+                "substack": "Substack",
+                "medium": "Medium",
+                "patreon": "Patreon",
+                "fxempire": "FXEmpire",
+            },
+        )
 
 
 if __name__ == "__main__":

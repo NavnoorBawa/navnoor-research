@@ -8,13 +8,15 @@ reviewed host without the rights screen noticing.
 
 from __future__ import annotations
 
+import ssl
 import time
 import urllib.error
 import urllib.request
 from collections.abc import Sequence
+from pathlib import Path
 from urllib.parse import urlsplit
 
-USER_AGENT = "navnoor-research/2.0 (+https://github.com/NavnoorBawa; contact via repository)"
+USER_AGENT = "Navnoor Research/1.0 (Navnoor Bawa; navnoorbawa@gmail.com)"
 
 DEFAULT_TIMEOUT_SECONDS = 15.0
 DEFAULT_MAX_BYTES = 4_000_000
@@ -31,13 +33,38 @@ class _NoRedirects(urllib.request.HTTPRedirectHandler):
         raise FetchError(f"redirect to {newurl!r} refused; reviewed host must answer directly")
 
 
-_OPENER = urllib.request.build_opener(_NoRedirects)
+def _verified_tls_context() -> ssl.SSLContext:
+    """Use platform trust, with the standard macOS trust file as a secure fallback."""
+    defaults = ssl.get_default_verify_paths()
+    fallback = Path("/etc/ssl/cert.pem")
+    if not defaults.cafile and not defaults.capath and fallback.is_file():
+        return ssl.create_default_context(cafile=str(fallback))
+    return ssl.create_default_context()
+
+
+_TLS_CONTEXT = _verified_tls_context()
+_OPENER = urllib.request.build_opener(
+    urllib.request.ProxyHandler({}),
+    urllib.request.HTTPSHandler(context=_TLS_CONTEXT),
+    _NoRedirects(),
+)
 
 
 def check_url(url: str, allowed_hosts: Sequence[str]) -> str:
     """Validate scheme and host against the rights screen, returning the host."""
+    if not isinstance(url, str) or not url or len(url) > 2_048:
+        raise FetchError("URL must be a non-empty string of at most 2,048 characters")
+    if any(ord(char) < 33 or ord(char) == 127 for char in url):
+        raise FetchError("URL contains whitespace or a control character")
     parts = urlsplit(url)
-    if parts.scheme != "https":
+    try:
+        port = parts.port
+    except ValueError as exc:
+        raise FetchError(f"URL has an invalid port: {url!r}") from exc
+    if (
+        parts.scheme != "https" or not parts.hostname or parts.username or parts.password
+        or parts.fragment or port not in (None, 443)
+    ):
         raise FetchError(f"refusing non-HTTPS url {url!r}")
     host = (parts.hostname or "").lower()
     if host not in {h.lower() for h in allowed_hosts}:
@@ -53,15 +80,16 @@ def fetch(
     max_bytes: int = DEFAULT_MAX_BYTES,
     retries: int = DEFAULT_RETRIES,
     accept: str | None = None,
+    content_types: Sequence[str] = (),
     sleep=time.sleep,
 ) -> bytes:
     """Fetch a bounded body from a reviewed host, or raise FetchError."""
     check_url(url, allowed_hosts)
 
-    headers = {"User-Agent": USER_AGENT}
+    request_headers = {"User-Agent": USER_AGENT}
     if accept:
-        headers["Accept"] = accept
-    request = urllib.request.Request(url, headers=headers, method="GET")
+        request_headers["Accept"] = accept
+    request = urllib.request.Request(url, headers=request_headers, method="GET")
 
     last: Exception | None = None
     for attempt in range(retries + 1):
@@ -69,6 +97,31 @@ def fetch(
             with _OPENER.open(request, timeout=timeout) as response:
                 if response.status != 200:
                     raise FetchError(f"{url}: HTTP {response.status}")
+                final_url = response.geturl() if hasattr(response, "geturl") else url
+                if final_url != url:
+                    raise FetchError(f"{url}: final response URL changed to {final_url!r}")
+                response_headers = getattr(response, "headers", None)
+                if content_types:
+                    actual = (
+                        response_headers.get_content_type().lower()
+                        if response_headers is not None else ""
+                    )
+                    allowed_types = {value.lower() for value in content_types}
+                    if actual not in allowed_types:
+                        raise FetchError(
+                            f"{url}: content type {actual or 'missing'!r} is not allowed"
+                        )
+                declared = (
+                    response_headers.get("Content-Length")
+                    if response_headers is not None else None
+                )
+                if declared is not None:
+                    try:
+                        declared_size = int(declared)
+                    except ValueError as exc:
+                        raise FetchError(f"{url}: invalid Content-Length") from exc
+                    if declared_size < 0 or declared_size > max_bytes:
+                        raise FetchError(f"{url}: declared body exceeds {max_bytes} byte ceiling")
                 # Read one byte past the ceiling so an oversized body is
                 # detected rather than silently truncated into the catalogue.
                 body = response.read(max_bytes + 1)

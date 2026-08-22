@@ -1,512 +1,26 @@
 {
-  "checked_at": "2026-08-21T08:41:39Z",
   "items": [
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "fcbc0ba4561a64f7",
-      "published": "2026-08-21T08:00:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Asian Markets Trade Mostly Higher",
-      "topic": "general",
-      "url": "https://www.rttnews.com/story.aspx?Id=3682879"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "7b1e7337acd47412",
-      "published": "2026-08-21T08:00:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Ian Guider : If ICG , DCC and PTSB are so cheap , where are the other bidders ?",
-      "topic": "general",
-      "url": "https://www.businesspost.ie/companies/ian-guider-if-icg-dcc-and-ptsb-are-so-cheap-where-are-the-other-bidders/"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "1b7b63f3febfa644",
-      "published": "2026-08-21T08:00:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Australian Market Extends Early Losses In Mid - market",
-      "topic": "general",
-      "url": "https://www.rttnews.com/story.aspx?Id=3682882"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "894af898af1e1706",
-      "published": "2026-08-21T07:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Beyond the Buyout : China USD fundraising is back , but it has a catch",
-      "topic": "general",
-      "url": "https://www.dealstreetasia.com/stories/beyond-the-buyout-china-usd-gaja-492781"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "9a121d9458514507",
-      "published": "2026-08-21T07:15:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Foreign investors extend S . Korean stock selling spree to 7 months - Xinhua",
-      "topic": "equities",
-      "url": "https://english.news.cn/20260821/b089c61cf2f644c5b54f7f324e62d7fb/c.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "6ab35187f619460a",
-      "published": "2026-08-21T07:00:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Evergrande founder given life sentence",
-      "topic": "general",
-      "url": "https://tribune.com.pk/story/2624987/evergrande-founder-given-life-sentence"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "c39c4e4c62645766",
-      "published": "2026-08-21T06:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "JBM Auto soars 10 % on heavy volume ; here why the stock is buzzing",
-      "topic": "equities",
-      "url": "https://www.business-standard.com/markets/news/jbm-auto-soars-10-on-heavy-volume-here-s-why-the-stock-is-buzzing-today-126082100279_1.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "bc20e608d382318e",
-      "published": "2026-08-21T06:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Hindustan Copper shares jump 4 %. What driving the rally ?",
-      "topic": "general",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hindustan-copper-shares-jump-4-whats-driving-the-rally/articleshow/133394956.cms"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "aea7e7b444a245a6",
-      "published": "2026-08-21T06:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "US fiscal deficit , rising Treasury yields emerge as key risks for financial markets : Jefferies",
-      "topic": "general",
-      "url": "https://timesofoman.com/article/175878-us-fiscal-deficit-rising-treasury-yields-emerge-as-key-risks-for-financial-markets-jefferies"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [
-        "nasdaq-exchange"
-      ],
-      "id": "5eb73784c07bf100",
-      "published": "2026-08-21T06:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Iovance Biotherapeutics ( NASDAQ : IOVA ) Price Target Raised to $11 . 00",
-      "topic": "market-structure",
-      "url": "https://www.dailypolitical.com/2026/08/20/iovance-biotherapeutics-nasdaqiova-price-target-raised-to-11-00.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [
-        "ipo"
-      ],
-      "id": "300c8993fd2be632",
-      "published": "2026-08-21T06:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Upstox in talks with banks for potential $350 - 400 million IPO",
-      "topic": "equities",
-      "url": "https://www.thehindubusinessline.com/markets/upstox-in-talks-with-banks-for-potential-350-400-million-ipo/article71372334.ece"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "2ccccf5164ae0168",
-      "published": "2026-08-21T06:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "US fiscal deficit , rising Treasury yields emerge as key risks for financial markets : Jefferies",
-      "topic": "general",
-      "url": "https://aninews.in/news/business/us-fiscal-deficit-rising-treasury-yields-emerge-as-key-risks-for-financial-markets-jefferies20260821104543/"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "1dc052d99bdc93e2",
-      "published": "2026-08-21T06:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Retail sales fall despite World Cup and hot weather boosting alcohol and drinks trade – business live",
-      "topic": "general",
-      "url": "https://www.theguardian.com/business/live/2026/aug/21/retail-sales-economy-consumer-ons-heatwave-ftse-stock-market-growth-oil-live-updates"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "cb8425308384936a",
-      "published": "2026-08-21T06:15:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "ICICI Bank board approves $5 billion overseas borrowing limit",
-      "topic": "general",
-      "url": "https://www.businesstoday.in/markets/stocks/story/icici-bank-board-approves-5-billion-overseas-borrowing-limit-550522-2026-08-21"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "147e878f3854d602",
-      "published": "2026-08-21T06:15:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Blinkit moment : Urban Company shares gained 8 % today ; here why",
-      "topic": "general",
-      "url": "https://www.businesstoday.in/markets/stocks/story/blinkit-moment-urban-company-shares-gained-8-today-heres-why-550513-2026-08-21"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [
-        "machine-learning"
-      ],
-      "id": "3b6403d653e45791",
-      "published": "2026-08-21T06:00:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "A Historic First for the Mutual Fund Industry : MIDASX & MF Utilities India Partner to Bring AI - Powered Wealth Tech to MFDs Across Bharat",
-      "topic": "quant-methods",
-      "url": "https://www.tribuneindia.com/news/business/a-historic-first-for-the-mutual-fund-industry-midasx-mf-utilities-india-partner-to-bring-ai-powered-wealth-tech-to-mfds-across-bharat-2-2/"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "f302fd48ffc6f6ed",
-      "published": "2026-08-21T05:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "AP News Summary at 12 : 14 a . m . EDT",
-      "topic": "general",
-      "url": "https://www.gjsentinel.com/news/us/ap-news-summary-at-12-14-a-m-edt/article_f2df55ef-d342-5590-b367-47e2f292a575.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "beed849ab77dd3de",
-      "published": "2026-08-21T05:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "US debt tops $40 trillion : Chris Wood flags the 5 % trigger that could rattle stock market",
-      "topic": "equities",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/us-debt-tops-40-trillion-chris-wood-flags-the-5-trigger-that-could-rattle-stock-market/articleshow/133393819.cms"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "36ee6f632a7925b0",
-      "published": "2026-08-21T05:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Asian Markets Trade Mostly Higher",
-      "topic": "general",
-      "url": "https://www.rttnews.com/3682879/asian-markets-trade-mostly-higher.aspx"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "1ce11a897b59cb02",
-      "published": "2026-08-21T05:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Stocks to buy for short term : Ajit Mishra of Religare Broking recommends 3 shares for next 1 - 2 weeks",
-      "topic": "general",
-      "url": "https://www.livemint.com/market/stock-market-news/stocks-to-buy-for-short-term-ajit-mishra-of-religare-broking-recommends-3-shares-for-next-1-2-weeks-11787279316530.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "1ab2a33d259b5c62",
-      "published": "2026-08-21T05:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Australian Market Extends Early Losses In Mid - market",
-      "topic": "general",
-      "url": "https://www.rttnews.com/3682882/australian-market-extends-early-losses-in-mid-market.aspx"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "b73e2f5b6367a477",
-      "published": "2026-08-21T05:15:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Chinese court in Guangzhou accepts bankruptcy case of Evergrande unit",
-      "topic": "general",
-      "url": "https://finance.yahoo.com/news/chinese-court-guangzhou-accepts-bankruptcy-044745125.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "312c5786c55982d7",
-      "published": "2026-08-21T05:15:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "India Is Now Asia Least Favored Stock Market - Trak . in - Indian Business of Tech , Mobile & Startups",
-      "topic": "equities",
-      "url": "https://trak.in/stories/india-is-now-asias-least-favored-stock-market/"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "1dd4c4268f72f8e2",
-      "published": "2026-08-21T05:00:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "AP News Summary at 12 : 14 a . m . EDT",
-      "topic": "general",
-      "url": "https://www.khqa.com/news/nation-world/ap-news-summary-at-12-14-a-m-edt/article_388f93c4-93c3-584e-9c49-15bc53bfb2c1.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "b0b428b0db183341",
-      "published": "2026-08-21T04:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Three SME IPOs to debut today ; Technocrats Plasma Systems leads with 53 % GMP",
-      "topic": "general",
-      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/three-sme-ipos-to-debut-today-technocrats-plasma-systems-leads-with-53-gmp/articleshow/133392138.cms"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "232b682afaf96e14",
-      "published": "2026-08-21T04:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Asian Markets Trade Mostly Higher",
-      "topic": "general",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69370043-asian-markets-trade-mostly-higher-020.htm"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [
-        "nse",
-        "ipo"
-      ],
-      "id": "fac764e4e48fbdef",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Sunshine Pictures IPO allotment today ; check status on BSE , NSE and registrar",
-      "topic": "market-structure",
-      "url": "https://www.moneycontrol.com/news/business/ipo/sunshine-pictures-ipo-allotment-today-check-status-on-bse-nse-and-registrar-14012082.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "b2f3e8f81ab50c91",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Five things to watch this week",
-      "topic": "general",
-      "url": "https://www.businessday.co.za/lifestyle/2026-08-21-five-things-to-watch-this-week/"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "6d988adbddea075e",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Business news live : Manish Anandani To Replace Colgate Prabha Narasimhan As MD & CEO",
-      "topic": "general",
-      "url": "https://www.moneycontrol.com/news/business/business-news-live-updates-today-on-august-20-gold-silver-rates-agm-ipo-gmp-today-liveblog-14011982.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "54640472c998bf93",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "AP News in Brief at 12 : 04 a . m . EDT – Winnipeg Free Press",
-      "topic": "general",
-      "url": "https://www.winnipegfreepress.com/world/2026/08/20/ap-news-in-brief-at-1204-a-m-edt-957"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [
-        "sebi"
-      ],
-      "id": "4a9679a3af0d5e54",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "CAS manipulation : SEBI swift ban on JPMorgan unit seen as warning to traders",
-      "topic": "regulation",
-      "url": "https://www.moneycontrol.com/news/business/markets/swift-indian-ban-on-jpmorgan-unit-seen-as-warning-to-traders-14012015.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "47ff6c96f0b30920",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Samsung to hold board meeting , mulls US$79b shareholder returns",
-      "topic": "general",
-      "url": "https://www.businesstimes.com.sg/companies-markets/samsung-convene-board-meeting-weighs-us79-billion-shareholder-returns"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "29ec1d4accfe251e",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Stock Market LIVE Updates , Sensex Today : Markets Likely To Open Flat Amid Mixed Global Cues",
-      "topic": "equities",
-      "url": "https://www.cinaradio.com/2026/08/20/stock-market-live-updates-sensex-today-markets-likely-to-open-flat-amid-mixed-global-cues/"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "270f61b784b9c0f1",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "How Did Tata Group Fare Under Chandra ?",
-      "topic": "general",
-      "url": "https://www.rediff.com/business/report/how-did-tata-group-fare-under-chandra/20260821.htm"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "22b041f4ef2a080d",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Australian Market Extends Early Losses In Mid - market",
-      "topic": "general",
-      "url": "https://www.finanzen.ch/nachrichten/aktien/australian-market-extends-early-losses-in-mid-market-1036480921"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "228c5ab337533a00",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Taiwan forecast of 11 % GDP growth likely not sustainable : economists",
-      "topic": "quant-methods",
-      "url": "https://www.cnbc.com/2026/08/21/taiwan-gdp-growth-outlook-tech-forecast.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "178b81ebd6935f72",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Asian Markets Trade Mostly Higher",
-      "topic": "general",
-      "url": "https://www.finanzen.ch/nachrichten/aktien/asian-markets-trade-mostly-higher-1036480911"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [
-        "ipo"
-      ],
-      "id": "0cd7fb07568c9bb6",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Sunshine Pictures IPO allotment today : GMP indicates 22 % listing upside ; Check Status",
-      "topic": "equities",
-      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/sunshine-pictures-ipo-allotment-today-gmp-indicates-22-listing-upside-check-status/articleshow/133391889.cms"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [
-        "nasdaq-exchange"
-      ],
-      "id": "03b641b2692f6737",
-      "published": "2026-08-21T04:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "SATA Technology Co ., Ltd . ( NASDAQ : SATA ) Declares Dividend of $0 . 05",
-      "topic": "market-structure",
-      "url": "https://www.dailypolitical.com/2026/08/20/sata-technology-co-ltd-nasdaqsata-declares-dividend-of-0-05-3.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "d7c2ab816a23a975",
-      "published": "2026-08-21T04:15:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "AP News Summary at 11 : 09 p . m . EDT",
-      "topic": "general",
-      "url": "https://www.yumasun.com/news/national_news/ap-news-summary-at-11-09-p-m-edt/article_5171f257-7bdf-577e-bd1d-3759175cf869.html"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "74d5b379c2a8f1e7",
-      "published": "2026-08-21T04:15:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Top stocks to buy today : Stock market recommendations for August 21 , 2026 - check list",
-      "topic": "equities",
-      "url": "https://timesofindia.indiatimes.com/business/india-business/top-stock-recommendations-for-august-21-2026-dlf-pg-electroplast-ltd-sansera-engineerng-stocks-to-buy-today/articleshow/133392017.cms"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "4ae9964624b00720",
-      "published": "2026-08-21T04:15:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Sensex Today | Nifty 50 | Stock Market LIVE Updates : Sensex slips over 50 pts , Nifty below 24 , 250 ; IT stocks fall",
-      "topic": "equities",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-bpcl-hal-share-price-21-august-2026/liveblog/133390893.cms"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "66faf0b1b01ceb42",
-      "published": "2026-08-21T04:00:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "The Islander stunning third jersey is finally unveiled",
-      "topic": "general",
-      "url": "https://dose.ca/2026/08/20/the-islanders-stunning-third-jersey-is-finally-unveiled/"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "94dca4ef49459c88",
-      "published": "2026-08-21T03:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Sell YES Bank , PNB shares ; buy HDFC Bank , ICICI Bank stocks , says Goldman Sachs",
-      "topic": "general",
-      "url": "https://www.businesstoday.in/markets/stocks/story/sell-yes-bank-pnb-shares-buy-hdfc-bank-icici-bank-stocks-says-goldman-sachs-550487-2026-08-21"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "28965dcbca930fec",
-      "published": "2026-08-21T03:45:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Elumelu $500m Seplat stake doubles to over $1bn in 8 months",
-      "topic": "general",
-      "url": "https://thesun.ng/elumelus-500m-seplat-stake-doubles-to-over-1bn-in-8-months/"
-    },
-    {
-      "attribution": "Discovery data: GDELT Project",
-      "entities": [],
-      "id": "6833fa3c048f1a34",
-      "published": "2026-08-21T03:30:00Z",
-      "source_id": "gdelt-doc-v2",
-      "title": "Stock Market LIVE : GIFT Nifty signals positive open ; Asia mkts mixed post Wall Street pullback",
-      "topic": "equities",
-      "url": "https://www.business-standard.com/markets/news/stock-market-live-aug-21-nse-bse-sensex-today-nifty50-gift-nifty-us-iran-tension-brent-crude-tempsens-instruments-ipo-share-market-today-126082100079_1.html"
-    },
     {
       "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
-      "id": "83e7ca69b8e01b29",
+      "id": "n_83e7ca69b8e01b29b33c05be53a1b4de8d026343a948164c71ef51d6d412362b",
       "published": "2026-08-20T20:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
       "topic": "rates-macro",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260820a.htm"
     },
     {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc"
-      ],
-      "id": "593a057fcca7da8a",
-      "published": "2026-08-20T16:53:39Z",
-      "source_id": "cftc-rss",
-      "title": "CFTC Seeks Public Comments on Proposed Elimination of SEF Order Book Requirement for Permitted Transactions",
-      "topic": "regulation",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9287-26"
-    },
-    {
       "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
-      "id": "694ce1badfaf5f2f",
+      "id": "n_694ce1badfaf5f2f80c9b1673c6a87f6ee520e33eee56dd8802987ffe7848ad8",
       "published": "2026-08-20T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
       "topic": "rates-macro",
@@ -517,8 +31,9 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "1458ce3d0a030fb8",
+      "id": "n_1458ce3d0a030fb8fae6196e68b948685cf6ba85e76b63f8a208302513c4dac5",
       "published": "2026-08-20T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
       "topic": "rates-macro",
@@ -527,116 +42,35 @@
     {
       "attribution": "Federal Reserve Board",
       "entities": [],
-      "id": "dfdf8d18c6f010c7",
+      "id": "n_dfdf8d18c6f010c7a318f46d8fa292942ebcb1f5fd0210849e57595ca7d9f69f",
       "published": "2026-08-19T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
       "topic": "rates-macro",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm"
     },
     {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc",
-        "options"
-      ],
-      "id": "e1182b1a3383c7c4",
-      "published": "2026-08-19T16:35:53Z",
-      "source_id": "cftc-rss",
-      "title": "CFTC Requests Comment on the Listing of Compute Derivatives Contracts",
-      "topic": "volatility",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9286-26"
-    },
-    {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc"
-      ],
-      "id": "34aca828cc42f494",
-      "published": "2026-08-18T13:00:02Z",
-      "source_id": "cftc-rss",
-      "title": "CFTC Seeks Public Comment on Proposed Rule Changes for Commodity Pool Operator and Commodity Trading Advisor Registration",
-      "topic": "regulation",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9284-26"
-    },
-    {
       "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
-      "id": "86b112d22257464b",
+      "id": "n_86b112d22257464be45388ef734d7c16678041643ffbabc9c7ed390a60e94cae",
       "published": "2026-08-13T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
       "topic": "rates-macro",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260813a.htm"
     },
     {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [],
-      "id": "be4eab782f512cc3",
-      "published": "2026-08-13T14:00:32Z",
-      "source_id": "cftc-rss",
-      "title": "Chairman Selig Announces Agenda for August 20 Innovation Advisory Committee Meeting in Washington",
-      "topic": "general",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9283-26"
-    },
-    {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc",
-        "prediction-markets"
-      ],
-      "id": "f83c00b474a5deed",
-      "published": "2026-08-12T19:27:08Z",
-      "source_id": "cftc-rss",
-      "title": "CFTC Releases Advisory on Self-Certification of Incentive Programs for Prediction Markets",
-      "topic": "regulation",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9282-26"
-    },
-    {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc"
-      ],
-      "id": "a6331135eddf955b",
-      "published": "2026-08-11T20:40:28Z",
-      "source_id": "cftc-rss",
-      "title": "CFTC Exercises Emergency Authority to Ensure Market Stability",
-      "topic": "regulation",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9281-26"
-    },
-    {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc"
-      ],
-      "id": "0703ce761c4d610b",
-      "published": "2026-08-10T16:00:00Z",
-      "source_id": "cftc-rss",
-      "title": "Chairman Selig Announces Inaugural CFTC Innovation Advisory Committee Meeting on August 20 in Washington",
-      "topic": "regulation",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9279-26"
-    },
-    {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc"
-      ],
-      "id": "51fc1d0f0d1fec83",
-      "published": "2026-08-07T21:00:57Z",
-      "source_id": "cftc-rss",
-      "title": "CFTC Reminds Markets to Display Clear Pricing Information",
-      "topic": "regulation",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9278-26"
-    },
-    {
       "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
-      "id": "efb5d3bd8ee2477e",
+      "id": "n_efb5d3bd8ee2477eb02f04499b5499d1d8729f10498a85d671cc73d67bbe4237",
       "published": "2026-08-04T20:30:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board announces approval of the application by Banco Santander, S.A. and Santander Holdings USA, Inc.",
       "topic": "rates-macro",
@@ -647,8 +81,9 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "888652bb279a9979",
+      "id": "n_888652bb279a9979e97d404c3550d620a39247e5f4012ff0f76cb845ae79a1a2",
       "published": "2026-08-04T20:30:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board announces approval of the application by FS Bancorp, Inc.",
       "topic": "rates-macro",
@@ -659,32 +94,22 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "2fe4c3360c5a7a2b",
+      "id": "n_2fe4c3360c5a7a2b9a51726bf3ec8d14ea1424067523783eb89888bd4f8dc3cf",
       "published": "2026-08-04T20:30:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board announces approval of the application by Coastal Bend Bancshares, Inc.",
       "topic": "rates-macro",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260804c.htm"
     },
     {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc"
-      ],
-      "id": "acd478d1561c3aba",
-      "published": "2026-07-31T14:18:05Z",
-      "source_id": "cftc-rss",
-      "title": "ICYMI: Members of the CFTC’s Agricultural Advisory Committee Join Chairman Selig in Washington at First Meeting of 2026",
-      "topic": "regulation",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9275-26"
-    },
-    {
       "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
-      "id": "e8f7cb2840c6d715",
+      "id": "n_e8f7cb2840c6d715a237896233a40d1c0049a9d863532b22df3bb096fab36c06",
       "published": "2026-07-31T14:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board requests comment on a proposal to modernize its rule governing the extension of credit to bank \"insiders\"—bank executives, board members and major shareholders who could potentially influence a bank's lending decisions",
       "topic": "rates-macro",
@@ -695,32 +120,22 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "c86a43cb997c9911",
+      "id": "n_c86a43cb997c99112fbad40da5627653de7a77abbd1f345ce6b742568d41bb5f",
       "published": "2026-07-31T14:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board requests comment on a proposal to modernize rules for mutual banking organizations",
       "topic": "rates-macro",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260731a.htm"
     },
     {
-      "attribution": "U.S. Commodity Futures Trading Commission",
-      "entities": [
-        "cftc"
-      ],
-      "id": "59c882b8105a4fe1",
-      "published": "2026-07-30T16:29:23Z",
-      "source_id": "cftc-rss",
-      "title": "CFTC Seeks Public Comment on Notice of Proposed Rulemaking Concerning Affiliations Among Certain CFTC-Regulated Entities",
-      "topic": "regulation",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9274-26"
-    },
-    {
       "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
-      "id": "85f5b1c8ee5a4693",
+      "id": "n_85f5b1c8ee5a469374d4d2d52fb1da147f2b3b51bbe5f0ac847096e7bdb69833",
       "published": "2026-07-30T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of First Interstate Bank",
       "topic": "rates-macro",
@@ -731,8 +146,9 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "597db052f0fd1b08",
+      "id": "n_597db052f0fd1b0815ac21fd6b8dc6426bf4864a7b878bde4ffeaa401a6085fd",
       "published": "2026-07-30T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board issues enforcement action with Iuka Bancshares, Inc. and The Iuka State Bank",
       "topic": "rates-macro",
@@ -743,8 +159,9 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "e290aabba3caad80",
+      "id": "n_e290aabba3caad80496847cfb5424b874694a37d342708327f2fa9dac0b163e6",
       "published": "2026-07-29T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve issues FOMC statement",
       "topic": "rates-macro",
@@ -753,8 +170,9 @@
     {
       "attribution": "Federal Reserve Board",
       "entities": [],
-      "id": "c65515efea12106a",
+      "id": "n_c65515efea12106abdf19f344dd4082caa9a07ef0f67cda3180d3630edd2515e",
       "published": "2026-07-16T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Agencies issue joint statement on handling of highly sensitive information during bank examinations",
       "topic": "general",
@@ -765,8 +183,9 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "4108857251ea5867",
+      "id": "n_4108857251ea58673dda20a3ecd2e7c8aa49383b318169107ba3737434753cf7",
       "published": "2026-07-16T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board issues enforcement action with former chief lending officer of Heritage State Bank",
       "topic": "rates-macro",
@@ -775,8 +194,9 @@
     {
       "attribution": "Federal Reserve Board",
       "entities": [],
-      "id": "5a26ae43a3fa1c29",
+      "id": "n_5a26ae43a3fa1c29fad718eae35a1cd46a3ee85dc5c8f8decbd4c535e34c82c9",
       "published": "2026-07-14T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
       "topic": "rates-macro",
@@ -787,8 +207,9 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "61a7bae109af084a",
+      "id": "n_61a7bae109af084abef4a4d9cbd1755c5241a9a6948683d8ae22531dd71ac33a",
       "published": "2026-07-09T19:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
       "topic": "rates-macro",
@@ -799,8 +220,9 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "ca864a83f9a46a89",
+      "id": "n_ca864a83f9a46a89d2b0a68dbf240f72e52fcd2dbd2ac980836eab67477409c1",
       "published": "2026-07-09T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board issues enforcement action with TS Banking Group, Inc. and TS Contrarian Bancshares, Inc.",
       "topic": "rates-macro",
@@ -809,8 +231,9 @@
     {
       "attribution": "Federal Reserve Board",
       "entities": [],
-      "id": "10d7843780423456",
+      "id": "n_10d78437804234563a598c50f68a018dd8ab65b6fcc2e88f011c5403c7701226",
       "published": "2026-07-08T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
       "topic": "rates-macro",
@@ -821,13 +244,32 @@
       "entities": [
         "federal-reserve"
       ],
-      "id": "85eb2ff365b608d1",
+      "id": "n_85eb2ff365b608d1b3a5a0ab55f69b683f230fc838076bd7fbcb3b253bfc75db",
       "published": "2026-07-07T19:00:00Z",
+      "publisher": "www.federalreserve.gov",
       "source_id": "federal-reserve-rss",
       "title": "Federal Reserve Board requests comment on a proposal to amend its requirements for banks to maintain anti-money laundering programs",
       "topic": "rates-macro",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260707a.htm"
     }
   ],
-  "schema_version": 2
+  "schema_version": 3,
+  "sources": {
+    "federal-reserve-rss": {
+      "attribution": "Federal Reserve Board",
+      "item_count": 20,
+      "label": "Federal Reserve Board",
+      "last_attempt_at": "2026-08-22T18:38:25Z",
+      "last_success_at": "2026-08-22T18:38:25Z",
+      "status": "ok"
+    },
+    "gdelt-doc-v2": {
+      "attribution": "Discovery metadata: GDELT Project",
+      "item_count": 0,
+      "label": "GDELT Project",
+      "last_attempt_at": "2026-08-22T18:38:25Z",
+      "last_success_at": null,
+      "status": "error"
+    }
+  }
 }

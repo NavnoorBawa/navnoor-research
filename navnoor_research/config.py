@@ -41,7 +41,9 @@ class Source:
     id: str
     label: str
     status: str
+    adapter: str
     allowed_hosts: list[str]
+    link_hosts: list[str]
     allowed_fields: list[str]
     prohibited_fields: list[str]
     attribution: str
@@ -106,13 +108,27 @@ def load_sources() -> dict[str, Source]:
             id=str(_require(item, "id", where)),
             label=str(_require(item, "label", where)),
             status=str(_require(item, "status", where)),
+            adapter=str(_require(item, "adapter", where)),
             allowed_hosts=[str(h) for h in _require(item, "allowed_hosts", where)],
+            link_hosts=[str(h) for h in _require(item, "link_hosts", where)],
             allowed_fields=[str(f) for f in _require(item, "allowed_fields", where)],
             prohibited_fields=[str(f) for f in item.get("prohibited_fields", [])],
             attribution=str(_require(item, "attribution", where)),
             poll_interval_seconds=int(item.get("poll_interval_seconds", 0)),
             retention_days=int(item.get("retention_days", 0)),
         )
+        if src.id in out:
+            raise ConfigError(f"{where}: duplicate source id")
+        if src.status not in {"enabled", "disabled"}:
+            raise ConfigError(f"{where}: status must be enabled or disabled")
+        for label, values in (
+            ("allowed_hosts", src.allowed_hosts),
+            ("link_hosts", src.link_hosts),
+            ("allowed_fields", src.allowed_fields),
+            ("prohibited_fields", src.prohibited_fields),
+        ):
+            if len(values) != len(set(values)):
+                raise ConfigError(f"{where}: {label} contains duplicates")
         out[src.id] = src
     if not out:
         raise ConfigError("source_rights.json defines no sources")

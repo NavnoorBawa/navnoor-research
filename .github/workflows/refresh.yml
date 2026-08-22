@@ -1,0 +1,359 @@
+name: Refresh Checked Data
+
+on:
+  schedule:
+    - cron: '43 */3 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: checked-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  static_analysis:
+    name: Isolated static analysis
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out current product source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python for static analysis
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Install pinned developer-only checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            if python3 -m pip install \
+              --disable-pip-version-check \
+              --requirement requirements-dev.txt; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              sleep "$((attempt * 5))"
+            fi
+          done
+          exit 1
+
+      - name: Lint and type-check production code
+        shell: bash
+        run: |
+          set -euo pipefail
+          ruff check .
+          mypy --cache-dir "$RUNNER_TEMP/mypy-cache"
+
+  refresh:
+    name: Import, refresh, validate, and commit
+    if: github.ref == 'refs/heads/main'
+    needs: static_analysis
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - name: Check out current product main
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up deterministic Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Prove refresh started from current main
+        shell: bash
+        run: |
+          set -euo pipefail
+          remote_main=$(
+            git ls-remote --exit-code origin refs/heads/main |
+              awk 'NR == 1 { print $1 }'
+          )
+          [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]
+          [ "$GITHUB_SHA" = "$remote_main" ]
+          [ "$(git rev-parse --verify HEAD)" = "$GITHUB_SHA" ]
+          test -z "$(git status --porcelain --untracked-files=normal)"
+
+      - name: Check out exact public archive main in a fixed secondary worktree
+        id: archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive_url='https://github.com/navnoorthapar/substack-trades.git'
+          archive_dir="$RUNNER_TEMP/public-research-archive"
+          test ! -e "$archive_dir"
+          git clone \
+            --depth=1 \
+            --branch=main \
+            --single-branch \
+            "$archive_url" \
+            "$archive_dir"
+          archive_revision=$(git -C "$archive_dir" rev-parse --verify HEAD)
+          remote_revision=$(
+            git ls-remote --exit-code "$archive_url" refs/heads/main |
+              awk 'NR == 1 { print $1 }'
+          )
+          [[ "$archive_revision" =~ ^[0-9a-f]{40}$ ]]
+          [ "$archive_revision" = "$remote_revision" ]
+          echo "revision=$archive_revision" >> "$GITHUB_OUTPUT"
+
+      - name: Import the exact rights-safe research projection
+        shell: bash
+        env:
+          ARCHIVE_REVISION: ${{ steps.archive.outputs.revision }}
+        run: |
+          set -euo pipefail
+          archive_dir="$RUNNER_TEMP/public-research-archive"
+          git -C "$archive_dir" archive "$ARCHIVE_REVISION" -- \
+            articles_index.json \
+            trades_extracted.json \
+            snapshot_manifest.json \
+            | python3 import_research_seed.py \
+                --revision "$ARCHIVE_REVISION" \
+                --write
+          python3 build_research.py
+
+      - name: Decide whether the daily SEC check is due
+        id: sec_due
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          import os
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+
+          due = os.environ["EVENT_NAME"] == "workflow_dispatch"
+          try:
+              value = json.loads(Path("data/companies.json").read_text(encoding="utf-8"))
+              checked = datetime.strptime(
+                  value["checked_at"], "%Y-%m-%dT%H:%M:%SZ"
+              ).replace(tzinfo=timezone.utc)
+              due = due or datetime.now(timezone.utc) - checked >= timedelta(hours=24)
+          except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+              due = True
+          print(f"due={'true' if due else 'false'}")
+          PY
+
+      - name: Refresh SEC company associations
+        id: companies
+        if: steps.sec_due.outputs.due == 'true'
+        continue-on-error: true
+        run: python3 refresh_companies.py
+
+      - name: Refresh reviewed checked-headline sources
+        id: news
+        continue-on-error: true
+        run: python3 refresh_news.py
+
+      - name: Report retained last-known-good sources
+        if: >-
+          steps.companies.outcome == 'failure'
+          || steps.news.outcome == 'failure'
+        shell: bash
+        run: |
+          echo "::warning title=Source refresh degraded::One or more adapters failed; their validated last-known-good data was retained."
+
+      - name: Validate changed data before it is eligible to commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s . -p 'test_*.py' -v
+          python3 validate_data.py
+          python3 refresh_companies.py --offline
+          python3 refresh_news.py --offline
+          python3 build_site.py --revision local-refresh
+          python3 validate_release.py --expected-revision local-refresh
+          python3 smoke_test_site.py --expected-revision local-refresh
+          python3 -m py_compile ./*.py ./navnoor_research/*.py ./navnoor_research/adapters/*.py
+          git diff --check
+
+      - name: Admit only fixed seed and data paths
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import subprocess
+
+          allowed = {
+              "data/companies.json",
+              "data/news.json",
+              "data/research.json",
+              "seed/manifest.json",
+              "seed/publications.json",
+          }
+          raw = subprocess.check_output(
+              ["git", "status", "--porcelain=v1", "-z", "--untracked-files=all"]
+          )
+          unexpected = []
+          for entry in raw.split(b"\0"):
+              if not entry:
+                  continue
+              text = entry.decode("utf-8", errors="strict")
+              status, path = text[:2], text[3:]
+              if "R" in status or "C" in status or path not in allowed:
+                  unexpected.append(f"{status} {path}")
+          if unexpected:
+              raise SystemExit("unexpected refresh mutation(s): " + ", ".join(unexpected))
+          PY
+          git add -- \
+            data/companies.json \
+            data/news.json \
+            data/research.json \
+            seed/manifest.json \
+            seed/publications.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No checked data changed."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create a local validated refresh commit
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh checked research data'
+
+      - name: Run the exact committed standard-library gate
+        if: steps.changes.outputs.changed == 'true'
+        id: committed
+        shell: bash
+        run: |
+          set -euo pipefail
+          release_revision=$(git rev-parse --verify HEAD)
+          [[ "$release_revision" =~ ^[0-9a-f]{40}$ ]]
+          python3 -m unittest discover -s . -p 'test_*.py' -v
+          python3 validate_data.py
+          python3 refresh_companies.py --offline
+          python3 refresh_news.py --offline
+          python3 build_site.py --revision "$release_revision"
+          python3 validate_release.py --expected-revision "$release_revision"
+          python3 smoke_test_site.py --expected-revision "$release_revision"
+          python3 -m py_compile ./*.py ./navnoor_research/*.py ./navnoor_research/adapters/*.py
+          for file in ./*.sh; do
+            if [ -f "$file" ]; then
+              bash -n "$file"
+            fi
+          done
+          git diff --check
+          [ "$(git rev-parse --verify HEAD)" = "$release_revision" ]
+          test -z "$(git status --porcelain --untracked-files=normal)"
+          echo "revision=$release_revision" >> "$GITHUB_OUTPUT"
+
+      - name: Refuse to overwrite a newer main
+        if: steps.changes.outputs.changed == 'true'
+        id: currency
+        shell: bash
+        run: |
+          set -euo pipefail
+          remote_main=$(
+            git ls-remote --exit-code origin refs/heads/main |
+              awk 'NR == 1 { print $1 }'
+          )
+          [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]
+          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Superseded refresh skipped::Main advanced to $remote_main while data was checked."
+            exit 0
+          fi
+          echo "current=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push only the exact validated refresh commit
+        if: >-
+          steps.changes.outputs.changed == 'true'
+          && steps.currency.outputs.current == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_REVISION: ${{ steps.committed.outputs.revision }}
+        run: |
+          set -euo pipefail
+          [ "$(git rev-parse --verify HEAD)" = "$RELEASE_REVISION" ]
+          test -z "$(git status --porcelain --untracked-files=normal)"
+          basic_auth=$(python3 - <<'PY'
+          import base64
+          import os
+
+          value = f"x-access-token:{os.environ['GH_TOKEN']}".encode("utf-8")
+          print(base64.b64encode(value).decode("ascii"))
+          PY
+          )
+          cleanup_auth() {
+            git config --local --unset-all http.https://github.com/.extraheader \
+              >/dev/null 2>&1 || true
+          }
+          trap cleanup_auth EXIT
+          git config --local http.https://github.com/.extraheader \
+            "AUTHORIZATION: basic $basic_auth"
+          unset basic_auth GH_TOKEN
+          git push --porcelain origin "$RELEASE_REVISION:refs/heads/main"
+          published=$(
+            git ls-remote --exit-code origin refs/heads/main |
+              awk 'NR == 1 { print $1 }'
+          )
+          [ "$published" = "$RELEASE_REVISION" ]
+          cleanup_auth
+          trap - EXIT
+
+      - name: Dispatch the normal main deployment
+        if: >-
+          steps.changes.outputs.changed == 'true'
+          && steps.currency.outputs.current == 'true'
+        shell: bash
+        env:
+          API_URL: ${{ github.api_url }}
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          url = (
+              f"{os.environ['API_URL']}/repos/{os.environ['REPOSITORY']}"
+              "/actions/workflows/deploy.yml/dispatches"
+          )
+          body = json.dumps({"ref": "main"}).encode("utf-8")
+          request = urllib.request.Request(
+              url,
+              data=body,
+              method="POST",
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                  "Content-Type": "application/json",
+                  "User-Agent": "navnoor-research-refresh/1",
+                  "X-GitHub-Api-Version": "2022-11-28",
+              },
+          )
+          with urllib.request.urlopen(request, timeout=20) as response:
+              if response.status != 204:
+                  raise SystemExit(f"deployment dispatch returned HTTP {response.status}")
+          print("Dispatched deploy.yml for exact current main.")
+          PY

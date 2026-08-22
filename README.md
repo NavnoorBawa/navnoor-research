@@ -1,100 +1,115 @@
 # Navnoor Research
 
-**Search the research. Scan the news. Start from a name.**
+**Search the research. Check the market news. Start from a name.**
 
-A fast, source-linked research index built for people who open a page, type a
-name, and want the answer before they have finished thinking about it.
+Navnoor Research is a small public-source research index with exactly three
+destinations:
 
-Three things, done properly:
+- **Search** — discover published research, checked headlines, and SEC-backed
+  company/ticker associations from a company, ticker, fund, regulator, index,
+  asset, or topic.
+- **Research** — search and filter 568 source-linked publication records by
+  topic and access state.
+- **Market News** — scan retained headline metadata from reviewed public
+  sources with publisher, discovery attribution, and an honest status for each
+  scheduled source check.
 
-- **Articles** — every published piece, searchable by keyword, company, ticker,
-  fund, regulator or topic, with the date, access and topic on the row.
-- **News** — checked headlines from reviewed public sources, each carrying its
-  attribution, its timestamp and a link straight to the publisher.
-- **Discovery** — type a name and the page tells you what it is and how much
-  there is: *Jane Street · fund · 14 articles · 0 headlines*.
+GDELT-discovered rows and source status link their credit to the
+[GDELT Project](https://www.gdeltproject.org/), consistent with its
+[Terms of Use](https://www.gdeltproject.org/about.html). The SEC company file is
+a periodically updated set of company/name/ticker/exchange associations, not an
+SEC listing registry; see the SEC's
+[EDGAR data documentation](https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data).
 
-There is no account, cookie, telemetry, remote script, remote font or backend
-that receives what you type. Search runs in the page, over data already loaded.
+It provides no quote, portfolio, holding, score, target, or investment
+recommendation. A bare ticker such as `NVDA` produces a company suggestion;
+`$NVDA` or `ticker:NVDA` explicitly scopes the result set. Reviewed aliases
+such as `IWM`, `AI`, and `SEC` resolve to their corresponding research entity.
 
-## How it is built
+Search runs entirely in the page over four content-addressed, same-origin data
+files. There is no account, cookie, analytics, telemetry, third-party script,
+remote font, or backend that receives the query.
 
-A dependency-free Python 3.9+ pipeline produces a static bundle. Source records
-are validated before the build; the build emits an HTML shell, fingerprinted
-same-origin CSS and JavaScript, content-addressed JSON, and a release manifest
-binding every public byte to one Git revision.
+## Architecture
 
-The whole site is about 300 KB, of which the shell is 3 KB.
+The dependency-free Python 3.9+ pipeline produces a deterministic GitHub Pages
+bundle. Every input is validated before build; every public file is listed by
+size and SHA-256 in `release.json`; the browser verifies each data asset against
+the digest embedded in its filename before installing any of them.
 
+```text
+seed/publications.json   rights-safe exact-revision archive projection
+seed/manifest.json       source revision, input digests, counts, check state
+data/research.json       deterministic searchable publication metadata
+data/companies.json      last-known-good SEC company/ticker associations
+data/news.json           last-known-good checked headline metadata and states
+config/*.json            reviewed entity, topic, and source-rights tables
+_site/                   ignored deterministic Pages bundle
 ```
-config/*.json        reviewed entity, topic and source-rights tables
-data/articles.json   normalised article metadata      (import_articles.py)
-data/news.json       checked headlines, last known good (refresh_news.py)
-_site/               the built bundle                 (build_site.py)
-```
 
-News refreshes are scheduled pipeline jobs, never browser requests. Every
-adapter enforces an HTTPS host allowlist, refuses redirects, caps bytes and
-time, bounds retries, parses XML with entity expansion refused, keeps only
-allow-listed fields, and promotes a snapshot atomically so a bad network day
-leaves the previous one intact.
+The archive seed is independent from the new application at runtime: it is a
+tracked, rights-bounded transaction imported from one exact archive commit.
+The production build never reaches into another checkout and never reads an
+article body.
 
-## Running it
+## Refreshing tracked data
+
+Import one exact local archive revision through standard input, then rebuild
+the research projection:
 
 ```bash
-python3 import_articles.py                 # corpus -> data/articles.json
-python3 refresh_news.py                    # reviewed sources -> data/news.json
-python3 validate_data.py                   # shape, references, rights rules
-SITE_REVISION=$(git rev-parse HEAD) python3 build_site.py
-python3 -m http.server 8000 --directory _site
+ARCHIVE_REVISION="$(git -C '../substack trades' rev-parse HEAD)"
+git -C '../substack trades' archive "$ARCHIVE_REVISION" \
+  articles_index.json trades_extracted.json snapshot_manifest.json \
+  | python3 import_research_seed.py --revision "$ARCHIVE_REVISION" --write
+python3 build_research.py
 ```
 
-`import_articles.py` reads the corpus read-only. Point it somewhere else with
-`--corpus DIR` or `CORPUS_DIR`.
+Refresh the independent SEC registry and checked news sources:
 
-## Checks
+```bash
+python3 refresh_companies.py
+python3 refresh_news.py
+```
+
+Each network refresh validates the previous snapshot first, uses fixed reviewed
+requests, and promotes a complete replacement atomically. A failed response
+does not replace valid last-known-good data. Offline validation never uses the
+network:
+
+```bash
+python3 refresh_companies.py --offline
+python3 refresh_news.py --offline
+```
+
+## Building and checking
 
 ```bash
 python3 -m unittest discover -s . -p 'test_*.py' -v
 python3 validate_data.py
-SITE_OUTPUT_DIR="$(mktemp -d)" SITE_REVISION=local-audit python3 build_site.py
-python3 validate_release.py --site "$SITE_OUTPUT_DIR" --expected-revision local-audit
-python3 smoke_test_site.py --site "$SITE_OUTPUT_DIR"
-rm -r "$SITE_OUTPUT_DIR"
-ruff check .
-mypy --cache-dir /tmp/navnoor-research-mypy
+python3 build_site.py --revision local-audit
+python3 validate_release.py --expected-revision local-audit
+python3 smoke_test_site.py --expected-revision local-audit
+python3 -m http.server 8000 --directory _site
 ```
 
-## What the metadata can and cannot say
+For an exact committed release, run `./release_gate.sh "$(git rev-parse HEAD)"`.
+After deployment, `./watchdog.sh "$(git rev-parse HEAD)"` rebuilds the same
+revision, checks source freshness, and compares every served release byte.
 
-The catalogue is only as good as the corpus behind it, and the honest picture
-for 559 articles is:
+## Publication boundary
 
-| Field | Coverage | Why |
-|---|---|---|
-| Title, link, date, source | 100% | present for every record |
-| Access (free / paid) | 100% | six inconsistent audience strings collapsed to three |
-| Topic | 82% | keyword and entity rules; the rest fall back to *General* |
-| Entities | 67% | matched against the reviewed alias table |
-| Summary | 41% | subtitle, or the lead for publicly readable articles |
-| Reading time | 4% | **only** where the corpus holds a complete body |
+Research records contain only title, canonical publisher link, source, real
+publication time, access state, deterministic topic/entity references, and an
+optional reviewed subtitle exposed as `summary`. Publisher bodies, member
+previews, images, branding, parser observations, word counts, positions,
+returns, holdings, and recommendations are never included. Restricted records
+receive no body-derived text and no reading-time estimate.
 
-Reading time is deliberately sparse. Most records store an excerpt, and an
-excerpt's word count describes the teaser, not the article — printing it would
-advertise a 3,000-word piece as a one-minute read. The field is omitted rather
-than guessed. Raising this number is an ingestion change, not a display one.
+Market News stores checked headline metadata, never an article body or snippet.
+Headlines framed as live coverage, a price target, rating change, or investment
+recommendation are excluded. The interface distinguishes the actual publisher
+domain from the source used to discover the metadata.
 
-## Rights
-
-See [DATA_RIGHTS.md](DATA_RIGHTS.md) and [PRIVACY.md](PRIVACY.md).
-
-Publisher bodies, images and branding are not republished. A body-derived lead
-sentence is used **only** for articles that are publicly readable; for paid or
-locked articles the subtitle is the only text shown, and member previews are
-never read at all.
-
-### Planned sources
-
-**SEC EDGAR** is rights-cleared in `config/source_rights.json` with status
-`reviewed` and is not yet wired to an adapter. It is the next source to enable,
-for company/ticker registry data behind ticker discovery.
+See [DATA_RIGHTS.md](DATA_RIGHTS.md), [PRIVACY.md](PRIVACY.md), and
+[ISSUES.md](ISSUES.md).

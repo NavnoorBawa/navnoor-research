@@ -1,0 +1,261 @@
+name: Validate and Deploy Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  static_analysis:
+    name: Isolated static analysis
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out exact source for static analysis
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python for static analysis
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Install pinned developer-only checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            if python3 -m pip install \
+              --disable-pip-version-check \
+              --requirement requirements-dev.txt; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              sleep "$((attempt * 5))"
+            fi
+          done
+          exit 1
+
+      - name: Lint and type-check production code
+        shell: bash
+        run: |
+          set -euo pipefail
+          ruff check .
+          mypy --cache-dir "$RUNNER_TEMP/mypy-cache"
+
+  build:
+    name: Validate and build exact artifact
+    if: github.ref == 'refs/heads/main'
+    needs: static_analysis
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pages: read
+    outputs:
+      base_url: ${{ steps.pages.outputs.base_url }}
+
+    steps:
+      - name: Check out exact release source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up deterministic Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Run standard-library release gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s . -p 'test_*.py' -v
+          python3 validate_data.py
+          python3 refresh_companies.py --offline
+          python3 refresh_news.py --offline
+          python3 build_site.py --revision "$GITHUB_SHA"
+          python3 validate_release.py --expected-revision "$GITHUB_SHA"
+          python3 smoke_test_site.py --expected-revision "$GITHUB_SHA"
+          python3 -m py_compile ./*.py ./navnoor_research/*.py ./navnoor_research/adapters/*.py
+          for file in ./*.sh; do
+            if [ -f "$file" ]; then
+              bash -n "$file"
+            fi
+          done
+          git diff --check
+          [ "$(git rev-parse --verify HEAD)" = "$GITHUB_SHA" ]
+          test -z "$(git status --porcelain --untracked-files=normal)"
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Upload exact Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+          include-hidden-files: true
+          retention-days: 7
+
+  authority:
+    name: Confirm current main owns production
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      current: ${{ steps.current.outputs.current }}
+
+    steps:
+      - name: Compare release with remote main
+        id: current
+        shell: bash
+        env:
+          REMOTE_URL: ${{ github.server_url }}/${{ github.repository }}.git
+        run: |
+          set -euo pipefail
+          remote_main=
+          for attempt in 1 2 3; do
+            remote_main=$(
+              git ls-remote --exit-code "$REMOTE_URL" refs/heads/main 2>/dev/null |
+                awk 'NR == 1 { print $1 }'
+            ) || remote_main=
+            if [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]; then
+              break
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              sleep "$((attempt * 5))"
+            fi
+          done
+          if [[ ! "$remote_main" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error title=Release authority unavailable::Remote main could not be proved."
+            exit 1
+          fi
+          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Superseded release skipped::Current main is $remote_main, not $GITHUB_SHA."
+            exit 0
+          fi
+          echo "current=true" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    name: Deploy and certify production
+    if: >-
+      always()
+      && needs.build.result == 'success'
+      && needs.authority.result == 'success'
+      && needs.authority.outputs.current == 'true'
+    needs:
+      - build
+      - authority
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    concurrency:
+      group: pages-production
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out release verification code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up deterministic Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Reconfirm current-main deployment authority
+        id: current
+        shell: bash
+        env:
+          REMOTE_URL: ${{ github.server_url }}/${{ github.repository }}.git
+        run: |
+          set -euo pipefail
+          remote_main=$(
+            git ls-remote --exit-code "$REMOTE_URL" refs/heads/main |
+              awk 'NR == 1 { print $1 }'
+          )
+          [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]
+          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Superseded before deploy::Current main is $remote_main."
+            exit 0
+          fi
+          echo "current=true" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy exact Pages artifact
+        id: deployment
+        if: steps.current.outputs.current == 'true'
+        continue-on-error: true
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+        with:
+          timeout: 600000
+
+      - name: Verify exact revision and bytes are live
+        id: smoke
+        if: steps.current.outputs.current == 'true'
+        continue-on-error: true
+        run: ./watchdog.sh "$GITHUB_SHA"
+
+      - name: Prove post-deploy authority
+        id: post
+        if: always() && steps.current.outputs.current == 'true'
+        shell: bash
+        env:
+          REMOTE_URL: ${{ github.server_url }}/${{ github.repository }}.git
+        run: |
+          set -euo pipefail
+          remote_main=$(
+            git ls-remote --exit-code "$REMOTE_URL" refs/heads/main |
+              awk 'NR == 1 { print $1 }'
+          )
+          [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]
+          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Superseded release reconciled::New main $remote_main owns certification."
+            exit 0
+          fi
+          echo "current=true" >> "$GITHUB_OUTPUT"
+
+      - name: Reconcile deployment result
+        if: >-
+          always()
+          && steps.current.outputs.current == 'true'
+          && steps.post.outcome == 'success'
+          && steps.post.outputs.current == 'true'
+        shell: bash
+        env:
+          DEPLOYMENT_OUTCOME: ${{ steps.deployment.outcome }}
+          SMOKE_OUTCOME: ${{ steps.smoke.outcome }}
+        run: |
+          set -euo pipefail
+          if [ "$SMOKE_OUTCOME" != "success" ]; then
+            echo "::error title=Production certification failed::Exact live verification did not pass."
+            exit 1
+          fi
+          if [ "$DEPLOYMENT_OUTCOME" = "failure" ]; then
+            echo "::notice title=Late Pages completion verified::The deploy action reported failure, but exact current bytes are live."
+          elif [ "$DEPLOYMENT_OUTCOME" != "success" ]; then
+            echo "::error title=Deployment outcome unavailable::Pages did not report a completed outcome."
+            exit 1
+          fi

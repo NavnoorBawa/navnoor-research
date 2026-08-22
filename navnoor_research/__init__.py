@@ -1,4 +1,3 @@
-"""Navnoor Research — article search, market news, and ticker discovery."""
+"""Navnoor Research — search, published research, and checked market news."""
 
-SCHEMA_VERSION = 2
 PRODUCT_NAME = "Navnoor Research"

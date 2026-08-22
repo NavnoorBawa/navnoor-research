@@ -1,0 +1,80 @@
+name: Monitor Exact Published Release
+
+on:
+  schedule:
+    - cron: '17 */4 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: published-release-watchdog
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    name: Verify freshness and exact live bytes
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out expected current release
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up deterministic Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Confirm expected revision still owns main
+        id: current
+        shell: bash
+        env:
+          REMOTE_URL: ${{ github.server_url }}/${{ github.repository }}.git
+        run: |
+          set -euo pipefail
+          remote_main=$(
+            git ls-remote --exit-code "$REMOTE_URL" refs/heads/main |
+              awk 'NR == 1 { print $1 }'
+          )
+          [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]
+          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Superseded watchdog skipped::Current main is $remote_main."
+            exit 0
+          fi
+          echo "current=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild, check freshness, and verify exact production bytes
+        id: verification
+        if: steps.current.outputs.current == 'true'
+        continue-on-error: true
+        run: ./watchdog.sh "$GITHUB_SHA"
+
+      - name: Reconcile verification with current main
+        if: always() && steps.current.outputs.current == 'true'
+        shell: bash
+        env:
+          REMOTE_URL: ${{ github.server_url }}/${{ github.repository }}.git
+          VERIFICATION_OUTCOME: ${{ steps.verification.outcome }}
+        run: |
+          set -euo pipefail
+          remote_main=$(
+            git ls-remote --exit-code "$REMOTE_URL" refs/heads/main |
+              awk 'NR == 1 { print $1 }'
+          )
+          [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]
+          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+            echo "::notice title=Superseded watchdog reconciled::New main $remote_main owns production verification."
+            exit 0
+          fi
+          if [ "$VERIFICATION_OUTCOME" != "success" ]; then
+            echo "::error title=Published release verification failed::Current main remains $GITHUB_SHA and exact-live or freshness checks failed."
+            exit 1
+          fi

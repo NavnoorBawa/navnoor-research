@@ -2,51 +2,87 @@
 
 These instructions apply to the entire repository.
 
-## Product boundary
+## Product and architecture
 
-Navnoor Research is a dependency-free Python pipeline and a static site with
-exactly three things in it: **Articles** (search over published research
-metadata), **News** (checked headlines from reviewed public sources), and
-**Discovery** (a name resolved to its articles and headlines).
+Navnoor Research is a dependency-free Python data pipeline and a static GitHub
+Pages application with exactly three public destinations: **Search**,
+**Research**, and **Market News**. Search resolves reviewed entity aliases and
+an independent SEC company/ticker registry entirely in the browser. Research
+publishes source-linked article metadata. Market News publishes checked
+headline metadata and per-source check state.
 
-It is not a broker, quote terminal, portfolio system, or investment
-recommendation service. Prefer removing a feature to adding one.
+It is not a broker, quote terminal, portfolio system, recommendation engine, or
+article mirror. There is no reader-query API, telemetry endpoint, or browser
+request to a source adapter.
 
-## Required checks
+The tracked pipeline inputs are `seed/*.json`, `data/*.json`, and
+`config/*.json`. `build_site.py` validates them and generates the ignored
+`_site/` artifact with content-addressed data and assets plus a closed-set
+release manifest.
 
-Run before and after a change:
+## Required local checks
+
+Run the full suite before and after a change:
 
 ```bash
 python3 -m unittest discover -s . -p 'test_*.py' -v
+```
+
+Validate every tracked input and the two stored network snapshots offline:
+
+```bash
 python3 validate_data.py
-SITE_OUTPUT_DIR="$(mktemp -d)" SITE_REVISION=local-audit python3 build_site.py
-python3 validate_release.py --site "$SITE_OUTPUT_DIR" --expected-revision local-audit
-python3 smoke_test_site.py --site "$SITE_OUTPUT_DIR"
-rm -r "$SITE_OUTPUT_DIR"
-python3 -m py_compile *.py navnoor_research/*.py navnoor_research/adapters/*.py
+python3 refresh_companies.py --offline
+python3 refresh_news.py --offline
+```
+
+Build and validate the fixed generated site:
+
+```bash
+python3 build_site.py --revision local-audit
+python3 validate_release.py --expected-revision local-audit
+python3 smoke_test_site.py --expected-revision local-audit
+```
+
+Lint and syntax-check the dependency-free codebase:
+
+```bash
+python3 -m py_compile ./*.py ./navnoor_research/*.py ./navnoor_research/adapters/*.py
 ruff check .
 mypy --cache-dir /tmp/navnoor-research-mypy
+for file in ./*.sh; do bash -n "$file"; done
 git diff --check
+```
+
+Before updating remote `main`, commit the exact release and run:
+
+```bash
+./release_gate.sh "$(git rev-parse HEAD)"
 ```
 
 ## Change rules
 
-- Use only the Python 3.9+ standard library at runtime.
-- The published research corpus is **read-only**. Never write to it, and never
-  read a body, member preview, or parser observation from it.
-- A body-derived lead may only be published for an article that is publicly
-  readable. For paid or locked articles the subtitle is the only permitted text.
-- Never publish a number the data cannot support. If a wordcount describes an
-  excerpt, there is no reading time — omit the field rather than estimate it.
-- Reader search terms stay in page memory. Never put them in a URL, in storage,
-  in a log, or in an upstream request. Adapter queries come from reviewed
-  constants only.
-- Every adapter must enforce its reviewed host, HTTPS, no redirects, allowed
-  fields, byte and time bounds, and atomic last-known-good promotion.
-- Do not call delayed or periodically checked data "live". The interface says
-  **checked**.
-- Do not edit generated `_site/` output; rebuild it.
-- Keep the build deterministic. No timestamps, no ordering that depends on a
-  set, no randomness. The same inputs and revision must produce identical bytes.
-- A release is complete only after exact artifact validation and an exact-live
-  smoke check for the same commit.
+- Preserve the standard-library-only Python 3.9+ runtime and deterministic
+  static architecture.
+- Import the archive only through a bounded `git archive` stream for one exact
+  40-character revision. Never add a corpus path override.
+- The seed importer may materialise only its reviewed metadata allowlist. It
+  must lexically skip article bodies, member previews, parser observations,
+  positions, returns, recommendations, and every other unreviewed JSON value.
+- Restricted publication text is limited to the reviewed title and subtitle.
+  Never infer or invent a summary, reading time, position, holding, return,
+  confidence score, exposure, or recommendation.
+- Reader queries and filters stay in page memory. Never put them in a URL,
+  storage, log, telemetry event, or upstream request.
+- Every network adapter uses a fixed reviewed request, verified HTTPS, no
+  redirects or ambient proxies, an exact host and field allowlist, byte/time
+  bounds, strict parsing, and atomic last-known-good promotion.
+- Call delayed or periodically checked data **checked**, never live. Display a
+  source failure and its last-success state rather than implying freshness.
+- Do not hand-edit `_site/`; rebuild it from `build_site.py`. The fixed output
+  and staging paths must remain non-configurable and symlink-safe.
+- Keep `ISSUES.md` current with severity, evidence, resolution, and
+  verification. An unresolved launch-safety decision is a blocker.
+- A push is not a release until the deployment workflow validates the exact
+  artifact and production serves every manifest-listed byte for that same
+  commit. Use `watchdog.sh` for the independent exact-live and freshness check.

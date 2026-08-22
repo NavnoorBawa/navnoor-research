@@ -1,169 +1,221 @@
 #!/usr/bin/env python3
-"""Validate the stored catalogue before it is allowed into a build.
-
-    python3 validate_data.py [--strict]
-
-Checks shape, referential integrity against the reviewed tables, and the rights
-rules that must hold for every published record. --strict also fails on quality
-warnings rather than only reporting them.
-"""
+"""Validate every tracked input against independent rights and schema contracts."""
 
 from __future__ import annotations
 
-import argparse
 import re
 import sys
+from datetime import date, datetime, timezone
+from typing import Any
+from urllib.parse import urlsplit
 
-from navnoor_research import SCHEMA_VERSION, config, jsonio, normalize, paths
+import refresh_companies
+from navnoor_research import config, corpus, jsonio, newsstore, paths, seed
+from navnoor_research.adapters import gdelt, rss, sec
 from navnoor_research.entities import TopicClassifier
+from navnoor_research.schema import RESEARCH_SCHEMA_VERSION
 
-ARTICLE_FIELDS = {"id", "title", "url", "source", "published", "access", "topic",
-                  "entities", "summary", "reading_minutes"}
-ARTICLE_REQUIRED = {"id", "title", "url", "source", "published", "access", "topic", "entities"}
-
-NEWS_FIELDS = {"id", "title", "url", "source_id", "attribution", "published", "entities", "topic"}
-NEWS_REQUIRED = NEWS_FIELDS
-
-# Fields that must never appear in a published record.
-FORBIDDEN_FIELDS = {"body", "body_text", "body_html", "member_preview", "parser_observations",
-                    "position", "return", "recommendation", "pnl", "holdings"}
-
-DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-INSTANT_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
-MAX_SUMMARY = 260
-
-
-def validate_articles(doc: dict, entity_ids: set, topic_ids: set) -> list[str]:
-    errors: list[str] = []
-    if doc.get("schema_version") != SCHEMA_VERSION:
-        errors.append(f"articles: schema_version {doc.get('schema_version')!r} != {SCHEMA_VERSION}")
-
-    seen: dict[str, int] = {}
-    for index, record in enumerate(doc.get("articles", [])):
-        where = f"articles[{index}] {record.get('id', '?')}"
-        extra = set(record) - ARTICLE_FIELDS
-        if extra:
-            errors.append(f"{where}: unexpected fields {sorted(extra)}")
-        forbidden = set(record) & FORBIDDEN_FIELDS
-        if forbidden:
-            errors.append(f"{where}: forbidden fields {sorted(forbidden)}")
-        for field in ARTICLE_REQUIRED - set(record):
-            errors.append(f"{where}: missing required field {field!r}")
-
-        if record.get("id") in seen:
-            errors.append(f"{where}: duplicate id, first seen at index {seen[record['id']]}")
-        elif "id" in record:
-            seen[record["id"]] = index
-
-        url = record.get("url", "")
-        if not str(url).startswith("https://"):
-            errors.append(f"{where}: url must be https, got {url!r}")
-        if not DATE_RE.match(str(record.get("published", ""))):
-            errors.append(f"{where}: published must be YYYY-MM-DD, got "
-                          f"{record.get('published')!r}")
-        access = record.get("access")
-        if access not in {normalize.ACCESS_FREE, normalize.ACCESS_PAID, normalize.ACCESS_UNKNOWN}:
-            errors.append(f"{where}: unknown access {access!r}")
-        if record.get("topic") not in topic_ids:
-            errors.append(f"{where}: unknown topic {record.get('topic')!r}")
-        for entity in record.get("entities", []):
-            if entity not in entity_ids:
-                errors.append(f"{where}: unknown entity {entity!r}")
-
-        summary = record.get("summary")
-        if summary is not None and len(summary) > MAX_SUMMARY:
-            errors.append(f"{where}: summary is {len(summary)} chars, ceiling is {MAX_SUMMARY}")
-        minutes = record.get("reading_minutes")
-        if minutes is not None and (not isinstance(minutes, int) or minutes < 1):
-            errors.append(f"{where}: reading_minutes must be a positive integer, got {minutes!r}")
-    return errors
+RESEARCH_FIELDS = frozenset({
+    "access", "entities", "id", "published", "source", "summary", "title", "topic", "url",
+})
+RESEARCH_REQUIRED = RESEARCH_FIELDS - {"summary"}
+RESEARCH_ENVELOPE = frozenset({
+    "research", "schema_version", "source_dataset_version", "source_revision",
+})
+FORBIDDEN_FIELDS = frozenset({
+    "article_body", "body", "body_html", "body_text", "brief", "holdings", "member_preview",
+    "parser_observations", "pnl", "position", "reading_minutes", "recommendation", "return",
+    "wordcount",
+})
+SOURCE_HOSTS = dict(seed.SOURCE_HOSTS)
+ENABLED_SOURCES = {
+    "archive": "seed",
+    "federal-reserve-rss": "rss",
+    "gdelt-doc-v2": "gdelt",
+    "sec-edgar": "sec",
+}
+ALL_SOURCES = set(ENABLED_SOURCES) | {"cftc-rss"}
+MAX_RESEARCH_BYTES = 1_000_000
+MAX_COMPANIES_BYTES = 4_000_000
 
 
-def validate_news(doc: dict, entity_ids: set, topic_ids: set, source_ids: set) -> list[str]:
-    errors: list[str] = []
-    if doc.get("schema_version") != SCHEMA_VERSION:
-        errors.append(f"news: schema_version {doc.get('schema_version')!r} != {SCHEMA_VERSION}")
-
-    checked = doc.get("checked_at")
-    if checked is not None and not INSTANT_RE.match(str(checked)):
-        errors.append(f"news: checked_at must be an ISO-8601 UTC instant, got {checked!r}")
-
-    seen = set()
-    for index, record in enumerate(doc.get("items", [])):
-        where = f"news[{index}] {record.get('id', '?')}"
-        extra = set(record) - NEWS_FIELDS
-        if extra:
-            errors.append(f"{where}: unexpected fields {sorted(extra)}")
-        forbidden = set(record) & FORBIDDEN_FIELDS
-        if forbidden:
-            errors.append(f"{where}: forbidden fields {sorted(forbidden)}")
-        for field in NEWS_REQUIRED - set(record):
-            errors.append(f"{where}: missing required field {field!r}")
-
-        if record.get("id") in seen:
-            errors.append(f"{where}: duplicate id")
-        seen.add(record.get("id"))
-
-        if not str(record.get("url", "")).startswith("https://"):
-            errors.append(f"{where}: url must be https, got {record.get('url')!r}")
-        if not INSTANT_RE.match(str(record.get("published", ""))):
-            errors.append(f"{where}: published must be an ISO-8601 UTC instant, got "
-                          f"{record.get('published')!r}")
-        if record.get("source_id") not in source_ids:
-            errors.append(f"{where}: unknown source {record.get('source_id')!r}")
-        if record.get("topic") not in topic_ids:
-            errors.append(f"{where}: unknown topic {record.get('topic')!r}")
-        for entity in record.get("entities", []):
-            if entity not in entity_ids:
-                errors.append(f"{where}: unknown entity {entity!r}")
-    return errors
+class ValidationError(ValueError):
+    """A tracked dataset cannot be published."""
 
 
-def main(argv: list) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--strict", action="store_true", help="treat warnings as failures")
-    args = parser.parse_args(argv)
+def _real_published(value: Any, where: str) -> None:
+    if not isinstance(value, str):
+        raise ValidationError(f"{where}: publication time is not text")
+    try:
+        if re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", value):
+            parsed = datetime.combine(date.fromisoformat(value), datetime.min.time(), timezone.utc)
+        elif re.fullmatch(
+            r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\.[0-9]{1,6})?Z",
+            value,
+        ):
+            parsed = datetime.fromisoformat(value[:-1] + "+00:00")
+        else:
+            raise ValueError
+    except ValueError as exc:
+        raise ValidationError(f"{where}: invalid publication date/instant") from exc
+    if parsed > datetime.now(timezone.utc) + newsstore.FUTURE_SKEW:
+        raise ValidationError(f"{where}: future publication time refused")
 
-    entity_ids = {e.id for e in config.load_entities()}
-    classifier = TopicClassifier(config.load_topics())
-    topic_ids = set(classifier.order())
-    source_ids = set(config.load_sources())
 
-    if not paths.ARTICLES_PATH.exists():
-        print("error: data/articles.json is missing. Run import_articles.py.", file=sys.stderr)
-        return 2
-
-    articles_doc = jsonio.load(paths.ARTICLES_PATH)
-    news_doc = jsonio.load(paths.NEWS_PATH) if paths.NEWS_PATH.exists() else {
-        "schema_version": SCHEMA_VERSION, "checked_at": None, "items": []
+def validate_source_matrix(sources: dict[str, config.Source]) -> None:
+    if set(sources) != ALL_SOURCES:
+        raise ValidationError("source rights table does not match the reviewed source matrix")
+    actual_enabled = {
+        source.id: source.adapter for source in sources.values() if source.status == "enabled"
     }
+    if actual_enabled != ENABLED_SOURCES:
+        raise ValidationError("enabled source adapters do not match the launch matrix")
+    if sources["cftc-rss"].status != "disabled":
+        raise ValidationError("CFTC must remain disabled until verified TLS succeeds")
 
-    errors = validate_articles(articles_doc, entity_ids, topic_ids)
-    errors += validate_news(news_doc, entity_ids, topic_ids, source_ids)
+    allowed = {
+        "archive": set(seed.RECORD_KEYS),
+        "sec-edgar": set(sec.PUBLIC_FIELDS),
+        "gdelt-doc-v2": set(gdelt.ALLOWED_FIELDS),
+        "federal-reserve-rss": set(rss.ALLOWED_FIELDS),
+        "cftc-rss": set(rss.ALLOWED_FIELDS),
+    }
+    for source_id, expected_fields in allowed.items():
+        source = sources[source_id]
+        if set(source.allowed_fields) != expected_fields:
+            raise ValidationError(f"{source_id}: rights fields do not match its adapter")
+        if set(source.allowed_fields) & set(source.prohibited_fields):
+            raise ValidationError(f"{source_id}: a prohibited field is allow-listed")
+    if sources["archive"].allowed_hosts:
+        raise ValidationError("archive seed import must not declare a network host")
+    if set(sources["archive"].link_hosts) != set(seed.SOURCE_HOSTS.values()):
+        raise ValidationError("archive publication link hosts drifted")
+    if sources["gdelt-doc-v2"].link_hosts:
+        raise ValidationError(
+            "GDELT publisher hosts are discovery metadata, not pre-approved hosts"
+        )
+    if tuple(sources["sec-edgar"].allowed_hosts) != sec.ALLOWED_HOSTS:
+        raise ValidationError("SEC request hosts drifted")
+    for source_id, feed in rss.FEEDS.items():
+        expected_host = (urlsplit(feed).hostname or "").lower()
+        source = sources[source_id]
+        if source.allowed_hosts != [expected_host] or source.link_hosts != [expected_host]:
+            raise ValidationError(f"{source_id}: request/link hosts drifted")
 
-    articles = articles_doc.get("articles", [])
-    total = max(1, len(articles))
-    warnings = []
-    no_summary = sum(1 for a in articles if not a.get("summary"))
-    if no_summary / total > 0.65:
-        warnings.append(f"{no_summary}/{len(articles)} articles have no summary")
-    unclassified = sum(1 for a in articles if a.get("topic") == TopicClassifier.FALLBACK)
-    if unclassified / total > 0.35:
-        warnings.append(f"{unclassified}/{len(articles)} articles fall back to the general topic")
 
-    print(f"articles  : {len(articles)}")
-    print(f"headlines : {len(news_doc.get('items', []))}")
-    for warning in warnings:
-        print(f"warning   : {warning}")
-    for error in errors:
-        print(f"error     : {error}", file=sys.stderr)
+def validate_research(
+    document: Any,
+    entity_ids: set[str],
+    topic_ids: set[str],
+) -> None:
+    if not isinstance(document, dict) or set(document) != RESEARCH_ENVELOPE:
+        raise ValidationError("research envelope has unexpected fields")
+    if document.get("schema_version") != RESEARCH_SCHEMA_VERSION:
+        raise ValidationError("research schema is unsupported")
+    version = document.get("source_dataset_version")
+    revision = document.get("source_revision")
+    if not isinstance(version, str) or not re.fullmatch(r"[0-9a-f]{64}", version):
+        raise ValidationError("research source dataset version is invalid")
+    if not isinstance(revision, str) or not re.fullmatch(r"[0-9a-f]{40}", revision):
+        raise ValidationError("research source revision is invalid")
+    records = document.get("research")
+    if not isinstance(records, list) or not records or len(records) > 2_000:
+        raise ValidationError("research records must be a bounded non-empty array")
+    seen = set()
+    for index, record in enumerate(records):
+        where = f"research[{index}]"
+        if not isinstance(record, dict):
+            raise ValidationError(f"{where}: expected an object")
+        if not RESEARCH_REQUIRED.issubset(record) or not set(record).issubset(RESEARCH_FIELDS):
+            raise ValidationError(f"{where}: fields do not match the research schema")
+        if set(record) & FORBIDDEN_FIELDS:
+            raise ValidationError(f"{where}: prohibited source material reached research data")
+        identifier = record.get("id")
+        if not isinstance(identifier, str) or not re.fullmatch(r"r_[0-9a-f]{64}", identifier):
+            raise ValidationError(f"{where}: invalid identity")
+        if identifier in seen:
+            raise ValidationError(f"{where}: duplicate identity")
+        seen.add(identifier)
+        title = record.get("title")
+        summary = record.get("summary")
+        if not isinstance(title, str) or not title or len(title) > 500:
+            raise ValidationError(f"{where}: invalid title")
+        if summary is not None and (not isinstance(summary, str) or len(summary) > 240):
+            raise ValidationError(f"{where}: invalid summary")
+        source = record.get("source")
+        if source not in SOURCE_HOSTS:
+            raise ValidationError(f"{where}: unknown publication source")
+        url = record.get("url")
+        host = (urlsplit(url).hostname or "").lower() if isinstance(url, str) else ""
+        if host != SOURCE_HOSTS[source]:
+            raise ValidationError(f"{where}: publication host does not match its source")
+        _real_published(record.get("published"), f"{where}.published")
+        if record.get("access") not in {"public", "restricted", "unknown"}:
+            raise ValidationError(f"{where}: invalid access state")
+        if record.get("topic") not in topic_ids:
+            raise ValidationError(f"{where}: unknown topic")
+        entities = record.get("entities")
+        if (
+            not isinstance(entities, list) or len(entities) != len(set(entities))
+            or any(entity not in entity_ids for entity in entities)
+        ):
+            raise ValidationError(f"{where}: invalid entity references")
 
-    if errors:
-        print(f"\nFAILED with {len(errors)} error(s)", file=sys.stderr)
+    expected, stats = corpus.import_articles()
+    if [article.to_json() for article in expected] != records:
+        raise ValidationError("research data is not the exact deterministic seed projection")
+    if version != stats["source_dataset_version"] or revision != stats["source_revision"]:
+        raise ValidationError("research data provenance does not match the seed transaction")
+
+
+def load_and_validate() -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+    sources = config.load_sources()
+    validate_source_matrix(sources)
+    entities = config.load_entities()
+    classifier = TopicClassifier(config.load_topics())
+    entity_ids = {entity.id for entity in entities}
+    topic_ids = set(classifier.order())
+
+    for path, ceiling in (
+        (paths.RESEARCH_PATH, MAX_RESEARCH_BYTES),
+        (paths.COMPANIES_PATH, MAX_COMPANIES_BYTES),
+        (paths.NEWS_PATH, newsstore.MAX_SNAPSHOT_BYTES),
+    ):
+        if not path.is_file():
+            raise ValidationError(f"required tracked data is missing: {path.name}")
+        if path.stat().st_size > ceiling:
+            raise ValidationError(f"{path.name} exceeds its tracked byte ceiling")
+
+    research = jsonio.load(paths.RESEARCH_PATH)
+    companies = jsonio.load(paths.COMPANIES_PATH)
+    news = jsonio.load(paths.NEWS_PATH)
+    validate_research(research, entity_ids, topic_ids)
+    refresh_companies.validate_snapshot(companies)
+    newsstore.validate_snapshot(news, sources, entity_ids, topic_ids)
+    return research, companies, news
+
+
+def main(argv: list[str]) -> int:
+    if argv:
+        print("error: validate_data.py accepts no arguments", file=sys.stderr)
+        return 2
+    try:
+        research, companies, news = load_and_validate()
+    except (
+        ValidationError,
+        config.ConfigError,
+        corpus.CorpusError,
+        jsonio.JsonError,
+        newsstore.NewsError,
+        OSError,
+        refresh_companies.CompanyStoreError,
+    ) as exc:
+        print(f"error: {exc}", file=sys.stderr)
         return 1
-    if warnings and args.strict:
-        print(f"\nFAILED with {len(warnings)} warning(s) under --strict", file=sys.stderr)
-        return 1
+    print(f"research   : {len(research['research'])}")
+    print(f"companies  : {len(companies['items'])}")
+    print(f"headlines  : {len(news['items'])}")
+    print(f"seed       : {research['source_revision']}")
     print("\nvalid")
     return 0
 
