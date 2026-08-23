@@ -1,6 +1,1132 @@
 {
   "items": [
     {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_f50774a1379ed483ab6139d0bc2a843281741acfbad33061a2e7b41b84aa6951",
+      "published": "2026-08-23T13:45:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "WealthShield Partners LLC Buys Shares of 13 , 630 Salesforce Inc . $CRM",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/wealthshield-partners-llc-buys-shares-of-13630-salesforce-inc-crm.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_a8c316ffa98f93512c505e2b2059700f70fbd4bab433662428aa6a76eef1b2d4",
+      "published": "2026-08-23T13:45:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Northwestern Mutual Wealth Management Co . Makes New $13 . 28 Million Investment in Automatic Data Processing , Inc . $ADP",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/northwestern-mutual-wealth-management-co-makes-new-13-28-million-investment-in-automatic-data-processing-inc-adp.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_9946c64c983015ed935d14c21bcdbf98259e1edef1e87535c66b362bb11b30a1",
+      "published": "2026-08-23T13:45:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Commerce Bank Takes Position in The Progressive Corporation $PGR",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/commerce-bank-takes-position-in-the-progressive-corporation-pgr.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_820c24bb1dd6197cbe7d7e3e03ba29d6e8089179555a4934d41b87385d6fb077",
+      "published": "2026-08-23T13:45:00Z",
+      "publisher": "finance.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Here some surprisingly good news for the stock market this midterm election year",
+      "topic": "equities",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/surprisingly-good-news-stock-market-120000563.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_73940f9bc5529105ab8bcdf783bae237d0d6791754107ccb64f68d391aff040c",
+      "published": "2026-08-23T13:45:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "75 , 326 Shares in The TJX Companies , Inc . $TJX Bought by Quantbot Technologies LP",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/75326-shares-in-the-tjx-companies-inc-tjx-bought-by-quantbot-technologies-lp.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_5d222892606c9a1e0cc2a7a775aadda9c4a9719072f45cc4d93975410809a095",
+      "published": "2026-08-23T13:45:00Z",
+      "publisher": "www.morningstar.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "The Treasury bond - market intervention isnt working . So what comes next ?",
+      "topic": "general",
+      "url": "https://www.morningstar.com/news/marketwatch/202608236/the-treasurys-bond-market-intervention-isnt-working-so-what-comes-next"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "machine-learning"
+      ],
+      "id": "n_ee21c75ee5b31385a788a344fdc4aec20d932aadfca5a11d2fe7a7b305602493",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "www.hindustantimes.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Bill Ackman buys 6 stocks and dumps 3 as he looks beyond the AI boom",
+      "topic": "quant-methods",
+      "url": "https://www.hindustantimes.com/business/bill-ackman-buys-6-stocks-and-dumps-3-as-he-looks-beyond-the-ai-boom-101787486967460.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_e9fe455b08ca4cfa344f42204a641332801af9e1af7138126955d4c20bbdc050",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "www.dailybreeze.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Doug McIntyre : Have you raised a Communist ?",
+      "topic": "general",
+      "url": "https://www.dailybreeze.com/2026/08/23/doug-mcintyre-have-you-raised-a-communist/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_dbfe9b3f70c4895eeb417a6bceb808e9a74407f390861b71a7990475d769f238",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "finance.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Trump made a multimillion - dollar bond bet and Fed Chair Kevin Warsh could shape the outcome . What investors can learn",
+      "topic": "general",
+      "url": "https://finance.yahoo.com/markets/options/articles/trump-made-multimillion-dollar-bond-130000920.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "cme"
+      ],
+      "id": "n_c08bb5799ebcde18e3a872377b14a497d804a9930e243730e8ee6e8479a712e7",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Haverford Trust Co Buys Shares of 62 , 575 CME Group Inc . $CME",
+      "topic": "market-structure",
+      "url": "https://www.themarketsdaily.com/2026/08/23/haverford-trust-co-buys-shares-of-62575-cme-group-inc-cme.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_964443a9137a1364dac3c55b3d4bb217a621a852ed98a9ea8722648d5ba5fd46",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Vista Investment Management Makes New $1 . 27 Million Investment in CSX Corporation $CSX",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/vista-investment-management-makes-new-1-27-million-investment-in-csx-corporation-csx.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_930669777da14a244d6bf0e3abf8ad47305126b40abaa29862b0a9e98546d1a3",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Anglo American Platinum ( OTCMKTS : AGPPF ) Share Price Crosses Above 200 Day Moving Average – Time to Sell ?",
+      "topic": "equities",
+      "url": "https://www.themarketsdaily.com/2026/08/23/anglo-american-platinum-otcmktsagppf-share-price-crosses-above-200-day-moving-average-time-to-sell.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_73ff48e176b7a408fabd28472d0671c086d661d62cef4782a8d93a1d0b51ef71",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "www.thepeterboroughexaminer.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Here why the Bank of Canada is worried about the rise of private credit",
+      "topic": "general",
+      "url": "https://www.thepeterboroughexaminer.com/business/heres-why-the-bank-of-canada-is-worried-about-the-rise-of-private-credit/article_2ae47e9e-b534-5629-ac95-ff8730be1dad.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_6d8994bdb4d92ad07bbdcc54d7dfaf49edd1cfad36eb1df8be71cec0cec55ccb",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "www.cnbc.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Equal - weight S & P 500 is winning as its biggest trade hits $100 billion",
+      "topic": "general",
+      "url": "https://www.cnbc.com/2026/08/23/stocks-market-investing-sp500-spx.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_65ac22a8bf8ce8aee3184da398714c4a55150e6e1175631182d89f681ca06005",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "english.news.cn",
+      "source_id": "gdelt-doc-v2",
+      "title": "Rising U . S . Treasury yields intensify pressure on European bond markets - Xinhua",
+      "topic": "general",
+      "url": "https://english.news.cn/europe/20260823/186d2bc1c16d4060a63a63b1117b7cca/c.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_52ed7fbd3fad8897e62465ef5e1d4a12dff8d1206a749eb0602a5793a3e54156",
+      "published": "2026-08-23T13:30:00Z",
+      "publisher": "247wallst.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "The Idiot Guide to Stocks",
+      "topic": "general",
+      "url": "https://247wallst.com/investing/2026/08/23/the-idiots-guide-to-stocks/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_fd8f74c75749e3f7dee4e64d9944c8a373c773c998c6ac5bba7561f565e2f39f",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "bilkulonline.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "The Great Indians – Dhirubhai Ambani The Journey That Made Him",
+      "topic": "general",
+      "url": "https://bilkulonline.com/2026/08/23/the-great-indians-dhirubhai-ambani-the-journey-that-made-him/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_f569ceea157fc4a8cf6fd2bc6eb345c0846ddedec23202c49a9d712e23542f61",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "medicinehatnews.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Here why the Bank of Canada is worried about the rise of private credit - Medicine Hat NewsMedicine Hat News",
+      "topic": "general",
+      "url": "https://medicinehatnews.com/news/national-news/2026/08/23/heres-why-the-bank-of-canada-is-worried-about-the-rise-of-private-credit/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "btc"
+      ],
+      "id": "n_ec873431511e80e62fcf4bfd5bbb1da8a8667f44a51bac24d341bc13f6d80927",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "finance.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Bitcoin Finally Wakes Up While U . S . Debt Hits $40 Trillion",
+      "topic": "crypto",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-finally-wakes-while-u-123000444.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_d8bd3850ed88de206d22ad7dc680191abd4a7c9461c4e61e34cf11e97ca902d1",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.livemint.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "How changing jobs affects your EPF account and balance portability",
+      "topic": "general",
+      "url": "https://www.livemint.com/money/personal-finance/how-changing-jobs-affects-your-epf-account-and-balance-portability-11787483039542.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_9d2ddf4ff3fb9058bc8f655c6444e5372291e8d013c0a680b04c97cbd681f9fc",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Northwestern Mutual Wealth Management Co . Invests $16 . 44 Million in Blackstone Inc . $BX",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/northwestern-mutual-wealth-management-co-invests-16-44-million-in-blackstone-inc-bx.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_86d681404a5afbc90b9fe8261cc1f33282b0c8dfad450a5d2142f48411a2b65e",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.hindustantimes.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "How Trump Canada tariffs could hurt the US economy and raise prices",
+      "topic": "general",
+      "url": "https://www.hindustantimes.com/world-news/us-news/how-trumps-canada-tariffs-could-hurt-the-us-economy-and-raise-prices-101787479999300.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "oil"
+      ],
+      "id": "n_79214837af1550c346e61a76c7033d12977e8b48f2a7f232836b915889af060c",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.rediff.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Crude Oil Prices , Geopolitical Tensions to Influence Indian Stock Market",
+      "topic": "commodities",
+      "url": "https://www.rediff.com/business/report/crude-oil-prices-geopolitical-tensions-to-influence-indian-stock-market/20260823.htm"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_73cccd4cccbcafffb229b167af7c1035c68d0839bfc800c0ca19f88b578c9da2",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "GE Aerospace $GE Shares Sold by Northwestern Mutual Wealth Management Co .",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/ge-aerospace-ge-shares-sold-by-northwestern-mutual-wealth-management-co.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_42baf7189703f3d2f738f424dde57834a2936c8aade696e12822f0f3933dafc7",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Northwestern Mutual Wealth Management Co . Makes New Investment in Newmont Corporation $NEM",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/northwestern-mutual-wealth-management-co-makes-new-investment-in-newmont-corporation-nem.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_265b557192229d720583e29e4961d7dce1dc3f6f091a3268b6833b397e7752b1",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "finance.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Got $2M saved ? You should ( probably ) retire immediately . Dont sacrifice it all for nothing",
+      "topic": "general",
+      "url": "https://finance.yahoo.com/markets/articles/got-2m-saved-probably-retire-124500785.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_26572c08db190f71dd73c8eec44dd72db49ad135eb3d2c22e570a1cbe2dae7f3",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.pentictonherald.ca",
+      "source_id": "gdelt-doc-v2",
+      "title": "Here why the Bank of Canada is worried about the rise of private credit",
+      "topic": "general",
+      "url": "https://www.pentictonherald.ca/news/national_news/article_bbfc0e96-bb9e-5846-9893-32605dbc29ed.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_1f48b9f200a8c11424372f034e859395cf00e4e7e42c44e8b7f714e5a32227b9",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.premiumtimesng.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "CPPE backs FG reforms , urges shift from economic stability to productivity",
+      "topic": "general",
+      "url": "https://www.premiumtimesng.com/business/business-news/904852-cppe-backs-fg-reforms-urges-shift-from-economic-stability-to-productivity.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_14762c6423a3d9232a944cb14e38de34ca94d1c1a698fa6ad051070f184d6bc3",
+      "published": "2026-08-23T13:15:00Z",
+      "publisher": "www.thestandard.co.zw",
+      "source_id": "gdelt-doc-v2",
+      "title": "Banks ignore RBZ rate cuts as profits plunge",
+      "topic": "general",
+      "url": "https://www.thestandard.co.zw/business/article/200059518/banks-ignore-rbz-rate-cuts-as-profits-plunge"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_f081fbe7eedabdd7a1a2f579669ef22a93c3696ff5c2576545290bf5a083dd0d",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Northwestern Mutual Wealth Management Co . Sells 2 , 668 Shares of L3Harris Technologies Inc $LHX",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/northwestern-mutual-wealth-management-co-sells-2668-shares-of-l3harris-technologies-inc-lhx.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_c4d1f327edbb99772533236bc079481234683cd271d7657d815a64f2cd38fadb",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Ieq Capital LLC Buys 61 , 096 Shares of EOG Resources , Inc . $EOG",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/ieq-capital-llc-buys-61096-shares-of-eog-resources-inc-eog.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_c2c565d049c50bd72823b8b8824533bd091d70fcd391a2d2977431f4c935ea74",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.spokesman.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Used cars are more expensive now . Here how to get the best deal",
+      "topic": "general",
+      "url": "https://www.spokesman.com/stories/2026/aug/23/used-cars-are-more-expensive-now-heres-how-to-get-/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_b6cd77e3c61844f7159ea6da26f36caeb2bad659ec7351a1507e28f91ac6edc6",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Northwestern Mutual Wealth Management Co . Lowers Position in Citigroup Inc . $C",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/northwestern-mutual-wealth-management-co-lowers-position-in-citigroup-inc-c.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_86f04ef24307eeef25d6233e89b8ea6c932dda9a631b645ba044e87280466825",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.spokesman.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Motley Fool : Mmm , Mmm ... profits ?",
+      "topic": "general",
+      "url": "https://www.spokesman.com/stories/2026/aug/23/motley-fool-mmm-mmm-profits/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_6f02ccc677fcd3c4d373e0df8ac11fbbde6fe4bcd8bc3ef2b4601c73f8c34cc6",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.niagarafallsreview.ca",
+      "source_id": "gdelt-doc-v2",
+      "title": "No room for missteps in bank earnings after run - up in lender stocks : fund manager",
+      "topic": "equities",
+      "url": "https://www.niagarafallsreview.ca/business/no-room-for-missteps-in-bank-earnings-after-run-up-in-lenders-stocks-fund-manager/article_b024c71f-6a56-55b9-acaa-85202559988a.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_636720884fe20e3c194761c315bc860746eb3b9fdf65075388cafb816f1207e8",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Korea Investment CORP Invests $40 . 90 Million in CSX Corporation $CSX",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/korea-investment-corp-invests-40-90-million-in-csx-corporation-csx.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_38b7aa42ac4e80f1ae4221119f73282967c344f03f028493fac5f219d0d8b955",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Northwestern Mutual Wealth Management Co . Buys Shares of 46 , 866 Marathon Petroleum Corporation $MPC",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/northwestern-mutual-wealth-management-co-buys-shares-of-46866-marathon-petroleum-corporation-mpc.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_32262d9756cacc29d7496fda9de2be0183c10e310423b79c72d636d5f1d71373",
+      "published": "2026-08-23T12:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "2 , 724 Shares in BlackRock $BLK Bought by CFO4Life Group LLC",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/2724-shares-in-blackrock-blk-bought-by-cfo4life-group-llc.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "citadel"
+      ],
+      "id": "n_e5ab496415645900748ad41b6a325a2028593414321b9f2b16a280a0adf53270",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.fool.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Billionaire Ken Griffin Just Loaded Up on Eli Lilly Stock . Should You ?",
+      "topic": "hedge-funds",
+      "url": "https://www.fool.com/investing/2026/08/23/billionaire-ken-griffin-just-loaded-up-on-eli-lill/?source=iedfolrf0000001"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_e0c36305c2dcbadd895ce76f38f28f1ca3c0864607db825b11a814b43c462f58",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "collider.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "10 Apple TV Shows That Are the Perfect Weekend Binge",
+      "topic": "general",
+      "url": "https://collider.com/apple-tv-shows-perfect-weekend-binge/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_d8198cb8b113648355a1a4d3b4b65771a8e63f628073ecd9bc9d0f9581179720",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.dailypolitical.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Twin Tree Management LP Takes Position in MACOM Technology Solutions Holdings , Inc . $MTSI",
+      "topic": "general",
+      "url": "https://www.dailypolitical.com/2026/08/23/twin-tree-management-lp-takes-position-in-macom-technology-solutions-holdings-inc-mtsi.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_d1ae4e5d561d77e0b9402ec7096260dcb53ad7c442bf1bb2547baa70d78d1f0a",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "finance.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "MarketBeat Week in Review – 08 / 17",
+      "topic": "general",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/marketbeat-week-review-08-17-110000158.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_c6480dc17089fc95d242088c3d932c7bfc69edd18517d748297a3e10d5065e08",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.dailypolitical.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Monetta Financial Services Inc . Acquires Shares of 21 , 000 Hewlett Packard Enterprise Company $HPE",
+      "topic": "general",
+      "url": "https://www.dailypolitical.com/2026/08/23/monetta-financial-services-inc-acquires-shares-of-21000-hewlett-packard-enterprise-company-hpe.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_b9cf78b12052166ff09825d297350e18e5f8113dc8f59539929dfc9e3b315689",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "internationalviewpoint.org",
+      "source_id": "gdelt-doc-v2",
+      "title": "Albania : Three months of mass protests",
+      "topic": "general",
+      "url": "https://internationalviewpoint.org/Albania-Three-months-of-mass-protests"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_9a935bc625d92f45a647ba64ff6fbd961d02303c97a7ac65bddb8421c463e8da",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.dailypolitical.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Haverford Trust Co Buys New Shares in Cincinnati Financial Corporation $CINF",
+      "topic": "general",
+      "url": "https://www.dailypolitical.com/2026/08/23/haverford-trust-co-buys-new-shares-in-cincinnati-financial-corporation-cinf.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_98477eb64a272ccc1bef9f160ecb77966643a9696f63cd158139260c7a417afb",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Micron Technology , Inc . $MU Shares Sold by Todd Asset Management LLC",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/micron-technology-inc-mu-shares-sold-by-todd-asset-management-llc.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_935e0dd144ced9304bb132c886553820fb640ad98ecbd1b888259e25e1b5eac6",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Great Lakes Advisors LLC Invests $743 , 000 in The Kroger Co . $KR",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/great-lakes-advisors-llc-invests-743000-in-the-kroger-co-kr.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_887641e37f7b756120873c414b1fef9108e522dd6cf880438cfc315809c647b5",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "23 , 613 Shares in PPL Corporation $PPL Acquired by Haverford Trust Co",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/23613-shares-in-ppl-corporation-ppl-acquired-by-haverford-trust-co.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_87b60387b188699f631814e0ff20069a70c09c0f9afc09fa74d874ea3ae7e78c",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Twin Tree Management LP Invests $763 , 000 in Jabil , Inc . $JBL",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/twin-tree-management-lp-invests-763000-in-jabil-inc-jbl.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "msci"
+      ],
+      "id": "n_83a8f4045c1ba935135e298ca27e94fc184e4171952dbf619a90b6eb7a7e1429",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Kirtland Hills Capital Management LLC Purchases New Holdings in MSCI Inc $MSCI",
+      "topic": "equities",
+      "url": "https://www.themarketsdaily.com/2026/08/23/kirtland-hills-capital-management-llc-purchases-new-holdings-in-msci-inc-msci.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "gold"
+      ],
+      "id": "n_67ef211f7d8bf3064bc3c31a87f054ce2e680e18453f1b17949359943b423524",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.dailyforex.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Forex Weekly Forecast : GBP / USD , Gold & USD / CAD",
+      "topic": "commodities",
+      "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/forex-markets-at-a-crossroads-as-dollar-loses-momentum-23th-to-28th-august-2026/248908"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_633ff9a4232d28fb91e91b3d9ca18801573f87faa6cf0a4876ce151a214884ce",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "True Freedom Investing LLC Invests $616 , 000 in RTX Corporation $RTX",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/true-freedom-investing-llc-invests-616000-in-rtx-corporation-rtx.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_572fb75bfbfbff14d0168adb8d13ace556227076a982d486b069122a5ff86d22",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "finance.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "The Bond King Goes Bananas Over Nvidia $500 Billion Move . How It May Be Affecting Your Portfolio .",
+      "topic": "general",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bond-king-goes-bananas-over-130002636.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_4d13cc57f9c7ffd4bf2eb9ffd09fcfa4b68be85fb1a0d508658195158fc25d36",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.dailypolitical.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Two Seas Capital LP Makes New Investment in CoreWeave Inc . $CRWV",
+      "topic": "general",
+      "url": "https://www.dailypolitical.com/2026/08/23/two-seas-capital-lp-makes-new-investment-in-coreweave-inc-crwv.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_4c6548ef04fb15b3944c969741b980d6ad26455039561484ddb8900a7cecef9f",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Varma Mutual Pension Insurance Co Acquires New Shares in Corning Incorporated $GLW",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/varma-mutual-pension-insurance-co-acquires-new-shares-in-corning-incorporated-glw.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_40ec5497e238017046e2739fecfe9143d4166df6065d29adb7add6d453f3bed8",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "nationalpost.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "The progressive plan to loot Silicon Valley keeps getting worse",
+      "topic": "general",
+      "url": "https://nationalpost.com/opinion/j-d-tuccille-the-progressive-plan-to-loot-silicon-valley-keeps-getting-worse"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_35d0fde494ab8bbf25cb1f04038244d51cfb640b0bc5d3ba6aab471217f36926",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.cnbc.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Bearproof stocks with a history of holding up when the market struggles",
+      "topic": "general",
+      "url": "https://www.cnbc.com/2026/08/23/bearproof-stocks-with-a-history-of-holding-up-when-the-market-struggles.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_32186cef2da289220a2b0d322144a39fb4071f2430c6ee3c369b7f94040ecc09",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.dailypolitical.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "True Freedom Investing LLC Makes New $3 . 33 Million Investment in DexCom , Inc . $DXCM",
+      "topic": "general",
+      "url": "https://www.dailypolitical.com/2026/08/23/true-freedom-investing-llc-makes-new-3-33-million-investment-in-dexcom-inc-dxcm.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_21d5fda882f60429606f4164b62026091bbf27a87608691b875afb8d6400c4ae",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Twin Tree Management LP Makes New $3 . 60 Million Investment in Western Digital Corporation $WDC",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/twin-tree-management-lp-makes-new-3-60-million-investment-in-western-digital-corporation-wdc.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_1ec765192f727a9eca00485f1226ddcc0f690be8c3ca76f13eba8426e0d10a93",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.huffingtonpost.co.uk",
+      "source_id": "gdelt-doc-v2",
+      "title": "Trump Sparks Mockery After Suggesting Baffling New Use For The Military",
+      "topic": "general",
+      "url": "https://www.huffingtonpost.co.uk/entry/trump-mockery-military-bond-market_uk_6a8aae9ae4b0832f43175d20"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_0f1a66210c060c598b7ced7393baa893bb0d8dcaebf2b2a526631a762297b0a9",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.dailyforex.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Markets Weekly 24 to 28 / 08 : At a Tense Crossroads of Rates",
+      "topic": "general",
+      "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/mayor-markets-showing-contrasting-signals-week-from-24th-to-28th-august-2026/248904"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_0d568229aa50d6112d585f5e0a162961eff85a0d9c9f211513f6546a801a8f89",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Kendall Capital Management Purchases Shares of 7 , 395 ANI Pharmaceuticals , Inc . $ANIP",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/kendall-capital-management-purchases-shares-of-7395-ani-pharmaceuticals-inc-anip.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_0c9383b0cedf5303990758a1104ab8cf69de1fc62068de8ee37f0adf70b534e6",
+      "published": "2026-08-23T12:00:00Z",
+      "publisher": "www.dailypolitical.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Steadview Capital Management LLC Purchases New Stake in Micron Technology , Inc . $MU",
+      "topic": "general",
+      "url": "https://www.dailypolitical.com/2026/08/23/steadview-capital-management-llc-purchases-new-stake-in-micron-technology-inc-mu.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_e752284713019233464e1f58dbbc7655bb511112b171ad2ccce51ccf4ba84e0e",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.thisdaylive.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "When Better Numbers Meet Emptier Pockets – THISDAYLIVE",
+      "topic": "general",
+      "url": "https://www.thisdaylive.com/2026/08/23/when-better-numbers-meet-emptier-pockets/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_e0cfa5ec53b240619702272c1cc78d3e751235bdc85b4d137b91548a9729d5c8",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Quantbot Technologies LP Acquires New Holdings in Sirius XM Holdings Inc . $SIRI",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/quantbot-technologies-lp-acquires-new-holdings-in-sirius-xm-holdings-inc-siri.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_d98bb24cf74144d71eb47298320b986bc71bf6c58e0f6753b0ca31ef2a103131",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Findlay Park Partners LLP Acquires New Shares in Texas Instruments Incorporated $TXN",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/findlay-park-partners-llp-acquires-new-shares-in-texas-instruments-incorporated-txn.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_cd59c36745509629f80d88bbc0c566456482c1ecd0e835eaae6bc19754a5bacb",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Fish , ships and sovereignty : Iceland weighs its European future",
+      "topic": "general",
+      "url": "https://www.yahoo.com/news/articles/fish-ships-sovereignty-iceland-weighs-110536656.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_a614738486698f6bb33958314a1e54404eea66b98e6cb622590bc5e243abf102",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Compound Dai Price Reaches $0 . 0252 on Exchanges ( CDAI )",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/compound-dai-price-reaches-0-0252-on-exchanges-cdai.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "machine-learning"
+      ],
+      "id": "n_9b317e1823f1a3dcdf824f121b199d94c9e612b2897518c6129a0bf1213481ed",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.insidermonkey.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Stephen Mandel Lone Pine and Whale Rock Piled Into This Little Known AI Stock",
+      "topic": "quant-methods",
+      "url": "https://www.insidermonkey.com/blog/stephen-mandels-lone-pine-and-whale-rock-piled-into-this-little-known-ai-stock-1821927/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_766dd43f201d16a99ea692660f288ccc1e38828b903f56f498702ceb933d6d79",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Meeder Advisory Services Inc . Grows Position in Advanced Micro Devices , Inc . $AMD",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/meeder-advisory-services-inc-grows-position-in-advanced-micro-devices-inc-amd.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "btc"
+      ],
+      "id": "n_5623b7063408f64e11a758ad332e0846263fe8e4c42f8ae013324dfc26203213",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "finance.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Scott Bessent just kicked the bitcoin debasement trade into another gear : Chart of the Day",
+      "topic": "crypto",
+      "url": "https://finance.yahoo.com/markets/crypto/article/scott-bessent-just-kicked-the-bitcoin-debasement-trade-into-another-gear-chart-of-the-day-110841942.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_55eb0ab8445e7de5b7289c35f3b0c76421a36e2ca62e5293050108f1ed559be2",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.insidermonkey.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "AWS Was Lagging Microsoft Azure and Google Cloud in Growth Is Amazon Finally Catching Up ?",
+      "topic": "general",
+      "url": "https://www.insidermonkey.com/blog/aws-was-lagging-microsoft-azure-and-google-cloud-in-growth-is-amazon-finally-catching-up-1821380/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_3c0057673f1ec8e625db95938cf463335fd9c7a7830b6ee0d29af2fea26f1e5c",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.chroniclejournal.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Here why the Bank of Canada is worried about the rise of private credit",
+      "topic": "general",
+      "url": "https://www.chroniclejournal.com/news/national/heres-why-the-bank-of-canada-is-worried-about-the-rise-of-private-credit/article_ad2a68af-c737-584c-9173-eb3510b4a4e5.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_048df40e1daa269f2c7ce93cd073f5e0f13a295243bd08887875aad061b41eb1",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.insidermonkey.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Marvell $120 Billion Google Number : How Much of It Is Real ?",
+      "topic": "general",
+      "url": "https://www.insidermonkey.com/blog/marvells-120-billion-google-number-how-much-of-it-is-real-1821378/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_01a9d9255bfb0bfac1cd1c61a5cafd3daece024e291e8649c08458da66a2d008",
+      "published": "2026-08-23T11:45:00Z",
+      "publisher": "www.dnews.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Beef producers disappointed by Trump tariff suspension",
+      "topic": "general",
+      "url": "https://www.dnews.com/northwest/beef-producers-disappointed-by-trump-tariff-suspension-b26a5753"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_dad0779b23f64215e426c7a8905314eabf5b882c3111ad6079dca22348730e76",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "4 , 677 Shares in Texas Pacific Land Corporation $TPL Purchased by X Square Capital LLC",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/4677-shares-in-texas-pacific-land-corporation-tpl-purchased-by-x-square-capital-llc.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "gold"
+      ],
+      "id": "n_d49a2cc0f74d10e0a0714486bdd1319b799ab86f4441c060f4af84273cd09381",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.businesstimes.com.sg",
+      "source_id": "gdelt-doc-v2",
+      "title": "Gold jumps as Treasury buybacks revive debasement concerns",
+      "topic": "commodities",
+      "url": "https://www.businesstimes.com.sg/companies-markets/gold-jumps-treasury-buybacks-revive-debasement-concerns"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_91777bfbb33c672d2e98f76fd20e86e55b639bbc10235441eb1032fc12471a45",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Twin Tree Management LP Takes Position in Skyworks Solutions , Inc . $SWKS",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/twin-tree-management-lp-takes-position-in-skyworks-solutions-inc-swks.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "ipo"
+      ],
+      "id": "n_8953ab0ba25422827060380dc49ca094fc1ef9abb667e3e4691207ebcd2aef5a",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.livemint.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Upcoming IPOs : Symbiotec Pharmalab IPO , Skyways Air Services IPO among 10 new issues to open next week ; full list here",
+      "topic": "equities",
+      "url": "https://www.livemint.com/market/ipo/upcoming-ipos-symbiotec-pharmalab-ipo-skyways-air-services-ipo-among-10-new-issues-to-open-next-week-full-list-here-11787471553011.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_858b262b2abb9ba762d27c34e72bee1332d5331b1c40f68258acf3cdc418077e",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.thehindubusinessline.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Stagger your bonds and steady your cash flow - The HinduBusinessLine",
+      "topic": "general",
+      "url": "https://www.thehindubusinessline.com/portfolio/personal-finance/stagger-your-bonds-and-steady-your-cash-flow/article71380502.ece"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_68c581576c60af8103f640dfded963354ea5b73faa65baa010d03e0573dab0f6",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.citizen.co.za",
+      "source_id": "gdelt-doc-v2",
+      "title": "Is Kastelo a DA woopsie ? | The Citizen",
+      "topic": "general",
+      "url": "https://www.citizen.co.za/news/opinion/is-kastelo-a-da-woopsie/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_49ba640f08cc89c7f59dcab3a6f8b14942c5cb5ad8393ff24b3a20a38fed2dbd",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "timesofindia.indiatimes.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Market recap : Rs 87 , 960 crore wiped off four top - 10 firms ; Airtel bears biggest loss",
+      "topic": "general",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/market-recap-rs-87960-crore-wiped-off-four-top-10-firms-airtel-bears-biggest-loss/articleshow/133438057.cms"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_45866b075cafbad9b2465ff2d6197e822a66d699ccbf776a427d1eb96753b63d",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.nakedcapitalism.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Links 8 / 23 / 2026 | naked capitalism",
+      "topic": "general",
+      "url": "https://www.nakedcapitalism.com/2026/08/Links-8-23-2026.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_3d66b7b4a41f20fe2b4b69ea630a8605407f8114183084f29de16a4a4e62c596",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.theguardian.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Jumpy bond markets make it clear : Trump risks driving US into debt crisis | Heather Stewart",
+      "topic": "blowups",
+      "url": "https://www.theguardian.com/business/2026/aug/23/jumpy-bond-markets-make-it-clear-trump-risks-driving-us-into-debt-crisis"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_37dbbbfa3c7333ff67e59814f5520a7e640e39713a5237aeeaf6d70bcf5a419f",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "lethbridgeherald.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Here why the Bank of Canada is worried about the rise of private credit",
+      "topic": "general",
+      "url": "https://lethbridgeherald.com/news/national-news/2026/08/23/heres-why-the-bank-of-canada-is-worried-about-the-rise-of-private-credit/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_29844ad5b7084c020be429643e6b1a6c3af6caa06c3f2e3b2d3eba2316e8e729",
+      "published": "2026-08-23T11:30:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "XXEC Inc . Takes $127 . 49 Million Position in Reliance , Inc . $RS",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/xxec-inc-takes-127-49-million-position-in-reliance-inc-rs.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_fbb14c82dc011ea6e6eaedff67bef0661af9ca44de8368fa7e985dab47ed6c81",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "finance.yahoo.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Rising bond yields have stocks on the brink of a 20 % drop , strategist warns",
+      "topic": "general",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rising-bond-yields-stocks-brink-092502254.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "ipo"
+      ],
+      "id": "n_ddc56268ee02390bce28929147368460406c42c7992965a01dc08b186826288c",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.dailysabah.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Anthropic market debut could beat recent IPO record set by SpaceX",
+      "topic": "equities",
+      "url": "https://www.dailysabah.com/business/tech/anthropic-market-debut-could-beat-recent-ipo-record-set-by-spacex"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [
+        "cme"
+      ],
+      "id": "n_dd6cce53f1e75163241ba1ad7501bbcf115b7bacecc28ae590d65172e6514472",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Commerce Bank Buys Shares of 151 , 118 CME Group Inc . $CME",
+      "topic": "market-structure",
+      "url": "https://www.themarketsdaily.com/2026/08/23/commerce-bank-buys-shares-of-151118-cme-group-inc-cme.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_bbafe02dd3df506cc129dcde3343cc92a464e6fd07b6303fbf0d4ea5900e2ab3",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.wellandtribune.ca",
+      "source_id": "gdelt-doc-v2",
+      "title": "Here why the Bank of Canada is worried about the rise of private credit",
+      "topic": "general",
+      "url": "https://www.wellandtribune.ca/business/heres-why-the-bank-of-canada-is-worried-about-the-rise-of-private-credit/article_c41a6b52-f39a-59ec-8a87-56dab82d3da6.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_bb6fa681a087baef38dd2a9003475e0ce6095979b93a2b1ebab4060ecebf692f",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Hudson Portfolio Management LLC Purchases Shares of 1 , 365 United Therapeutics Corporation $UTHR",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/hudson-portfolio-management-llc-purchases-shares-of-1365-united-therapeutics-corporation-uthr.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_b62d45aec3ddb9821dd2d265e0ffa19f8639e6137a9eb6035881bb2cba8e4bdb",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "9 , 500 Shares in IDEX Corporation $IEX Purchased by Pinnbrook Capital Management LP",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/9500-shares-in-idex-corporation-iex-purchased-by-pinnbrook-capital-management-lp.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_91e33535361ba297c12e6dc603d2072b7c72d7b300bc7f1a044075158092e3ba",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "2 , 957 Shares in Norfolk Southern Corporation $NSC Acquired by Sumitomo Life Insurance Co .",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/2957-shares-in-norfolk-southern-corporation-nsc-acquired-by-sumitomo-life-insurance-co.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_8568e389cbdae2ed0977e472e3268c6f5711d353a6772193238e3f8cad1b3276",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "panow.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Here why the Bank of Canada is worried about the rise of private credit",
+      "topic": "general",
+      "url": "https://panow.com/2026/08/23/heres-why-the-bank-of-canada-is-worried-about-the-rise-of-private-credit/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_7f632096c979e999ae27da0301cd87c009cfcad61067ed957306a4b4c63dfaf7",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "thebull.com.au",
+      "source_id": "gdelt-doc-v2",
+      "title": "Fisher & Paykel Healthcare Shares Hit New ATH . What Now ?",
+      "topic": "general",
+      "url": "https://thebull.com.au/news/fisher-paykel-healthcare-shares-hit-new-ath-what-now/"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_715d61337291bfe1dd150264c4aa6cfec96d81fcf43e0182256fb3368b5f5f98",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Greenland Capital Management LP Acquires Shares of 60 , 070 ONE Gas , Inc . $OGS",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/greenland-capital-management-lp-acquires-shares-of-60070-one-gas-inc-ogs.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_56a90c4fb21e65ecb69c2181db2e62239caa94d1c30e652878e6421ff274a509",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "MKA Charitable Fund Invests $232 . 52 Billion in Airbnb , Inc . $ABNB",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/mka-charitable-fund-invests-232-52-billion-in-airbnb-inc-abnb.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_4d57e171c90ec17d749248cf61edd24716a18f830f25c11c4bf6641935cf11e4",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.stcatharinesstandard.ca",
+      "source_id": "gdelt-doc-v2",
+      "title": "No room for missteps in bank earnings after run - up in lender stocks : fund manager",
+      "topic": "equities",
+      "url": "https://www.stcatharinesstandard.ca/business/no-room-for-missteps-in-bank-earnings-after-run-up-in-lenders-stocks-fund-manager/article_5acbc651-9fc8-5d4b-aa4c-54c4cd174468.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_31b3d0197ff2db4e31ffb3826a483b0abcbf37b1275844a857a85566dd36919b",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "GQG Partners LLC Purchases New Shares in Old Market Capital Corporation $OMCC",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/gqg-partners-llc-purchases-new-shares-in-old-market-capital-corporation-omcc.html"
+    },
+    {
+      "attribution": "Discovery metadata: GDELT Project",
+      "entities": [],
+      "id": "n_1f076c4ef0bbea1715819f892324e1962226a330c5a54494eabd4e55bc273ecc",
+      "published": "2026-08-23T11:15:00Z",
+      "publisher": "www.themarketsdaily.com",
+      "source_id": "gdelt-doc-v2",
+      "title": "Greenland Capital Management LP Acquires Shares of 94 , 950 Consolidated Edison Inc $ED",
+      "topic": "general",
+      "url": "https://www.themarketsdaily.com/2026/08/23/greenland-capital-management-lp-acquires-shares-of-94950-consolidated-edison-inc-ed.html"
+    },
+    {
       "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
@@ -259,17 +1385,17 @@
       "attribution": "Federal Reserve Board",
       "item_count": 20,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-08-23T14:02:43Z",
-      "last_success_at": "2026-08-23T14:02:43Z",
+      "last_attempt_at": "2026-08-23T14:15:06Z",
+      "last_success_at": "2026-08-23T14:15:06Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
-      "item_count": 0,
+      "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-08-23T14:02:43Z",
-      "last_success_at": null,
-      "status": "error"
+      "last_attempt_at": "2026-08-23T14:15:06Z",
+      "last_success_at": "2026-08-23T14:15:06Z",
+      "status": "ok"
     }
   }
 }
