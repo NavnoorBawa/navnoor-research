@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import subprocess
 import tempfile
 import unittest
@@ -281,10 +282,13 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const app = require(process.argv[1]);
 const document = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
-assert.equal(app.validateResearch(document).research.length, 568);
+assert.equal(app.validateResearch(document).research.length, Number(process.argv[3]));
 """
+        expected = json.loads(
+            (ROOT / "seed" / "manifest.json").read_text(encoding="utf-8")
+        )["counts"]["records"]
         result = subprocess.run(
-            ["node", "-e", script, str(APP), str(RESEARCH_DATA)],
+            ["node", "-e", script, str(APP), str(RESEARCH_DATA), str(expected)],
             cwd=ROOT,
             capture_output=True,
             text=True,

@@ -21,6 +21,17 @@ DESCRIPTION = (
     "Search source-linked research metadata, discover SEC company/ticker associations, "
     "and scan checked market news from reviewed public sources."
 )
+
+
+def describe(research_count: int, company_count: int, headline_count: int) -> str:
+    """State the exact release counts where they can be regenerated every build."""
+    return (
+        f"{research_count:,} source-linked research records, "
+        f"{company_count:,} SEC company/ticker associations, and "
+        f"{headline_count:,} checked headlines from reviewed public sources."
+    )
+
+
 PUBLIC_ORIGIN = "https://navnoorbawa.github.io/navnoor-research/"
 
 
@@ -34,6 +45,7 @@ def render(
     source_issue_count: int,
 ) -> str:
     """Render a small shell; every searchable record stays in fingerprinted JSON."""
+    description = describe(research_count, company_count, headline_count)
     og = ""
     if assets.get("og"):
         og_name = escape(assets["og"])
@@ -53,10 +65,10 @@ def render(
 <meta name="theme-color" content="#07131e">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Navnoor Research">
-<meta property="og:description" content="{escape(DESCRIPTION)}">
+<meta property="og:description" content="{escape(description)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Navnoor Research">
-<meta name="twitter:description" content="{escape(DESCRIPTION)}">
+<meta name="twitter:description" content="{escape(description)}">
 <meta property="og:url" content="{PUBLIC_ORIGIN}">
 <link rel="canonical" href="{PUBLIC_ORIGIN}">
 {og}<title>Navnoor Research — Search, Research, Market News</title>

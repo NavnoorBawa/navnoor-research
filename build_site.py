@@ -19,14 +19,17 @@ from navnoor_research.schema import COMPANY_SCHEMA_VERSION, TAXONOMY_SCHEMA_VERS
 STAGING_DIR = paths.ROOT / ".site-build"
 REVISION_RE = re.compile(r"(?:[0-9a-f]{40}|local-[a-z0-9-]{1,40})")
 PUBLIC_COMPANY_FIELDS = ("cik", "ticker", "exchange", "name")
-SOCIAL_CARD_COUNTS = (568, 10_403, 20)
-SOCIAL_CARD_SHA256 = "4ac02c0598ae728f11b599d17a75340bcf426a7ac76bd5e1ac445ba041165d35"
+SOCIAL_CARD_SHA256 = "241f3fd6b20312e7b4f91b95bccd265009c825c2049d90c620d412e2e2a74151"
 
 
-def checked_social_card(counts: tuple[int, int, int]) -> bytes:
-    """Bind the reviewed factual card to the exact counts printed in its pixels."""
-    if counts != SOCIAL_CARD_COUNTS:
-        raise ValueError("social card facts do not match the current release counts")
+def checked_social_card() -> bytes:
+    """Return the reviewed social card.
+
+    The card states no release counts. Counts change on every scheduled refresh,
+    and social platforms cache a scraped card for days, so a number burned into
+    these pixels could only ever be stale. The exact live counts are published in
+    the regenerated og:description instead, next to this card.
+    """
     path = paths.ASSETS_DIR / "og.png"
     if not path.is_file():
         raise ValueError("reviewed social card is missing")
@@ -94,12 +97,7 @@ def build_into(out_dir: Path, revision: str) -> dict[str, Any]:
     emit("taxonomy", "taxonomy.json", jsonio.dumps(taxonomy).encode("utf-8"))
     emit("css", "app.css", (paths.ASSETS_DIR / "app.css").read_bytes())
     emit("js", "app.js", (paths.ASSETS_DIR / "app.js").read_bytes())
-    social_counts = (
-        len(research["research"]),
-        len(companies_public["companies"]),
-        len(news["items"]),
-    )
-    emit("og", "og.png", checked_social_card(social_counts))
+    emit("og", "og.png", checked_social_card())
 
     html = render.render(
         written,

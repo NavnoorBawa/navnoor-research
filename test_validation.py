@@ -35,7 +35,8 @@ class TestTrackedDataContracts(unittest.TestCase):
 
     def test_full_fixed_path_validation_succeeds(self):
         research, companies, news = validate_data.load_and_validate()
-        self.assertEqual(len(research["research"]), 568)
+        seeded = jsonio.load(paths.PUBLICATIONS_PATH)["records"]
+        self.assertEqual(len(research["research"]), len(seeded))
         self.assertGreaterEqual(len(companies["items"]), 10_000)
         self.assertLessEqual(len(news["items"]), newsstore.MAX_ITEMS)
         validate_data.validate_source_matrix(self.sources)
@@ -73,7 +74,10 @@ class TestTrackedDataContracts(unittest.TestCase):
     def test_seed_projection_contains_only_reviewed_fields(self):
         document = jsonio.load(paths.PUBLICATIONS_PATH)
         self.assertEqual(document["rights_profile"], seed.RIGHTS_PROFILE)
-        self.assertEqual(len(document["records"]), 568)
+        self.assertEqual(
+            len(document["records"]),
+            jsonio.load(paths.SEED_MANIFEST_PATH)["counts"]["records"],
+        )
         for record in document["records"]:
             self.assertEqual(set(record), seed.RECORD_KEYS)
             self.assertFalse(set(record) & validate_data.FORBIDDEN_FIELDS)

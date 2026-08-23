@@ -1,6 +1,17 @@
 {
   "research": [
     {
+      "access": "public",
+      "entities": [],
+      "id": "r_2450240dab32908d23a40144f324a635059bf166a946b94ebf4a9edf59100984",
+      "published": "2026-08-22T18:00:58.586Z",
+      "source": "substack",
+      "summary": "The $38 billion quarterly envelope never moved. Only the per operation size and count did, and Thursday's reversal already tested whether that is enough.",
+      "title": "Bessent Doubled the Buyback. Treasury's Budget Didn't Grow. JPMorgan Isn't Buying It.",
+      "topic": "equities",
+      "url": "https://navnoorbawa.substack.com/p/bessent-doubled-the-buyback-treasurys"
+    },
+    {
       "access": "unknown",
       "entities": [],
       "id": "r_3d92871bfc0defcaba186dc0f037726cd6f307eb223d757a6f4444980ef09f1d",
@@ -6920,6 +6931,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "9046cb6519964c9816667d8e95250b7833a8a45c843345828a0fa24f343e3f91",
-  "source_revision": "978b232d5ef2bc63e3e22eb1e93b7ac6886b08ab"
+  "source_dataset_version": "78c1a38375e6a1c793611c122763557963aee4f180c8ba79318237a80c3910c6",
+  "source_revision": "913e2f66be91bffc937e1356870797c6ad97680a"
 }

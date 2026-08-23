@@ -15,7 +15,7 @@ from pathlib import Path
 import build_site
 import validate_data
 import validate_release
-from navnoor_research import manifest, render
+from navnoor_research import jsonio, manifest, paths, render
 
 ROOT = Path(__file__).resolve().parent
 REVISION = "a" * 40
@@ -254,7 +254,10 @@ class TestBuild(unittest.TestCase):
         self.assertLess(len(json.dumps(public, separators=(",", ":")).encode()), 1_800_000)
         nvda = [row for row in public["companies"] if row[1] == "NVDA"]
         self.assertTrue(nvda)
-        self.assertEqual(len(research["research"]), 568)
+        self.assertEqual(
+            len(research["research"]),
+            len(jsonio.load(paths.PUBLICATIONS_PATH)["records"]),
+        )
 
     def test_bundle_contains_no_prohibited_source_material(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -281,15 +284,25 @@ class TestBuild(unittest.TestCase):
                               if not entry["path"].startswith("og-"))
             self.assertLessEqual(interactive, validate_release.INTERACTIVE_BUDGET)
 
-    def test_social_card_bytes_are_bound_to_the_current_release_counts(self):
-        payload = build_site.checked_social_card(build_site.SOCIAL_CARD_COUNTS)
+    def test_social_card_is_the_reviewed_asset_and_states_no_release_counts(self):
+        payload = build_site.checked_social_card()
         self.assertEqual(
             build_site.sha256_hex(payload),
             build_site.SOCIAL_CARD_SHA256,
         )
-        for drifted in ((569, 10_403, 20), (568, 10_404, 20), (568, 10_403, 19)):
-            with self.assertRaisesRegex(ValueError, "do not match"):
-                build_site.checked_social_card(drifted)
+        self.assertFalse(hasattr(build_site, "SOCIAL_CARD_COUNTS"))
+
+    def test_shared_description_states_the_exact_live_release_counts(self):
+        facts = render.describe(569, 10_403, 20)
+        self.assertEqual(
+            facts,
+            "569 source-linked research records, 10,403 SEC company/ticker "
+            "associations, and 20 checked headlines from reviewed public sources.",
+        )
+        html = render.render(TestRender.ASSETS, REVISION, 569, 10_403, 20, 2, 1)
+        for shared in ('property="og:description"', 'name="twitter:description"'):
+            self.assertIn(f'<meta {shared} content="{facts}">', html)
+        self.assertIn(f'<meta name="description" content="{render.DESCRIPTION}">', html)
 
     def test_cli_has_no_output_path_control(self):
         with tempfile.TemporaryDirectory() as tmp:

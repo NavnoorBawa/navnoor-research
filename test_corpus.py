@@ -136,9 +136,10 @@ class TestSeedTransactionLoading(unittest.TestCase):
             manifest.write_bytes(self.manifest_bytes)
             with pub_patch, manifest_patch:
                 records, document, provenance = corpus.load_index()
-        self.assertEqual(len(records), 568)
+        manifested = json.loads(self.manifest_bytes.decode("utf-8"))["counts"]["records"]
+        self.assertEqual(len(records), manifested)
         self.assertEqual(records, document["records"])
-        self.assertEqual(provenance["counts"]["records"], 568)
+        self.assertEqual(provenance["counts"]["records"], manifested)
 
 
 class TestCurrentCorpus(unittest.TestCase):
@@ -153,14 +154,22 @@ class TestCurrentCorpus(unittest.TestCase):
     )
     NOMURA_BODY_LEAD = "spent five hours manufacturing order book pressure"
 
-    def test_current_seed_is_exactly_568_metadata_records(self):
+    def test_current_seed_agrees_with_every_manifested_metadata_count(self):
         records, document, provenance = corpus.load_index()
-        self.assertEqual(len(records), 568)
-        self.assertEqual(provenance["counts"]["records"], 568)
+        artifact = next(
+            entry
+            for entry in json.loads(
+                paths.SEED_MANIFEST_PATH.read_text(encoding="utf-8")
+            )["artifacts"]
+            if entry["path"] == "seed/publications.json"
+        )
+        self.assertGreater(len(records), 0)
+        self.assertEqual(provenance["counts"]["records"], len(records))
         self.assertEqual(
             provenance["source_snapshot"]["catalog_count"],
-            568,
+            len(records),
         )
+        self.assertEqual(artifact["record_count"], len(records))
         self.assertRegex(document["source_dataset_version"], r"^[0-9a-f]{64}$")
         self.assertRegex(
             provenance["source_snapshot"]["revision"],
@@ -187,7 +196,8 @@ class TestCurrentCorpus(unittest.TestCase):
     def test_import_is_deterministic_newest_first_and_metadata_only(self):
         first, stats = corpus.import_articles()
         second, second_stats = corpus.import_articles()
-        self.assertEqual(len(first), 568)
+        seeded, _document, _provenance = corpus.load_index()
+        self.assertEqual(len(first), len(seeded))
         self.assertEqual(stats, second_stats)
         self.assertEqual(
             [article.to_json() for article in first],
@@ -205,8 +215,8 @@ class TestCurrentCorpus(unittest.TestCase):
             reverse=True,
         )
         self.assertEqual(first, expected)
-        self.assertEqual(stats["read"], 568)
-        self.assertEqual(stats["published"], 568)
+        self.assertEqual(stats["read"], len(seeded))
+        self.assertEqual(stats["published"], len(seeded))
 
 
 if __name__ == "__main__":

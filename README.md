@@ -8,7 +8,7 @@ destinations:
 - **Search** — discover published research, checked headlines, and SEC-backed
   company/ticker associations from a company, ticker, fund, regulator, index,
   asset, or topic.
-- **Research** — search and filter 568 source-linked publication records by
+- **Research** — search and filter every source-linked publication record by
   topic and access state.
 - **Market News** — scan retained headline metadata from reviewed public
   sources with publisher, discovery attribution, and an honest status for each

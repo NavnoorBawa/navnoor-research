@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/bessent-doubled-the-buyback-treasurys",
+      "id": "r_2450240dab32908d23a40144f324a635059bf166a946b94ebf4a9edf59100984",
+      "published_at": "2026-08-22T18:00:58.586Z",
+      "slug": "bessent-doubled-the-buyback-treasurys",
+      "source": "substack",
+      "source_id": "bessent-doubled-the-buyback-treasurys",
+      "subtitle": "The $38 billion quarterly envelope never moved. Only the per operation size and count did, and Thursday's reversal already tested whether that is enough.",
+      "title": "Bessent Doubled the Buyback. Treasury's Budget Didn't Grow. JPMorgan Isn't Buying It."
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/quantlib-wont-guess-at-a-bad-quote-ferdinando-ametrano-showed-why-in-2013-1d5d8931d38b",
@@ -7315,5 +7327,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "9046cb6519964c9816667d8e95250b7833a8a45c843345828a0fa24f343e3f91"
+  "source_dataset_version": "78c1a38375e6a1c793611c122763557963aee4f180c8ba79318237a80c3910c6"
 }

@@ -6,11 +6,12 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from html import escape
 from typing import Any
 
 import build_site
 import validate_data
-from navnoor_research import jsonio, manifest, paths
+from navnoor_research import jsonio, manifest, paths, render
 from navnoor_research.fingerprint import sha256_hex
 
 TOTAL_BUDGET = 2_500_000
@@ -167,13 +168,14 @@ def validate(expected_revision: str) -> tuple[dict[str, Any], list[str]]:
             expected_counts["headlines"],
         ]:
             problems.append("institutional index ledger counts are not the exact payload counts")
-        social_counts = (
+        expected_facts = render.describe(
             expected_counts["research"],
             expected_counts["companies"],
             expected_counts["headlines"],
         )
-        if social_counts != build_site.SOCIAL_CARD_COUNTS:
-            problems.append("reviewed social-card facts do not match the release counts")
+        for shared in ('property="og:description"', 'name="twitter:description"'):
+            if f'<meta {shared} content="{escape(expected_facts)}">' not in html:
+                problems.append(f"{shared} does not state the exact release counts")
         source_issue_count = sum(
             source["status"] != "ok" for source in news["sources"].values()
         )
@@ -183,7 +185,7 @@ def validate(expected_revision: str) -> tuple[dict[str, Any], list[str]]:
         og_name = names.get("og", "")
         if og_name and (site / og_name).is_file():
             if sha256_hex((site / og_name).read_bytes()) != build_site.SOCIAL_CARD_SHA256:
-                problems.append("social card is not the reviewed count-bound asset")
+                problems.append("social card is not the reviewed asset")
     except (OSError, ValueError) as exc:
         problems.append(f"release payload validation failed: {exc}")
 
