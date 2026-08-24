@@ -2,8 +2,34 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
-      "access": "public",
+      "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/ljm-lost-80-in-two-days-the-formula-behind-vix-has-the-same-blind-spot-db4656fff1b7",
+      "id": "r_d83538a788090c40771766a606b7bdbf83edc8b315b29a5daa6d77d3e04f63a2",
+      "published_at": "2026-08-24T09:49:19Z",
+      "slug": "ljm-lost-80-in-two-days-the-formula-behind-vix-has-the-same-blind-spot-db4656fff1b7",
+      "source": "medium",
+      "source_id": "db4656fff1b7",
+      "subtitle": "Every variance swap ever priced, and the VIX index itself, traces to one formula. The fair strike is K_var = (2/T) times the integral of…\n\nContinue reading on Medium »",
+      "title": "LJM Lost 80% in Two Days. The Formula Behind VIX Has the Same Blind Spot"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/citadel-bought-situational-awarenesss",
+      "id": "r_5def758aed59e5d09dd4bcfe8af647a69682ff2686258c943b0ebb680f40b7d1",
+      "published_at": "2026-08-23T13:01:49.754Z",
+      "slug": "citadel-bought-situational-awarenesss",
+      "source": "substack",
+      "source_id": "citadel-bought-situational-awarenesss",
+      "subtitle": "Griffin's own letter names the exit. The trade was never the conviction call the market read it as.",
+      "title": "Citadel Bought Situational Awareness's Book \"With Conviction.\" It Sold 80% of the Risk in Three Weeks."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/bessent-doubled-the-buyback-treasurys-budget-didn-t-grow-jpmorgan-isn-t-buying-it-50993d0dca16"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/bessent-doubled-the-buyback-treasurys",
       "id": "r_2450240dab32908d23a40144f324a635059bf166a946b94ebf4a9edf59100984",
       "published_at": "2026-08-22T18:00:58.586Z",
@@ -7327,5 +7353,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "78c1a38375e6a1c793611c122763557963aee4f180c8ba79318237a80c3910c6"
+  "source_dataset_version": "e6eb312aa3813daadfcc580dfec8afe31dc27699f62f4d73d3fe4e7828ee76c0"
 }
