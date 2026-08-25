@@ -2,6 +2,19 @@
   "research": [
     {
       "access": "public",
+      "entities": [
+        "federal-reserve"
+      ],
+      "id": "r_103234d7a7c46b082324a9a7b3168fdcff7c545adbe91093f4a51112c23c4b1b",
+      "published": "2026-08-25T05:13:01.711Z",
+      "source": "substack",
+      "summary": "A correlation reading at the 2nd percentile of two decades, the Fed's own hawkish dissent, and the redemption playbook if the two collide inside 30 days.",
+      "title": "The Federal Reserve Split 9-3 on a Hike in July. Archegos Is What a 2nd-Percentile Correlation Reading Costs When It Breaks.",
+      "topic": "rates-macro",
+      "url": "https://navnoorbawa.substack.com/p/the-federal-reserve-split-9-3-on"
+    },
+    {
+      "access": "public",
       "entities": [],
       "id": "r_b7abe7cb90696881777fdc403be3776c95af3a99be545cfe67519998bdc1172d",
       "published": "2026-08-24T21:14:01.874Z",
@@ -7040,6 +7053,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "63366f6db2cec9ac2a70af2b1d0a8d1fd4632989cf250411d6fcd7e21334452b",
-  "source_revision": "e00db61e3bff2d45bb2ba8e7d1bd8d6dc3ba699f"
+  "source_dataset_version": "cf4da0d448888f683d22f3dc225b6c02109e48c99ac71281e94505ae17f647dd",
+  "source_revision": "baa3631f0bb944ca43726217419dce6659533c73"
 }
