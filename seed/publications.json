@@ -2,6 +2,42 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/rbi-blindsided-bond-markets-and-goldman",
+      "id": "r_b7abe7cb90696881777fdc403be3776c95af3a99be545cfe67519998bdc1172d",
+      "published_at": "2026-08-24T21:14:01.874Z",
+      "slug": "rbi-blindsided-bond-markets-and-goldman",
+      "source": "substack",
+      "source_id": "rbi-blindsided-bond-markets-and-goldman",
+      "subtitle": "Deputy Governor Gupta's own minutes flagged a hike case fourteen days after Malhotra's patient press conference, and the bond market is still catching up.",
+      "title": "RBI Blindsided Bond Markets, and Goldman Sachs Now Sees Hikes Coming."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/goldman-warned-kevin-warshs-silence",
+      "id": "r_301bcc579f7a944c490fece0e5b9d44391e498adc0d0358d32ba05740fb4e604",
+      "published_at": "2026-08-24T18:41:03.394Z",
+      "slug": "goldman-warned-kevin-warshs-silence",
+      "source": "substack",
+      "source_id": "goldman-warned-kevin-warshs-silence",
+      "subtitle": "Treasury doubled its bond buybacks to hold the 30-year yield down before Warsh even speaks. The relief lasted about a day. Here is what that tells you about the speech.",
+      "title": "Goldman warned Kevin Warsh's silence would backfire. The Treasury just proved it."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/renaissance-keeps-medallion-aqrs-founder-calls-the-rest-regular-quants-5ad32416f119",
+      "id": "r_1b6dfcfc157e915684698dc68bbcbc6743d48c18226eb9ded2b71260faae07fe",
+      "published_at": "2026-08-24T16:39:05Z",
+      "slug": "renaissance-keeps-medallion-aqrs-founder-calls-the-rest-regular-quants-5ad32416f119",
+      "source": "medium",
+      "source_id": "5ad32416f119",
+      "subtitle": "Renaissance’s outside investor funds have round tripped through the same drawdown shape in three separate policy shocks since 2020.\n\nContinue reading on Medium »",
+      "title": "Renaissance Keeps Medallion. AQR’s Founder Calls the Rest Regular Quants."
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/ljm-lost-80-in-two-days-the-formula-behind-vix-has-the-same-blind-spot-db4656fff1b7",
@@ -12,6 +48,54 @@
       "source_id": "db4656fff1b7",
       "subtitle": "Every variance swap ever priced, and the VIX index itself, traces to one formula. The fair strike is K_var = (2/T) times the integral of…\n\nContinue reading on Medium »",
       "title": "LJM Lost 80% in Two Days. The Formula Behind VIX Has the Same Blind Spot"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/treasury-already-167569843",
+      "id": "r_8a5f9fae8a6bc8e66f61e0713814957856be9933ccf4b2f1ceb2a712ef168531",
+      "published_at": "2026-08-24",
+      "slug": "treasury-already-167569843",
+      "source": "patreon",
+      "source_id": "167569843",
+      "subtitle": "",
+      "title": "The Treasury Already Tested Kevin Warsh's Jackson Hole. It Failed in One Session."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/rbis-committee-167573774",
+      "id": "r_f46349b5ab698d3ae0c280e110ac17556faec462fb30e97227d0db0d1689ea50",
+      "published_at": "2026-08-24",
+      "slug": "rbis-committee-167573774",
+      "source": "patreon",
+      "source_id": "167573774",
+      "subtitle": "",
+      "title": "RBI's Committee Is More Hawkish Than Its Governor. The Front End Hasn't Fully Priced It."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/financing-hedge-167570561",
+      "id": "r_6309d43881953b45129cd313d89c84b05d861ec1558380356d33b238c9bae1c6",
+      "published_at": "2026-08-24",
+      "slug": "financing-hedge-167570561",
+      "source": "patreon",
+      "source_id": "167570561",
+      "subtitle": "",
+      "title": "Financing the Hedge Out of the Vol Surface's Own Mispricing"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/exoduspoints-8-167568553",
+      "id": "r_5acd9c07018ab01cec4b5f5b3ef1831a87197fca4ce24d60a45f8f0eecf7f440",
+      "published_at": "2026-08-24",
+      "slug": "exoduspoints-8-167568553",
+      "source": "patreon",
+      "source_id": "167568553",
+      "subtitle": "",
+      "title": "ExodusPoint's Dubai Desk: 8 Days Is the Tempo Tell for When Presence Becomes Payback"
     },
     {
       "access": "restricted",
@@ -7353,5 +7437,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "e6eb312aa3813daadfcc580dfec8afe31dc27699f62f4d73d3fe4e7828ee76c0"
+  "source_dataset_version": "63366f6db2cec9ac2a70af2b1d0a8d1fd4632989cf250411d6fcd7e21334452b"
 }
