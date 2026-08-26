@@ -68,6 +68,46 @@ def source_files(record=None, trades=None):
     }
 
 
+def cross_post_source_files():
+    """Model a newest Medium discovery retained canonically as Substack."""
+    records = [
+        article(
+            alternate_urls={"medium": "https://medium.com/@navnoorbawa/alpha"},
+        ),
+        article(
+            source="medium",
+            source_id="older-medium",
+            slug="older-medium",
+            title="Older Medium research",
+            post_date="2026-08-19T10:00:00Z",
+            url="https://medium.com/@navnoorbawa/older-medium",
+            audience="public",
+        ),
+    ]
+    files = source_files()
+    article_payload = jsonio.dumps(records).encode("utf-8")
+    trade_payload = files["trades_extracted.json"]
+    snapshot = jsonio.loads_strict(files["snapshot_manifest.json"])
+    snapshot.update({
+        "article_count": 2,
+        "catalog_count": 2,
+        "data_checksum": hashlib.sha256(
+            article_payload + b"\0" + trade_payload
+        ).hexdigest(),
+    })
+    snapshot["sources"]["medium"] = {
+        "checked_at": snapshot["checked_at"],
+        "included_count": 1,
+        # This is the discovered cross-post above, not the older canonical
+        # Medium record that remains after source merging.
+        "newest": records[0]["post_date"],
+        "status": "ok",
+    }
+    files["articles_index.json"] = article_payload
+    files["snapshot_manifest.json"] = jsonio.dumps(snapshot).encode("utf-8")
+    return files
+
+
 def git_archive(files, *, comment=REVISION, mode="w:"):
     payload = io.BytesIO()
     kwargs = {
@@ -320,6 +360,47 @@ class TestProjectionAndCommitMarker(unittest.TestCase):
         snapshot["data_checksum"] = "0" * 64
         files["snapshot_manifest.json"] = jsonio.dumps(snapshot).encode("utf-8")
         with self.assertRaises(seed.SeedError):
+            seed.project(files, REVISION)
+
+    def test_source_newest_preserves_the_pre_deduplication_discovery_edge(self):
+        publications, provenance = seed.project(cross_post_source_files(), REVISION)
+
+        self.assertEqual(len(publications["records"]), 2)
+        self.assertEqual(provenance["counts"]["by_source"], {
+            "medium": 1,
+            "substack": 1,
+        })
+        self.assertEqual(
+            provenance["source_checks"]["medium"]["newest"],
+            "2026-08-20T13:31:31.862Z",
+        )
+
+    def test_source_newest_cannot_predate_retained_canonical_records(self):
+        files = cross_post_source_files()
+        snapshot = jsonio.loads_strict(files["snapshot_manifest.json"])
+        snapshot["sources"]["medium"]["newest"] = "2026-08-18T10:00:00Z"
+        files["snapshot_manifest.json"] = jsonio.dumps(snapshot).encode("utf-8")
+
+        with self.assertRaisesRegex(seed.SeedError, "predates its retained records"):
+            seed.project(files, REVISION)
+
+    def test_publishable_degraded_archive_source_is_preserved(self):
+        files = source_files()
+        snapshot = jsonio.loads_strict(files["snapshot_manifest.json"])
+        snapshot["sources"]["substack"]["status"] = "degraded"
+        files["snapshot_manifest.json"] = jsonio.dumps(snapshot).encode("utf-8")
+
+        _, provenance = seed.project(files, REVISION)
+
+        self.assertEqual(provenance["source_checks"]["substack"]["status"], "degraded")
+
+    def test_unpublishable_archive_source_status_is_rejected(self):
+        files = source_files()
+        snapshot = jsonio.loads_strict(files["snapshot_manifest.json"])
+        snapshot["sources"]["substack"]["status"] = "failed"
+        files["snapshot_manifest.json"] = jsonio.dumps(snapshot).encode("utf-8")
+
+        with self.assertRaisesRegex(seed.SeedError, "is not publishable"):
             seed.project(files, REVISION)
 
 

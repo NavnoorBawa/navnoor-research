@@ -1,6 +1,6 @@
 # Issue log
 
-Last updated: 2026-08-23
+Last updated: 2026-08-26
 
 ## Resolved
 
@@ -159,6 +159,52 @@ Last updated: 2026-08-23
   search shortcuts, issuer-specific SEC labels, one-column print output,
   forced-colors, reduced motion, count-bound social-card facts, collision-free
   mobile metrics, and the unchanged local-query privacy boundary.
+
+## Remediation in progress
+
+### NR-012 — Cross-post provenance stalled every scheduled checked-data refresh
+
+- **Severity:** P1
+- **Evidence:** Scheduled refresh runs `32888738396`, `32903926227`,
+  `32921917030`, `32930107289`, `32943221489`, and `32957529464` all rejected
+  the same valid archive with
+  `seed source check 'medium' newest publication is inconsistent`. The importer
+  required exact equality between Medium's pre-deduplication discovery edge and
+  the newest row retained canonically as Medium. A newer Medium publication had
+  correctly been collapsed into its canonical Substack row, so the scheduled
+  job stopped before recording checked-headline attempts. Watchdog run
+  `32932139824` and `32950938785` then truthfully reported that checked-headline
+  attempts were older than 12 hours. The first monitor named Federal Reserve
+  only because its fail-fast loop encountered that source first; exact live
+  bytes were not checked in that run even though an independent nine-file
+  comparison later proved the deployed `7cf6c3d` release exact.
+- **Resolution:** Preserve the exact per-adapter discovery timestamp and apply
+  the archive's ordering contract: it may be newer than that source's retained
+  canonical rows after cross-post deduplication, but it may not predate them.
+  Accept the producer's two publishable source states (`ok` and `degraded`) and
+  continue independent SEC and checked-headline refreshes from the validated
+  prior seed when archive checkout, import, or projection fails. Restore and
+  revalidate the exact three-file baseline before continuing, retry archive
+  acquisition and revision proof, and remove the scheduled heartbeat's
+  redundant PyPI-backed static-analysis dependency; CI and deployment retain
+  those mandatory gates. The 36-hour archive gate still fails closed if the
+  fallback persists.
+  Split exact-live verification from freshness, run both even when one fails,
+  reconcile both against current `main`, and aggregate all stale clocks rather
+  than exiting on the alphabetically first headline source.
+  Add a regression fixture for a newest Medium discovery retained canonically
+  as Substack, plus a negative case proving stale source provenance still fails
+  closed. Keep the freshness watchdog and its attempt-age threshold intact.
+- **Verification:** The pre-change 180-test baseline passed against the older
+  stored seed. The repaired consumer accepted exact upstream revision
+  `82307a0f490c05411c4454421953b2f1199a8a55`, imported 583 metadata-only
+  publications, refreshed 10,388 SEC associations and 121 retained headlines,
+  and recorded a current successful Federal Reserve attempt. All 194 tests,
+  tracked-data validation, offline source validation, deterministic build,
+  release validation, local HTTP smoke, Python syntax, Ruff, mypy, shell syntax,
+  workflow YAML parsing, freshness policy, and diff checks pass. Hosted refresh,
+  exact deployment, and independent watchdog evidence remain pending before
+  this issue moves to Resolved.
 
 ## Open operational issues
 

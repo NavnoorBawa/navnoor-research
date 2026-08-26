@@ -8,7 +8,7 @@ import json
 import re
 import tarfile
 from collections import Counter
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from typing import Any
 from urllib.parse import urlsplit
 
@@ -42,6 +42,8 @@ ACCESS = {
     ("patreon", "paid"): "restricted",
     ("fxempire", "public"): "public",
 }
+
+ARCHIVE_SOURCE_STATUSES = {"ok", "degraded"}
 
 SOURCE_HOSTS = {
     "substack": "navnoorbawa.substack.com",
@@ -327,6 +329,16 @@ def _published(value: Any, where: str) -> str:
     except ValueError as exc:
         raise SeedError(f"{where}: invalid publication date/instant {text!r}") from exc
     return text
+
+
+def _publication_instant(value: Any, where: str) -> datetime:
+    """Return the archive's ordering instant for a validated publication value."""
+    text = _published(value, where)
+    if DATE_RE.fullmatch(text):
+        return datetime.combine(
+            date.fromisoformat(text), datetime.min.time(), tzinfo=timezone.utc
+        )
+    return datetime.fromisoformat(text[:-1] + "+00:00")
 
 
 def _project_article(raw: Any, index: int) -> dict[str, Any]:
@@ -654,19 +666,31 @@ def validate_stored(
         )
         check_times.append(checked_at)
         newest = state.get("newest")
-        if newest is not None:
-            _published(newest, f"seed source check {source!r}.newest")
+        newest_instant = _publication_instant(
+            newest, f"seed source check {source!r}.newest"
+        )
         if not isinstance(state.get("included_count"), int) or state["included_count"] < 0:
             raise SeedError(f"seed source check {source!r} count is invalid")
         if state["included_count"] != expected_by_source[source]:
             raise SeedError(f"seed source check {source!r} count does not match its records")
-        source_newest = max(
-            record["published_at"] for record in projected if record["source"] == source
+        retained_source_newest = max(
+            _publication_instant(
+                record["published_at"],
+                f"seed retained {source!r} publication",
+            )
+            for record in projected
+            if record["source"] == source
         )
-        if newest != source_newest:
-            raise SeedError(f"seed source check {source!r} newest publication is inconsistent")
-        if state.get("status") != "ok":
-            raise SeedError(f"seed source check {source!r} is not successful")
+        # The archive source check describes the pre-deduplication discovery
+        # edge. A newer item can therefore survive under another canonical
+        # source while its source-specific alternate URL remains attached.
+        if newest_instant < retained_source_newest:
+            raise SeedError(
+                f"seed source check {source!r} newest publication predates "
+                "its retained records"
+            )
+        if state.get("status") not in ARCHIVE_SOURCE_STATUSES:
+            raise SeedError(f"seed source check {source!r} is not publishable")
     if snapshot.get("checked_at") != max(check_times):
         raise SeedError("seed source checked_at is not the latest completed source check")
     return publications, provenance

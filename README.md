@@ -95,7 +95,41 @@ python3 -m http.server 8000 --directory _site
 
 For an exact committed release, run `./release_gate.sh "$(git rev-parse HEAD)"`.
 After deployment, `./watchdog.sh "$(git rev-parse HEAD)"` rebuilds the same
-revision, checks source freshness, and compares every served release byte.
+revision, compares every served release byte, and only then checks source
+freshness. Automation runs the exact-byte and freshness gates as separate steps
+and reconciles both against current `main`, so either failure stays visible and
+neither can short-circuit the other.
+
+The archive manifest records each adapter's newest discovered publication
+before cross-source deduplication. That timestamp can be newer than the newest
+row retained canonically under the same source when, for example, a Medium
+cross-post is retained as Substack with Medium as an alternate URL. The seed
+importer preserves that exact provenance and verifies that it does not predate
+the source's retained canonical rows.
+
+If the watchdog reports that a checked-headline source has not been attempted,
+inspect the latest **Refresh Checked Data** run first. The watchdog is a
+downstream alarm: it intentionally stays red when the scheduled publisher has
+stopped before recording source attempts, even if the last deployed bytes are
+still exact.
+
+Archive import, SEC refresh, and checked-headline refresh have separate
+last-known-good boundaries. An archive fetch or import failure retains the
+previous validated seed while SEC and headline checks continue; the independent
+36-hour archive freshness gate still turns red if that upstream failure
+persists. A valid archive source state may be `ok` or `degraded`, matching the
+producer's publishable contract; an unknown or failed state remains rejected.
+
+The scheduled data workflow is standard-library-only and does not install
+developer tools from PyPI. Ruff and mypy remain mandatory in CI, deployment,
+and the exact local release gate; they do not sit in front of the three-hour
+source-attempt heartbeat for code that has already reached `main`.
+
+Fresh headline attempts older than 12 hours are a hard scheduler failure.
+Recently attempted `error` or `partial` adapters remain visible warnings and
+retain their validated last-known-good metadata; persistence beyond 48 hours is
+escalated in the warning text but remains non-blocking unless the fixed source
+policy is explicitly changed.
 
 ## Publication boundary
 

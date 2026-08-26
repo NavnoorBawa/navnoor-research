@@ -51,18 +51,25 @@ jobs:
           fi
           echo "current=true" >> "$GITHUB_OUTPUT"
 
-      - name: Rebuild, check freshness, and verify exact production bytes
-        id: verification
+      - name: Rebuild and verify exact production bytes
+        id: exact
         if: steps.current.outputs.current == 'true'
         continue-on-error: true
-        run: ./watchdog.sh "$GITHUB_SHA"
+        run: ./watchdog.sh "$GITHUB_SHA" --exact-only
+
+      - name: Verify scheduled data freshness
+        id: freshness
+        if: always() && steps.current.outputs.current == 'true'
+        continue-on-error: true
+        run: python3 check_freshness.py
 
       - name: Reconcile verification with current main
         if: always() && steps.current.outputs.current == 'true'
         shell: bash
         env:
           REMOTE_URL: ${{ github.server_url }}/${{ github.repository }}.git
-          VERIFICATION_OUTCOME: ${{ steps.verification.outcome }}
+          EXACT_OUTCOME: ${{ steps.exact.outcome }}
+          FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
         run: |
           set -euo pipefail
           remote_main=$(
@@ -74,7 +81,15 @@ jobs:
             echo "::notice title=Superseded watchdog reconciled::New main $remote_main owns production verification."
             exit 0
           fi
-          if [ "$VERIFICATION_OUTCOME" != "success" ]; then
-            echo "::error title=Published release verification failed::Current main remains $GITHUB_SHA and exact-live or freshness checks failed."
+          failed=false
+          if [ "$EXACT_OUTCOME" != "success" ]; then
+            echo "::error title=Exact published release failed::Current main remains $GITHUB_SHA and its production bytes were not proved exact."
+            failed=true
+          fi
+          if [ "$FRESHNESS_OUTCOME" != "success" ]; then
+            echo "::error title=Published data freshness failed::Current main remains $GITHUB_SHA and one or more scheduled check clocks are outside policy."
+            failed=true
+          fi
+          if [ "$failed" = true ]; then
             exit 1
           fi

@@ -215,7 +215,13 @@ jobs:
         id: smoke
         if: steps.current.outputs.current == 'true'
         continue-on-error: true
-        run: ./watchdog.sh "$GITHUB_SHA"
+        run: ./watchdog.sh "$GITHUB_SHA" --exact-only
+
+      - name: Verify published data freshness
+        id: freshness
+        if: always() && steps.current.outputs.current == 'true'
+        continue-on-error: true
+        run: python3 check_freshness.py
 
       - name: Prove post-deploy authority
         id: post
@@ -247,15 +253,28 @@ jobs:
         env:
           DEPLOYMENT_OUTCOME: ${{ steps.deployment.outcome }}
           SMOKE_OUTCOME: ${{ steps.smoke.outcome }}
+          FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
         run: |
           set -euo pipefail
+          failed=false
           if [ "$SMOKE_OUTCOME" != "success" ]; then
-            echo "::error title=Production certification failed::Exact live verification did not pass."
-            exit 1
+            echo "::error title=Exact production certification failed::The current release bytes were not proved live."
+            failed=true
           fi
-          if [ "$DEPLOYMENT_OUTCOME" = "failure" ]; then
+          if [ "$FRESHNESS_OUTCOME" != "success" ]; then
+            echo "::error title=Published data freshness failed::One or more scheduled check clocks are outside policy."
+            failed=true
+          fi
+          if [ "$DEPLOYMENT_OUTCOME" = "failure" ] \
+            && [ "$SMOKE_OUTCOME" = "success" ]; then
             echo "::notice title=Late Pages completion verified::The deploy action reported failure, but exact current bytes are live."
+          elif [ "$DEPLOYMENT_OUTCOME" = "failure" ]; then
+            echo "::error title=Pages deployment failed::The deploy action failed and exact current bytes were not proved live."
+            failed=true
           elif [ "$DEPLOYMENT_OUTCOME" != "success" ]; then
             echo "::error title=Deployment outcome unavailable::Pages did not report a completed outcome."
+            failed=true
+          fi
+          if [ "$failed" = true ]; then
             exit 1
           fi

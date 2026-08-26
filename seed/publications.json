@@ -2,6 +2,54 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/treasury-buyback-167710172",
+      "id": "r_b4604d11e143de5accde930dc0a040db6f87f95608fb1fb592314b8c55f0a82f",
+      "published_at": "2026-08-26",
+      "slug": "treasury-buyback-167710172",
+      "source": "patreon",
+      "source_id": "167710172",
+      "subtitle": "",
+      "title": "The Treasury Buyback Offer Stack, and the Measurement Trap Waiting on 10 September"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/six-advisers-one-167711079",
+      "id": "r_f353992a1be566977b30d74fd4c281894151a996bda2866e7a483cabebc93d52",
+      "published_at": "2026-08-26",
+      "slug": "six-advisers-one-167711079",
+      "source": "patreon",
+      "source_id": "167711079",
+      "subtitle": "",
+      "title": "Six Advisers, One Form: Reading a Fund's Lenders Out of Form ADV Question 24"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/1-42m-per-print-167710722",
+      "id": "r_09746794baae76ed77c39b6f7211c75df02e80754799dfb250666eaa6f88a675",
+      "published_at": "2026-08-26",
+      "slug": "1-42m-per-print-167710722",
+      "source": "patreon",
+      "source_id": "167710722",
+      "subtitle": "",
+      "title": "The $1.42m Per Megawatt Print: What Musk's Turbine Purchase Tells You About the AI Power Trade"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/qrts-own-filing-undercuts-the-exoduspoint",
+      "id": "r_368243648cc522c915e8e2fc1772d018c6f699d5a9211fd26817051529c461cf",
+      "published_at": "2026-08-25T13:31:30.617Z",
+      "slug": "qrts-own-filing-undercuts-the-exoduspoint",
+      "source": "substack",
+      "source_id": "qrts-own-filing-undercuts-the-exoduspoint",
+      "subtitle": "ExodusPoint's last two Dubai hires landed closer to its record $2 billion raise than anything in the four years before. QRT's own Gulf-free desk complicates the easy read.",
+      "title": "QRT's own filing undercuts the ExodusPoint reciprocity story, until the last two hires"
+    },
+    {
       "access": "public",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/the-federal-reserve-split-9-3-on",
@@ -15,7 +63,9 @@
     },
     {
       "access": "public",
-      "alternate_urls": {},
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/rbi-blindsided-bond-markets-and-goldman-sachs-now-sees-hikes-coming-f59dc830a6dd"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/rbi-blindsided-bond-markets-and-goldman",
       "id": "r_b7abe7cb90696881777fdc403be3776c95af3a99be545cfe67519998bdc1172d",
       "published_at": "2026-08-24T21:14:01.874Z",
@@ -7449,5 +7499,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "cf4da0d448888f683d22f3dc225b6c02109e48c99ac71281e94505ae17f647dd"
+  "source_dataset_version": "85b7300bf0c2ef0d06daedc06190d762d1bfa6c7591e661ba822e3d07dbf13fd"
 }
