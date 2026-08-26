@@ -100,6 +100,10 @@ freshness. Automation runs the exact-byte and freshness gates as separate steps
 and reconciles both against current `main`, so either failure stays visible and
 neither can short-circuit the other.
 
+On macOS, the watchdog uses the OS-maintained `/etc/ssl/cert.pem` trust bundle
+when a Python.org interpreter is on `PATH` without its optional CA bootstrap.
+HTTPS verification remains mandatory; the fallback never disables TLS checks.
+
 The archive manifest records each adapter's newest discovered publication
 before cross-source deduplication. That timestamp can be newer than the newest
 row retained canonically under the same source when, for example, a Medium

@@ -80,6 +80,7 @@ class TestWorkflowFailureDomains(unittest.TestCase):
     def test_default_watchdog_proves_live_bytes_before_freshness(self):
         text = (ROOT / "watchdog.sh").read_text(encoding="utf-8")
 
+        self.assertIn("export SSL_CERT_FILE=/etc/ssl/cert.pem", text)
         self.assert_ordered(
             text,
             "python3 smoke_test_site.py \\",

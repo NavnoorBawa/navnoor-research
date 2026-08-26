@@ -4,6 +4,15 @@ set -Eeuo pipefail
 
 PRODUCTION_ORIGIN='https://navnoorbawa.github.io/navnoor-research/'
 
+# Python.org's macOS installer can be present on PATH without its optional CA
+# bootstrap having been run. Use the OS-maintained trust bundle when available;
+# verification remains strict and no certificate check is bypassed.
+if [ "$(uname -s)" = 'Darwin' ] \
+    && [ -z "${SSL_CERT_FILE:-}" ] \
+    && [ -r /etc/ssl/cert.pem ]; then
+    export SSL_CERT_FILE=/etc/ssl/cert.pem
+fi
+
 if [ "$#" -lt 1 ] || [ "$#" -gt 2 ]; then
     echo "Usage: $0 <40-character-commit-sha> [--exact-only]" >&2
     exit 2

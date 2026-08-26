@@ -190,6 +190,9 @@ Last updated: 2026-08-26
   Split exact-live verification from freshness, run both even when one fails,
   reconcile both against current `main`, and aggregate all stale clocks rather
   than exiting on the alphabetically first headline source.
+  On macOS, use the OS-maintained CA bundle when a Python.org interpreter has no
+  configured default trust file, preserving strict TLS while keeping the local
+  watchdog operable.
   Add a regression fixture for a newest Medium discovery retained canonically
   as Substack, plus a negative case proving stale source provenance still fails
   closed. Keep the freshness watchdog and its attempt-age threshold intact.
