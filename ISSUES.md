@@ -160,8 +160,6 @@ Last updated: 2026-08-26
   forced-colors, reduced motion, count-bound social-card facts, collision-free
   mobile metrics, and the unchanged local-query privacy boundary.
 
-## Remediation in progress
-
 ### NR-012 — Cross-post provenance stalled every scheduled checked-data refresh
 
 - **Severity:** P1
@@ -202,9 +200,17 @@ Last updated: 2026-08-26
   and recorded a current successful Federal Reserve attempt. All 194 tests,
   tracked-data validation, offline source validation, deterministic build,
   release validation, local HTTP smoke, Python syntax, Ruff, mypy, shell syntax,
-  workflow YAML parsing, freshness policy, and diff checks pass. Hosted refresh,
-  exact deployment, and independent watchdog evidence remain pending before
-  this issue moves to Resolved.
+  workflow YAML parsing, freshness policy, and diff checks passed. Commit
+  `1fa6bffd80b0c8c7041b48e4c77ed536950a70ca` passed hosted CI run
+  `32962196157` and exact deployment run `32962196213`. The formerly failing
+  path then passed refresh run `32962323144`, including archive import, SEC and
+  headline attempts, the full validation gate, guarded commit/push, and deploy
+  dispatch. Its exact data commit
+  `7dc339285a4ce349d81faa4671712881021ff06b` passed deployment run
+  `32962425579`; independent watchdog run `32962540752` separately passed exact
+  production bytes, freshness, and current-main reconciliation. GDELT's
+  retained source remains a visible non-blocking warning under NR-006; it did
+  not block the recovered publisher or either hard monitor gate.
 
 ## Open operational issues
 
