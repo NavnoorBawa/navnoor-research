@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/the-fed-bought-342-billion-of-treasury",
+      "id": "r_ac9f6c7f23542663cd0d905a1b8c8165813a45833f62447adafa95318617c14e",
+      "published_at": "2026-08-26T21:49:34.469Z",
+      "slug": "the-fed-bought-342-billion-of-treasury",
+      "source": "substack",
+      "source_id": "the-fed-bought-342-billion-of-treasury",
+      "subtitle": "Treasury's buyback doubling buys $14 billion over eight weeks. The Fed added $342 billion of Treasury bills in a year, about a third of all net new supply, on a directive issued before Warsh arrived.",
+      "title": "The Fed Bought $342 Billion of Treasury Bills While Bessent's $14 Billion Got the Argument"
+    },
+    {
       "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/spacex-is-hiring-a-gas-trader-with-a-p-l-meta-amazon-and-google-got-there-first-47e69e64eb72"
@@ -38,6 +50,18 @@
       "source_id": "167711079",
       "subtitle": "",
       "title": "Six Advisers, One Form: Reading a Fund's Lenders Out of Form ADV Question 24"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/consolidated-two-167764273",
+      "id": "r_7eb86cd05a0c35cd462e2ee6676aeda32c9f8f589aa7b78b815b885958d3400d",
+      "published_at": "2026-08-26",
+      "slug": "consolidated-two-167764273",
+      "source": "patreon",
+      "source_id": "167764273",
+      "subtitle": "",
+      "title": "The Consolidated Balance Sheet Loop: Working TBAC's Two 2026 Bill Scenarios End to End"
     },
     {
       "access": "restricted",
@@ -7515,5 +7539,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "5690bc25909deeac0b1d5ff6b9761cbf208a2f6f4c0c45a089335fdf4e471ba7"
+  "source_dataset_version": "a7a50a3ded9e4273bf50b5a49894439dd40daef185367ae21d881436124afcdb"
 }

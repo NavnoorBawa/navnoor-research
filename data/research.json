@@ -1,6 +1,19 @@
 {
   "research": [
     {
+      "access": "restricted",
+      "entities": [
+        "federal-reserve"
+      ],
+      "id": "r_ac9f6c7f23542663cd0d905a1b8c8165813a45833f62447adafa95318617c14e",
+      "published": "2026-08-26T21:49:34.469Z",
+      "source": "substack",
+      "summary": "Treasury's buyback doubling buys $14 billion over eight weeks. The Fed added $342 billion of Treasury bills in a year, about a third of all net new supply, on a directive issued before Warsh arrived.",
+      "title": "The Fed Bought $342 Billion of Treasury Bills While Bessent's $14 Billion Got the Argument",
+      "topic": "rates-macro",
+      "url": "https://navnoorbawa.substack.com/p/the-fed-bought-342-billion-of-treasury"
+    },
+    {
       "access": "public",
       "entities": [
         "cftc"
@@ -32,6 +45,16 @@
       "title": "The Treasury Buyback Offer Stack, and the Measurement Trap Waiting on 10 September",
       "topic": "equities",
       "url": "https://www.patreon.com/NavnoorBawa/posts/treasury-buyback-167710172"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_7eb86cd05a0c35cd462e2ee6676aeda32c9f8f589aa7b78b815b885958d3400d",
+      "published": "2026-08-26",
+      "source": "patreon",
+      "title": "The Consolidated Balance Sheet Loop: Working TBAC's Two 2026 Bill Scenarios End to End",
+      "topic": "general",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/consolidated-two-167764273"
     },
     {
       "access": "restricted",
@@ -7111,6 +7134,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "5690bc25909deeac0b1d5ff6b9761cbf208a2f6f4c0c45a089335fdf4e471ba7",
-  "source_revision": "1829bc39d8d3a1ac41f7702b792970e8a33d6710"
+  "source_dataset_version": "a7a50a3ded9e4273bf50b5a49894439dd40daef185367ae21d881436124afcdb",
+  "source_revision": "d8f330fc4e094eb39c4c513d77c3d97225a0acbe"
 }
