@@ -2,6 +2,54 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/the-sec-subpoenaed-four-banks-situational",
+      "id": "r_1dff277f01f0ae215da7894b3598ba3a902de2c70fce64a0834d657284b5e7d6",
+      "published_at": "2026-08-28T13:30:58.014Z",
+      "slug": "the-sec-subpoenaed-four-banks-situational",
+      "source": "substack",
+      "source_id": "the-sec-subpoenaed-four-banks-situational",
+      "subtitle": "Question 24 of Schedule D makes every private fund adviser list its prime brokers publicly. Situational Awareness listed four. Two of the three subpoena asks needed no subpoena.",
+      "title": "The SEC Subpoenaed Four Banks. Situational Awareness Had Named Them on Form ADV."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/sovereign-for-167941375",
+      "id": "r_9e493f292ea1787e05216ac9103e6c600c2be3d295cb5587882144078070476c",
+      "published_at": "2026-08-28",
+      "slug": "sovereign-for-167941375",
+      "source": "patreon",
+      "source_id": "167941375",
+      "subtitle": "",
+      "title": "The Sovereign Concession Discount: A Framework for Pricing Chevron's Venezuela Optionality Before Feb 2027"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/alphabet-spent-7-167939529",
+      "id": "r_6b5d9ea54d5d9ffa311699e2048b682aa482c6b2e2014b4418d21d1f71fc89fc",
+      "published_at": "2026-08-28",
+      "slug": "alphabet-spent-7-167939529",
+      "source": "patreon",
+      "source_id": "167939529",
+      "subtitle": "",
+      "title": "Alphabet Spent $439.7 Million Buying Back the Option It Just Sold: The Capped Call Table"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/3-field-form-d-167939504",
+      "id": "r_dfc15ef8fa2e8b75de591cea9c633f9450bf2c822f9ad0e4a5d3da40f8c5def0",
+      "published_at": "2026-08-28",
+      "slug": "3-field-form-d-167939504",
+      "source": "patreon",
+      "source_id": "167939504",
+      "subtitle": "",
+      "title": "The 3-Field Form D Screen, Worked End to End on Nvidia's $12.9bn Hugging Face Deal"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/millennium-sued-a-trader-who-never-started-man-group-at-253-6bn-has-no-gazumping-suit-43c86f6c54ce",
@@ -7599,5 +7647,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "fcbd6b3fb0c8f13524df838b4d0591bf316da794046dd4d9d621556bc085743a"
+  "source_dataset_version": "839abd9459fca51e09409bd607a6ac935cd111bcbebc58290558d38a2e9ea094"
 }

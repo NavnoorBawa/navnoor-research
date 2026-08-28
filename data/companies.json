@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-27T14:46:27Z",
+  "checked_at": "2026-08-28T22:40:27Z",
   "items": [
     {
       "cik": "0001090872",
@@ -1219,8 +1219,8 @@
     },
     {
       "cik": "0002084227",
-      "exchange": "",
-      "id": "a3db904b0b1133854ea1a79358fff3ff5c569edd09e3c1afbe4d2cbe7397ea66",
+      "exchange": "Nasdaq",
+      "id": "7f2b35adf66cd2bb01618b8ce4ed0a76491cb292c2273044e39ad79200a8769a",
       "name": "Advasa Holdings, Inc.",
       "ticker": "ADBT",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002084227"
@@ -2080,14 +2080,6 @@
       "name": "AGENUS INC",
       "ticker": "AGEN",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001098972"
-    },
-    {
-      "cik": "0001109262",
-      "exchange": "",
-      "id": "e299dbe8bb7f464bea7970aad5ac5739323c75cf5c03e1154d30f9d0a5bc746b",
-      "name": "BILI Social International, Inc.",
-      "ticker": "AGGI",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001109262"
     },
     {
       "cik": "0001178819",
@@ -9715,8 +9707,8 @@
     },
     {
       "cik": "0001759136",
-      "exchange": "OTC",
-      "id": "0f23b91be4240ded8e8994968c28b52e94342a899ecbf5693fe8fa26defac438",
+      "exchange": "",
+      "id": "8ef3146916f6e6a958bade594bb153d52570f9b290839c9335bb216e30b4d547",
       "name": "Blue Hat Interactive Entertainment Technology",
       "ticker": "BHATF",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001759136"
@@ -11363,8 +11355,8 @@
     },
     {
       "cik": "0001901215",
-      "exchange": "Nasdaq",
-      "id": "f137a4eafea2d2c184a22ee533a0a02cf4c1bf3553f173d2aa356e85528212cd",
+      "exchange": "",
+      "id": "a8b56fe95ecf484f35a080635799a279e5016266f6b8abcc99f6e2027a418ede",
       "name": "BRENX LTD.",
       "ticker": "BNRG",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001901215"
@@ -12496,6 +12488,14 @@
       "name": "BENTLEY SYSTEMS INC",
       "ticker": "BSY",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001031308"
+    },
+    {
+      "cik": "0001343793",
+      "exchange": "",
+      "id": "26ff93cefa3ab9d3267da8facd7863e9400d6d18ad9c545946ca8c9b81070331",
+      "name": "BlackRock Long-Term Municipal Advantage Trust",
+      "ticker": "BTA",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001343793"
     },
     {
       "cik": "0001303523",
@@ -23603,8 +23603,8 @@
     },
     {
       "cik": "0001553788",
-      "exchange": "",
-      "id": "973bf83d20e0e1afbfd0da7ebe2cc5aa1fb6b78eadbf787b19182684d89093bc",
+      "exchange": "NYSE",
+      "id": "ff07ab6bd29a357e8bd35973771f204b9e27fa44345d9abe3de5a831ad8f8980",
       "name": "SPLASH BEVERAGE GROUP, INC.",
       "ticker": "EDVA",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001553788"
@@ -31236,6 +31236,14 @@
     {
       "cik": "0001966287",
       "exchange": "NYSE",
+      "id": "6ba6ddd6179742e3aca0157d6f1eba1baf642d796543e167174d14410eccee50",
+      "name": "Greenfire Resources Ltd.",
+      "ticker": "GFR-RI",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001966287"
+    },
+    {
+      "cik": "0001966287",
+      "exchange": "NYSE",
       "id": "180747a8e5077e32ef95afa2699cf579549dce562b7ca6b4f3ba008e2df5d629",
       "name": "Greenfire Resources Ltd.",
       "ticker": "GFR-RW",
@@ -36605,7 +36613,7 @@
       "cik": "0001750777",
       "exchange": "OTC",
       "id": "969c5785d0487b4c14e01022f53e78bb9553549627daf3f300ae213acbb42855",
-      "name": "Hawkeye Systems, Inc.",
+      "name": "Hawkeye Digital, Inc.",
       "ticker": "HWKE",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001750777"
     },
@@ -41671,6 +41679,14 @@
       "id": "336ca50c2bac450622096be5849121724f959daa9d7478b1fe21c4fddc690310",
       "name": "KLX Energy Services Holdings, Inc.",
       "ticker": "KLXE",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001738827"
+    },
+    {
+      "cik": "0001738827",
+      "exchange": "Nasdaq",
+      "id": "56959b1233f6448c593a447822c63a145d0e7a2fa969a57093e0a37fc166922f",
+      "name": "KLX Energy Services Holdings, Inc.",
+      "ticker": "KLXER",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001738827"
     },
     {
@@ -50627,8 +50643,8 @@
     },
     {
       "cik": "0001923780",
-      "exchange": "NYSE",
-      "id": "06c404680cd07dcf37a382e020f8cae507e70baa47294e2ea6cedab0e734ad6f",
+      "exchange": "",
+      "id": "560a0aa224ebaf1e7250ea7da362a72e6eecaaf5935b56f446e1878342871873",
       "name": "Northann Corp.",
       "ticker": "NCL",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001923780"
@@ -56080,6 +56096,14 @@
       "name": "OTG Acquisition Corp. I",
       "ticker": "OTGAW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002077010"
+    },
+    {
+      "cik": "0001788235",
+      "exchange": "OTC",
+      "id": "23ea83bfb41228748529ccaf29c3e59e4f1baa7a0a7c31a42b8315144efdc9ee",
+      "name": "CD Projekt S.A./ADR",
+      "ticker": "OTGLF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001788235"
     },
     {
       "cik": "0001781335",
@@ -76781,7 +76805,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "cdeba7e8f019deee9cdf221dac079f2965f9fc2f10ae09ad175c27aec1591b03",
-      "name": "US BANCORP \\DE\\",
+      "name": "US BANCORP DE",
       "ticker": "USB",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -76789,7 +76813,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "a876c16fa72accefa0a8b28724226d8cf86932cedc300a8c3bf30bb7e07055fd",
-      "name": "US BANCORP \\DE\\",
+      "name": "US BANCORP DE",
       "ticker": "USB-PA",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -76797,7 +76821,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "bb726a862a7ea856459449f38fab80267e62ae5b0b97f90911da46be47d9db92",
-      "name": "US BANCORP \\DE\\",
+      "name": "US BANCORP DE",
       "ticker": "USB-PH",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -76805,7 +76829,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "50d47a391a89c0966ab181d3fd7a2f6f5eb9b6778ba2aeb1dfb212740cb8d7e9",
-      "name": "US BANCORP \\DE\\",
+      "name": "US BANCORP DE",
       "ticker": "USB-PP",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -76813,7 +76837,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "eba5f748e156067abfd32096ab7d60249301650693f4d2bd15ae6a9b68122894",
-      "name": "US BANCORP \\DE\\",
+      "name": "US BANCORP DE",
       "ticker": "USB-PQ",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -76821,7 +76845,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "2ee206bce50a10c2c0b84a5de5dd47b7b62e241f93e791ff1e723ce5cfae435c",
-      "name": "US BANCORP \\DE\\",
+      "name": "US BANCORP DE",
       "ticker": "USB-PR",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -76829,7 +76853,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "1837daa71220a35674e4a6fe85e449a0b3d7824d47b06eff7e1c672fb0d38054",
-      "name": "US BANCORP \\DE\\",
+      "name": "US BANCORP DE",
       "ticker": "USB-PS",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -82525,7 +82549,7 @@
       "cik": "0001720265",
       "exchange": "OTC",
       "id": "b77518e557a32627749a6f99f9c878d7ad23756258ff9032d614548c72bdbf7f",
-      "name": "Grayscale Zcash Trust (ZEC)",
+      "name": "Zcash ETF",
       "ticker": "ZCSH",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001720265"
     },
