@@ -3,6 +3,31 @@
     {
       "access": "restricted",
       "entities": [
+        "citadel"
+      ],
+      "id": "r_8f51c7a99daa3b37b7f95d63647082c7b63e722d4e70150a42dc0f61fadb0983",
+      "published": "2026-08-27T13:30:36.710Z",
+      "source": "substack",
+      "summary": "Dealers offered $520.4bn of ten to thirty year paper in 2026 and Treasury's cap let it buy $42.2bn. The offer column answers the question Druckenmiller and Citadel Securities are arguing about.",
+      "title": "Treasury's Own Buyback File Answers Druckenmiller and Citadel Securities",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/treasurys-own-buyback-file-answers"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "jane-street"
+      ],
+      "id": "r_785927d92e4fc08ce2c583c298782b269e5df51953eef8aca00c1a8885610773",
+      "published": "2026-08-27",
+      "source": "patreon",
+      "title": "How a Guaranteed Lease Escapes a Rating Trigger: Jane Street, Moody's, and $289m a Year",
+      "topic": "market-structure",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/how-guaranteed-167822188"
+    },
+    {
+      "access": "restricted",
+      "entities": [
         "federal-reserve"
       ],
       "id": "r_ac9f6c7f23542663cd0d905a1b8c8165813a45833f62447adafa95318617c14e",
@@ -998,7 +1023,7 @@
       "id": "r_e86379626fed0b2f023a1f2e9c8e7e19bc124faffe50a41d8b5e22b8fbc87a4f",
       "published": "2026-08-11T15:29:27.534Z",
       "source": "substack",
-      "summary": "FINRA's new intelligence channel is keyed to broker-dealer registration. 84.4% of private fund advisers report none, and the largest of them is Millennium.",
+      "summary": "FINRA's new intelligence channel is keyed to broker-dealer registration. 84.4% of private fund advisers report none, and the largest of them is Millennium",
       "title": "Millennium's $720.8bn Has No Route Into FINRA's New Cyber Channel",
       "topic": "hedge-funds",
       "url": "https://navnoorbawa.substack.com/p/millenniums-7208bn-has-no-route-into"
@@ -7134,6 +7159,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "a7a50a3ded9e4273bf50b5a49894439dd40daef185367ae21d881436124afcdb",
-  "source_revision": "d8f330fc4e094eb39c4c513d77c3d97225a0acbe"
+  "source_dataset_version": "9349842aa93caad6e21739d62ab6ad8d53a992a0b0873c2c0c09e1d836e42ae4",
+  "source_revision": "1e058b26db71cb827cf198f5482aa16c19295860"
 }
