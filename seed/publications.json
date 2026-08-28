@@ -2,6 +2,42 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/millennium-sued-a-trader-who-never-started-man-group-at-253-6bn-has-no-gazumping-suit-43c86f6c54ce",
+      "id": "r_78ef45f50fc979c3aa5dd32157e7465d4bbedfcfb97167f3cbcff70398730f46",
+      "published_at": "2026-08-27T21:16:46Z",
+      "slug": "millennium-sued-a-trader-who-never-started-man-group-at-253-6bn-has-no-gazumping-suit-43c86f6c54ce",
+      "source": "medium",
+      "source_id": "43c86f6c54ce",
+      "subtitle": "Of four reneged Millennium hires in 2026, only one had already cost real money to build. That one got sued.\n\nContinue reading on Medium »",
+      "title": "Millennium Sued a Trader Who Never Started. Man Group, at $253.6bn, Has No Gazumping Suit."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/bridgewater-lost-2-8-in-chinas-quant-quake-deepseek-s-funds-lost-20-that-gap-is-a-formula-e01e370b68c7",
+      "id": "r_f5c424a7b764eeb77149456d0d25be0c1e82c60492ba5f84fcb94917da060b50",
+      "published_at": "2026-08-27T19:00:54Z",
+      "slug": "bridgewater-lost-2-8-in-chinas-quant-quake-deepseek-s-funds-lost-20-that-gap-is-a-formula-e01e370b68c7",
+      "source": "medium",
+      "source_id": "e01e370b68c7",
+      "subtitle": "The consensus, stated at its strongest\n\nContinue reading on Medium »",
+      "title": "Bridgewater Lost 2.8% in China’s Quant Quake. DeepSeek’s Funds Lost 20%. That Gap Is a Formula."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/jane-streets-lease-guaranty-adds",
+      "id": "r_6cba74ac44e694622d375193d03cb4d7aa9bb0bc9d2f3e71e55d3ef3ff21fc95",
+      "published_at": "2026-08-27T18:31:01.808Z",
+      "slug": "jane-streets-lease-guaranty-adds",
+      "source": "substack",
+      "source_id": "jane-streets-lease-guaranty-adds",
+      "subtitle": "A fifteen-year absolute triple net lease behind $2.25bn of Zenith Arc notes, guaranteed by the parent, sitting outside the one ratio Moody's says would downgrade it.",
+      "title": "Jane Street's Lease Guaranty Adds $289m a Year. Moody's 30% Trigger Never Names It."
+    },
+    {
       "access": "restricted",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/treasurys-own-buyback-file-answers",
@@ -7563,5 +7599,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "9349842aa93caad6e21739d62ab6ad8d53a992a0b0873c2c0c09e1d836e42ae4"
+  "source_dataset_version": "fcbd6b3fb0c8f13524df838b4d0591bf316da794046dd4d9d621556bc085743a"
 }
