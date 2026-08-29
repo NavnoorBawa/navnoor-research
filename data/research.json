@@ -1,6 +1,20 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "jane-street",
+        "aqr"
+      ],
+      "id": "r_d50ac5a3b12e1658505d61ce5e2e6d42161364fe96d459d298cb1ec1478c0edd",
+      "published": "2026-08-29T10:03:08Z",
+      "source": "medium",
+      "summary": "Dealers charge for a short put book they can’t fully hedge. SKEW just closed at the 92nd percentile of its own 36 year history",
+      "title": "AQR’s Fund to Sell This Died in 2020. Jane Street’s 13F Says the Trade Is Real.",
+      "topic": "market-structure",
+      "url": "https://medium.com/@navnoorbawa/aqrs-fund-to-sell-this-died-in-2020-jane-street-s-13f-says-the-trade-is-real-bb592c4767aa"
+    },
+    {
       "access": "restricted",
       "entities": [
         "sec"
@@ -2346,7 +2360,7 @@
       "url": "https://medium.com/@navnoorbawa/how-quant-funds-made-6-annually-buying-rough-vol-the-heston-fourier-edge-422b76e195db"
     },
     {
-      "access": "public",
+      "access": "restricted",
       "entities": [
         "jane-street",
         "hrt",
@@ -7242,6 +7256,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "839abd9459fca51e09409bd607a6ac935cd111bcbebc58290558d38a2e9ea094",
-  "source_revision": "66c582cd0e20665b1dc4c2b33cf9c0ea4b3224ae"
+  "source_dataset_version": "d3ca16fd6e1d9f6fa44e0958ba8a6d62034f4e44b47c39703371c574afd16191",
+  "source_revision": "c13b27e4c866d01369f53f608ec55d3a4f95307d"
 }
