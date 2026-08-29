@@ -1,6 +1,17 @@
 {
   "research": [
     {
+      "access": "public",
+      "entities": [],
+      "id": "r_9aa10ab103d35c82c0c08a7f89e2ae52c90cdb68dd78438999b739db16eb9c38",
+      "published": "2026-08-29T13:01:08.827Z",
+      "source": "substack",
+      "summary": "The reserve line traces to Washington, not Caracas — and the annuity math says a 100-year lease is worth what its first 17 to 40 years produce.",
+      "title": "Chevron Books Zero Reserves in Venezuela. A 100-Year Lease Won't Change That Before 2027",
+      "topic": "general",
+      "url": "https://navnoorbawa.substack.com/p/chevron-books-zero-reserves-in-venezuela"
+    },
+    {
       "access": "unknown",
       "entities": [
         "jane-street",
@@ -7256,6 +7267,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "d3ca16fd6e1d9f6fa44e0958ba8a6d62034f4e44b47c39703371c574afd16191",
-  "source_revision": "c13b27e4c866d01369f53f608ec55d3a4f95307d"
+  "source_dataset_version": "4b9d8badda55228be9752b42057c364aa3a4920cd048eff0f9cba1be11d5c6d1",
+  "source_revision": "2389fb819317ac06d9d197c4beeb131bac53d246"
 }
