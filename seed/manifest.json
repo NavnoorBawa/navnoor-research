@@ -39,32 +39,32 @@
       "bytes": 1662,
       "path": "snapshot_manifest.json",
       "role": "provenance",
-      "sha256": "4f88631bab9ea37f8c9fabe87e2f00b5ab3b30d718c49164ccd4cc74d7af7b45"
+      "sha256": "26951f2ac729ab05584d485807f04e00b31fdf4d134145c681d1d9fd7e9f8ead"
     }
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
   "source_checks": {
     "fxempire": {
-      "checked_at": "2026-08-28T16:31:25Z",
+      "checked_at": "2026-08-29T03:31:13Z",
       "included_count": 11,
       "newest": "2026-07-20",
       "status": "ok"
     },
     "medium": {
-      "checked_at": "2026-08-28T16:30:43Z",
+      "checked_at": "2026-08-29T03:30:41Z",
       "included_count": 165,
       "newest": "2026-08-27T21:16:46Z",
       "status": "ok"
     },
     "patreon": {
-      "checked_at": "2026-08-28T16:30:48Z",
+      "checked_at": "2026-08-29T03:30:44Z",
       "included_count": 137,
       "newest": "2026-08-28",
       "status": "ok"
     },
     "substack": {
-      "checked_at": "2026-08-28T16:30:37Z",
+      "checked_at": "2026-08-29T03:30:35Z",
       "included_count": 282,
       "newest": "2026-08-28T13:30:58.014Z",
       "status": "ok"
@@ -74,12 +74,12 @@
     "article_count": 447,
     "catalog_count": 595,
     "catalog_latest_publication": "2026-08-28T13:30:58.014Z",
-    "checked_at": "2026-08-28T16:31:25Z",
+    "checked_at": "2026-08-29T03:31:13Z",
     "data_checksum": "839abd9459fca51e09409bd607a6ac935cd111bcbebc58290558d38a2e9ea094",
     "manifest_schema_version": 2,
     "observation_count_verified_but_omitted": 132,
     "registry_count": 148,
     "repository": "https://github.com/navnoorthapar/substack-trades",
-    "revision": "555d7f2eac159199a1eede5c9b74e88efba3bc2b"
+    "revision": "66c582cd0e20665b1dc4c2b33cf9c0ea4b3224ae"
   }
 }
