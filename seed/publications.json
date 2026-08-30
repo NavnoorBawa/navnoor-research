@@ -2,6 +2,54 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/morgan-stanley-sold-archegos-blocks-first-and-avoided-the-loss-two-banks-that-waited-lost-8-4b-2243b64d8c3e",
+      "id": "r_58df3633e5210add22b6b555ad59101b51cc9db183e63a96d00b33854d077a40",
+      "published_at": "2026-08-30T13:11:14Z",
+      "slug": "morgan-stanley-sold-archegos-blocks-first-and-avoided-the-loss-two-banks-that-waited-lost-8-4b-2243b64d8c3e",
+      "source": "medium",
+      "source_id": "2243b64d8c3e",
+      "subtitle": "The S&P 500’s calm is not real risk absence. It is one compressed number, implied correlation, sitting near its lowest reading in twenty…\n\nContinue reading on Medium »",
+      "title": "Morgan Stanley Sold Archegos Blocks First and Avoided the Loss. Two Banks That Waited Lost $8.4B."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/aqr-says-tail-hedging-is-a-bad-trade-universa-runs-20-billion-doing-it-anyway-df928806dce0",
+      "id": "r_035dbfd07e115e19ee80b989ec41c78e83ad8aa9b1da8feafb7ef8ef5ad83432",
+      "published_at": "2026-08-30T13:10:41Z",
+      "slug": "aqr-says-tail-hedging-is-a-bad-trade-universa-runs-20-billion-doing-it-anyway-df928806dce0",
+      "source": "medium",
+      "source_id": "df928806dce0",
+      "subtitle": "The formula that prices that insurance can’t see the one date that matters until October 4.\n\nContinue reading on Medium »",
+      "title": "AQR Says Tail Hedging Is a Bad Trade. Universa Runs $20 Billion Doing It Anyway."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/kevin-durants-60m-hugging-face-payout",
+      "id": "r_d42c1a03ecf4e38a59d9bffbc1b242b5a27ff64f51a269857a7071dc7a08a38d",
+      "published_at": "2026-08-30T13:03:11.332Z",
+      "slug": "kevin-durants-60m-hugging-face-payout",
+      "source": "substack",
+      "source_id": "kevin-durants-60m-hugging-face-payout",
+      "subtitle": "Three Form D fields bound any private return claim. Here: a seed that bought debt, a Series A that counts $3,315,000 twice, and four rounds where the 240x uses two.",
+      "title": "Kevin Durant's $60M Hugging Face Payout Needs a 0.465% Stake Nobody Has Disclosed"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/alphabets-1925b-record-convertible",
+      "id": "r_22c868bee34335bbe3886951468d9f68d5d5d46d99dc8a92c0440b24f232735d",
+      "published_at": "2026-08-29T18:00:39.588Z",
+      "slug": "alphabets-1925b-record-convertible",
+      "source": "substack",
+      "source_id": "alphabets-1925b-record-convertible",
+      "subtitle": "Four 2026 issuers' own SEC filings show a 5% to 9% cash cost that never makes the coupon line",
+      "title": "Alphabet's $19.25B \"Record\" Convertible Isn't a Zero Coupon Bond"
+    },
+    {
       "access": "public",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/chevron-books-zero-reserves-in-venezuela",
@@ -7671,5 +7719,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "4b9d8badda55228be9752b42057c364aa3a4920cd048eff0f9cba1be11d5c6d1"
+  "source_dataset_version": "fe60091dee15320e3702e68c25e4d79f54d38231ec70b8bb30980244611da401"
 }
