@@ -3,6 +3,22 @@
     {
       "access": "unknown",
       "entities": [
+        "millennium",
+        "point72",
+        "balyasny",
+        "sec"
+      ],
+      "id": "r_b20eae873cd04cca938021ef30a839985f81f326be9501268c33b599682a5a67",
+      "published": "2026-08-31T15:02:21Z",
+      "source": "medium",
+      "summary": "Point72’s own SEC filing draws a hard legal line between the business lines it registers as separate advisers and the ones it doesn’t",
+      "title": "Millennium Discloses 52 SEC Advisers, Balyasny 29. Point72’s Newest Brand Isn’t One of Its 14.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/millennium-discloses-52-sec-advisers-balyasny-29-point72s-newest-brand-isn-t-one-of-its-14-0e1f233207b1"
+    },
+    {
+      "access": "unknown",
+      "entities": [
         "spx"
       ],
       "id": "r_58df3633e5210add22b6b555ad59101b51cc9db183e63a96d00b33854d077a40",
@@ -7318,6 +7334,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "fe60091dee15320e3702e68c25e4d79f54d38231ec70b8bb30980244611da401",
-  "source_revision": "45c22dc3ab52ef692dfdef19027e5e79ef855c5d"
+  "source_dataset_version": "2700edeae9ecc97571c4c40ff03f8bfd1dda51235e380c9ca95d14f27843851a",
+  "source_revision": "b1d5e5a072867efacef4338970f5a0920893fb01"
 }

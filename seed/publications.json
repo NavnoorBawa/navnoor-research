@@ -4,6 +4,18 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/millennium-discloses-52-sec-advisers-balyasny-29-point72s-newest-brand-isn-t-one-of-its-14-0e1f233207b1",
+      "id": "r_b20eae873cd04cca938021ef30a839985f81f326be9501268c33b599682a5a67",
+      "published_at": "2026-08-31T15:02:21Z",
+      "slug": "millennium-discloses-52-sec-advisers-balyasny-29-point72s-newest-brand-isn-t-one-of-its-14-0e1f233207b1",
+      "source": "medium",
+      "source_id": "0e1f233207b1",
+      "subtitle": "Point72’s own SEC filing draws a hard legal line between the business lines it registers as separate advisers and the ones it doesn’t…\n\nContinue reading on Medium »",
+      "title": "Millennium Discloses 52 SEC Advisers, Balyasny 29. Point72’s Newest Brand Isn’t One of Its 14."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/morgan-stanley-sold-archegos-blocks-first-and-avoided-the-loss-two-banks-that-waited-lost-8-4b-2243b64d8c3e",
       "id": "r_58df3633e5210add22b6b555ad59101b51cc9db183e63a96d00b33854d077a40",
       "published_at": "2026-08-30T13:11:14Z",
@@ -7719,5 +7731,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "fe60091dee15320e3702e68c25e4d79f54d38231ec70b8bb30980244611da401"
+  "source_dataset_version": "2700edeae9ecc97571c4c40ff03f8bfd1dda51235e380c9ca95d14f27843851a"
 }
