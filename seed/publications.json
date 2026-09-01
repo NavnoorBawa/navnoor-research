@@ -2,6 +2,30 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/the-cftc-delayed-the-hedge-fund-leverage",
+      "id": "r_58ee7c38aaa383cfb7edf5056630e09b5280f4e53f59f7d37175f975fc2775b8",
+      "published_at": "2026-09-01T14:31:15.034Z",
+      "slug": "the-cftc-delayed-the-hedge-fund-leverage",
+      "source": "substack",
+      "source_id": "the-cftc-delayed-the-hedge-fund-leverage",
+      "subtitle": "The five public dials that separate a duration repricing from a basis trade unwind, and where every one of them sits while the 30-year prints 5.25%.",
+      "title": "The CFTC Delayed the Hedge Fund Leverage Form to 2027. Its Own File Already Shows $823 Billion Short."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/five-dial-four-i-168301914",
+      "id": "r_d9fe8e132c53f5e49189df4ec0a32700d67235dd238f7973d1a12e372722b082",
+      "published_at": "2026-09-01",
+      "slug": "five-dial-four-i-168301914",
+      "source": "patreon",
+      "source_id": "168301914",
+      "subtitle": "",
+      "title": "The Five-Dial Funding Monitor: Four Endpoints, the Exact Field on Each, and What I Do When One Fires"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/millennium-discloses-52-sec-advisers-balyasny-29-point72s-newest-brand-isn-t-one-of-its-14-0e1f233207b1",
@@ -7731,5 +7755,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "2700edeae9ecc97571c4c40ff03f8bfd1dda51235e380c9ca95d14f27843851a"
+  "source_dataset_version": "3686c72cee6cf098dc94fe43840fc7e2423262bf3d2694c50cdac0dadcbe2cef"
 }
