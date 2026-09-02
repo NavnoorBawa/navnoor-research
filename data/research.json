@@ -1,6 +1,19 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "aqr"
+      ],
+      "id": "r_aecd4bb2c48a116d597723332f90820447bce85f065aa336ede28989081eb9c1",
+      "published": "2026-09-02T15:03:20Z",
+      "source": "medium",
+      "summary": "Bun, Bouchaud, and Potters’ own formula shows a raw backtest can overstate portfolio safety by 4x once assets crowd the sample",
+      "title": "CFM’s Chairman Proved 94% of Your Correlation Matrix Is Noise. AQR Lost the Expert in Seven Months.",
+      "topic": "quant-methods",
+      "url": "https://medium.com/@navnoorbawa/cfms-chairman-proved-94-of-your-correlation-matrix-is-noise-aqr-lost-the-expert-in-seven-months-1596750b3144"
+    },
+    {
       "access": "restricted",
       "entities": [
         "cftc",
@@ -7358,6 +7371,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "60d07639f7dcd6da0e96b3a0d191bbe2732fe00b1f7e51c2fbfc4d8ca58940c0",
-  "source_revision": "20b0cf576dbd5be27c601cc96f84dea4b9f57a91"
+  "source_dataset_version": "1a67e3f7d8e7113bf139af73b9974321358f442f8cc7e0fb5ba02a24e59209b0",
+  "source_revision": "b70812e7328a46f8aa6f900b040ccb90131eedba"
 }
