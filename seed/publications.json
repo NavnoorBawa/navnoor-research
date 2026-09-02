@@ -16,14 +16,14 @@
     {
       "access": "restricted",
       "alternate_urls": {},
-      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/five-dial-four-i-168301914",
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/five-dial-exact-168301914",
       "id": "r_d9fe8e132c53f5e49189df4ec0a32700d67235dd238f7973d1a12e372722b082",
       "published_at": "2026-09-01",
-      "slug": "five-dial-four-i-168301914",
+      "slug": "five-dial-exact-168301914",
       "source": "patreon",
       "source_id": "168301914",
       "subtitle": "",
-      "title": "The Five-Dial Funding Monitor: Four Endpoints, the Exact Field on Each, and What I Do When One Fires"
+      "title": "The Five-Dial Funding Monitor: The Exact Endpoint and Field for Each, and What I Do When One Fires"
     },
     {
       "access": "unknown",
@@ -34,7 +34,7 @@
       "slug": "millennium-discloses-52-sec-advisers-balyasny-29-point72s-newest-brand-isn-t-one-of-its-14-0e1f233207b1",
       "source": "medium",
       "source_id": "0e1f233207b1",
-      "subtitle": "Point72’s own SEC filing draws a hard legal line between the business lines it registers as separate advisers and the ones it doesn’t…\n\nContinue reading on Medium »",
+      "subtitle": "Its own filing gives Cubist and six foreign offices independent SEC status. Valist, its loudest launch, gets none.\n\nContinue reading on Medium »",
       "title": "Millennium Discloses 52 SEC Advisers, Balyasny 29. Point72’s Newest Brand Isn’t One of Its 14."
     },
     {
@@ -178,7 +178,7 @@
       "slug": "bridgewater-lost-2-8-in-chinas-quant-quake-deepseek-s-funds-lost-20-that-gap-is-a-formula-e01e370b68c7",
       "source": "medium",
       "source_id": "e01e370b68c7",
-      "subtitle": "The consensus, stated at its strongest\n\nContinue reading on Medium »",
+      "subtitle": "Bridgewater’s China fund lost 2.8% in July’s quant crash while the sector averaged 17%. The same methodology lost 22% in 2022.\n\nContinue reading on Medium »",
       "title": "Bridgewater Lost 2.8% in China’s Quant Quake. DeepSeek’s Funds Lost 20%. That Gap Is a Formula."
     },
     {
@@ -7755,5 +7755,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "3686c72cee6cf098dc94fe43840fc7e2423262bf3d2694c50cdac0dadcbe2cef"
+  "source_dataset_version": "60d07639f7dcd6da0e96b3a0d191bbe2732fe00b1f7e51c2fbfc4d8ca58940c0"
 }
