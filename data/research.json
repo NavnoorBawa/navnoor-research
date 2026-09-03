@@ -2,6 +2,17 @@
   "research": [
     {
       "access": "unknown",
+      "entities": [],
+      "id": "r_f2813a0cefa7b0c3413ba8f76768d8f30acbf7e2850eb2f29bb72bebd2cbfa00",
+      "published": "2026-09-02T17:44:12Z",
+      "source": "medium",
+      "summary": "Two banks price the same instrument with the same model and mark the input five times apart",
+      "title": "The Gaussian copula never left: BBVA marks its key input from 19% to 92%.",
+      "topic": "quant-methods",
+      "url": "https://medium.com/@navnoorbawa/the-gaussian-copula-never-left-bbva-marks-its-key-input-from-19-to-92-7ec0a5498ab8"
+    },
+    {
+      "access": "unknown",
       "entities": [
         "aqr"
       ],
@@ -12,6 +23,31 @@
       "title": "CFM’s Chairman Proved 94% of Your Correlation Matrix Is Noise. AQR Lost the Expert in Seven Months.",
       "topic": "quant-methods",
       "url": "https://medium.com/@navnoorbawa/cfms-chairman-proved-94-of-your-correlation-matrix-is-noise-aqr-lost-the-expert-in-seven-months-1596750b3144"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "two-sigma",
+        "aum"
+      ],
+      "id": "r_c0c55f0eeb578523dad4055fb1fe4b121ba56fbc567a743a5ae1b1d45e5cbfec",
+      "published": "2026-09-02",
+      "source": "patreon",
+      "title": "Two Sigma's Nine Week Gap: A Redemption Latency Audit Any Allocator Can Run",
+      "topic": "hedge-funds",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/two-sigmas-nine-168440642"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "millennium"
+      ],
+      "id": "r_52f7928f60cb79c86d14540c319bedaed6c0161b812245e752816a8f43e3803f",
+      "published": "2026-09-02",
+      "source": "patreon",
+      "title": "The Pass-Through Screen: Rebuilding Millennium's Jain Global Playbook From Public Filings",
+      "topic": "hedge-funds",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/pass-through-168439611"
     },
     {
       "access": "restricted",
@@ -7371,6 +7407,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "1a67e3f7d8e7113bf139af73b9974321358f442f8cc7e0fb5ba02a24e59209b0",
-  "source_revision": "b70812e7328a46f8aa6f900b040ccb90131eedba"
+  "source_dataset_version": "df824d3ba8e50ff30d251e204786f6275f10f35b55a74a25dae55a6b6aeea06f",
+  "source_revision": "75b1fc9132e2405c58a5644f06e553667f4205c5"
 }

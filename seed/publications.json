@@ -4,6 +4,18 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/the-gaussian-copula-never-left-bbva-marks-its-key-input-from-19-to-92-7ec0a5498ab8",
+      "id": "r_f2813a0cefa7b0c3413ba8f76768d8f30acbf7e2850eb2f29bb72bebd2cbfa00",
+      "published_at": "2026-09-02T17:44:12Z",
+      "slug": "the-gaussian-copula-never-left-bbva-marks-its-key-input-from-19-to-92-7ec0a5498ab8",
+      "source": "medium",
+      "source_id": "7ec0a5498ab8",
+      "subtitle": "Two banks price the same instrument with the same model and mark the input five times apart\n\nContinue reading on Medium »",
+      "title": "The Gaussian copula never left: BBVA marks its key input from 19% to 92%."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/cfms-chairman-proved-94-of-your-correlation-matrix-is-noise-aqr-lost-the-expert-in-seven-months-1596750b3144",
       "id": "r_aecd4bb2c48a116d597723332f90820447bce85f065aa336ede28989081eb9c1",
       "published_at": "2026-09-02T15:03:20Z",
@@ -12,6 +24,30 @@
       "source_id": "1596750b3144",
       "subtitle": "Bun, Bouchaud, and Potters’ own formula shows a raw backtest can overstate portfolio safety by 4x once assets crowd the sample.\n\nContinue reading on Medium »",
       "title": "CFM’s Chairman Proved 94% of Your Correlation Matrix Is Noise. AQR Lost the Expert in Seven Months."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/two-sigmas-nine-168440642",
+      "id": "r_c0c55f0eeb578523dad4055fb1fe4b121ba56fbc567a743a5ae1b1d45e5cbfec",
+      "published_at": "2026-09-02",
+      "slug": "two-sigmas-nine-168440642",
+      "source": "patreon",
+      "source_id": "168440642",
+      "subtitle": "",
+      "title": "Two Sigma's Nine Week Gap: A Redemption Latency Audit Any Allocator Can Run"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/pass-through-168439611",
+      "id": "r_52f7928f60cb79c86d14540c319bedaed6c0161b812245e752816a8f43e3803f",
+      "published_at": "2026-09-02",
+      "slug": "pass-through-168439611",
+      "source": "patreon",
+      "source_id": "168439611",
+      "subtitle": "",
+      "title": "The Pass-Through Screen: Rebuilding Millennium's Jain Global Playbook From Public Filings"
     },
     {
       "access": "restricted",
@@ -7767,5 +7803,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "1a67e3f7d8e7113bf139af73b9974321358f442f8cc7e0fb5ba02a24e59209b0"
+  "source_dataset_version": "df824d3ba8e50ff30d251e204786f6275f10f35b55a74a25dae55a6b6aeea06f"
 }
