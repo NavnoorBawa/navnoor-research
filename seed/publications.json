@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/jain-global-made-18-billion-millennium",
+      "id": "r_a82ac60136186d40190e81b6bbb6313eee339dd46031b62582e1a9aac4ad8d5f",
+      "published_at": "2026-09-03T06:02:32.423Z",
+      "slug": "jain-global-made-18-billion-millennium",
+      "source": "substack",
+      "source_id": "jain-global-made-18-billion-millennium",
+      "subtitle": "A $250 million sovereign redemption, an uncapped pass-through fee structure, and the option Millennium has now exercised three times.",
+      "title": "Jain Global Made $1.8 Billion. Millennium Is Buying Out the Investors Who Funded It."
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/the-gaussian-copula-never-left-bbva-marks-its-key-input-from-19-to-92-7ec0a5498ab8",
@@ -7803,5 +7815,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "df824d3ba8e50ff30d251e204786f6275f10f35b55a74a25dae55a6b6aeea06f"
+  "source_dataset_version": "c5d59bdfcd9dd434849fd2e9e127cc9384c6819ef0276fab09369664e0f45da8"
 }

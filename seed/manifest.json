@@ -1,33 +1,33 @@
 {
   "artifacts": [
     {
-      "bytes": 431989,
+      "bytes": 432694,
       "path": "seed/publications.json",
-      "record_count": 608,
-      "sha256": "64d80bd81dff34a42593605ea81cd450f74853fb1306cd043d83f19ed0d2d62b"
+      "record_count": 609,
+      "sha256": "aaee414214aa0ea51d8df55c6c988b6302b87f92c70b3cfeaab86ae02268ccc5"
     }
   ],
   "counts": {
     "by_access": {
       "public": 74,
-      "restricted": 498,
+      "restricted": 499,
       "unknown": 36
     },
     "by_source": {
       "fxempire": 11,
       "medium": 171,
       "patreon": 140,
-      "substack": 286
+      "substack": 287
     },
-    "records": 608
+    "records": 609
   },
   "dataset": "navnoor-research-publications",
   "inputs": [
     {
-      "bytes": 868646,
+      "bytes": 870841,
       "path": "articles_index.json",
       "role": "projected",
-      "sha256": "ad3bd3cc3e3cbe93042e6badb0c0e2d03851367ce8a670bdc5eac5342e787aa2"
+      "sha256": "3ad3b0f3a3f9f46ce2f156c9b2798ad6ac02347ba84d49855b1c0da8f53d879f"
     },
     {
       "bytes": 146068,
@@ -36,50 +36,50 @@
       "sha256": "9444e1b564526765c35ccd860d23c4e2bc934917e2752230b4591073ffee51bc"
     },
     {
-      "bytes": 1654,
+      "bytes": 1662,
       "path": "snapshot_manifest.json",
       "role": "provenance",
-      "sha256": "1611fb7213f73a19ab599d3c166d5c6a3661acd37391b70f7c66fbf8114bd03e"
+      "sha256": "b0294f2ce7d32de2a7c7e699c77e1b460eb3070ed56356a8e4ba15135502d7d2"
     }
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
   "source_checks": {
     "fxempire": {
-      "checked_at": "2026-09-03T03:31:08Z",
+      "checked_at": "2026-09-03T07:31:28Z",
       "included_count": 11,
       "newest": "2026-07-20",
       "status": "ok"
     },
     "medium": {
-      "checked_at": "2026-09-03T03:30:39Z",
+      "checked_at": "2026-09-03T07:30:54Z",
       "included_count": 171,
       "newest": "2026-09-02T17:44:12Z",
       "status": "ok"
     },
     "patreon": {
-      "checked_at": "2026-09-03T03:30:42Z",
+      "checked_at": "2026-09-03T07:30:58Z",
       "included_count": 140,
       "newest": "2026-09-02",
       "status": "ok"
     },
     "substack": {
-      "checked_at": "2026-09-03T03:30:33Z",
-      "included_count": 286,
-      "newest": "2026-09-01T14:31:15.034Z",
+      "checked_at": "2026-09-03T07:30:48Z",
+      "included_count": 287,
+      "newest": "2026-09-03T06:02:32.423Z",
       "status": "ok"
     }
   },
   "source_snapshot": {
-    "article_count": 457,
-    "catalog_count": 608,
-    "catalog_latest_publication": "2026-09-02T17:44:12Z",
-    "checked_at": "2026-09-03T03:31:08Z",
-    "data_checksum": "df824d3ba8e50ff30d251e204786f6275f10f35b55a74a25dae55a6b6aeea06f",
+    "article_count": 458,
+    "catalog_count": 609,
+    "catalog_latest_publication": "2026-09-03T06:02:32.423Z",
+    "checked_at": "2026-09-03T07:31:28Z",
+    "data_checksum": "c5d59bdfcd9dd434849fd2e9e127cc9384c6819ef0276fab09369664e0f45da8",
     "manifest_schema_version": 2,
     "observation_count_verified_but_omitted": 126,
     "registry_count": 151,
     "repository": "https://github.com/navnoorthapar/substack-trades",
-    "revision": "75b1fc9132e2405c58a5644f06e553667f4205c5"
+    "revision": "c01e4ddaf57a74f3d280eedddb13cfda28f6fc82"
   }
 }

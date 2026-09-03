@@ -1,6 +1,19 @@
 {
   "research": [
     {
+      "access": "restricted",
+      "entities": [
+        "millennium"
+      ],
+      "id": "r_a82ac60136186d40190e81b6bbb6313eee339dd46031b62582e1a9aac4ad8d5f",
+      "published": "2026-09-03T06:02:32.423Z",
+      "source": "substack",
+      "summary": "A $250 million sovereign redemption, an uncapped pass-through fee structure, and the option Millennium has now exercised three times.",
+      "title": "Jain Global Made $1.8 Billion. Millennium Is Buying Out the Investors Who Funded It.",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/jain-global-made-18-billion-millennium"
+    },
+    {
       "access": "unknown",
       "entities": [],
       "id": "r_f2813a0cefa7b0c3413ba8f76768d8f30acbf7e2850eb2f29bb72bebd2cbfa00",
@@ -7407,6 +7420,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "df824d3ba8e50ff30d251e204786f6275f10f35b55a74a25dae55a6b6aeea06f",
-  "source_revision": "75b1fc9132e2405c58a5644f06e553667f4205c5"
+  "source_dataset_version": "c5d59bdfcd9dd434849fd2e9e127cc9384c6819ef0276fab09369664e0f45da8",
+  "source_revision": "c01e4ddaf57a74f3d280eedddb13cfda28f6fc82"
 }
