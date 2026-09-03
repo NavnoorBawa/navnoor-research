@@ -1,6 +1,19 @@
 {
   "research": [
     {
+      "access": "public",
+      "entities": [
+        "two-sigma"
+      ],
+      "id": "r_bcbecc8d843ec843d4811a5be3a9d5b16bbd9b6b57cbcf8bb9cfa8e54c2e7dbb",
+      "published": "2026-09-03T13:31:18.881Z",
+      "source": "substack",
+      "summary": "Public disclosure and institutional redemption run on two different clocks, and only one of them is fast.",
+      "title": "Two Sigma's Co-CEO Collapse Hit Bloomberg in a Day. New Mexico's Pension Still Took Nine Weeks.",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/two-sigmas-co-ceo-collapse-hit-bloomberg"
+    },
+    {
       "access": "restricted",
       "entities": [
         "millennium"
@@ -12,6 +25,16 @@
       "title": "Jain Global Made $1.8 Billion. Millennium Is Buying Out the Investors Who Funded It.",
       "topic": "hedge-funds",
       "url": "https://navnoorbawa.substack.com/p/jain-global-made-18-billion-millennium"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_135425d7d322894a97b200d13895502f4e7fc4f911f991ece3e8d23c0d7dd0c1",
+      "published": "2026-09-03",
+      "source": "patreon",
+      "title": "The Three-Test Holdco Screen, Run Live on Deutsche Telekom's 4.7x Stub",
+      "topic": "general",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/three-test-run-4-168495262"
     },
     {
       "access": "unknown",
@@ -7420,6 +7443,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "c5d59bdfcd9dd434849fd2e9e127cc9384c6819ef0276fab09369664e0f45da8",
-  "source_revision": "c01e4ddaf57a74f3d280eedddb13cfda28f6fc82"
+  "source_dataset_version": "23aeeb8f6445b57a234c49afdaaea5d39e8ffb13c2f06537eaa2042067ec1ef3",
+  "source_revision": "fee1c41e85f88bef8e5238fccfbdaf1cabeae863"
 }
