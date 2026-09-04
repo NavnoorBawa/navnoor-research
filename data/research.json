@@ -29,6 +29,29 @@
     {
       "access": "restricted",
       "entities": [],
+      "id": "r_88320827e73e767447aa9747e4a762bff76e48549a43dad03e7a665e3d10d171",
+      "published": "2026-09-03",
+      "source": "patreon",
+      "title": "The Five-Minute ADV Check: How to Read Schedule D Before the Next Wire Story Does",
+      "topic": "general",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/five-minute-adv-168528059"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "two-sigma",
+        "sec"
+      ],
+      "id": "r_3efe2bd53d53cabef4483f9f447a104fd9bb9d2c01c15b1d15ea1405e4666951",
+      "published": "2026-09-03",
+      "source": "patreon",
+      "title": "Two Sigma's Own SEC Filing Shows Exactly How a $4.9bn Ownership Trust Works. Here's How to Check Yours.",
+      "topic": "hedge-funds",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/two-sigmas-own-4-168526401"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
       "id": "r_135425d7d322894a97b200d13895502f4e7fc4f911f991ece3e8d23c0d7dd0c1",
       "published": "2026-09-03",
       "source": "patreon",
@@ -7443,6 +7466,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "23aeeb8f6445b57a234c49afdaaea5d39e8ffb13c2f06537eaa2042067ec1ef3",
-  "source_revision": "fee1c41e85f88bef8e5238fccfbdaf1cabeae863"
+  "source_dataset_version": "aff004aa0a915746c46a99ab5aa264dfe00a2df98df1e154b41ba1b158299a5a",
+  "source_revision": "b3c5c6fef9691e5d7028a0e16c030539ca9d8550"
 }

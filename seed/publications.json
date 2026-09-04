@@ -28,6 +28,18 @@
     {
       "access": "restricted",
       "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/two-sigmas-own-4-168526401",
+      "id": "r_3efe2bd53d53cabef4483f9f447a104fd9bb9d2c01c15b1d15ea1405e4666951",
+      "published_at": "2026-09-03",
+      "slug": "two-sigmas-own-4-168526401",
+      "source": "patreon",
+      "source_id": "168526401",
+      "subtitle": "",
+      "title": "Two Sigma's Own SEC Filing Shows Exactly How a $4.9bn Ownership Trust Works. Here's How to Check Yours."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
       "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/three-test-run-4-168495262",
       "id": "r_135425d7d322894a97b200d13895502f4e7fc4f911f991ece3e8d23c0d7dd0c1",
       "published_at": "2026-09-03",
@@ -36,6 +48,18 @@
       "source_id": "168495262",
       "subtitle": "",
       "title": "The Three-Test Holdco Screen, Run Live on Deutsche Telekom's 4.7x Stub"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/five-minute-adv-168528059",
+      "id": "r_88320827e73e767447aa9747e4a762bff76e48549a43dad03e7a665e3d10d171",
+      "published_at": "2026-09-03",
+      "slug": "five-minute-adv-168528059",
+      "source": "patreon",
+      "source_id": "168528059",
+      "subtitle": "",
+      "title": "The Five-Minute ADV Check: How to Read Schedule D Before the Next Wire Story Does"
     },
     {
       "access": "unknown",
@@ -7839,5 +7863,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "23aeeb8f6445b57a234c49afdaaea5d39e8ffb13c2f06537eaa2042067ec1ef3"
+  "source_dataset_version": "aff004aa0a915746c46a99ab5aa264dfe00a2df98df1e154b41ba1b158299a5a"
 }
