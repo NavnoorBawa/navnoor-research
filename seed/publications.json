@@ -2,6 +2,42 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/two-goldman-quants-fixed-markowitzs-formula-few-funds-check-which-half-works-c51d1c84bacd",
+      "id": "r_393a4561037cf2feecb8abc9d7423efde9b285f60bff9186550b4f15e0dadff7",
+      "published_at": "2026-09-04T15:04:19Z",
+      "slug": "two-goldman-quants-fixed-markowitzs-formula-few-funds-check-which-half-works-c51d1c84bacd",
+      "source": "medium",
+      "source_id": "c51d1c84bacd",
+      "subtitle": "Goldman’s reverse-optimization anchor tames a 1,144% bond weight. The view-blending everyone studies adds just 1.6% more Sharpe.\n\nContinue reading on Medium »",
+      "title": "Two Goldman Quants Fixed Markowitz’s Formula. Few Funds Check Which Half Works."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/two-sigmas-2023-sec-warning-just",
+      "id": "r_9d4b7dc922e74979945fade0405f8347298ddda2291585ebc61d8dd15790ceab",
+      "published_at": "2026-09-04T13:31:07.967Z",
+      "slug": "two-sigmas-2023-sec-warning-just",
+      "source": "substack",
+      "source_id": "two-sigmas-2023-sec-warning-just",
+      "subtitle": "Inside the Ownership Trust built to survive any one founder's life event, and the SEC filing showing it hasn't",
+      "title": "Two Sigma's 2023 SEC Warning Just Became Overdeck's $4.9B Divorce Problem"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/exoduspoint-filed-atlas-capital-with",
+      "id": "r_53424cf0753895a19336194a4f9cc5d5e23a249218bd02c91da5c79d022516e9",
+      "published_at": "2026-09-04T06:02:06.780Z",
+      "slug": "exoduspoint-filed-atlas-capital-with",
+      "source": "substack",
+      "source_id": "exoduspoint-filed-atlas-capital-with",
+      "subtitle": "How a federal filing deadline nobody watches ran fifteen days ahead of Bloomberg's own scoop.",
+      "title": "ExodusPoint Filed 'Atlas Capital' With the SEC Two Weeks Before Its $1 Billion Pod Made the Trade Press"
+    },
+    {
       "access": "public",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/two-sigmas-co-ceo-collapse-hit-bloomberg",
@@ -7863,5 +7899,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "aff004aa0a915746c46a99ab5aa264dfe00a2df98df1e154b41ba1b158299a5a"
+  "source_dataset_version": "92ee6c9fba189cb9016232ddf6429797d515dc675286958c53ecdbff005cfc6d"
 }
