@@ -5,6 +5,19 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_8e50e86f77c26bb3a56197aa956c021c0295d7e2bee53eb932f3b7f2af765040",
+      "published": "2026-09-04T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260904a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_42aa786d6696d49ac534784d9a24e77e78c36262b1428246d39de6eafe0f9fe7",
       "published": "2026-08-27T15:00:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1407,17 +1420,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 22,
+      "item_count": 23,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-04T11:45:09Z",
-      "last_success_at": "2026-09-04T11:45:09Z",
+      "last_attempt_at": "2026-09-04T16:36:02Z",
+      "last_success_at": "2026-09-04T16:36:02Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-04T11:45:09Z",
+      "last_attempt_at": "2026-09-04T16:36:02Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
