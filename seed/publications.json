@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/deutsche-telekoms-german-business",
+      "id": "r_6ed2ea37b5d12ac3f581a8e57065f4960be9d30ce5f103a1a0e555a868170ac3",
+      "published_at": "2026-09-05T13:02:35.931Z",
+      "slug": "deutsche-telekoms-german-business",
+      "source": "substack",
+      "source_id": "deutsche-telekoms-german-business",
+      "subtitle": "The popular arithmetic sets a 54% equity claim against 100% of consolidated debt. Correcting that halves the gap, and then a harder problem shows up underneath.",
+      "title": "Deutsche Telekom's German Business Trades at 4.7x. Elliott Just Bought the Stub."
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/two-goldman-quants-fixed-markowitzs-formula-few-funds-check-which-half-works-c51d1c84bacd",
@@ -7899,5 +7911,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "92ee6c9fba189cb9016232ddf6429797d515dc675286958c53ecdbff005cfc6d"
+  "source_dataset_version": "9897b6e1f22549e662b6d11e55504dc353ef15d5e8d193d5b2a578c8ec3d76dc"
 }
