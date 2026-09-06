@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/morgan-stanley-beat-the-model-credit-suisse-trusted-it-and-lost-5-5-billion-6833ba48f5ca",
+      "id": "r_82f7c979612d15fa9276f4fd9c489416c2b0b14a81ec5a4a477b08d075733927",
+      "published_at": "2026-09-06T08:27:49Z",
+      "slug": "morgan-stanley-beat-the-model-credit-suisse-trusted-it-and-lost-5-5-billion-6833ba48f5ca",
+      "source": "medium",
+      "source_id": "6833ba48f5ca",
+      "subtitle": "Almgren-Chriss prices speed against risk for one trader. It has no term for seven other banks racing the same swap unwind.\n\nContinue reading on Medium »",
+      "title": "Morgan Stanley Beat the Model. Credit Suisse Trusted It and Lost $5.5 Billion."
+    },
+    {
       "access": "restricted",
       "alternate_urls": {},
       "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/secs-15-margin-168735382",
@@ -51,7 +63,9 @@
     },
     {
       "access": "public",
-      "alternate_urls": {},
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/two-sigmas-2023-sec-warning-just-became-overdeck-s-4-9b-divorce-problem-24ee8281c01c"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/two-sigmas-2023-sec-warning-just",
       "id": "r_9d4b7dc922e74979945fade0405f8347298ddda2291585ebc61d8dd15790ceab",
       "published_at": "2026-09-04T13:31:07.967Z",
@@ -2538,7 +2552,7 @@
       "title": "Omega Ratio Ranked Winton 1st While Sharpe Put It 6th. 2,763 Hedge Funds Reveal Why: It Was Mean Return All Along."
     },
     {
-      "access": "public",
+      "access": "restricted",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/prediction-market-alpha-the-3-14-who-win-the-federal-cases-and-the-hedge-funds-moving-in-947c6df94e33"
       },
@@ -7935,5 +7949,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "27e594bff2aeee00de40020f16caa9e9fb9f2851e9c0c2c39b959566f3373856"
+  "source_dataset_version": "e1ef2c2903bdad842d29a0d37b93f31526553b6504729a3acb208db916fe02d8"
 }
