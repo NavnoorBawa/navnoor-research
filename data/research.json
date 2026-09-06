@@ -3,6 +3,30 @@
     {
       "access": "restricted",
       "entities": [
+        "vix"
+      ],
+      "id": "r_992bf42c3c5b81a7fb021985be13f3328b3dd0672545c7254d4abe50a3d8afd9",
+      "published": "2026-09-06",
+      "source": "patreon",
+      "title": "The BOJ's September 18 Decision: the VIX Call Structure, Sized, With a 13.80 Stop",
+      "topic": "volatility",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/bojs-september-168734873"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "sec"
+      ],
+      "id": "r_0a8da7e650860c040aa02e01eb9b3d795b791d97e7f4c2f4877691f2c3288db4",
+      "published": "2026-09-06",
+      "source": "patreon",
+      "title": "The SEC's 15% Margin Floor Decides This Filing. The RIN Tracker That Watches It Move.",
+      "topic": "regulation",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/secs-15-margin-168735382"
+    },
+    {
+      "access": "restricted",
+      "entities": [
         "elliott"
       ],
       "id": "r_6ed2ea37b5d12ac3f581a8e57065f4960be9d30ce5f103a1a0e555a868170ac3",
@@ -7518,6 +7542,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "9897b6e1f22549e662b6d11e55504dc353ef15d5e8d193d5b2a578c8ec3d76dc",
-  "source_revision": "4da9786a68692cf384c8ff8323ef433b44388d85"
+  "source_dataset_version": "27e594bff2aeee00de40020f16caa9e9fb9f2851e9c0c2c39b959566f3373856",
+  "source_revision": "860375eb1b687a0057c264f2c8fb2aae123a688a"
 }
