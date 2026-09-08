@@ -2,6 +2,71 @@
   "research": [
     {
       "access": "unknown",
+      "entities": [
+        "bridgewater",
+        "ltcm"
+      ],
+      "id": "r_8f307e6c9334f20a352f6ff1a4860d78065a3ec8a2c5773da82e26fa226a718f",
+      "published": "2026-09-08T15:03:41Z",
+      "source": "medium",
+      "summary": "One fund mispriced the tail. The other priced it correctly and still lost on positioning",
+      "title": "LTCM Bet 1998 Was a 10-Sigma Fluke. Bridgewater Hedged It and Still Lost.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/ltcm-bet-1998-was-a-10-sigma-fluke-bridgewater-hedged-it-and-still-lost-052befc03ac5"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "msci"
+      ],
+      "id": "r_d281b19f3eb8b3869ce2d9bcde2748d1dd7867bac996cfae2830c0a943a5b0cb",
+      "published": "2026-09-07T13:31:40.982Z",
+      "source": "substack",
+      "summary": "MSCI's rebalance, priced to $310m. India's new 20-minute auction, priced to nothing.",
+      "title": "MSCI's $310 Million Bid Broke on Adani Energy While Reliance Absorbed a Bigger One",
+      "topic": "equities",
+      "url": "https://navnoorbawa.substack.com/p/mscis-310-million-bid-broke-on-adani"
+    },
+    {
+      "access": "unknown",
+      "entities": [
+        "citadel",
+        "millennium",
+        "sec"
+      ],
+      "id": "r_c0b240d97a52bf58f46fa548c50c33f64534ab23c66e0fed949d215f4eb684b2",
+      "published": "2026-09-07T11:54:03Z",
+      "source": "medium",
+      "summary": "A control premium is filed with the SEC before it moves the tape. Ordinary basis risk never is",
+      "title": "Citadel and Millennium Run This Trade. Kerkorian’s GM Bid Shows Its Blind Spot.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/citadel-and-millennium-run-this-trade-kerkorians-gm-bid-shows-its-blind-spot-feab4e4358d4"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "msci"
+      ],
+      "id": "r_64fda71e2ffd1eaaff0d84a3ba43ea80cfeb93d967bc3eb556abeb0face986ba",
+      "published": "2026-09-07",
+      "source": "patreon",
+      "title": "The 1.84x Screen: What GQG's Adani Energy Trade Means for the Next MSCI Rebalance",
+      "topic": "equities",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/1-84x-screen-for-168847890"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_61d9a7430d0cbf6f1fe32514edb2e7ea16427919b969b74819e580e677436e7d",
+      "published": "2026-09-06T18:01:41.874Z",
+      "source": "substack",
+      "summary": "The Black Scholes flip level for September 18, worked from six live inputs",
+      "title": "Dealer Vanna Just Hit a Two Year Extreme. The BOJ Meets September 18. Here's the Level Where It Flips",
+      "topic": "general",
+      "url": "https://navnoorbawa.substack.com/p/dealer-vanna-just-hit-a-two-year"
+    },
+    {
+      "access": "unknown",
       "entities": [],
       "id": "r_82f7c979612d15fa9276f4fd9c489416c2b0b14a81ec5a4a477b08d075733927",
       "published": "2026-09-06T08:27:49Z",
@@ -7553,6 +7618,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "e1ef2c2903bdad842d29a0d37b93f31526553b6504729a3acb208db916fe02d8",
-  "source_revision": "27bd026c20a6cfc8e7179f242fec32b675626873"
+  "source_dataset_version": "0b9e9595782949284816b4cde47515c3135f95433b4b51c89854a17a5a20158a",
+  "source_revision": "e85302b74faf3cf8066ff9f946a892364c9b3466"
 }
