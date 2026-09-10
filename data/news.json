@@ -2,6 +2,17 @@
   "items": [
     {
       "attribution": "Federal Reserve Board",
+      "entities": [],
+      "id": "n_18a063e11b9e4f0fc797761cf320dbc0c4f256deac57d4aef4ccc46b6d1f3b4b",
+      "published": "2026-09-10T20:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Agencies reduce regulatory burden for community banks, increase eligibility for 18-month exam cycle",
+      "topic": "general",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260910a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
@@ -1420,17 +1431,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 23,
+      "item_count": 24,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-10T16:41:05Z",
-      "last_success_at": "2026-09-10T16:41:05Z",
+      "last_attempt_at": "2026-09-10T21:12:36Z",
+      "last_success_at": "2026-09-10T21:12:36Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-10T16:41:05Z",
+      "last_attempt_at": "2026-09-10T21:12:36Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
