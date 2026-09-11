@@ -394,6 +394,29 @@ class TestProjectionAndCommitMarker(unittest.TestCase):
 
         self.assertEqual(provenance["source_checks"]["substack"]["status"], "degraded")
 
+    def test_manifest_may_follow_source_checks_within_the_archive_transaction_bound(self):
+        for stamp in ("2026-08-22T12:01:16Z", "2026-08-22T13:00:00Z"):
+            files = cross_post_source_files()
+            snapshot = jsonio.loads_strict(files["snapshot_manifest.json"])
+            snapshot["checked_at"] = stamp
+            files["snapshot_manifest.json"] = jsonio.dumps(snapshot).encode("utf-8")
+            with self.subTest(stamp=stamp):
+                _, provenance = seed.project(files, REVISION)
+                self.assertEqual(provenance["source_snapshot"]["checked_at"], stamp)
+                self.assertEqual(provenance["source_checks"], snapshot["sources"])
+
+    def test_every_source_check_must_precede_and_remain_close_to_manifest(self):
+        for stamp, message in (
+            ("2026-08-22T12:00:01Z", "later than the manifest"),
+            ("2026-08-22T10:59:59Z", "too far behind the manifest"),
+        ):
+            files = cross_post_source_files()
+            snapshot = jsonio.loads_strict(files["snapshot_manifest.json"])
+            snapshot["sources"]["medium"]["checked_at"] = stamp
+            files["snapshot_manifest.json"] = jsonio.dumps(snapshot).encode("utf-8")
+            with self.subTest(stamp=stamp), self.assertRaisesRegex(seed.SeedError, message):
+                seed.project(files, REVISION)
+
     def test_unpublishable_archive_source_status_is_rejected(self):
         files = source_files()
         snapshot = jsonio.loads_strict(files["snapshot_manifest.json"])

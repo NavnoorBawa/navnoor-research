@@ -61,10 +61,21 @@ class TestRecordDerivation(unittest.TestCase):
         self.assertFalse(hasattr(built, "reading_minutes"))
 
     def test_extra_body_trade_or_derived_fields_fail_closed(self):
-        for field in corpus.PROHIBITED_SOURCE_FIELDS:
-            changed = record(**{field: "DO_NOT_PUBLISH"})
-            with self.subTest(field=field), self.assertRaises(corpus.CorpusError):
-                corpus.build_article(changed, self.matcher, self.classifier)
+        for access in ("public", "restricted", "unknown"):
+            for field in corpus.PROHIBITED_SOURCE_FIELDS:
+                changed = record(access=access, **{field: "DO_NOT_PUBLISH"})
+                with self.subTest(access=access, field=field):
+                    with self.assertRaises(corpus.CorpusError):
+                        corpus.build_article(changed, self.matcher, self.classifier)
+
+    def test_access_changes_preserve_subtitle_only_projection(self):
+        for access in ("public", "restricted", "unknown"):
+            with self.subTest(access=access):
+                source = record(access=access)
+                built = corpus.build_article(source, self.matcher, self.classifier)
+                self.assertEqual(built.access, access)
+                self.assertEqual(built.summary, source["subtitle"])
+                self.assertFalse(set(built.to_json()) & corpus.PROHIBITED_SOURCE_FIELDS)
 
     def test_missing_title_https_url_or_publication_time_is_refused(self):
         changes = (
@@ -180,12 +191,14 @@ class TestCurrentCorpus(unittest.TestCase):
         for field in corpus.PROHIBITED_SOURCE_FIELDS:
             self.assertNotIn(f'"{field}"', encoded)
 
-    def test_restricted_nomura_record_uses_subtitle_not_body_lead(self):
+    def test_nomura_record_uses_source_access_and_subtitle_not_body_lead(self):
         articles, _stats = corpus.import_articles()
         matches = [article for article in articles if article.title == self.NOMURA_TITLE]
         self.assertEqual(len(matches), 1)
         article = matches[0]
-        self.assertEqual(article.access, "restricted")
+        records, _document, _provenance = corpus.load_index()
+        source = next(record for record in records if record["id"] == article.id)
+        self.assertEqual(article.access, source["access"])
         self.assertEqual(article.summary, self.NOMURA_SUBTITLE)
         serialized = json.dumps(article.to_json(), ensure_ascii=False)
         self.assertNotIn(self.NOMURA_BODY_LEAD, serialized)

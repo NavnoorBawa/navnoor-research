@@ -59,11 +59,11 @@ class TestTrackedDataContracts(unittest.TestCase):
             )
         )
 
-    def test_restricted_nomura_record_is_only_reviewed_publication_metadata(self):
+    def test_nomura_record_is_only_reviewed_publication_metadata(self):
         seed_document = jsonio.load(paths.PUBLICATIONS_PATH)
         seeded = next(record for record in seed_document["records"] if record["id"] == NOMURA_ID)
         public = next(record for record in self.research["research"] if record["id"] == NOMURA_ID)
-        self.assertEqual(public["access"], "restricted")
+        self.assertEqual(public["access"], seeded["access"])
         self.assertEqual(public.get("summary"), seeded["subtitle"])
         self.assertTrue(validate_data.RESEARCH_REQUIRED.issubset(public))
         self.assertTrue(set(public).issubset(validate_data.RESEARCH_FIELDS))

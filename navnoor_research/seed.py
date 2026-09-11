@@ -8,7 +8,7 @@ import json
 import re
 import tarfile
 from collections import Counter
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from typing import Any
 from urllib.parse import urlsplit
 
@@ -21,6 +21,7 @@ DATASET = "navnoor-research-publications"
 INPUT_NAMES = ("articles_index.json", "trades_extracted.json", "snapshot_manifest.json")
 MAX_ARCHIVE_BYTES = 20_000_000
 MAX_MEMBER_BYTES = 10_000_000
+MAX_SOURCE_MANIFEST_LAG = timedelta(hours=1)
 REVISION_RE = re.compile(r"^[0-9a-f]{40}$")
 DATE_RE = re.compile(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
 INSTANT_RE = re.compile(
@@ -645,7 +646,7 @@ def validate_stored(
     if snapshot["article_count"] + snapshot["registry_count"] != len(projected):
         raise SeedError("seed source article and registry counts do not make the catalogue")
     _published(snapshot.get("catalog_latest_publication"), "seed latest publication")
-    _published(snapshot.get("checked_at"), "seed checked_at")
+    snapshot_checked = _publication_instant(snapshot.get("checked_at"), "seed checked_at")
     newest_publication = max(record["published_at"] for record in projected)
     if snapshot.get("catalog_latest_publication") != newest_publication:
         raise SeedError("seed source latest publication does not match its records")
@@ -655,16 +656,21 @@ def validate_stored(
         raise SeedError("seed source checks are missing")
     if set(source_checks) != set(expected_by_source):
         raise SeedError("seed source checks do not cover the exact publication sources")
-    check_times: list[str] = []
     for source, state in source_checks.items():
         if source not in SOURCE_HOSTS or not isinstance(state, dict):
             raise SeedError(f"seed source check {source!r} is invalid")
         if set(state) != {"checked_at", "included_count", "newest", "status"}:
             raise SeedError(f"seed source check {source!r} has unexpected keys")
-        checked_at = _published(
+        checked_at = _publication_instant(
             state.get("checked_at"), f"seed source check {source!r}.checked_at"
         )
-        check_times.append(checked_at)
+        # The archive stamps its manifest after processing the source checks.
+        # Preserve those original clocks and enforce the archive's one-hour
+        # transaction bound for every source, including the oldest check.
+        if checked_at > snapshot_checked:
+            raise SeedError(f"seed source check {source!r} is later than the manifest")
+        if snapshot_checked - checked_at > MAX_SOURCE_MANIFEST_LAG:
+            raise SeedError(f"seed source check {source!r} is too far behind the manifest")
         newest = state.get("newest")
         newest_instant = _publication_instant(
             newest, f"seed source check {source!r}.newest"
@@ -691,6 +697,4 @@ def validate_stored(
             )
         if state.get("status") not in ARCHIVE_SOURCE_STATUSES:
             raise SeedError(f"seed source check {source!r} is not publishable")
-    if snapshot.get("checked_at") != max(check_times):
-        raise SeedError("seed source checked_at is not the latest completed source check")
     return publications, provenance

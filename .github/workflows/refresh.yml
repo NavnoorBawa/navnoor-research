@@ -105,7 +105,14 @@ jobs:
             python3 build_research.py
           )
 
-          if refresh_seed_candidate; then
+          # A function in an if-condition suppresses errexit in its entire
+          # body, even a subshell that sets -e. Capture the unconditional
+          # subshell's status so a failed import cannot reach the old build.
+          set +e
+          refresh_seed_candidate
+          seed_status=$?
+          set -e
+          if [ "$seed_status" -eq 0 ]; then
             echo "used_fallback=false" >> "$GITHUB_OUTPUT"
           else
             git restore \

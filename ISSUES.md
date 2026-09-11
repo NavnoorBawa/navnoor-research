@@ -1,8 +1,52 @@
 # Issue log
 
-Last updated: 2026-08-26
+Last updated: 2026-09-12
 
 ## Resolved
+
+### NR-013 — Archive completion timestamps stalled imports and failed certification
+
+- **Severity:** P1
+- **Evidence:** Refresh run `34623865421` rejected the current archive with
+  `seed source checked_at is not the latest completed source check`, then
+  rebuilt the retained 625-record seed and reported success. Deployment
+  `34623949629` and monitor `34637324273` proved exact production bytes but
+  failed the 36-hour archive freshness policy. The archive stamps its manifest
+  after source processing (16:32:38Z versus checks through 16:31:22Z on
+  September 11); equality is not its timestamp contract. Calling the refresh
+  subshell as an `if` condition also suppressed Bash errexit, hiding the
+  failed importer behind a successful build of the old seed.
+- **Resolution:** Preserve the original clocks while requiring every source
+  check to precede the manifest by at most the archive's existing one-hour
+  bound. Invoke the candidate subshell unconditionally and capture its status
+  so clone, archive, import, or build failures restore and validate the exact
+  three-file baseline. Reimport the exact current archive through its bounded
+  Git-archive stream, including the upstream retirement of FX Empire records.
+  Keep freshness limits, rights-safe metadata projection, and source warnings.
+- **Verification:** The 194-test baseline passed. New timestamp regressions
+  cover processing delay, the one-hour boundary, future source checks, and an
+  individually stale source. Executable workflow fault injection covers clone,
+  archive, import, and build failures, exact baseline restoration, and success.
+  All 198 tests, tracked-data and offline snapshot validation, generated release
+  validation, exact local HTTP smoke, Python compilation, Ruff, mypy, shell
+  syntax, and diff checks pass. The imported 618 records match archive revision
+  `6bf2b1ef16f37b6dbefe6305a37f72ca9897a35c` exactly and freshness passes.
+  Hosted acceptance requires the normal exact deployment and independent
+  monitor workflows; the known GDELT rate-limit warning remains NR-006.
+
+### NR-014 — A fixed paywall assertion blocked valid source access changes
+
+- **Severity:** P1
+- **Evidence:** Once NR-013 restored the current seed, two full-suite tests
+  rejected the Nomura record because its exact upstream access label changed
+  from restricted to public. Both tests had pinned that mutable publication
+  state rather than checking that the projection preserved the source label.
+- **Resolution:** Compare the derived access label to its verified seed while
+  retaining the original Nomura subtitle and forbidden-body assertions. Add
+  deterministic public, restricted, and unknown fixtures proving access
+  preservation, subtitle-only summaries, and rejection of every prohibited
+  source field for each access state. Publication metadata is imported as-is.
+- **Verification:** Included in the complete local and committed release gates.
 
 ### NR-001 — Restricted source material crossed the original import boundary
 

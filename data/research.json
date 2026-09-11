@@ -1,6 +1,55 @@
 {
   "research": [
     {
+      "access": "restricted",
+      "entities": [
+        "options"
+      ],
+      "id": "r_3e7c3cbd8794fbf28834783a75544e4c5b41c55d2377612fdb929255ee14a411",
+      "published": "2026-09-10T13:31:35.565Z",
+      "source": "substack",
+      "summary": "The OCC's own numbers say the club widened this quarter, and a bank's derivatives revenue mix just swung harder than at any point since the report existed.",
+      "title": "JPMorgan, Citi, BofA and Goldman Hold 79% of a $296 Trillion Derivatives Book. A Year Ago It Was 87%.",
+      "topic": "volatility",
+      "url": "https://navnoorbawa.substack.com/p/jpmorgan-citi-bofa-and-goldman-hold"
+    },
+    {
+      "access": "unknown",
+      "entities": [
+        "renaissance"
+      ],
+      "id": "r_9925e64028df647de70384a271037b3e6a905855d742101c72648d37efb11ee5",
+      "published": "2026-09-10T08:42:34Z",
+      "source": "medium",
+      "summary": "Elwyn Berlekamp bought a failing fund in 1989, rewrote its code using coding theory, and delivered a 55% return the next year",
+      "title": "Jim Simons’s Famous Math Never Built Renaissance Technologies. A Coding Theorist’s Did.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/jim-simonss-famous-math-never-built-renaissance-technologies-a-coding-theorist-s-did-219bb1769228"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_f750c38731d30999ad6872b7edf952f2721092a9b5ef5ef25d6ec926b33b1bad",
+      "published": "2026-09-10",
+      "source": "patreon",
+      "title": "Reading a Bank's Own Capital Math as a Risk-Appetite Signal: the Goldman VaR Screen",
+      "topic": "quant-methods",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/reading-banks-as-169113785"
+    },
+    {
+      "access": "public",
+      "entities": [
+        "cme"
+      ],
+      "id": "r_f23b0cb7b3ecfab3456e3e6351e4f2420e6ce20854f035444e6780d053704970",
+      "published": "2026-09-09T13:31:40.157Z",
+      "source": "substack",
+      "summary": "OneChicago died on capital cost, not on demand. Coinbase filed the day after regulators quietly reopened the question of whether that cost is about to change.",
+      "title": "Coinbase and CME Both Just Reopened a Product a 2020 Margin Rule Killed",
+      "topic": "market-structure",
+      "url": "https://navnoorbawa.substack.com/p/coinbase-and-cme-both-just-reopened"
+    },
+    {
       "access": "unknown",
       "entities": [
         "bridgewater",
@@ -2115,42 +2164,6 @@
     {
       "access": "public",
       "entities": [
-        "gold"
-      ],
-      "id": "r_0bfad90ec2e4f768f8e087ba6cf0f6d9897958c43721c0cd79b96a4dafb93a84",
-      "published": "2026-07-20",
-      "source": "fxempire",
-      "title": "Is Gold’s Bull Market Over? Three Reasons the Fundamentals Say No",
-      "topic": "commodities",
-      "url": "https://www.fxempire.com/forecasts/article/premium-is-golds-bull-market-over-three-reasons-the-fundamentals-say-no-1611512"
-    },
-    {
-      "access": "public",
-      "entities": [
-        "spx"
-      ],
-      "id": "r_83668cd26fbb76fc5e0a86b2017fd8488448c3292ba8eb2b343357a78321e7f2",
-      "published": "2026-07-17",
-      "source": "fxempire",
-      "title": "The S&P 500 Just Flipped Regimes Twice: Here Are the Levels That Matter",
-      "topic": "equities",
-      "url": "https://www.fxempire.com/forecasts/article/premium-the-sp-500-just-flipped-regimes-twice-here-are-the-levels-that-matter-1611030"
-    },
-    {
-      "access": "public",
-      "entities": [
-        "natural-gas"
-      ],
-      "id": "r_dfd1bd41d90bf6c77111014ac0295ff1eda2d9ef0aa38ce4651a625323a9aa55",
-      "published": "2026-07-15",
-      "source": "fxempire",
-      "title": "Natural Gas Futures Analysis: Why Winter Risk Is Still Underpriced",
-      "topic": "commodities",
-      "url": "https://www.fxempire.com/forecasts/article/premium-natural-gas-futures-analysis-why-winter-risk-is-still-underpriced-1610570"
-    },
-    {
-      "access": "public",
-      "entities": [
         "optiver"
       ],
       "id": "r_05b9a4997a1fd0e01a089cf5b10a31b4ec3197ce23809dcba2da942889da4bf0",
@@ -2164,18 +2177,6 @@
     {
       "access": "public",
       "entities": [
-        "btc"
-      ],
-      "id": "r_d2bc057a19a8a9b37449a8d2f198d3a21a0a3ac91558793b8f8167e73fad693b",
-      "published": "2026-07-09",
-      "source": "fxempire",
-      "title": "Bitcoin Forecast: $58,000 Holds Despite the Falling Yen",
-      "topic": "crypto",
-      "url": "https://www.fxempire.com/forecasts/article/premium-bitcoin-forecast-58000-holds-despite-the-falling-yen-1609274"
-    },
-    {
-      "access": "public",
-      "entities": [
         "volatility"
       ],
       "id": "r_fc4b16b28da98396c575055e143db875a4cf38e0ce838a6ca0f6688ea7e91190",
@@ -2185,16 +2186,6 @@
       "title": "Hull-White’s Mean-Reversion Problem: A ‘Smarter’ Model Lost to a Naive Guess in 2022",
       "topic": "volatility",
       "url": "https://navnoorbawa.substack.com/p/hull-whites-mean-reversion-problem"
-    },
-    {
-      "access": "public",
-      "entities": [],
-      "id": "r_6bc0fe068b1b46e2defb980a7e203a188929d9f948594e66e295f89fd63e0d0f",
-      "published": "2026-07-07",
-      "source": "fxempire",
-      "title": "Oil Crashed on Mechanical Selling: A Squeeze to $75 Is Next",
-      "topic": "commodities",
-      "url": "https://www.fxempire.com/forecasts/article/premium-oil-crashed-on-mechanical-selling-a-squeeze-to-75-is-next-1608677"
     },
     {
       "access": "public",
@@ -2258,16 +2249,6 @@
     },
     {
       "access": "public",
-      "entities": [],
-      "id": "r_409673746712f9cbae71a050af70b3980323f1606f5ed891a84f58aa7119e300",
-      "published": "2026-06-29",
-      "source": "fxempire",
-      "title": "Copper Price Analysis: Why $5.50 Beckons Before the Tariff Verdict",
-      "topic": "general",
-      "url": "https://www.fxempire.com/forecasts/article/premium-copper-price-analysis-why-5-50-beckons-before-the-tariff-verdict-1607204"
-    },
-    {
-      "access": "public",
       "entities": [
         "citadel",
         "de-shaw",
@@ -2327,16 +2308,6 @@
     },
     {
       "access": "public",
-      "entities": [],
-      "id": "r_e55382be159a1d1dacf63c9fcdea11096bdc4a668a556de6bd67831896ba5501",
-      "published": "2026-06-25",
-      "source": "fxempire",
-      "title": "Silver Falls to 6-Month Lows: Why the $68–71 Setup Will Survive",
-      "topic": "general",
-      "url": "https://www.fxempire.com/forecasts/article/premium-silver-falls-to-6-month-lows-why-the-68-71-setup-will-survive-1606550"
-    },
-    {
-      "access": "public",
       "entities": [
         "options"
       ],
@@ -2357,16 +2328,6 @@
       "title": "JPMorgan and Goldman Sachs Both Disclose Two VaR Numbers. Basel’s Backtest Only Ever Checks One.",
       "topic": "quant-methods",
       "url": "https://medium.com/@navnoorbawa/jpmorgan-and-goldman-sachs-both-disclose-two-var-numbers-basels-backtest-only-ever-checks-one-64ef9fcc8635"
-    },
-    {
-      "access": "public",
-      "entities": [],
-      "id": "r_9523bddceb05970901f613bf3323589a1a061007f683deeb512d9a52fad6633f",
-      "published": "2026-06-23",
-      "source": "fxempire",
-      "title": "USD/JPY Analysis: Has the Yen Carry Trade Finally Peaked?",
-      "topic": "general",
-      "url": "https://www.fxempire.com/forecasts/article/premium-usd-jpy-analysis-has-the-yen-carry-trade-finally-peaked-1605978"
     },
     {
       "access": "restricted",
@@ -2427,18 +2388,6 @@
       "title": "How Citadel, Millennium, and AQR Apply Fractional Kelly — and Why Half-Kelly Is 5× Too Large Below t = 1",
       "topic": "hedge-funds",
       "url": "https://medium.com/@navnoorbawa/how-citadel-millennium-and-aqr-apply-fractional-kelly-and-why-half-kelly-is-5-too-large-below-9f555ed24981"
-    },
-    {
-      "access": "public",
-      "entities": [
-        "spx"
-      ],
-      "id": "r_022baff401e9ac63b84ac26e4c2b4d343543bc8b38e348768ced5622579479dd",
-      "published": "2026-06-19",
-      "source": "fxempire",
-      "title": "S&P 500 Faces $7,150 Pullback Risk as Warsh’s Fed Turns Hawkish",
-      "topic": "equities",
-      "url": "https://www.fxempire.com/forecasts/article/premium-sp-500-analysis-the-fed-changed-nothing-yet-stocks-felt-the-shock-1605422"
     },
     {
       "access": "public",
@@ -2549,18 +2498,6 @@
       "url": "https://medium.com/@navnoorbawa/goldman-jpmorgan-var-30-capital-release-sized-6-wrong-c48ffb38b00b"
     },
     {
-      "access": "public",
-      "entities": [
-        "gold"
-      ],
-      "id": "r_96ef9e5fa07230fef8938cb75fb436154e239bc21e5ccbf2df7f0151daaa5afa",
-      "published": "2026-06-13",
-      "source": "fxempire",
-      "title": "Gold’s War Hedge Is Failing: Can Central Banks Hold the $4,000 Floor?",
-      "topic": "commodities",
-      "url": "https://www.fxempire.com/forecasts/article/premium-golds-war-hedge-is-failing-can-central-banks-hold-the-4000-floor-1604320"
-    },
-    {
       "access": "restricted",
       "entities": [
         "citadel"
@@ -2607,16 +2544,6 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/commodity-crisis-160695234"
     },
     {
-      "access": "public",
-      "entities": [],
-      "id": "r_57a1c5e7919572d61a0ef80a12393c967ff3c88da4760258dccd3a0456ab2e9c",
-      "published": "2026-06-09",
-      "source": "fxempire",
-      "title": "Goldman’s Six-Month Hedge Fund High Hides a Fragility Signal",
-      "topic": "hedge-funds",
-      "url": "https://www.fxempire.com/forecasts/article/premium-goldmans-six-month-hedge-fund-high-hides-a-fragility-signal-1603326"
-    },
-    {
       "access": "restricted",
       "entities": [],
       "id": "r_389397e3f2e334040db282065088420a8ad20c22889a5997875f957f7d0f50fc",
@@ -2627,7 +2554,7 @@
       "url": "https://medium.com/@navnoorbawa/why-the-omega-ratios-edge-over-sharpe-is-mean-return-not-moments-2-763-hedge-funds-tested-8336a68a6aa3"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_cd5c2f99b9237b3ca678f168aad8fecbf811d95419b2a87e954e0f00c62739ce",
       "published": "2026-06-06T10:49:07.280Z",
@@ -2722,7 +2649,7 @@
       "url": "https://medium.com/@navnoorbawa/how-quant-funds-made-6-annually-buying-rough-vol-the-heston-fourier-edge-422b76e195db"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "jane-street",
         "hrt",
@@ -2829,7 +2756,7 @@
       "url": "https://medium.com/@navnoorbawa/the-options-moment-gap-killed-ljm-its-why-sebi-froze-jane-street-s-570m-9ba0863e1a64"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "jgb",
         "market-manipulation"
@@ -2855,7 +2782,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/jgb-10s-30s-post-158957374"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "ltcm",
         "two-sigma",
@@ -2885,7 +2812,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/market-making-1-157814849"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "jane-street",
         "virtu",
@@ -3000,7 +2927,7 @@
       "url": "https://medium.com/@navnoorbawa/adjusted-r-squared-paradox-why-overfitting-signals-lower-alpha-45f691b31972"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_280de6eac636edadd6c8c6ae99ae364b7781e36afa0ab17837816d7a82899353",
       "published": "2026-04-24T03:51:47.501Z",
@@ -3074,7 +3001,7 @@
       "url": "https://medium.com/@navnoorbawa/color-%CE%B3-t-the-options-greek-behind-hedge-fund-rehedging-verified-by-bis-sec-and-cboe-b7bf066746e0"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "elliott",
         "nasdaq-exchange",
@@ -3125,7 +3052,7 @@
       "url": "https://medium.com/@navnoorbawa/vomma-volga-how-hedge-funds-trade-volatilitys-second-derivative-the-vol-of-vol-risk-premium-7fe96e80bb2e"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "cftc"
       ],
@@ -3160,7 +3087,7 @@
       "url": "https://medium.com/@navnoorbawa/vanna-and-volatility-skew-how-hedge-funds-extract-structural-alpha-from-the-greek-that-forces-14b69dcd0294"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "sec"
       ],
@@ -3199,7 +3126,7 @@
       "url": "https://medium.com/@navnoorbawa/gamma-scalping-and-the-volatility-risk-premium-the-formula-behind-jane-streets-4-3b-india-trade-1c04cfbeaaf1"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "cftc",
         "oil",
@@ -3224,7 +3151,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/macro-strategy-154226191"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "spx",
         "vix"
@@ -3238,7 +3165,7 @@
       "url": "https://navnoorbawa.substack.com/p/joint-spxvix-calibration-follow-up"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_f496703e23454c1cfbcacac83db2560c35eb81f132115e9bd885aec5cada7a6d",
       "published": "2026-03-26T08:28:39.268Z",
@@ -3260,7 +3187,7 @@
       "url": "https://medium.com/@navnoorbawa/the-black-scholes-equation-as-a-profit-ledger-how-hedge-funds-extract-alpha-and-how-allianz-lost-2d2219a5b56a"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility"
       ],
@@ -3306,7 +3233,7 @@
       "url": "https://medium.com/@navnoorbawa/rho-the-black-scholes-greek-that-separated-40b-in-winners-from-30b-in-losers-in-2022-9bc65db23d9c"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "federal-reserve",
         "leverage"
@@ -3342,7 +3269,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/trade-note-march-153586236"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_366a35be70b107d87582207090c1c39d3fe02802d6a5d5f4a09326607ef5514b",
       "published": "2026-03-19T14:08:23.845Z",
@@ -3363,7 +3290,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/dubai-alpha-153357182"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "ltcm",
         "leverage",
@@ -3388,7 +3315,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/alm-alpha-how-153109667"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_9a516d96b3e6a6378e04ec9bfdc63ad9526869f17c4dec9ac15d18d9424ab710",
       "published": "2026-03-13T14:21:53.179Z",
@@ -3408,7 +3335,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/index-fund-toll-152868887"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "esg"
       ],
@@ -3433,7 +3360,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/esg-arbitrage-152704347"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "elliott",
         "esg"
@@ -3456,7 +3383,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/equity-strategy-152530063"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bis",
         "bank-of-england"
@@ -3479,7 +3406,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/trade-note-152456965"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bridgewater",
         "brevan-howard",
@@ -3494,7 +3421,7 @@
       "url": "https://navnoorbawa.substack.com/p/gold-65-silver-144-in-2025-how-bridgewater"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -3517,7 +3444,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/precious-metals-152396513"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bridgewater"
       ],
@@ -3556,7 +3483,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/2025-tariff-152308095"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "oil"
       ],
@@ -3578,7 +3505,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/russia-sanctions-152224755"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_0cec304884accab54a9cb78f955d49b5773b7214594f9e67bab0ed38394e77bd",
       "published": "2026-03-03T16:52:35.576Z",
@@ -3612,7 +3539,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/settlement-five-152138794"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "cftc",
         "gold"
@@ -3636,7 +3563,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/iran-war-trade-152030898"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_1fdca3a1f16df084d0b99542e4bb6e58c51db40e66863353618924590bd469a0",
       "published": "2026-03-01T17:31:54.764Z",
@@ -3656,7 +3583,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/trade-reference-151951095"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "elliott"
       ],
@@ -3678,7 +3605,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/japan-halo-trade-151880953"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_709ab8f8e0a9363a0dac81de7666d61b7f01bcef7ac8499b2fcbf6ef7bf12a98",
       "published": "2026-02-27T17:38:50.970Z",
@@ -3714,7 +3641,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/korea-2025-trade-151805733"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options",
         "leverage",
@@ -3739,7 +3666,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/2025-trade-loop-151721113"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "cme",
         "options"
@@ -3765,7 +3692,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/cme-outage-28-151637776"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_223f591afe5bd5c5bd197ec7532673619b09cdf375f21e3064ff1e4e72044503",
       "published": "2026-02-24T16:54:09.506Z",
@@ -3785,7 +3712,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/exact-trades-151556304"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_f4226fd377127fe75fc61f5e253c126f73d7700c73cf951980f9dee7d873c3f8",
       "published": "2026-02-23T14:41:59.332Z",
@@ -3795,7 +3722,7 @@
       "url": "https://navnoorbawa.substack.com/p/eu-ets-alpha-andurands-3085-eua-trade"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel"
       ],
@@ -3828,7 +3755,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/energy-trading-151381001"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "machine-learning"
       ],
@@ -3866,7 +3793,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/trade-reference-151332364"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_5ab8895637554e21bec4c0ce5c69ab1a3b956ee46f4ba1ba98a76c919d4afd4d",
       "published": "2026-02-20T17:32:16.631Z",
@@ -3896,7 +3823,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/brazil-macro-151206547"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_1b92c9e6c44d266be03fe9f8bd24428b76a95540fa5394d15796e312486a2094",
       "published": "2026-02-19T18:23:26.872Z",
@@ -3907,7 +3834,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-druckenmiller-rokos-and-vista"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_a117a5dbf6e6584d7e41accae0ecef7091f3f112d13b777e2e9c61c2558a7369",
       "published": "2026-02-18T17:55:38.700Z",
@@ -3917,7 +3844,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-basis-traders-and"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel",
         "universa",
@@ -3941,7 +3868,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/october-10-2025-151098840"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "de-shaw"
       ],
@@ -3979,7 +3906,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/csgp-activist-151003694"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_03f2a905aa547239826e6d8bbb8cd39c0afbee8333ec51c91c6fda4e711f14d6",
       "published": "2026-02-16T16:05:09.604Z",
@@ -4000,7 +3927,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/mason-capital-150923858"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_73a666552562bf3720ac1e0460ed81f41034cf07d3a6575bf0dba323494594c7",
       "published": "2026-02-15T15:37:28.333Z",
@@ -4024,7 +3951,7 @@
       "url": "https://medium.com/@navnoorbawa/how-renaissance-technologies-aqr-and-pdt-built-100-billion-factor-models-statistical-arbitrage-ac0c9cd8a518"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -4047,7 +3974,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/first-brands-150841602"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "aum"
       ],
@@ -4084,7 +4011,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/blue-owl-capital-150783819"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_b99b92c620692d902f689cefe38fbe873b60fdeec936b10c3d871f1c17f863cb",
       "published": "2026-02-13T15:05:56.076Z",
@@ -4114,7 +4041,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/2025-hedge-fund-150634641"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_3faa11fcf7150c3d1e1fb485e239e42abe5b3aa8f9869dc9d4a24f9f95b74b42",
       "published": "2026-02-12T18:10:57.812Z",
@@ -4124,7 +4051,7 @@
       "url": "https://navnoorbawa.substack.com/p/2025-hedge-fund-performance-analysis"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "elliott"
       ],
@@ -4149,7 +4076,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/elliott-x-ac-150520663"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "machine-learning"
       ],
@@ -4161,7 +4088,7 @@
       "url": "https://navnoorbawa.substack.com/p/alphabets-20-billion-bond-offering"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -4196,7 +4123,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/36-souths-q1-150382802"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_c4095512632e56dcb61c34f246522cb624aaee205e084c9784950e78e1ed6c99",
       "published": "2026-02-09T12:04:17.763Z",
@@ -4206,7 +4133,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-illiquidity-arbitrage-playbook"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -4242,7 +4169,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/i-just-published-150298311"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_812bf767fab0c3be7144e4084d382aaee59d58f80687fa670bda4356abf724f1",
       "published": "2026-02-08T16:09:42.425Z",
@@ -4294,7 +4221,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/institutional-150262867"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options"
       ],
@@ -4337,7 +4264,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/leap-year-alpha-150151846"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "point72"
       ],
@@ -4371,7 +4298,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/trade-alpha-2008-150100579"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "ltcm"
       ],
@@ -4395,7 +4322,7 @@
       "url": "https://medium.com/@navnoorbawa/the-complete-volatility-trading-playbook-how-hedge-funds-extract-billions-from-variance-swaps-13e9746ba890"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_1578e9050e892c3a43f50b4128e91026c3eca1854709cead1bd85b8354668043",
       "published": "2026-02-04T16:00:28.543Z",
@@ -4420,7 +4347,7 @@
       "url": "https://medium.com/@navnoorbawa/volatility-trading-strategies-used-by-capstone-citadel-variance-swaps-dispersion-trading-and-21931589df8b"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bridgewater"
       ],
@@ -4443,7 +4370,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/china-hedge-fund-149838291"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bank-of-england",
         "ldi"
@@ -4471,7 +4398,7 @@
       "url": "https://medium.com/@navnoorbawa/from-black-scholes-to-billions-how-quantitative-hedge-funds-extract-value-from-derivatives-markets-f018f4d93bbe"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "sec"
       ],
@@ -4498,7 +4425,7 @@
       "url": "https://medium.com/@navnoorbawa/9-quantitative-hedge-fund-case-studies-universa-4-144-ltcm-4-6b-renaissance-66-avg-7f140d5a19ab"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "ipo"
       ],
@@ -4521,7 +4448,7 @@
       "url": "https://medium.com/@navnoorbawa/the-100-billion-paradox-why-elite-quants-profit-from-breaking-geometric-brownian-motion-not-e22f9671f45a"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_7777ae9dc0ee04803eb788b589d6be724a14cab8b633df7de743c642869d6628",
       "published": "2026-01-30T16:22:16.361Z",
@@ -4544,7 +4471,7 @@
       "url": "https://medium.com/@navnoorbawa/how-renaissance-technologies-made-100-billion-the-mathematical-formula-behind-quantitative-hedge-46532f179726"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel"
       ],
@@ -4556,7 +4483,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-elite-traders-made-250b-from"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_dc3f537f8c64908e58d397a7c3da5c488f63a340be8a4c13aca27e66516e6a4c",
       "published": "2026-01-28T18:14:02.352Z",
@@ -4566,7 +4493,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-scott-bessents-30-return-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_45425265d9a356b9d47be6f6c068ce4d37ec614f90853eb4723ec8f10a554cc4",
       "published": "2026-01-27T17:05:41.310Z",
@@ -4577,7 +4504,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-kite-lake-capitals-2b-event"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "cme"
       ],
@@ -4600,7 +4527,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/tcp-packet-trade-149133908"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "cme",
         "hft"
@@ -4613,7 +4540,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-the-tcp-packet-splitting-exploit"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_601b0aa36a5bfea59d291052ce7ce7909d0ea4babcf4ac9d4ded7b0a12e9ecdb",
       "published": "2026-01-24T16:57:37.127Z",
@@ -4634,7 +4561,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/copper-tc-rc-149020969"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "elliott"
       ],
@@ -4647,7 +4574,7 @@
       "url": "https://navnoorbawa.substack.com/p/20-billion-in-3-credit-trades-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_1cc1fa3697b3d09f03fcebac07fe03acae2d952fba17982bf8d2e8571e5e66cd",
       "published": "2026-01-22T16:52:08.006Z",
@@ -4657,7 +4584,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-the-oil-trades-that-generated"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "universa",
         "sec",
@@ -4685,7 +4612,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/tci-fund-trade-148734430"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "tci"
       ],
@@ -4698,7 +4625,7 @@
       "url": "https://navnoorbawa.substack.com/p/tci-fund-management-2025-inside-chris"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel",
         "millennium",
@@ -4713,7 +4640,7 @@
       "url": "https://navnoorbawa.substack.com/p/investigative-short-sellers-vs-systematic"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_b0d127c6d21f49e60d3fb0e42b783ed10ad1dc38ff11951d771f76dc3a1fe3f8",
       "published": "2026-01-18T16:19:54.456Z",
@@ -4768,7 +4695,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/jain-global-q3-148390269"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_e53b6d18fe0a021d193996b268fa8982d84ccfdc14bb4128f21b09dbffa03eac",
       "published": "2026-01-17T16:28:32.394Z",
@@ -4778,7 +4705,7 @@
       "url": "https://navnoorbawa.substack.com/p/florida-captured-11-of-new-hedge"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_4f6cdf5775cabc6d3397c4df0d34bfaab62dd53854984d5321a66811c7872945",
       "published": "2026-01-16T16:16:56.204Z",
@@ -4788,7 +4715,7 @@
       "url": "https://navnoorbawa.substack.com/p/bobby-jains-new-hedge-fund-complete"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "leverage"
       ],
@@ -4800,7 +4727,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-2-trillion-treasury-basis-trade"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_9dd73ec1ffeb8929bf4e0220d9245f60e3b95d450869b23b1692632815608848",
       "published": "2026-01-14T16:59:42.716Z",
@@ -4811,7 +4738,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-nick-train-lost-16-billion-in"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "leverage"
       ],
@@ -4845,7 +4772,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/nick-train-trade-148110940"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "brevan-howard",
         "gold"
@@ -4859,7 +4786,7 @@
       "url": "https://navnoorbawa.substack.com/p/why-one-hedge-fund-returned-21-while"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_7e6457bca7bb37e70dd753470a89a279713c1684d45b2ab1f1f4ae77c2d75e96",
       "published": "2026-01-11T13:10:44.280Z",
@@ -4869,7 +4796,7 @@
       "url": "https://navnoorbawa.substack.com/p/i-mapped-every-entry-level-position"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "federal-reserve"
       ],
@@ -4892,7 +4819,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/rokos-february-147943073"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "market-manipulation"
       ],
@@ -4905,7 +4832,7 @@
       "url": "https://navnoorbawa.substack.com/p/eight-banks-paid-13b-for-silver-manipulation"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_7151ef2e90ca0e3e475a7a1527e8db371abec575b7e2e7e0439fab078d71bb8d",
       "published": "2026-01-09T16:06:59.561Z",
@@ -4930,7 +4857,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/how-market-math-147793511"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "renaissance"
       ],
@@ -4943,7 +4870,7 @@
       "url": "https://navnoorbawa.substack.com/p/bluecrest-73-renaissance-1439-october"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_0b93a9a1afcbaec9873a443d154a2cb36c9365e388b7a5968ad08e2091454cb9",
       "published": "2026-01-07T13:41:46.046Z",
@@ -4954,7 +4881,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-made-30-in-the-first"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "sec"
       ],
@@ -4967,7 +4894,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-bluecrest-made-6-billion-shorting"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bridgewater"
       ],
@@ -4980,7 +4907,7 @@
       "url": "https://navnoorbawa.substack.com/p/bridgewaters-pure-alpha-returned"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel",
         "millennium",
@@ -4996,7 +4923,7 @@
       "url": "https://navnoorbawa.substack.com/p/point72-delivered-19-returns-after"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "stat-arb",
         "volatility",
@@ -5011,7 +4938,7 @@
       "url": "https://navnoorbawa.substack.com/p/squarepoint-capital-teardown-statistical"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "prediction-markets"
       ],
@@ -5024,7 +4951,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-founders-fund-captured-polymarkets"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_8ecbdea53f8c33c62ae446185688e1b89d11bd888b621280b9407436ef8a1cf5",
       "published": "2026-01-01T03:32:38.601Z",
@@ -5035,7 +4962,7 @@
       "url": "https://navnoorbawa.substack.com/p/what-3000-years-of-economic-history"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel",
         "millennium",
@@ -5050,7 +4977,7 @@
       "url": "https://navnoorbawa.substack.com/p/36-returns-how-de-shaw-beat-citadel"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "man-group"
       ],
@@ -5063,7 +4990,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-the-168b-systematic-fund-making"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_146799bcfc2d5ce0f2e89c8c1cb3598e40a571d14f6f2a896f9b542254c56803",
       "published": "2025-12-29T12:31:34.558Z",
@@ -5074,7 +5001,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-top-quant-funds-made-197-while"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel",
         "millennium",
@@ -5088,7 +5015,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-millennium-citadel-and-point72"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "aqr"
       ],
@@ -5101,7 +5028,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-cliff-asnesss-35b-quarter"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "millennium"
       ],
@@ -5113,7 +5040,7 @@
       "url": "https://navnoorbawa.substack.com/p/millenniums-234b-q3-portfolio-20b"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "machine-learning",
         "prediction-markets"
@@ -5127,7 +5054,7 @@
       "url": "https://navnoorbawa.substack.com/p/polymarket-prediction-system-v2-from"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "machine-learning",
         "prediction-markets"
@@ -5141,7 +5068,7 @@
       "url": "https://navnoorbawa.substack.com/p/building-a-quantitative-prediction"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options",
         "prediction-markets"
@@ -5164,7 +5091,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/hedge-funds-just-146571643"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "prediction-markets"
       ],
@@ -5176,7 +5103,7 @@
       "url": "https://navnoorbawa.substack.com/p/arbitrage-evolution-from-morgan-stanleys"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_59693d55e77a3c254933f443af0a413346c36c9eb707c00c28c765beda52e95f",
       "published": "2025-12-22T17:21:31.842Z",
@@ -5186,7 +5113,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-julian-robertsons-22b-hedge-fund"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_c8ee0ee3f245b9a681323144c2d77f29b3c53eca83d10a541300e9c40027e674",
       "published": "2025-12-21T12:06:26.479Z",
@@ -5196,7 +5123,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-generated-262-alpha"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_74a714e9b750ea4d003f96f3858e504ae5c8ab5667d6e4456dbc4d265cb326ca",
       "published": "2025-12-20T12:47:29.414Z",
@@ -5207,7 +5134,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-185-trillion-arbitrage-how-hedge"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_1f2185a476fe42b7302dec50e0b8d1ee2d5bb8ac340afa1b6fc211e841b9e7e3",
       "published": "2025-12-19T13:24:47.556Z",
@@ -5217,7 +5144,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-185-trillion-treasury-trade-that"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "renaissance"
       ],
@@ -5230,7 +5157,7 @@
       "url": "https://navnoorbawa.substack.com/p/why-renaissances-medallion-made-76"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "millennium"
       ],
@@ -5242,7 +5169,7 @@
       "url": "https://navnoorbawa.substack.com/p/millennium-managements-multi-strategy"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "millennium"
       ],
@@ -5254,7 +5181,7 @@
       "url": "https://navnoorbawa.substack.com/p/why-millennium-deployed-55b-to-100"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "factor-investing"
       ],
@@ -5266,7 +5193,7 @@
       "url": "https://navnoorbawa.substack.com/p/market-neutral-funds-returned-721"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "fx"
       ],
@@ -5278,7 +5205,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-extract-49-annual"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options"
       ],
@@ -5291,7 +5218,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-institutional-traders-exploit"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_bbc2134b1f76298fc57b03b38667640b7c9e44b2ea7a5f5d2d8759945087d3f2",
       "published": "2025-12-12T14:14:23.005Z",
@@ -5301,7 +5228,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-mathematical-execution-behind"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "vix"
       ],
@@ -5314,7 +5241,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-llm-sentiment-analysis-generated"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_f5faf92b2400b9d0103c5dec4621bf9f3f55ef2ff5f707d0fdbc7aedf2b5865d",
       "published": "2025-12-10T13:15:45.255Z",
@@ -5324,7 +5251,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-qis-products-democratized-dispersion"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "leverage"
       ],
@@ -5337,7 +5264,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-really-trade-the"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options"
       ],
@@ -5350,7 +5277,7 @@
       "url": "https://navnoorbawa.substack.com/p/market-making-in-derivatives-crushes"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_1faf6b7c366c24ce2e1404dd795c49f6fbc3312953967165e5a23ad5c248e742",
       "published": "2025-12-07T22:13:51.872Z",
@@ -5360,7 +5287,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-profit-from-uk-budget"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility"
       ],
@@ -5372,7 +5299,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-investment-banks-profit-from"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility"
       ],
@@ -5385,7 +5312,7 @@
       "url": "https://navnoorbawa.substack.com/p/beyond-the-smile-how-hedge-funds"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "jane-street",
         "susquehanna",
@@ -5400,7 +5327,7 @@
       "url": "https://navnoorbawa.substack.com/p/market-making-in-sports-betting-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_69599bada749ab1af16303b707aac50a090aeb9a9777f07968fd504c6baebd2f",
       "published": "2025-12-03T16:35:55.120Z",
@@ -5410,7 +5337,7 @@
       "url": "https://navnoorbawa.substack.com/p/bank-of-americas-macro-trading-desk"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "fx"
       ],
@@ -5423,7 +5350,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-citibanks-trading-engine-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bridgewater"
       ],
@@ -5436,7 +5363,7 @@
       "url": "https://navnoorbawa.substack.com/p/bridgewaters-alpha-beta-framework"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "marshall-wace"
       ],
@@ -5448,7 +5375,7 @@
       "url": "https://navnoorbawa.substack.com/p/marshall-waces-tops-how-crowdsourcing"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "prediction-markets"
       ],
@@ -5460,7 +5387,7 @@
       "url": "https://navnoorbawa.substack.com/p/which-hedge-funds-are-trading-prediction"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "aqr"
       ],
@@ -5473,7 +5400,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-aqr-capital-management-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "two-sigma"
       ],
@@ -5485,7 +5412,7 @@
       "url": "https://navnoorbawa.substack.com/p/two-sigmas-china-alpha-machine-52"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "machine-learning",
         "backtesting"
@@ -5499,7 +5426,7 @@
       "url": "https://navnoorbawa.substack.com/p/ml-signal-extraction-6-hypotheses"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -5513,7 +5440,7 @@
       "url": "https://navnoorbawa.substack.com/p/long-gamma-captures-excess-realized"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_2de4e62760f804fd3b0eacfcc7cbdd9b55824b9acb8c6409a9155d2842527644",
       "published": "2025-11-25T04:30:12.857Z",
@@ -5524,7 +5451,7 @@
       "url": "https://navnoorbawa.substack.com/p/quant-discovered-vs-discretionary"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility"
       ],
@@ -5536,7 +5463,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-extract-billions"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "millennium"
       ],
@@ -5549,7 +5476,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-made-then-lost-billions"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_4de3dc451268c2662da1c125596c3f305e7945bb5d96aeb89f82dde664cb8228",
       "published": "2025-11-23T15:32:51.425Z",
@@ -5559,7 +5486,7 @@
       "url": "https://navnoorbawa.substack.com/p/i-added-transaction-costs-to-my-goldman"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options"
       ],
@@ -5571,7 +5498,7 @@
       "url": "https://navnoorbawa.substack.com/p/goldman-sachs-claims-18-returns-on"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options"
       ],
@@ -5583,7 +5510,7 @@
       "url": "https://navnoorbawa.substack.com/p/goldman-sachs-event-driven-options"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "machine-learning"
       ],
@@ -5595,7 +5522,7 @@
       "url": "https://navnoorbawa.substack.com/p/jpmorgans-298b-trading-operation"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "hft"
       ],
@@ -5608,7 +5535,7 @@
       "url": "https://navnoorbawa.substack.com/p/quadeye-securities-extracting-05"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "prediction-markets"
       ],
@@ -5620,7 +5547,7 @@
       "url": "https://navnoorbawa.substack.com/p/ices-2b-polymarket-investment-the"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel"
       ],
@@ -5632,7 +5559,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-citadel-avoided-the-2024-steepener"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_26587cc9850955f6520647c8c8671e2f4e99716a1a8a3d45b1e4baaa51744456",
       "published": "2025-11-19T14:52:58.285Z",
@@ -5642,7 +5569,7 @@
       "url": "https://navnoorbawa.substack.com/p/multi-strategy-hedge-funds-face-structural"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_6710f863b1d3a8509cd1d07e76f501c35e51308233c2f3dcdc4d38e569359065",
       "published": "2025-11-18T16:56:20.879Z",
@@ -5653,7 +5580,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-major-hedge-funds-value-crypto"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "point72"
       ],
@@ -5665,7 +5592,7 @@
       "url": "https://navnoorbawa.substack.com/p/point72s-multi-pod-engine-how-415b"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options",
         "hft",
@@ -5680,7 +5607,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-futures-first-generates-returns"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "stat-arb",
         "hft"
@@ -5721,7 +5648,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/alphagreps-hft-143623324"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "hft"
@@ -5747,7 +5674,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/worldquants-how-143548715"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "de-shaw"
       ],
@@ -5819,7 +5746,7 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/jane-streets-4-143472965"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "hrt",
         "hft"
@@ -5832,7 +5759,7 @@
       "url": "https://navnoorbawa.substack.com/p/hudson-river-trading-how-8b-in-revenue"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_512cfea8ec47b72b28ce43bfabf010948e29e335ab013cd39c8e2f25f53cdb72",
       "published": "2025-11-11T16:29:42.408Z",
@@ -5842,7 +5769,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-qrt-built-28b-through-centralized"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -5855,7 +5782,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-volatility-arbitrage-funds-use"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "fx"
       ],
@@ -5867,7 +5794,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-multi-strategy-hedge-funds-win"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "xtx",
         "volatility",
@@ -5881,7 +5808,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-xtx-markets-turned-2024s-volatility"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "hft"
       ],
@@ -5893,7 +5820,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-flow-traders-captured-495m-in"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "optiver"
       ],
@@ -5905,7 +5832,7 @@
       "url": "https://navnoorbawa.substack.com/p/optivers-35b-market-making-engine"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_d71a0a6d6b84f82ef2838caea034082c13f405ed9ea846b4267da79b104c69cf",
       "published": "2025-11-05T16:26:50.041Z",
@@ -5915,7 +5842,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "susquehanna",
         "options",
@@ -5930,7 +5857,7 @@
       "url": "https://navnoorbawa.substack.com/p/susquehannas-black-monday-trade-exploiting"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "prediction-markets"
       ],
@@ -5942,7 +5869,7 @@
       "url": "https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "prediction-markets"
       ],
@@ -5954,7 +5881,7 @@
       "url": "https://navnoorbawa.substack.com/p/combinatorial-arbitrage-in-prediction"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_f57d491bf24d7577950432e7f993d2b769705700fb24a57bb17cace950710197",
       "published": "2025-11-01T11:03:25.925Z",
@@ -5964,7 +5891,7 @@
       "url": "https://navnoorbawa.substack.com/p/building-a-prediction-market-arbitrage"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_f673f6da8a2b8e664c3de5a7d32594ece5ba844f96a1043f9848b7f8ede6696a",
       "published": "2025-10-31T10:53:02.713Z",
@@ -5974,7 +5901,7 @@
       "url": "https://navnoorbawa.substack.com/p/prediction-market-arbitrage-how-quants"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_286e8320ddfa0f5482d76094979db52e2c8d80d6605e2a609212e7a20b727eb8",
       "published": "2025-10-30T17:16:57.937Z",
@@ -5985,7 +5912,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-generated-30-returns"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options"
       ],
@@ -5998,7 +5925,7 @@
       "url": "https://navnoorbawa.substack.com/p/one-million-options-contracts-isnt"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility"
       ],
@@ -6011,7 +5938,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-volatility-carry-trade-how-selling"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility"
       ],
@@ -6023,7 +5950,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hidden-volatility-feedback-loops"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_7f95fe8505ec6d3c4aebf4f3dcdd4ad3e10fcabe7732c0d1eba9f04a61ee9d21",
       "published": "2025-10-26T16:01:14.471Z",
@@ -6034,7 +5961,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-short-sellers-extracted-127m"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "fx"
       ],
@@ -6047,7 +5974,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-multi-million-dollar-misdiagnosis"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "ltcm",
         "options"
@@ -6061,7 +5988,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-46-billion-lesson-why-european"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_dfda587943d72713a22d4f23eac005b9d4b7c58b823dc693432317e14954a785",
       "published": "2025-10-23T08:04:54.819Z",
@@ -6072,7 +5999,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-markov-processes-print-money"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_6bc73c2d03e46912572f74574c8276c6d8fac33816a05a9c469f75434248f50f",
       "published": "2025-10-22T04:20:02.075Z",
@@ -6083,7 +6010,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-40-year-bond-trade-how-systematic"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "natural-gas"
       ],
@@ -6096,7 +6023,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-amaranth-advisors-lost-6-billion"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "sharpe"
       ],
@@ -6109,7 +6036,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-misusing-the-sharpe-ratio-cost"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_c87d2265309e0954bf9d78bfefe20582d7579e656ca1bde093f212384dee7854",
       "published": "2025-10-19T12:38:09.899Z",
@@ -6119,7 +6046,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-vol-arb-desks-actually-make-money"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -6133,7 +6060,7 @@
       "url": "https://navnoorbawa.substack.com/p/weather-derivatives-explode-260-inside"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "stat-arb"
       ],
@@ -6146,7 +6073,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-statistical-arbitrage-desks-made"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "ltcm",
         "volatility"
@@ -6160,7 +6087,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-martingale-paradox-why-mathematically"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options",
         "machine-learning"
@@ -6174,7 +6101,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-use-machine-learning"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "btc",
         "volatility"
@@ -6188,7 +6115,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-made-50-returns-betting"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_9c5326290468782010d86c67171f75cff4c56c3af7594670ccc5298fb74d9f48",
       "published": "2025-10-13T17:33:15.681Z",
@@ -6199,7 +6126,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-2-billion-oil-storage-trade-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "machine-learning"
       ],
@@ -6212,7 +6139,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-deepseek-shock-how-systematic"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "crowding"
       ],
@@ -6225,7 +6152,7 @@
       "url": "https://navnoorbawa.substack.com/p/when-hedge-funds-lost-money-while"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "balyasny"
       ],
@@ -6237,7 +6164,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-multi-strategy-funds-generated"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_d69a875884d7d931dcdb602e44cd54d480bf16eda9ada935caaf24492c47bd14",
       "published": "2025-10-09T15:53:39.253Z",
@@ -6248,7 +6175,7 @@
       "url": "https://navnoorbawa.substack.com/p/anatomy-of-a-468-million-collapse"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "options"
       ],
@@ -6260,7 +6187,7 @@
       "url": "https://navnoorbawa.substack.com/p/commodity-derivatives-pricing-engine"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "man-group"
       ],
@@ -6273,7 +6200,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-56-billion-unwind-how-trumps"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bridgewater",
         "volatility"
@@ -6287,7 +6214,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-bridgewaters-pure-alpha-captured"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "stat-arb"
       ],
@@ -6300,7 +6227,7 @@
       "url": "https://navnoorbawa.substack.com/p/statistical-arbitrage-the-quant-strategy"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "vix",
         "volatility"
@@ -6314,7 +6241,7 @@
       "url": "https://navnoorbawa.substack.com/p/volatility-arbitrage-how-funds-profited"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "elliott"
       ],
@@ -6327,7 +6254,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-ackman-made-26b-installing-one"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "bridgewater"
       ],
@@ -6340,7 +6267,7 @@
       "url": "https://navnoorbawa.substack.com/p/inside-bridgewaters-pure-alpha-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_94b53e5e80683a68e2cd94835ed1e9f08eae4d3845abfb9626ad42941b1c575b",
       "published": "2025-10-03T01:34:25.649Z",
@@ -6351,7 +6278,7 @@
       "url": "https://navnoorbawa.substack.com/p/longshort-equity-dissecting-robert"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "renaissance",
         "stat-arb"
@@ -6365,7 +6292,7 @@
       "url": "https://navnoorbawa.substack.com/p/renaissance-technologies-the-100"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "citadel",
         "millennium",
@@ -6382,7 +6309,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-pod-shop-revolution-how-multi"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_4111a6df7f49aaa930b6813a5d8625820af737885784f6c31a65b1505fe30a8a",
       "published": "2025-09-30T01:33:36.823Z",
@@ -6393,7 +6320,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-27-million-bet-that-returned"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "sec"
       ],
@@ -6406,7 +6333,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-474-trillion-inflection-point"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_4df912de15e02dfe4cff1ee64930f8150da9ccb32016c97d11a4100185f25576",
       "published": "2025-09-28T02:08:47.748Z",
@@ -6417,7 +6344,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-george-weiss-collapse-how-a-46"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_62072d8fce6c1d51324b75d3cd4a0286e2852ac7b2e0ace535569853b0f855ff",
       "published": "2025-09-27T02:10:16.796Z",
@@ -6428,7 +6355,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-242k-cross-trading-scheme-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "de-shaw",
         "volatility"
@@ -6442,7 +6369,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-de-shaw-generated-111-billion"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_05c4b135fcf14d5e32836376dd9c28d785845e4e4a54ba648b59f99e764a4136",
       "published": "2025-09-25T03:30:34.072Z",
@@ -6453,7 +6380,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-20-billion-meltdown-how-two-junior"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "market-manipulation",
         "ipo"
@@ -6467,7 +6394,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-ecor1-capital-lost-10-million"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -6481,7 +6408,7 @@
       "url": "https://navnoorbawa.substack.com/p/weather-derivatives-market-explodes"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "cftc"
       ],
@@ -6493,7 +6420,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-171-billion-cftc-enforcement"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "esg"
       ],
@@ -6506,7 +6433,7 @@
       "url": "https://navnoorbawa.substack.com/p/the-40-trillion-reality-check-how"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility"
       ],
@@ -6519,7 +6446,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hedge-funds-made-and-lost-millions"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "market-manipulation"
       ],
@@ -6532,7 +6459,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-morgan-stanley-made-100m-through"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_ca6247c0feb6f75e77b651c68f2b605ee681b002e210ca2c7f6cc1e6cba972cd",
       "published": "2025-09-18T05:11:25.611Z",
@@ -6543,7 +6470,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-josh-resnicks-1206-return-cracked"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_3c5b317e05af842a328be096258ad4ee177d63cd3a270e2b0538db90a83ff947",
       "published": "2025-09-17T06:57:15.220Z",
@@ -6553,7 +6480,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-jpmorgan-lost-617-million-in"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "renaissance"
       ],
@@ -6566,7 +6493,7 @@
       "url": "https://navnoorbawa.substack.com/p/riefs-16-billion-liberation-day-disaster"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_68daef946f217e6321b9ec3d9ab1f4e96a9ca05894c5f1388c25d8c795076f50",
       "published": "2025-09-15T01:54:38.303Z",
@@ -7618,6 +7545,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "0b9e9595782949284816b4cde47515c3135f95433b4b51c89854a17a5a20158a",
-  "source_revision": "3939b88a6d6f0e45dff6c8e135ac8d663e27424f"
+  "source_dataset_version": "c8032b5ee5ac161bc64526a406e77a12fe8d6f7630c79125332969b98d17caa4",
+  "source_revision": "6bf2b1ef16f37b6dbefe6305a37f72ca9897a35c"
 }
