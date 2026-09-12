@@ -1,6 +1,20 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "de-shaw",
+        "leverage"
+      ],
+      "id": "r_8c8a88155689c4c7d98e8d48213e6700bfd75bb6092fcf749452a9a020b5fdc4",
+      "published": "2026-09-12T05:40:24Z",
+      "source": "medium",
+      "summary": "Morgan Stanley’s PDT lost $390M in a day and its CEO overruled the model. Leverage explains the shock; authority explains the rest",
+      "title": "Goldman’s Quant Fund Needed a $3B Rescue in 2007. D.E. Shaw’s Didn’t Need One.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/goldmans-quant-fund-needed-a-3b-rescue-in-2007-d-e-shaw-s-didn-t-need-one-4d0a9e944768"
+    },
+    {
       "access": "restricted",
       "entities": [
         "options"
@@ -7545,6 +7559,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "c8032b5ee5ac161bc64526a406e77a12fe8d6f7630c79125332969b98d17caa4",
-  "source_revision": "ed03ed7880d2a4eb87e0658b99eb9eae745270c4"
+  "source_dataset_version": "d624f640d8f198a3b4344cc07a989cc829343562e12a1c23bae2b373838f33ce",
+  "source_revision": "482a06d59b4a4a132b1f531ad9ddf3fa36439ded"
 }
