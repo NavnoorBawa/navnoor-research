@@ -1,17 +1,72 @@
 name: Validate and Deploy Pages
+run-name: Publish ${{ inputs.release_revision || github.sha }}
 
 on:
   push:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      release_revision:
+        description: Exact checked commit to publish (must still own main)
+        required: false
+        type: string
 
 permissions: {}
 
+env:
+  RELEASE_REVISION: ${{ inputs.release_revision || github.sha }}
+
 jobs:
+  resolve:
+    name: Resolve exact requested release
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      current: ${{ steps.release.outputs.current }}
+    steps:
+      - name: Validate requested revision against remote main
+        id: release
+        shell: bash
+        env:
+          REMOTE_URL: ${{ github.server_url }}/${{ github.repository }}.git
+        run: |
+          set -euo pipefail
+          if [[ ! "$RELEASE_REVISION" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error title=Invalid release revision::An exact commit SHA is required."
+            exit 1
+          fi
+          remote_main=
+          for attempt in 1 2 3; do
+            remote_main=$(
+              git ls-remote --exit-code "$REMOTE_URL" refs/heads/main 2>/dev/null |
+                awk 'NR == 1 { print $1 }'
+            ) || remote_main=
+            if [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]; then
+              break
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              sleep "$((attempt * 5))"
+            fi
+          done
+          if [[ ! "$remote_main" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error title=Release authority unavailable::Remote main could not be proved."
+            exit 1
+          fi
+          if [ "$remote_main" != "$RELEASE_REVISION" ]; then
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Superseded release skipped::Main $remote_main supersedes requested $RELEASE_REVISION."
+            exit 0
+          fi
+          echo "current=true" >> "$GITHUB_OUTPUT"
+
   static_analysis:
     name: Isolated static analysis
-    if: github.ref == 'refs/heads/main'
+    needs: resolve
+    if: needs.resolve.outputs.current == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -21,6 +76,7 @@ jobs:
       - name: Check out exact source for static analysis
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: ${{ env.RELEASE_REVISION }}
           persist-credentials: false
 
       - name: Set up Python for static analysis
@@ -54,7 +110,7 @@ jobs:
   build:
     name: Validate and build exact artifact
     if: github.ref == 'refs/heads/main'
-    needs: static_analysis
+    needs: [resolve, static_analysis]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -67,6 +123,7 @@ jobs:
       - name: Check out exact release source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: ${{ env.RELEASE_REVISION }}
           fetch-depth: 0
           persist-credentials: false
 
@@ -83,9 +140,9 @@ jobs:
           python3 validate_data.py
           python3 refresh_companies.py --offline
           python3 refresh_news.py --offline
-          python3 build_site.py --revision "$GITHUB_SHA"
-          python3 validate_release.py --expected-revision "$GITHUB_SHA"
-          python3 smoke_test_site.py --expected-revision "$GITHUB_SHA"
+          python3 build_site.py --revision "$RELEASE_REVISION"
+          python3 validate_release.py --expected-revision "$RELEASE_REVISION"
+          python3 smoke_test_site.py --expected-revision "$RELEASE_REVISION"
           python3 -m py_compile ./*.py ./navnoor_research/*.py ./navnoor_research/adapters/*.py
           for file in ./*.sh; do
             if [ -f "$file" ]; then
@@ -93,7 +150,7 @@ jobs:
             fi
           done
           git diff --check
-          [ "$(git rev-parse --verify HEAD)" = "$GITHUB_SHA" ]
+          [ "$(git rev-parse --verify HEAD)" = "$RELEASE_REVISION" ]
           test -z "$(git status --porcelain --untracked-files=normal)"
 
       - name: Configure GitHub Pages
@@ -142,9 +199,9 @@ jobs:
             echo "::error title=Release authority unavailable::Remote main could not be proved."
             exit 1
           fi
-          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+          if [ "$remote_main" != "$RELEASE_REVISION" ]; then
             echo "current=false" >> "$GITHUB_OUTPUT"
-            echo "::notice title=Superseded release skipped::Current main is $remote_main, not $GITHUB_SHA."
+            echo "::notice title=Superseded release skipped::Current main is $remote_main, not $RELEASE_REVISION."
             exit 0
           fi
           echo "current=true" >> "$GITHUB_OUTPUT"
@@ -176,6 +233,7 @@ jobs:
       - name: Check out release verification code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: ${{ env.RELEASE_REVISION }}
           fetch-depth: 1
           persist-credentials: false
 
@@ -196,7 +254,7 @@ jobs:
               awk 'NR == 1 { print $1 }'
           )
           [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]
-          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+          if [ "$remote_main" != "$RELEASE_REVISION" ]; then
             echo "current=false" >> "$GITHUB_OUTPUT"
             echo "::notice title=Superseded before deploy::Current main is $remote_main."
             exit 0
@@ -215,7 +273,7 @@ jobs:
         id: smoke
         if: steps.current.outputs.current == 'true'
         continue-on-error: true
-        run: ./watchdog.sh "$GITHUB_SHA" --exact-only
+        run: ./watchdog.sh "$RELEASE_REVISION" --exact-only
 
       - name: Verify published data freshness
         id: freshness
@@ -236,7 +294,7 @@ jobs:
               awk 'NR == 1 { print $1 }'
           )
           [[ "$remote_main" =~ ^[0-9a-f]{40}$ ]]
-          if [ "$remote_main" != "$GITHUB_SHA" ]; then
+          if [ "$remote_main" != "$RELEASE_REVISION" ]; then
             echo "current=false" >> "$GITHUB_OUTPUT"
             echo "::notice title=Superseded release reconciled::New main $remote_main owns certification."
             exit 0

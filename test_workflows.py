@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 import subprocess
 import sys
@@ -9,12 +10,19 @@ import tempfile
 import textwrap
 import unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parent
 
 
 def workflow(name: str) -> str:
     return (ROOT / ".github" / "workflows" / name).read_text(encoding="utf-8")
+
+
+def run_block(name: str, step_name: str) -> str:
+    step = workflow(name).split(f"      - name: {step_name}", 1)[1]
+    body = step.split("        run: |\n", 1)[1]
+    return textwrap.dedent(body.split("\n      - name:", 1)[0].split("\n  static_analysis:", 1)[0])
 
 
 class TestWorkflowFailureDomains(unittest.TestCase):
@@ -153,7 +161,7 @@ if stage == failure:
         self.assert_ordered(
             text,
             "Verify exact revision and bytes are live",
-            './watchdog.sh "$GITHUB_SHA" --exact-only',
+            './watchdog.sh "$RELEASE_REVISION" --exact-only',
             "Verify published data freshness",
             "python3 check_freshness.py",
             "SMOKE_OUTCOME:",
@@ -161,6 +169,82 @@ if stage == failure:
             "Exact production certification failed",
             "Published data freshness failed",
         )
+
+    def test_refresh_dispatch_carries_the_checked_commit_even_with_an_old_event_sha(self):
+        script = run_block("refresh.yml", "Dispatch the normal main deployment")
+        python = script.split("python3 - <<'PY'\n", 1)[1].rsplit("\nPY", 1)[0]
+        response = mock.MagicMock()
+        response.__enter__.return_value.status = 204
+        for revision in ("b" * 40, "main", "", "b" * 39, "$(touch injected)"):
+            with self.subTest(revision=revision), mock.patch.dict(os.environ, {
+                "API_URL": "https://api.github.com",
+                "REPOSITORY": "NavnoorBawa/navnoor-research",
+                "GH_TOKEN": "test-token",
+                "GITHUB_SHA": "a" * 40,
+                "RELEASE_REVISION": revision,
+            }), mock.patch("urllib.request.urlopen", return_value=response) as request:
+                if revision == "b" * 40:
+                    exec(compile(python, "refresh-dispatch", "exec"), {})
+                    sent = request.call_args.args[0]
+                    self.assertEqual(json.loads(sent.data), {
+                        "ref": "main", "inputs": {"release_revision": revision},
+                    })
+                    self.assertEqual(sent.method, "POST")
+                    self.assertEqual(sent.full_url,
+                                     "https://api.github.com/repos/NavnoorBawa/"
+                                     "navnoor-research/actions/workflows/deploy.yml/dispatches")
+                else:
+                    with self.assertRaises(SystemExit):
+                        exec(compile(python, "refresh-dispatch", "exec"), {})
+                    request.assert_not_called()
+
+    def test_requested_release_is_authorized_independently_of_dispatch_event_sha(self):
+        script = run_block("deploy.yml", "Validate requested revision against remote main")
+        for revision, remote, expected in (
+            ("b" * 40, "b" * 40, "true"),
+            ("a" * 40, "b" * 40, "false"),
+            ("main", "b" * 40, "error"),
+            ("b" * 40, "not-a-sha", "error"),
+        ):
+            with self.subTest(revision=revision, remote=remote):
+                with tempfile.TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    for name, body in (
+                        ("git", 'printf "%s\\n" "$FAKE_REMOTE"'),
+                        ("sleep", "exit 0"),
+                    ):
+                        executable = root / name
+                        executable.write_text("#!/bin/sh\n" + body + "\n")
+                        executable.chmod(0o755)
+                    output = root / "output"
+                    result = subprocess.run(
+                        ["bash", "-c", script], capture_output=True, text=True, timeout=10,
+                        env={**os.environ, "PATH": f"{root}:{os.environ['PATH']}",
+                             "GITHUB_SHA": "a" * 40, "RELEASE_REVISION": revision,
+                             "REMOTE_URL": "https://github.com/NavnoorBawa/navnoor-research.git",
+                             "FAKE_REMOTE": remote, "GITHUB_OUTPUT": str(output)},
+                    )
+                    if expected == "error":
+                        self.assertNotEqual(result.returncode, 0)
+                        self.assertFalse(output.exists())
+                    else:
+                        self.assertEqual(result.returncode, 0, result.stderr)
+                        self.assertEqual(output.read_text(), f"current={expected}\n")
+
+    def test_every_release_stage_uses_the_explicit_authorized_revision(self):
+        text = workflow("deploy.yml")
+        self.assertIn("RELEASE_REVISION: ${{ inputs.release_revision || github.sha }}", text)
+        self.assertNotIn("$GITHUB_SHA", text)
+        self.assertEqual(text.count("ref: ${{ env.RELEASE_REVISION }}"), 3)
+        self.assertIn("if: needs.resolve.outputs.current == 'true'", text)
+        for command in (
+            'build_site.py --revision "$RELEASE_REVISION"',
+            'validate_release.py --expected-revision "$RELEASE_REVISION"',
+            'smoke_test_site.py --expected-revision "$RELEASE_REVISION"',
+            './watchdog.sh "$RELEASE_REVISION" --exact-only',
+        ):
+            self.assertIn(command, text)
+        self.assertEqual(text.count('[ "$remote_main" != "$RELEASE_REVISION" ]'), 4)
 
     def test_default_watchdog_proves_live_bytes_before_freshness(self):
         text = (ROOT / "watchdog.sh").read_text(encoding="utf-8")

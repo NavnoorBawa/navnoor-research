@@ -331,18 +331,26 @@ jobs:
           API_URL: ${{ github.api_url }}
           GH_TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
+          RELEASE_REVISION: ${{ steps.committed.outputs.revision }}
         run: |
           set -euo pipefail
           python3 - <<'PY'
           import json
           import os
+          import re
           import urllib.request
 
+          revision = os.environ["RELEASE_REVISION"]
+          if not re.fullmatch(r"[0-9a-f]{40}", revision):
+              raise SystemExit("deployment requires the exact validated refresh revision")
           url = (
               f"{os.environ['API_URL']}/repos/{os.environ['REPOSITORY']}"
               "/actions/workflows/deploy.yml/dispatches"
           )
-          body = json.dumps({"ref": "main"}).encode("utf-8")
+          body = json.dumps({
+              "ref": "main",
+              "inputs": {"release_revision": revision},
+          }).encode("utf-8")
           request = urllib.request.Request(
               url,
               data=body,
@@ -358,5 +366,5 @@ jobs:
           with urllib.request.urlopen(request, timeout=20) as response:
               if response.status != 204:
                   raise SystemExit(f"deployment dispatch returned HTTP {response.status}")
-          print("Dispatched deploy.yml for exact current main.")
+          print(f"Dispatched deploy.yml for exact validated revision {revision}.")
           PY

@@ -4,6 +4,33 @@ Last updated: 2026-09-12
 
 ## Resolved
 
+### NR-015 — Refresh dispatch resolved the previous commit and skipped deployment
+
+- **Severity:** P1
+- **Evidence:** Refresh `34658412268` pushed `04ceb254c52aaeb6c4f7abe5b5d49f230f84af14`
+  at 23:32:51Z on September 11, then dispatched deployment against the name
+  `main`. GitHub created deployment `34658473072` with the previous event SHA
+  `58d11205b3f92be505cb7389ae6f7eb39982ea65`; its authority job correctly skipped
+  deployment as superseded, but the overall run remained green. Production
+  still served that older release, including on cache-busted requests. Monitor
+  `34673482443` correctly failed exact bytes while freshness passed.
+- **Resolution:** Pass the validated refresh commit as an explicit dispatch
+  input. Before checking out or executing release code, validate that exact
+  SHA and prove it still owns remote main. Bind all three checkouts, build,
+  artifact validation, local and hosted smoke, and later authority checks to
+  the requested revision instead of the dispatch event's possibly old SHA.
+  Push and ordinary manual runs default to their event SHA. Preserve clean
+  skipping of genuinely superseded releases and all exact-byte alarms.
+- **Verification:** Baseline: 198 tests passed. Regression coverage executes
+  the actual dispatch and authority scripts with an old event SHA, a newer
+  requested main, invalid revisions, unavailable authority, and supersession;
+  every downstream release stage must use the same explicit revision.
+  All 201 tests, input and offline snapshot validation, exact build and local
+  HTTP smoke, Ruff, mypy, Python/shell syntax, and diff checks pass. Recovery
+  deployment `34674420201` restored the missing `04ceb25` production release.
+  The repaired handoff must also pass a hosted refresh, exact deployment, and
+  independent watchdog before release acceptance.
+
 ### NR-013 — Archive completion timestamps stalled imports and failed certification
 
 - **Severity:** P1
