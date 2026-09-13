@@ -4,6 +4,20 @@
       "access": "unknown",
       "entities": [
         "de-shaw",
+        "stat-arb"
+      ],
+      "id": "r_ab9bb69d33d9e1e1b86686ab2949a2598366beabf15d33a5e103570c4c4c5b77",
+      "published": "2026-09-13T06:48:54Z",
+      "source": "medium",
+      "summary": "A 2006 paper found the edge fell 67 to 42 basis points a month. A 2024 Yale rerun found it hadn’t gone to zero",
+      "title": "Morgan Stanley Invented Pairs Trading in 1987. D.E. Shaw and Ed Thorp Proved It Wasn’t the Point.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/morgan-stanley-invented-pairs-trading-in-1987-d-e-shaw-and-ed-thorp-proved-it-wasnt-the-point-6cf9dbe92562"
+    },
+    {
+      "access": "unknown",
+      "entities": [
+        "de-shaw",
         "leverage"
       ],
       "id": "r_8c8a88155689c4c7d98e8d48213e6700bfd75bb6092fcf749452a9a020b5fdc4",
@@ -7559,6 +7573,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "72f5ca4567ecf84e11acf2b2667f0e24c3e424e90aba2f42de916c7c98d5fcb4",
-  "source_revision": "421bac1e566568974a9af59deb4b3e984ba68e9c"
+  "source_dataset_version": "3509169138c5beac113325b61b2cc8aa9f85657e76f38ccd66a2843854948597",
+  "source_revision": "4dff7abab4e103419af61c9e03e57f57faeda73c"
 }

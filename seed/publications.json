@@ -4,6 +4,18 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/morgan-stanley-invented-pairs-trading-in-1987-d-e-shaw-and-ed-thorp-proved-it-wasnt-the-point-6cf9dbe92562",
+      "id": "r_ab9bb69d33d9e1e1b86686ab2949a2598366beabf15d33a5e103570c4c4c5b77",
+      "published_at": "2026-09-13T06:48:54Z",
+      "slug": "morgan-stanley-invented-pairs-trading-in-1987-d-e-shaw-and-ed-thorp-proved-it-wasnt-the-point-6cf9dbe92562",
+      "source": "medium",
+      "source_id": "6cf9dbe92562",
+      "subtitle": "A 2006 paper found the edge fell 67 to 42 basis points a month. A 2024 Yale rerun found it hadn’t gone to zero.\n\nContinue reading on Medium »",
+      "title": "Morgan Stanley Invented Pairs Trading in 1987. D.E. Shaw and Ed Thorp Proved It Wasn’t the Point."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/goldmans-quant-fund-needed-a-3b-rescue-in-2007-d-e-shaw-s-didn-t-need-one-4d0a9e944768",
       "id": "r_8c8a88155689c4c7d98e8d48213e6700bfd75bb6092fcf749452a9a020b5fdc4",
       "published_at": "2026-09-12T05:40:24Z",
@@ -7937,5 +7949,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "72f5ca4567ecf84e11acf2b2667f0e24c3e424e90aba2f42de916c7c98d5fcb4"
+  "source_dataset_version": "3509169138c5beac113325b61b2cc8aa9f85657e76f38ccd66a2843854948597"
 }
