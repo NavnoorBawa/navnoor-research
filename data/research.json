@@ -6532,7 +6532,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-chris-rokos-made-1-billion-in"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility"
       ],
@@ -6545,7 +6545,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-quants-made-4144-returns-in-2020"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "market-manipulation"
       ],
@@ -6558,7 +6558,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-hsbc-made-millions-gaming-bond"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "ipo"
       ],
@@ -6571,7 +6571,7 @@
       "url": "https://navnoorbawa.substack.com/p/pre-ipo-arbitrage-fraud-how-120m"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "volatility",
         "options"
@@ -6585,7 +6585,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-societe-generales-a388m-mark"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "market-manipulation"
       ],
@@ -6598,7 +6598,7 @@
       "url": "https://navnoorbawa.substack.com/p/singapores-8-billion-market-manipulation"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [],
       "id": "r_639b0e714b2b2a4a6012eb8ed76f7f27442a4acb1c6db6cfe0b4c586cc04b2e3",
       "published": "2025-09-10T04:35:23.770Z",
@@ -6609,7 +6609,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-totalenergies-lost-48m-trying"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "market-manipulation"
       ],
@@ -6622,7 +6622,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-trafigura-turned-a-100m-arbitrage"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "market-manipulation"
       ],
@@ -6635,7 +6635,7 @@
       "url": "https://navnoorbawa.substack.com/p/how-jpmorgan-made-172-million-manipulating"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "entities": [
         "ljm"
       ],
@@ -7573,6 +7573,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "afcafe2eb588f411df9e4cf946979ffbfcab7ee96b1754da58cf543e46be4b06",
-  "source_revision": "950db8864833dd82fb0421412616ea46cad03bbd"
+  "source_dataset_version": "75c2b41a45d7bb748bf739c8c8335d90394a41398279a9d2efd72142ce9c8cbd",
+  "source_revision": "a04370b176bf0801bf2dc0374c90b44aac2e028d"
 }

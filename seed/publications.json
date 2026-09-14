@@ -63,7 +63,9 @@
     },
     {
       "access": "public",
-      "alternate_urls": {},
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/coinbase-and-cme-both-just-reopened-a-product-a-2020-margin-rule-killed-7e983d55141e"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/coinbase-and-cme-both-just-reopened",
       "id": "r_f23b0cb7b3ecfab3456e3e6351e4f2420e6ce20854f035444e6780d053704970",
       "published_at": "2026-09-09T13:31:40.157Z",
@@ -6909,7 +6911,7 @@
       "title": "How Chris Rokos Made $1 Billion in a Single Day: Deconstructing the Trump Trade"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/how-quants-made-4-144-returns-in-2020-while-markets-crashed-the-heston-model-edge-b1558ec7aac1"
       },
@@ -6923,7 +6925,7 @@
       "title": "How Quants Made 4,144% Returns in 2020 While Markets Crashed: The Heston Model Edge"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/how-hsbc-made-millions-gaming-bond-pricing-screens-a-quants-guide-to-market-manipulation-def8599b970b"
       },
@@ -6937,7 +6939,7 @@
       "title": "How HSBC Made Millions Gaming Bond Pricing Screens: A Quant’s Guide to Market Manipulation"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/pre-ipo-arbitrage-fraud-how-120m-was-stolen-through-corrupted-market-making-cd9c7e91451d"
       },
@@ -6951,7 +6953,7 @@
       "title": "Pre-IPO Arbitrage Fraud: How $120M Was Stolen Through Corrupted Market-Making"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/how-soci%C3%A9t%C3%A9-g%C3%A9n%C3%A9rales-a-3-88m-mark-the-close-strategy-exploited-war-driven-market-volatility-bf9a744c7898"
       },
@@ -6965,7 +6967,7 @@
       "title": "How Société Générale’s A$3.88M ‘Mark the Close’ Strategy Exploited War-Driven Market Volatility"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/singapores-8-billion-market-manipulation-how-187-trading-accounts-generated-massive-profits-e68cfeaa8524"
       },
@@ -6979,7 +6981,7 @@
       "title": "Singapore’s $8 Billion Market Manipulation: How 187 Trading Accounts Generated Massive Profits Before the Crash"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/how-totalenergies-lost-48m-trying-to-game-european-gasoline-markets-035870b8c206"
       },
@@ -6993,7 +6995,7 @@
       "title": "How TotalEnergies Lost $48M Trying to Game European Gasoline Markets"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/how-trafigura-turned-a-100m-arbitrage-into-a-55m-fraud-deconstructing-the-usgc-singapore-fuel-205ac452010c"
       },
@@ -7007,7 +7009,7 @@
       "title": "How Trafigura Turned a $100M Arbitrage into a $55M Fraud: Deconstructing the USGC-Singapore Fuel Oil Manipulation"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/how-jpmorgan-made-172-million-manipulating-markets-the-spoofing-strategy-that-broke-the-system-97b5d9b13b4e"
       },
@@ -7021,7 +7023,7 @@
       "title": "How JPMorgan Made $172 Million Manipulating Markets: The Spoofing Strategy That Broke the System"
     },
     {
-      "access": "restricted",
+      "access": "public",
       "alternate_urls": {
         "medium": "https://medium.com/@navnoorbawa/the-650m-volmageddon-collapse-how-ljms-leveraged-short-vol-strategy-imploded-in-48-hours-61ad04060f2d"
       },
@@ -7949,5 +7951,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "afcafe2eb588f411df9e4cf946979ffbfcab7ee96b1754da58cf543e46be4b06"
+  "source_dataset_version": "75c2b41a45d7bb748bf739c8c8335d90394a41398279a9d2efd72142ce9c8cbd"
 }
