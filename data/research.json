@@ -3,6 +3,21 @@
     {
       "access": "unknown",
       "entities": [
+        "renaissance",
+        "aqr",
+        "factor-investing"
+      ],
+      "id": "r_c40a70ce8eb8aaebd5a58acae693a1c8596353b8a296dbbe771e558a3af28628",
+      "published": "2026-09-14T15:03:03Z",
+      "source": "medium",
+      "summary": "My own numbers from Kenneth French’s data: the value factor has lost money, net, since 2010. AQR staked a firm on it anyway",
+      "title": "AQR Bet Billions That Value Would Pay Off. Medallion Never Made the Bet.",
+      "topic": "quant-methods",
+      "url": "https://medium.com/@navnoorbawa/aqr-bet-billions-that-value-would-pay-off-medallion-never-made-the-bet-33bd1c404013"
+    },
+    {
+      "access": "unknown",
+      "entities": [
         "de-shaw",
         "stat-arb"
       ],
@@ -3669,6 +3684,16 @@
       "url": "https://www.patreon.com/NavnoorBawa/posts/korea-2025-trade-151805733"
     },
     {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_afa14d3d1868d104192366704490d9a497c95ed2dd3f56c0bf440cac4ff29c89",
+      "published": "2026-02-26T17:22:13.070Z",
+      "source": "medium",
+      "title": "The $17.9 Billion Loop",
+      "topic": "general",
+      "url": "https://medium.com/@navnoorbawa/the-17-9-billion-loop-298c359d7c5f"
+    },
+    {
       "access": "public",
       "entities": [
         "options",
@@ -3679,7 +3704,7 @@
       "published": "2026-02-26T17:19:18.094Z",
       "source": "substack",
       "summary": "Prime brokerage leverage, the $55B EA merger arb, Figma's 250% IPO pop, and a closed derivatives gap — the anatomy of how Morgan Stanley's record Q4 and hedge fund returns from 10% to 45% were the sam",
-      "title": "The $17.9 Billion Loop",
+      "title": "w Prime Brokerage Leverage, the $55B EA Merger Arb, Figma’s 250% IPO Pop, and Morgan Stanley’s Closed Derivatives Gap Co-Created Both a Record Quarter and Hedge Fund Returns Ranging from 10% to 45% in",
       "topic": "volatility",
       "url": "https://navnoorbawa.substack.com/p/the-179-billion-loop"
     },
@@ -7573,6 +7598,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "75c2b41a45d7bb748bf739c8c8335d90394a41398279a9d2efd72142ce9c8cbd",
-  "source_revision": "a04370b176bf0801bf2dc0374c90b44aac2e028d"
+  "source_dataset_version": "712418e8063924ba51df2c2afda9d0039dc97f0db11e19e1ca88cef226aaefe1",
+  "source_revision": "3d8544e6930829a19f51fb61de3e5175603d05fa"
 }

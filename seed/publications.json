@@ -4,6 +4,18 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/aqr-bet-billions-that-value-would-pay-off-medallion-never-made-the-bet-33bd1c404013",
+      "id": "r_c40a70ce8eb8aaebd5a58acae693a1c8596353b8a296dbbe771e558a3af28628",
+      "published_at": "2026-09-14T15:03:03Z",
+      "slug": "aqr-bet-billions-that-value-would-pay-off-medallion-never-made-the-bet-33bd1c404013",
+      "source": "medium",
+      "source_id": "33bd1c404013",
+      "subtitle": "My own numbers from Kenneth French’s data: the value factor has lost money, net, since 2010. AQR staked a firm on it anyway.\n\nContinue reading on Medium »",
+      "title": "AQR Bet Billions That Value Would Pay Off. Medallion Never Made the Bet."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/morgan-stanley-invented-pairs-trading-in-1987-d-e-shaw-and-ed-thorp-proved-it-wasnt-the-point-6cf9dbe92562",
       "id": "r_ab9bb69d33d9e1e1b86686ab2949a2598366beabf15d33a5e103570c4c4c5b77",
       "published_at": "2026-09-13T06:48:54Z",
@@ -3678,10 +3690,20 @@
       "title": "Korea 2025 — Complete Trade Reference"
     },
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/the-17-9-billion-loop-298c359d7c5f",
+      "id": "r_afa14d3d1868d104192366704490d9a497c95ed2dd3f56c0bf440cac4ff29c89",
+      "published_at": "2026-02-26T17:22:13.070Z",
+      "slug": "the-17-9-billion-loop-298c359d7c5f",
+      "source": "medium",
+      "source_id": "298c359d7c5f",
+      "subtitle": "",
+      "title": "The $17.9 Billion Loop"
+    },
+    {
       "access": "public",
-      "alternate_urls": {
-        "medium": "https://medium.com/@navnoorbawa/the-17-9-billion-loop-298c359d7c5f"
-      },
+      "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/the-179-billion-loop",
       "id": "r_e4de2271617f10671dce3e6321b0c7e5a67c164525dbe71b9d9b077346a49f46",
       "published_at": "2026-02-26T17:19:18.094Z",
@@ -3689,7 +3711,7 @@
       "source": "substack",
       "source_id": "the-179-billion-loop",
       "subtitle": "Prime brokerage leverage, the $55B EA merger arb, Figma's 250% IPO pop, and a closed derivatives gap — the anatomy of how Morgan Stanley's record Q4 and hedge fund returns from 10% to 45% were the sam",
-      "title": "The $17.9 Billion Loop"
+      "title": "w Prime Brokerage Leverage, the $55B EA Merger Arb, Figma’s 250% IPO Pop, and Morgan Stanley’s Closed Derivatives Gap Co-Created Both a Record Quarter and Hedge Fund Returns Ranging from 10% to 45% in"
     },
     {
       "access": "restricted",
@@ -7951,5 +7973,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "75c2b41a45d7bb748bf739c8c8335d90394a41398279a9d2efd72142ce9c8cbd"
+  "source_dataset_version": "712418e8063924ba51df2c2afda9d0039dc97f0db11e19e1ca88cef226aaefe1"
 }
