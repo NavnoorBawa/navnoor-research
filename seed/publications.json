@@ -4,6 +4,30 @@
     {
       "access": "restricted",
       "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/isda-warns-jscc-merger-could-force",
+      "id": "r_e40d0b7e89a3ee7b63d324c57f170931473e4f900ef16f94ce2c48c41dc15485",
+      "published_at": "2026-09-15T13:32:32.741Z",
+      "slug": "isda-warns-jscc-merger-could-force",
+      "source": "substack",
+      "source_id": "isda-warns-jscc-merger-could-force",
+      "subtitle": "A pro rata draw across all six qualifications, a fund already over 95% financial futures, and the overlap number JSCC hasn't published",
+      "title": "ISDA Warns JSCC Merger Could Force a 95% Bond Fund to Cover Commodity Defaults"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/jsccs-default-95-169586293",
+      "id": "r_04234b871cab4ceafffe0189e6d66d28b6b9454f3dc8374dcf8a743685e4370c",
+      "published_at": "2026-09-15",
+      "slug": "jsccs-default-95-169586293",
+      "source": "patreon",
+      "source_id": "169586293",
+      "subtitle": "",
+      "title": "JSCC's Default Fund Merger: The 95% Bond Pool ISDA Is Warning About"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/citadel-and-schonfeld-are-betting",
       "id": "r_3c8041a4c18eea96cae5aee480349dea358e16da8a2913aa9cd0d83712e8eb99",
       "published_at": "2026-09-14T17:17:57.718Z",
@@ -3735,7 +3759,7 @@
       "source": "substack",
       "source_id": "the-179-billion-loop",
       "subtitle": "Prime brokerage leverage, the $55B EA merger arb, Figma's 250% IPO pop, and a closed derivatives gap — the anatomy of how Morgan Stanley's record Q4 and hedge fund returns from 10% to 45% were the sam",
-      "title": "w Prime Brokerage Leverage, the $55B EA Merger Arb, Figma’s 250% IPO Pop, and Morgan Stanley’s Closed Derivatives Gap Co-Created Both a Record Quarter and Hedge Fund Returns Ranging from 10% to 45% in"
+      "title": "Prime Brokerage Leverage, the $55B EA Merger Arb, Figma’s 250% IPO Pop, and Morgan Stanley’s Closed Derivatives Gap Co-Created Both a Record Quarter and Hedge Fund Returns Ranging from 10% to 45% in"
     },
     {
       "access": "restricted",
@@ -7997,5 +8021,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "b277058b0d25d445e7c732adb74d7ddac0963f4f90b220cb0ef2263f1ede3be1"
+  "source_dataset_version": "275a7d62dcf0852bd07964de687645d3a17ddeefbb085285367844de098bea79"
 }

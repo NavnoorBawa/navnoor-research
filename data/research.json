@@ -2,6 +2,27 @@
   "research": [
     {
       "access": "restricted",
+      "entities": [],
+      "id": "r_e40d0b7e89a3ee7b63d324c57f170931473e4f900ef16f94ce2c48c41dc15485",
+      "published": "2026-09-15T13:32:32.741Z",
+      "source": "substack",
+      "summary": "A pro rata draw across all six qualifications, a fund already over 95% financial futures, and the overlap number JSCC hasn't published",
+      "title": "ISDA Warns JSCC Merger Could Force a 95% Bond Fund to Cover Commodity Defaults",
+      "topic": "commodities",
+      "url": "https://navnoorbawa.substack.com/p/isda-warns-jscc-merger-could-force"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_04234b871cab4ceafffe0189e6d66d28b6b9454f3dc8374dcf8a743685e4370c",
+      "published": "2026-09-15",
+      "source": "patreon",
+      "title": "JSCC's Default Fund Merger: The 95% Bond Pool ISDA Is Warning About",
+      "topic": "blowups",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/jsccs-default-95-169586293"
+    },
+    {
+      "access": "restricted",
       "entities": [
         "citadel",
         "ecb"
@@ -3730,7 +3751,7 @@
       "published": "2026-02-26T17:19:18.094Z",
       "source": "substack",
       "summary": "Prime brokerage leverage, the $55B EA merger arb, Figma's 250% IPO pop, and a closed derivatives gap — the anatomy of how Morgan Stanley's record Q4 and hedge fund returns from 10% to 45% were the sam",
-      "title": "w Prime Brokerage Leverage, the $55B EA Merger Arb, Figma’s 250% IPO Pop, and Morgan Stanley’s Closed Derivatives Gap Co-Created Both a Record Quarter and Hedge Fund Returns Ranging from 10% to 45% in",
+      "title": "Prime Brokerage Leverage, the $55B EA Merger Arb, Figma’s 250% IPO Pop, and Morgan Stanley’s Closed Derivatives Gap Co-Created Both a Record Quarter and Hedge Fund Returns Ranging from 10% to 45% in",
       "topic": "volatility",
       "url": "https://navnoorbawa.substack.com/p/the-179-billion-loop"
     },
@@ -7624,6 +7645,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "b277058b0d25d445e7c732adb74d7ddac0963f4f90b220cb0ef2263f1ede3be1",
-  "source_revision": "57ce6fe152a8ccaff559c8ba4525201bcb6fe18f"
+  "source_dataset_version": "275a7d62dcf0852bd07964de687645d3a17ddeefbb085285367844de098bea79",
+  "source_revision": "cefcebffdc00f08836f929602e2abadf610c7495"
 }
