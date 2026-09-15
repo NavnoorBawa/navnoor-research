@@ -1,6 +1,20 @@
 {
   "research": [
     {
+      "access": "restricted",
+      "entities": [
+        "citadel",
+        "ecb"
+      ],
+      "id": "r_3c8041a4c18eea96cae5aee480349dea358e16da8a2913aa9cd0d83712e8eb99",
+      "published": "2026-09-14T17:17:57.718Z",
+      "source": "substack",
+      "summary": "A regulatory balance-sheet effect at calendar year end, not reserve scarcity, is the case the ECB's own economists never made",
+      "title": "Citadel and Schonfeld Are Betting the Euribor-€STR Spread Widens Before Year End",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/citadel-and-schonfeld-are-betting"
+    },
+    {
       "access": "unknown",
       "entities": [
         "renaissance",
@@ -14,6 +28,18 @@
       "title": "AQR Bet Billions That Value Would Pay Off. Medallion Never Made the Bet.",
       "topic": "quant-methods",
       "url": "https://medium.com/@navnoorbawa/aqr-bet-billions-that-value-would-pay-off-medallion-never-made-the-bet-33bd1c404013"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "citadel"
+      ],
+      "id": "r_68fbce235b224530888b70ea323c6c45eb7feb1f175c6b74ec53ad1b14bb833e",
+      "published": "2026-09-14",
+      "source": "patreon",
+      "title": "Citadel's Euribor-€STR Spread: The Trade Ticket Behind a 16.5bp December Bet",
+      "topic": "hedge-funds",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/citadels-euribor-169502154"
     },
     {
       "access": "unknown",
@@ -7598,6 +7624,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "712418e8063924ba51df2c2afda9d0039dc97f0db11e19e1ca88cef226aaefe1",
-  "source_revision": "3d8544e6930829a19f51fb61de3e5175603d05fa"
+  "source_dataset_version": "8c895aec28a7cdc62da4747cee1eb29c0649a3723a90c9ce0b30b6546d34309a",
+  "source_revision": "20e076352e8c1be70114947ffe950654e728fc5d"
 }

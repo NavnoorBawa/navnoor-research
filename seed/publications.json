@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/citadel-and-schonfeld-are-betting",
+      "id": "r_3c8041a4c18eea96cae5aee480349dea358e16da8a2913aa9cd0d83712e8eb99",
+      "published_at": "2026-09-14T17:17:57.718Z",
+      "slug": "citadel-and-schonfeld-are-betting",
+      "source": "substack",
+      "source_id": "citadel-and-schonfeld-are-betting",
+      "subtitle": "A regulatory balance-sheet effect at calendar year end, not reserve scarcity, is the case the ECB's own economists never made",
+      "title": "Citadel and Schonfeld Are Betting the Euribor-€STR Spread Widens Before Year End"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/aqr-bet-billions-that-value-would-pay-off-medallion-never-made-the-bet-33bd1c404013",
@@ -12,6 +24,18 @@
       "source_id": "33bd1c404013",
       "subtitle": "My own numbers from Kenneth French’s data: the value factor has lost money, net, since 2010. AQR staked a firm on it anyway.\n\nContinue reading on Medium »",
       "title": "AQR Bet Billions That Value Would Pay Off. Medallion Never Made the Bet."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/citadels-euribor-169502154",
+      "id": "r_68fbce235b224530888b70ea323c6c45eb7feb1f175c6b74ec53ad1b14bb833e",
+      "published_at": "2026-09-14",
+      "slug": "citadels-euribor-169502154",
+      "source": "patreon",
+      "source_id": "169502154",
+      "subtitle": "",
+      "title": "Citadel's Euribor-€STR Spread: The Trade Ticket Behind a 16.5bp December Bet"
     },
     {
       "access": "unknown",
@@ -7973,5 +7997,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "712418e8063924ba51df2c2afda9d0039dc97f0db11e19e1ca88cef226aaefe1"
+  "source_dataset_version": "8c895aec28a7cdc62da4747cee1eb29c0649a3723a90c9ce0b30b6546d34309a"
 }
