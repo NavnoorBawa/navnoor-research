@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-14T05:27:51Z",
+  "checked_at": "2026-09-15T12:08:43Z",
   "items": [
     {
       "cik": "0001090872",
@@ -3219,8 +3219,8 @@
     },
     {
       "cik": "0001883984",
-      "exchange": "OTC",
-      "id": "5311bbdcf3118272cd312c0324594e3825d6281f2ebcda0f83a650e676dfb726",
+      "exchange": "",
+      "id": "39b89448a4912a918faadab93e787000d004544601759e622fe9bb71f2a7acf8",
       "name": "Aedis Energy Inc.",
       "ticker": "ALCE",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001883984"
@@ -3528,6 +3528,14 @@
       "name": "Allegion plc",
       "ticker": "ALLE",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001579241"
+    },
+    {
+      "cik": "0002141983",
+      "exchange": "",
+      "id": "02dc97c1b94ef8e9e4c11827c268f5537019dc4053227236d75307a158bd5b83",
+      "name": "Allarity Acquisition Corp.",
+      "ticker": "ALLN",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002141983"
     },
     {
       "cik": "0001737287",
@@ -4978,14 +4986,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001796209"
     },
     {
-      "cik": "0001974640",
-      "exchange": "Nasdaq",
-      "id": "ad778b0eb9dced74347a7be018d09febf2b683665e82098ce1d009718a2b56a8",
-      "name": "Apogee Therapeutics, Inc.",
-      "ticker": "APGE",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001974640"
-    },
-    {
       "cik": "0001763660",
       "exchange": "OTC",
       "id": "9b4930fb90f929fa461403838daa9e0f818b8cd4c600296e710aaaf2da1dc5c1",
@@ -5538,14 +5538,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001590715"
     },
     {
-      "cik": "0000894871",
-      "exchange": "",
-      "id": "4d782f7460a8c9fe3bdf9cafb934a24c38c282c8637e514400cd48bdfdd18eee",
-      "name": "Paradium.AI, Inc.",
-      "ticker": "AREN",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0000894871"
-    },
-    {
       "cik": "0001176948",
       "exchange": "NYSE",
       "id": "1a92233297fcde99af233ba684104321e0df0145555b3f5e7b0972f917bb1200",
@@ -5711,14 +5703,6 @@
       "id": "8dd0c35f5dd5cda2659335ddfdeb812c96c2b8d949740e861f47d30233626b3e",
       "name": "Arqit Quantum Inc.",
       "ticker": "ARQQ",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001859690"
-    },
-    {
-      "cik": "0001859690",
-      "exchange": "Nasdaq",
-      "id": "f6671964dfd1e056b0f3d3f7615314ca856e59cf4340aefb3662f097e08189ae",
-      "name": "Arqit Quantum Inc.",
-      "ticker": "ARQQW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001859690"
     },
     {
@@ -6352,14 +6336,6 @@
       "name": "Albatross Acquisition Corp",
       "ticker": "ATAC",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002135163"
-    },
-    {
-      "cik": "0002081043",
-      "exchange": "Nasdaq",
-      "id": "732158d558f81d5f3eead5679169a7ad53e530e951b7d5d89a86153cae6b9eed",
-      "name": "AtaiBeckley Inc.",
-      "ticker": "ATAI",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002081043"
     },
     {
       "cik": "0002127653",
@@ -9563,14 +9539,6 @@
     },
     {
       "cik": "0001179821",
-      "exchange": "",
-      "id": "f127d4aee68519dcd60754a62f8605ee167102285fcdb1f37fbbc10eaf234b5e",
-      "name": "BIRKS GROUP INC.",
-      "ticker": "BGI",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001179821"
-    },
-    {
-      "cik": "0001179821",
       "exchange": "OTC",
       "id": "c5edebdc7d38eafc21f22039b21097a5a61f0b982d483b0574ee6115fe372684",
       "name": "BIRKS GROUP INC.",
@@ -10511,14 +10479,6 @@
       "id": "99803c418ce3ca3fa0a134c98dddbf836b7ccde7adb581aa49ba4d577f794329",
       "name": "BlackSky Technology Inc.",
       "ticker": "BKSY",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001753539"
-    },
-    {
-      "cik": "0001753539",
-      "exchange": "OTC",
-      "id": "160341bc17da32de3d50c49535fd774772b8434c584b52348c6edd88a624b1be",
-      "name": "BlackSky Technology Inc.",
-      "ticker": "BKSYW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001753539"
     },
     {
@@ -12530,6 +12490,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001720893"
     },
     {
+      "cik": "0001720893",
+      "exchange": "OTC",
+      "id": "666afc240f064f3dc57fca3196ba810e05d282d78bf8ace9d97845bfbc5e4f9d",
+      "name": "BioXcel Therapeutics, Inc.",
+      "ticker": "BTAIQ",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001720893"
+    },
+    {
       "cik": "0001718224",
       "exchange": "Nasdaq",
       "id": "6a0fb8753ecbd9cc1f39b1549cc1df0247c0f195fef82f93bd6526faf0e6de71",
@@ -12677,7 +12645,7 @@
       "cik": "0001854445",
       "exchange": "Nasdaq",
       "id": "145996c0cd8ab02dbdad0bf2e82c5311de72fbdc7f819c070bb3e9aa09dc4938",
-      "name": "Glimpse Group, Inc.",
+      "name": "Brightline Interactive, Inc./NV",
       "ticker": "BTLN",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001854445"
     },
@@ -12891,8 +12859,8 @@
     },
     {
       "cik": "0001814215",
-      "exchange": "OTC",
-      "id": "ebe61cfce17effef725becf565ee773e6a8c418fc77f6061deb8420a4053f99f",
+      "exchange": "",
+      "id": "c83702b6355575aed227db99dfc5c8d3ef1f7166e983154f3ebc72e2d59552c7",
       "name": "Nuburu, Inc.",
       "ticker": "BURU",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001814215"
@@ -14640,6 +14608,14 @@
       "name": "CCSC Technology International Holdings Ltd",
       "ticker": "CCTG",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001931717"
+    },
+    {
+      "cik": "0001865861",
+      "exchange": "OTC",
+      "id": "3f4c611d060f90747ac6dd2bb58f58781196cd9462c2c746a7849e8be591910d",
+      "name": "Cactus Acquisition Corp. 1 Ltd",
+      "ticker": "CCTSF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001865861"
     },
     {
       "cik": "0000888746",
@@ -18890,14 +18866,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001119769"
     },
     {
-      "cik": "0001658247",
-      "exchange": "Nasdaq",
-      "id": "9bad691a2fbe1028b908cf160d8957a9ed336cb1209d37a80b9b8f7cb0b7aa1c",
-      "name": "Crinetics Pharmaceuticals, Inc.",
-      "ticker": "CRNX",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001658247"
-    },
-    {
       "cik": "0001656472",
       "exchange": "Nasdaq",
       "id": "2ca570821738068e6e847fc8a624cff9b2e5f2d221541add7e96b07cc76457f5",
@@ -19147,8 +19115,8 @@
     },
     {
       "cik": "0001106861",
-      "exchange": "OTC",
-      "id": "f9cb8a0344b605e6fcb5d32492aa3b269c75353ef4a5527b4db1e55ca3b9d664",
+      "exchange": "",
+      "id": "63d38bf3f9a3995ead95316dce02d755cc7e441474a55f5a1d71458415336b2f",
       "name": "CS DIAGNOSTICS CORP.",
       "ticker": "CSDX",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001106861"
@@ -19584,6 +19552,22 @@
       "name": "Cytosorbents Corp",
       "ticker": "CTSO",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001175151"
+    },
+    {
+      "cik": "0001865861",
+      "exchange": "OTC",
+      "id": "ba2de4c5b1b7935a781a54a72adedf1ec60df47dacf7d15429f426feab177822",
+      "name": "Cactus Acquisition Corp. 1 Ltd",
+      "ticker": "CTSUF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001865861"
+    },
+    {
+      "cik": "0001865861",
+      "exchange": "OTC",
+      "id": "b47e39f5854bf437462fd00d9455ccef384da69b7cce4c142617e2e5efaf1094",
+      "name": "Cactus Acquisition Corp. 1 Ltd",
+      "ticker": "CTSWF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001865861"
     },
     {
       "cik": "0001035422",
@@ -20315,8 +20299,8 @@
     },
     {
       "cik": "0001917993",
-      "exchange": "",
-      "id": "529ca854235f75fa7c402fbc426e63af85813604a45840afb30e0d31eb1dd6f2",
+      "exchange": "OTC",
+      "id": "3e9c2fe64b9e580ec331c8f1988f98a4b99b158c2040053fbe96a7562def7a6f",
       "name": "Cyphaira Corp.",
       "ticker": "CYPA",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001917993"
@@ -24154,6 +24138,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002073615"
     },
     {
+      "cik": "0002131124",
+      "exchange": "",
+      "id": "e4726f7735717cadd9d5178f9f625a9dcf7f897ab5f52d57a6fd1367d28b5a5a",
+      "name": "Elevation Acquisition Group Inc.",
+      "ticker": "ELEV",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002131124"
+    },
+    {
       "cik": "0001600033",
       "exchange": "NYSE",
       "id": "381b06ec0c39d003d344987488c4242e288c944937fd44bbc20fd185b2dddff1",
@@ -26808,14 +26800,6 @@
       "name": "First Carolina Financial Services, Inc.",
       "ticker": "FCBM",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001531193"
-    },
-    {
-      "cik": "0001807689",
-      "exchange": "",
-      "id": "1d2af755eafcf8ec64db4d1237fa7d2d96536fc97515207430619411b90ad4e2",
-      "name": "FAST CASUAL CONCEPTS, INC.",
-      "ticker": "FCCI",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001807689"
     },
     {
       "cik": "0001131903",
@@ -32970,14 +32954,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001703644"
     },
     {
-      "cik": "0001677084",
-      "exchange": "OTC",
-      "id": "139640dfddc0efc11a5282c54be8422b5ad2ea8200ccf9ec8332425302ee9505",
-      "name": "GPM Metals Inc.",
-      "ticker": "GPMTF",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001677084"
-    },
-    {
       "cik": "0001123360",
       "exchange": "NYSE",
       "id": "b53b68c7278b9ac20b90090fa267cfc17b861ba4ea439aeeee1c10f521b858a1",
@@ -33578,22 +33554,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002044635"
     },
     {
-      "cik": "0001961592",
-      "exchange": "OTC",
-      "id": "6ff79ba35a3554543434925bd0f184d6c10130c6be0894c818f24951391c6fd3",
-      "name": "Gold X2 Mining Inc.",
-      "ticker": "GSHRD",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001961592"
-    },
-    {
-      "cik": "0001961592",
-      "exchange": "OTC",
-      "id": "0373ad6a940a6fa50714b71dbeafe493254062ddb4f6ecdef4e26921db6faccd",
-      "name": "Gold X2 Mining Inc.",
-      "ticker": "GSHRF",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001961592"
-    },
-    {
       "cik": "0002044635",
       "exchange": "Nasdaq",
       "id": "791b406fe38a098b506f3f907c39ae447fde9669160eb1393c4b92ffe06b7237",
@@ -33736,14 +33696,6 @@
       "name": "GSR V Acquisition Corp.",
       "ticker": "GSRVU",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002111762"
-    },
-    {
-      "cik": "0001917993",
-      "exchange": "OTC",
-      "id": "e385c47908f2155026e4ac2ebcf477053cb1eda29ea080246ccb3e8f94ce1c25",
-      "name": "Cyphaira Corp.",
-      "ticker": "GSTK",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001917993"
     },
     {
       "cik": "0001497649",
@@ -34986,6 +34938,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001680873"
     },
     {
+      "cik": "0002152644",
+      "exchange": "",
+      "id": "5b1eff93f469b57cc3da7804a26dc1102e0269dd181b78c1a4c17e818cf62a9e",
+      "name": "Hometown Financial Group, Inc./MD",
+      "ticker": "HFG",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002152644"
+    },
+    {
       "cik": "0001710680",
       "exchange": "NYSE",
       "id": "2e8325f6663f13a9055a1feb70ca0c994aae72bd851663f7676c68683a0b1076",
@@ -35435,8 +35395,8 @@
     },
     {
       "cik": "0001739174",
-      "exchange": "",
-      "id": "07983e48bb99da6c8fd2f130ea001aab395ba68855316538d3091f74f114f887",
+      "exchange": "NYSE",
+      "id": "24c3ab6524ba6724aac99d7bb13230de3ab83434d4606a8df0c11922278ba1c8",
       "name": "BiomX Inc.",
       "ticker": "HLSQ",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001739174"
@@ -35456,14 +35416,6 @@
       "name": "National Healthcare Properties, Inc.",
       "ticker": "HLTC",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001561032"
-    },
-    {
-      "cik": "0000866829",
-      "exchange": "NYSE",
-      "id": "2d84bd839bc5f57f3141da98c343017996d06df46076b52aabb8621253d5ae1d",
-      "name": "HORNBECK OFFSHORE SERVICES, INC.",
-      "ticker": "HLX",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0000866829"
     },
     {
       "cik": "0002099656",
@@ -39842,12 +39794,36 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001070304"
     },
     {
+      "cik": "0001852019",
+      "exchange": "OTC",
+      "id": "d7c8432f495a48fb2223597d633d608fe801007f0f2207ba5faa0add0d132664",
+      "name": "IX Acquisition Corp.",
+      "ticker": "IXAQF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001852019"
+    },
+    {
       "cik": "0001873875",
       "exchange": "Nasdaq",
       "id": "f69c6bdfc1f2821859585b96fe35fa1042cf25d78a3cf6c3ba20a7c5f4cddd8b",
       "name": "Incannex Healthcare Inc.",
       "ticker": "IXHL",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001873875"
+    },
+    {
+      "cik": "0001852019",
+      "exchange": "OTC",
+      "id": "90c1be266525cb2a6a5bb3f88174023456448bc62d99e4396d01d16a8661e1b9",
+      "name": "IX Acquisition Corp.",
+      "ticker": "IXQUF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001852019"
+    },
+    {
+      "cik": "0001852019",
+      "exchange": "OTC",
+      "id": "44d2e7039fda919bd3d71c2a9261854d511512498bc11140eb016e24ada4a2dd",
+      "name": "IX Acquisition Corp.",
+      "ticker": "IXQWF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001852019"
     },
     {
       "cik": "0001495231",
@@ -39872,14 +39848,6 @@
       "name": "JACOBS SOLUTIONS INC.",
       "ticker": "J",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000052988"
-    },
-    {
-      "cik": "0002128739",
-      "exchange": "",
-      "id": "980852ac41382f50101edb66889a112d4ffbec3e20a1850d33ff621c3cfde102",
-      "name": "JAB Acquisition Corp I",
-      "ticker": "JAB",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002128739"
     },
     {
       "cik": "0000807882",
@@ -40255,6 +40223,14 @@
       "id": "456275f3efccd3de517495da1213785fce5728958b704085ffc330d55e8fdb81",
       "name": "Jubilant Flame International, Ltd",
       "ticker": "JFIL",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001517389"
+    },
+    {
+      "cik": "0001517389",
+      "exchange": "OTC",
+      "id": "1b86603d6ce81bf42a1e48b14b7bdaaa2a6e39ec4d5376593f80b9cc25c11760",
+      "name": "Jubilant Flame International, Ltd",
+      "ticker": "JFILD",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001517389"
     },
     {
@@ -41523,8 +41499,8 @@
     },
     {
       "cik": "0001637459",
-      "exchange": "Nasdaq",
-      "id": "787bcc51a813983b98a5827ef41e547442efa6453c9ca1dd4b15dc4a34c01c55",
+      "exchange": "NYSE",
+      "id": "eb264f68af9bc1ddd4e1de4f436fdfdf6400f242aa33abeb32399309fc56cc86",
       "name": "Kraft Heinz Co",
       "ticker": "KHC",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001637459"
@@ -42386,6 +42362,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001772177"
     },
     {
+      "cik": "0001318596",
+      "exchange": "OTC",
+      "id": "22e4d9d385f2e0ff4dfe38fd74ce2cd55bbfe7df8f8d73c65168d67750267995",
+      "name": "KORYX COPPER INC.",
+      "ticker": "KRYCY",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001318596"
+    },
+    {
       "cik": "0001711279",
       "exchange": "Nasdaq",
       "id": "2bfbb67fa595649ace35f0ece1f8ae59b751e16615f7e8266df0ac21475bac76",
@@ -42653,7 +42637,7 @@
       "cik": "0002000756",
       "exchange": "Nasdaq",
       "id": "c2db7fb80d3d5474d4261a2edfd404779a69d8765a2b3b9fa1d0040271ef4a15",
-      "name": "K Wave Media Ltd.",
+      "name": "Nexus Advanced Technologies Inc.",
       "ticker": "KWM",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002000756"
     },
@@ -42661,7 +42645,7 @@
       "cik": "0002000756",
       "exchange": "Nasdaq",
       "id": "0cd14459e12113c30f36122eccaaf5365de2967e84a728161d1e7d200214edd3",
-      "name": "K Wave Media Ltd.",
+      "name": "Nexus Advanced Technologies Inc.",
       "ticker": "KWMWW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002000756"
     },
@@ -44019,8 +44003,8 @@
     },
     {
       "cik": "0001347242",
-      "exchange": "OTC",
-      "id": "cdddde9096f6fb7b053bc85fcc536f80631ef60b5c198dc0f54b74e6f0a6a51f",
+      "exchange": "",
+      "id": "049e9724ea4d4e6877ff1db61da3e5d23455cc8e671db413a69cba6e853aef86",
       "name": "LIPELLA PHARMACEUTICALS INC.",
       "ticker": "LIPO",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001347242"
@@ -46682,6 +46666,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000936958"
     },
     {
+      "cik": "0002099681",
+      "exchange": "OTC",
+      "id": "54162f4afef1c2e0e4da299b1d3d4eeed9d093d0789b51ecee1b83a0ab30c65b",
+      "name": "MetaOptics Ltd",
+      "ticker": "MEAOF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002099681"
+    },
+    {
       "cik": "0001766368",
       "exchange": "NYSE",
       "id": "036c8795b14a1ccf926d34fba6ced5aa5a4fb47174a22dc8e5203069898850b6",
@@ -48695,14 +48687,6 @@
       "id": "383cbb32176eb57e98537c501ecf136ebdee6e163043b179b4b7882535fe9398",
       "name": "MPLX LP",
       "ticker": "MPLX",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001552000"
-    },
-    {
-      "cik": "0001552000",
-      "exchange": "OTC",
-      "id": "cedf2e4f00b057c41f8512daa9c4fbb112e9a8d9f7800a15c7a0f4d12d487be8",
-      "name": "MPLX LP",
-      "ticker": "MPLXP",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001552000"
     },
     {
@@ -50842,14 +50826,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000070866"
     },
     {
-      "cik": "0001692427",
-      "exchange": "Nasdaq",
-      "id": "ab0da6d4a14a8d566542cf9ee21572113e3f2a33f7837bd8745e6ac673ec2759",
-      "name": "NCS Multistage Holdings, Inc.",
-      "ticker": "NCSM",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001692427"
-    },
-    {
       "cik": "0001003935",
       "exchange": "OTC",
       "id": "5558a410b4486ac61468777b0802f4239c9e14035c6b8da02ffbbf5283900ebf",
@@ -51354,6 +51330,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001749723"
     },
     {
+      "cik": "0001749723",
+      "exchange": "Nasdaq",
+      "id": "a195b39f64f6b9fffcacfa7d4c1f613590b05d2663d6cf731692daa1f427811a",
+      "name": "New Fortress Energy Inc.",
+      "ticker": "NFEGP",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001749723"
+    },
+    {
       "cik": "0000070145",
       "exchange": "NYSE",
       "id": "6cbaa5306ae2c4311c37797b27a07df29f4421d8f92ea53fad6fcd9323164069",
@@ -51655,14 +51639,6 @@
       "id": "f8023ea966374c3256ace123ef59ef2ae95ca8b52ab617519d49c4c05c9ea48b",
       "name": "National Healthcare Properties, Inc.",
       "ticker": "NHP",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001561032"
-    },
-    {
-      "cik": "0001561032",
-      "exchange": "Nasdaq",
-      "id": "3c81ca5733920e2112dd3ca6925d9b3049d695eb6ba4e127ddfcbd68c49938d8",
-      "name": "National Healthcare Properties, Inc.",
-      "ticker": "NHPAP",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001561032"
     },
     {
@@ -52802,14 +52778,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000070487"
     },
     {
-      "cik": "0001759546",
-      "exchange": "OTC",
-      "id": "db0183d6daca66467b5e2c4d143c434a652d5da14bd9a6c0fe26c8cf981db799",
-      "name": "Stark Novus Financial Inc.",
-      "ticker": "NRDE",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001759546"
-    },
-    {
       "cik": "0001850269",
       "exchange": "OTC",
       "id": "3fca0585fbaf0fc83b8712cd5756f7086dda8f1d3a1f273349871269a5eb5d7f",
@@ -53410,6 +53378,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000769594"
     },
     {
+      "cik": "0002153349",
+      "exchange": "OTC",
+      "id": "03c10a5aabfc05f1268c00905f5a04fa8206447c3379d052d8dc40e54a198c71",
+      "name": "Nativo Resources plc /ADR",
+      "ticker": "NTVRY",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002153349"
+    },
+    {
       "cik": "0001039280",
       "exchange": "Nasdaq",
       "id": "346a2e9a6df0327af3305bd8de0d60df2ca4c8c8a35cedeb9a9d9f7fa3741f98",
@@ -53496,14 +53472,6 @@
       "name": "NUCOR CORP",
       "ticker": "NUE",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000073309"
-    },
-    {
-      "cik": "0001502758",
-      "exchange": "OTC",
-      "id": "673f44425d4ba0c5a0e668101538e1c6b79d56bee4dccca04175e7e0eb07e7fd",
-      "name": "NuLegacy Gold Corp",
-      "ticker": "NULGF",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001502758"
     },
     {
       "cik": "0001543637",
@@ -54005,7 +53973,7 @@
       "cik": "0002000756",
       "exchange": "Nasdaq",
       "id": "d4c61318ffab10be5acf719edc970a8e086c637fa08189f6c30e36b8586560f8",
-      "name": "K Wave Media Ltd.",
+      "name": "Nexus Advanced Technologies Inc.",
       "ticker": "NXAT",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002000756"
     },
@@ -54013,7 +53981,7 @@
       "cik": "0002000756",
       "exchange": "Nasdaq",
       "id": "5de809d1362694d6bcc14085fe04c82ad80ad769fc9eed2f4f52b505b4f93e8f",
-      "name": "K Wave Media Ltd.",
+      "name": "Nexus Advanced Technologies Inc.",
       "ticker": "NXATW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002000756"
     },
@@ -54660,9 +54628,25 @@
     {
       "cik": "0002137679",
       "exchange": "Nasdaq",
+      "id": "cf1657d8fac8598a878e67b580ec30e955efbb6438d570cdb61ee6ffa784681f",
+      "name": "OceanLight Acquisition Corp",
+      "ticker": "OCLTR",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002137679"
+    },
+    {
+      "cik": "0002137679",
+      "exchange": "Nasdaq",
       "id": "1b56c1784c4d372e466c2bb2a7fee5439cb9258001caa7cc22bc5741928c6aa4",
       "name": "OceanLight Acquisition Corp",
       "ticker": "OCLTU",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002137679"
+    },
+    {
+      "cik": "0002137679",
+      "exchange": "Nasdaq",
+      "id": "e00bf75edcb9c416c2f3276b81645d8308a5d1fa1a12c57f9af7eeb4d4f313c5",
+      "name": "OceanLight Acquisition Corp",
+      "ticker": "OCLTW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002137679"
     },
     {
@@ -60770,14 +60754,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000889900"
     },
     {
-      "cik": "0001523872",
-      "exchange": "OTC",
-      "id": "03e6ad1bca3eef7f6ec5d8afdfaac32b72c2bbd6545d842bf01dccdc18c08f1e",
-      "name": "PT Tower Bersama Infrastructure Tbk/ADR",
-      "ticker": "PTFRF",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001523872"
-    },
-    {
       "cik": "0001377121",
       "exchange": "Nasdaq",
       "id": "3b65edd624d2151fab31e640974b05a9815f649d6453fdc2b3bd3c3b534c66b2",
@@ -60904,14 +60880,6 @@
       "name": "SIYATA PTT",
       "ticker": "PTT",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002110025"
-    },
-    {
-      "cik": "0001523872",
-      "exchange": "OTC",
-      "id": "b75525b37ddee4b38c6ac0c13b648ac3c160da40c88d8c6c545bb2bcdaf646f5",
-      "name": "PT Tower Bersama Infrastructure Tbk/ADR",
-      "ticker": "PTWRY",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001523872"
     },
     {
       "cik": "0001545057",
@@ -61498,14 +61466,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000824416"
     },
     {
-      "cik": "0001067839",
-      "exchange": "Nasdaq",
-      "id": "f82bbd220888c75dd3335832ab8fe3762fab6059dda4d56c0831ca46803d021a",
-      "name": "INVESCO QQQ TRUST, SERIES 1",
-      "ticker": "QQQ",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001067839"
-    },
-    {
       "cik": "0001608741",
       "exchange": "Nasdaq",
       "id": "55e5f7d835482f1c813b87896f9bf50d0984b8de3d1ca7124e421a390f51e873",
@@ -61898,6 +61858,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001949257"
     },
     {
+      "cik": "0002152921",
+      "exchange": "OTC",
+      "id": "d8e9bbafe4be424803755911c22101c86de85dc3a639cf5df206fa1a89d525f6",
+      "name": "Rafex Gold Corp.",
+      "ticker": "RAFX",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002152921"
+    },
+    {
       "cik": "0001320854",
       "exchange": "Nasdaq",
       "id": "2de7a375f86732b4121b68dd6ee98520f23775d0907da6e932a0b9d0e2beca2c",
@@ -62231,14 +62199,6 @@
       "id": "f017d259c3c53700565c6faa09afadb00f7eaead7cbf8f235561cdc9d4550977",
       "name": "ROCKET PHARMACEUTICALS, INC.",
       "ticker": "RCKT",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001281895"
-    },
-    {
-      "cik": "0001281895",
-      "exchange": "Nasdaq",
-      "id": "ad9e26db72bca12d362293eb93b663ad429ea8c199012b9c19330c1d675f6671",
-      "name": "ROCKET PHARMACEUTICALS, INC.",
-      "ticker": "RCKTW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001281895"
     },
     {
@@ -64506,14 +64466,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000943819"
     },
     {
-      "cik": "0002086869",
-      "exchange": "OTC",
-      "id": "bff03d10f8ecbc4afc1a60013e0318b8564f55cdbc36c8753b9b780cdd4a2fc3",
-      "name": "RESOLUTION MINERALS LTD/ADR",
-      "ticker": "RSMIY",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002086869"
-    },
-    {
       "cik": "0001858994",
       "exchange": "OTC",
       "id": "04c5992009bf466b27e4b4ce644298bd94d2286db6a1b454f796e3f713fdb55d",
@@ -66304,6 +66256,14 @@
       "name": "Scribe Therapeutics, Inc.",
       "ticker": "SCTX",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001853921"
+    },
+    {
+      "cik": "0001912540",
+      "exchange": "OTC",
+      "id": "0de2fd642343b18328746b7c2f76336fe5e847013edc73409f4c17f9a79a48e3",
+      "name": "Sound Cave Technology Inc.",
+      "ticker": "SCVE",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001912540"
     },
     {
       "cik": "0000933972",
@@ -76658,6 +76618,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001453932"
     },
     {
+      "cik": "0002153327",
+      "exchange": "OTC",
+      "id": "11621cc1dd67891cc50ae1a128b35c8fe515451143968646f839aa09d3a2c9bf",
+      "name": "Unicaja Banco S.A/ADR",
+      "ticker": "UNCJY",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002153327"
+    },
+    {
       "cik": "0001766140",
       "exchange": "Nasdaq",
       "id": "a5d5cd38a130dc3cdce881f5266fc49b2344d8846a708b0706f472fda04d7cb9",
@@ -76728,6 +76696,14 @@
       "name": "RiverNorth Long Prime Unicorn Fund I, Inc.",
       "ticker": "UNIU",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002077715"
+    },
+    {
+      "cik": "0002153327",
+      "exchange": "OTC",
+      "id": "7b4748746e9c2ae5b02512e53159fd4782d61c4fd8855b891d5c1a2a44a31207",
+      "name": "Unicaja Banco S.A/ADR",
+      "ticker": "UNJCF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002153327"
     },
     {
       "cik": "0001405513",
@@ -77013,7 +76989,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "cdeba7e8f019deee9cdf221dac079f2965f9fc2f10ae09ad175c27aec1591b03",
-      "name": "US BANCORP DE",
+      "name": "US BANCORP \\DE\\",
       "ticker": "USB",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -77021,7 +76997,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "a876c16fa72accefa0a8b28724226d8cf86932cedc300a8c3bf30bb7e07055fd",
-      "name": "US BANCORP DE",
+      "name": "US BANCORP \\DE\\",
       "ticker": "USB-PA",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -77029,7 +77005,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "bb726a862a7ea856459449f38fab80267e62ae5b0b97f90911da46be47d9db92",
-      "name": "US BANCORP DE",
+      "name": "US BANCORP \\DE\\",
       "ticker": "USB-PH",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -77037,7 +77013,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "50d47a391a89c0966ab181d3fd7a2f6f5eb9b6778ba2aeb1dfb212740cb8d7e9",
-      "name": "US BANCORP DE",
+      "name": "US BANCORP \\DE\\",
       "ticker": "USB-PP",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -77045,7 +77021,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "eba5f748e156067abfd32096ab7d60249301650693f4d2bd15ae6a9b68122894",
-      "name": "US BANCORP DE",
+      "name": "US BANCORP \\DE\\",
       "ticker": "USB-PQ",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -77053,7 +77029,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "2ee206bce50a10c2c0b84a5de5dd47b7b62e241f93e791ff1e723ce5cfae435c",
-      "name": "US BANCORP DE",
+      "name": "US BANCORP \\DE\\",
       "ticker": "USB-PR",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -77061,7 +77037,7 @@
       "cik": "0000036104",
       "exchange": "NYSE",
       "id": "1837daa71220a35674e4a6fe85e449a0b3d7824d47b06eff7e1c672fb0d38054",
-      "name": "US BANCORP DE",
+      "name": "US BANCORP \\DE\\",
       "ticker": "USB-PS",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000036104"
     },
@@ -79914,6 +79890,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001540042"
     },
     {
+      "cik": "0001778788",
+      "exchange": "OTC",
+      "id": "ea44dfaa8bf7da7356558dfabc6dd6907c701b4e680bb15770433c4ca1e5aa1e",
+      "name": "WebBeds Group Limited/ADR",
+      "ticker": "WEJTY",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001778788"
+    },
+    {
       "cik": "0002125056",
       "exchange": "",
       "id": "cea2b049cda0d7eb0f59d7ad8dce57a5d322fb18588b0209115ca27a758e3fc0",
@@ -80767,14 +80751,6 @@
       "id": "68ce13494ec36080e686f5c0214ac3474be3beed5a1aaa22170d13e6196f3f50",
       "name": "SCWorx Corp.",
       "ticker": "WORX",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001674227"
-    },
-    {
-      "cik": "0001674227",
-      "exchange": "",
-      "id": "6fe89b187968edc3d3ac99dc0b8a02c8c480e439c1ae4df8bea54f61e0d70532",
-      "name": "SCWorx Corp.",
-      "ticker": "WORXD",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001674227"
     },
     {
@@ -82722,14 +82698,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001674440"
     },
     {
-      "cik": "0001985337",
-      "exchange": "Nasdaq",
-      "id": "e914ef35436cec33b2ca479c8f9df1b097ab4c56cf82e0e289798544662687c8",
-      "name": "YYForce Inc.",
-      "ticker": "YYGH",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001985337"
-    },
-    {
       "cik": "0001617640",
       "exchange": "Nasdaq",
       "id": "97e0573c69350609ca6a964bf1c8f867a35dd1e66742180ff9ee310b1975222c",
@@ -83162,6 +83130,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001725160"
     },
     {
+      "cik": "0002078148",
+      "exchange": "",
+      "id": "5a1cedfa8145b9f1ee44caddf91f1474b0c0f0fb618418157efb0c317ded47d3",
+      "name": "Zoar Ltd",
+      "ticker": "ZOAR",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002078148"
+    },
+    {
       "cik": "0001684144",
       "exchange": "OTC",
       "id": "4b267e3f69b0fc0bb6bc51f3d4e991fb8576882a706bede81efb26466a8cccba",
@@ -83173,7 +83149,7 @@
       "cik": "0001956741",
       "exchange": "NYSE",
       "id": "46ce60e6e6b38648fbc791f8b4d60bb18a3491750e3f6226ddb24f81278b8636",
-      "name": "CleanCore Solutions, Inc.",
+      "name": "Zone Frontier Inc.",
       "ticker": "ZONE",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001956741"
     },
@@ -83288,14 +83264,6 @@
       "name": "ZeroStack Corp.",
       "ticker": "ZSTK",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001790169"
-    },
-    {
-      "cik": "0001904501",
-      "exchange": "Nasdaq",
-      "id": "756e1dd9f52ee2a188eef3558edc9c225e399c0d233af413cebf03eeb19c1720",
-      "name": "Zentek Ltd.",
-      "ticker": "ZTEK",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001904501"
     },
     {
       "cik": "0001904501",
