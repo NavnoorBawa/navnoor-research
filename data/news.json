@@ -2,6 +2,32 @@
   "items": [
     {
       "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
+      "id": "n_da3bcbb85f4595d6b859363dce4a60cecd20e7593bb1a729eadc864f44b7a9f9",
+      "published": "2026-09-16T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve issues FOMC statement",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
+      "id": "n_7400cab4847e7a3384d183c84c2761cad9b04464b74edb881a4203e6c203b1c4",
+      "published": "2026-09-16T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
       "entities": [],
       "id": "n_801d63c5c41391b968dca5c5f676d7992e6db7ff9e1ce04507fb029fb8517d50",
       "published": "2026-09-11T14:00:00Z",
@@ -1442,17 +1468,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 25,
+      "item_count": 27,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-16T17:17:24Z",
-      "last_success_at": "2026-09-16T17:17:24Z",
+      "last_attempt_at": "2026-09-16T21:43:34Z",
+      "last_success_at": "2026-09-16T21:43:34Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-16T17:17:24Z",
+      "last_attempt_at": "2026-09-16T21:43:34Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
