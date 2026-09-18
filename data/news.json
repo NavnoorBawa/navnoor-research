@@ -5,6 +5,32 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_d16dd968793c9f3199afcb66a5f001f9959a9a0e62d02d878c7ae40b8b44b25c",
+      "published": "2026-09-18T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
+      "id": "n_a7d6226407dcbbf91cb16d354774fc00b1f16368c9d7dbbe76b8f6a543154c60",
+      "published": "2026-09-18T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_da3bcbb85f4595d6b859363dce4a60cecd20e7593bb1a729eadc864f44b7a9f9",
       "published": "2026-09-16T18:00:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1468,17 +1494,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 27,
+      "item_count": 29,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-18T11:50:04Z",
-      "last_success_at": "2026-09-18T11:50:04Z",
+      "last_attempt_at": "2026-09-18T16:43:55Z",
+      "last_success_at": "2026-09-18T16:43:55Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-18T11:50:04Z",
+      "last_attempt_at": "2026-09-18T16:43:55Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
