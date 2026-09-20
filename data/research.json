@@ -1,6 +1,34 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "renaissance"
+      ],
+      "id": "r_b79b036e50d86c2f857f6bc8aef987cd6c0baf2854f34ebc1be0645cd23b5666",
+      "published": "2026-09-17T15:02:43Z",
+      "source": "medium",
+      "summary": "Peter Brown and Robert Mercer, two IBM computer scientists with no trading background, built the equity engine that made them Renaissance",
+      "title": "Jim Simons Never Built Medallion’s Equity Engine Either. Two IBM Speech Scientists Did.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/jim-simons-never-built-medallions-equity-engine-either-two-ibm-speech-scientists-did-62471d2ac761"
+    },
+    {
+      "access": "unknown",
+      "entities": [
+        "aqr",
+        "man-group",
+        "factor-investing"
+      ],
+      "id": "r_1c53b52d4ba2e02ab19631b3d56cb7da6fbcb49a495d66a4731f5269decad4ab",
+      "published": "2026-09-16T07:36:05Z",
+      "source": "medium",
+      "summary": "A widely repeated 23% CFM gain turned out to be from 2011, not 2009. Man AHL really fell 16.9% that year",
+      "title": "AQR’s momentum factor crashed 42% in 2009. CFM’s category crashed too.",
+      "topic": "quant-methods",
+      "url": "https://medium.com/@navnoorbawa/aqrs-momentum-factor-crashed-42-in-2009-cfm-s-category-crashed-too-d20bba1def54"
+    },
+    {
       "access": "restricted",
       "entities": [],
       "id": "r_e40d0b7e89a3ee7b63d324c57f170931473e4f900ef16f94ce2c48c41dc15485",
@@ -7645,6 +7673,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "650cbacec4c8256b74b7db9213643b803814f0b584dc73948717241ff8056de7",
-  "source_revision": "0fc7c0bf3e19e001bcfb7988c13ea6cfc58bb442"
+  "source_dataset_version": "0c1734512a457dfaaaf583ca85861c052b5bad31984c41905c83374f128bd8d3",
+  "source_revision": "a30652f7a92e04892c2581df7ac1900884a1d4e5"
 }

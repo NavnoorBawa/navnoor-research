@@ -2,6 +2,30 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-never-built-medallions-equity-engine-either-two-ibm-speech-scientists-did-62471d2ac761",
+      "id": "r_b79b036e50d86c2f857f6bc8aef987cd6c0baf2854f34ebc1be0645cd23b5666",
+      "published_at": "2026-09-17T15:02:43Z",
+      "slug": "jim-simons-never-built-medallions-equity-engine-either-two-ibm-speech-scientists-did-62471d2ac761",
+      "source": "medium",
+      "source_id": "62471d2ac761",
+      "subtitle": "Peter Brown and Robert Mercer, two IBM computer scientists with no trading background, built the equity engine that made them Renaissance…\n\nContinue reading on Medium »",
+      "title": "Jim Simons Never Built Medallion’s Equity Engine Either. Two IBM Speech Scientists Did."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/aqrs-momentum-factor-crashed-42-in-2009-cfm-s-category-crashed-too-d20bba1def54",
+      "id": "r_1c53b52d4ba2e02ab19631b3d56cb7da6fbcb49a495d66a4731f5269decad4ab",
+      "published_at": "2026-09-16T07:36:05Z",
+      "slug": "aqrs-momentum-factor-crashed-42-in-2009-cfm-s-category-crashed-too-d20bba1def54",
+      "source": "medium",
+      "source_id": "d20bba1def54",
+      "subtitle": "A widely repeated 23% CFM gain turned out to be from 2011, not 2009. Man AHL really fell 16.9% that year.\n\nContinue reading on Medium »",
+      "title": "AQR’s momentum factor crashed 42% in 2009. CFM’s category crashed too."
+    },
+    {
       "access": "restricted",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/isda-warns-jscc-merger-could-force",
@@ -8021,5 +8045,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "650cbacec4c8256b74b7db9213643b803814f0b584dc73948717241ff8056de7"
+  "source_dataset_version": "0c1734512a457dfaaaf583ca85861c052b5bad31984c41905c83374f128bd8d3"
 }
