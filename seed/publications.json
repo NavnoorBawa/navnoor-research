@@ -4,6 +4,42 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/thorp-traded-black-scholes-in-1967-merton-proved-it-in-1973-bet-ltcm-on-it-99824e5a20fc",
+      "id": "r_f182d30e44c051028c535c56b624c20c3bc7e8a731d1c1841589efe764d28e7b",
+      "published_at": "2026-09-21T15:04:14Z",
+      "slug": "thorp-traded-black-scholes-in-1967-merton-proved-it-in-1973-bet-ltcm-on-it-99824e5a20fc",
+      "source": "medium",
+      "source_id": "99824e5a20fc",
+      "subtitle": "Black and Scholes derived their formula from the CAPM, a modeling choice rather than a proof; the actual proof, built on continuous time…\n\nContinue reading on Medium »",
+      "title": "Thorp Traded Black-Scholes in 1967. Merton Proved It in 1973, Bet LTCM on It."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/pershing-square-funded-ackmans-berkshire",
+      "id": "r_4247f18e762a415fa40b4e527c38689f5b2467bb628f1979a5e531f4649f0349",
+      "published_at": "2026-09-21T14:21:12.183Z",
+      "slug": "pershing-square-funded-ackmans-berkshire",
+      "source": "substack",
+      "source_id": "pershing-square-funded-ackmans-berkshire",
+      "subtitle": "A seven-year call at 4% or 1.5x tangible book, first window March 1, 2027, and an equity book down $36 million in 27 days.",
+      "title": "Pershing Square Funded Ackman's Berkshire. Howard Hughes Holds the Call."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/ackmans-howard-170148084",
+      "id": "r_106617e420b1a227e9ed7d8367e9e65415fb7aa722fa3c6451fd11aa8d492479",
+      "published_at": "2026-09-21",
+      "slug": "ackmans-howard-170148084",
+      "source": "patreon",
+      "source_id": "170148084",
+      "subtitle": "",
+      "title": "Ackman's Howard Hughes Call: the Stress Test at a 20% Equity Quarter and Two Ledgers"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-never-built-medallions-equity-engine-either-two-ibm-speech-scientists-did-62471d2ac761",
       "id": "r_b79b036e50d86c2f857f6bc8aef987cd6c0baf2854f34ebc1be0645cd23b5666",
       "published_at": "2026-09-17T15:02:43Z",
@@ -8045,5 +8081,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "0c1734512a457dfaaaf583ca85861c052b5bad31984c41905c83374f128bd8d3"
+  "source_dataset_version": "4e7dd87b34591b8e3b3135358047967ddc9cf29c7f0256c8c40d46d83c922fc4"
 }
