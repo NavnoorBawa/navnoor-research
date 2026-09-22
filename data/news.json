@@ -5,6 +5,19 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_5686e3104fc13d1d52b91e41107098fe1df8c46e421ecaf0ab55fa4bcc04fe62",
+      "published": "2026-09-22T20:30:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_d16dd968793c9f3199afcb66a5f001f9959a9a0e62d02d878c7ae40b8b44b25c",
       "published": "2026-09-18T15:00:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1494,17 +1507,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 29,
+      "item_count": 30,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-22T17:18:18Z",
-      "last_success_at": "2026-09-22T17:18:18Z",
+      "last_attempt_at": "2026-09-22T21:39:57Z",
+      "last_success_at": "2026-09-22T21:39:57Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-22T17:18:18Z",
+      "last_attempt_at": "2026-09-22T21:39:57Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }

@@ -1,6 +1,35 @@
 {
   "research": [
     {
+      "access": "public",
+      "entities": [
+        "jane-street",
+        "susquehanna",
+        "options"
+      ],
+      "id": "r_4e6836792e90999d51fd76a0f93e694583a43521acb4298546ca105601dfa789",
+      "published": "2026-09-22T13:31:14.071Z",
+      "source": "substack",
+      "summary": "Susquehanna ranks it 21st of 3,053, in a book where two-thirds of names lean the same way.",
+      "title": "How to Read a Market Maker's 13F Options Line: Jane Street and Susquehanna's SpaceX Book, Ranked Against Their Own",
+      "topic": "market-structure",
+      "url": "https://navnoorbawa.substack.com/p/how-to-read-a-market-makers-13f-options"
+    },
+    {
+      "access": "public",
+      "entities": [
+        "jane-street",
+        "susquehanna",
+        "options"
+      ],
+      "id": "r_73d12cc2855f28c9487840dc5c60c424fa61a110ae191bbc9f71ed547298461c",
+      "published": "2026-09-22",
+      "source": "patreon",
+      "title": "The Three-Step Check for a Market Maker's 13F Options Line: Jane Street and Susquehanna on SpaceX",
+      "topic": "market-structure",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/three-step-check-170161365"
+    },
+    {
       "access": "unknown",
       "entities": [
         "ltcm",
@@ -7708,6 +7737,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "4e7dd87b34591b8e3b3135358047967ddc9cf29c7f0256c8c40d46d83c922fc4",
-  "source_revision": "2a04db9a7c884cfb17cca56a40c0d7e9439eac2b"
+  "source_dataset_version": "cc6ef126c72f191d5bc354bc93e6dbedc851d13ec2659ffa630a92d02f91801a",
+  "source_revision": "4eba55e2f7eb0d7d3936530f59c991c409e46b1c"
 }

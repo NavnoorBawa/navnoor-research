@@ -2,6 +2,30 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/how-to-read-a-market-makers-13f-options",
+      "id": "r_4e6836792e90999d51fd76a0f93e694583a43521acb4298546ca105601dfa789",
+      "published_at": "2026-09-22T13:31:14.071Z",
+      "slug": "how-to-read-a-market-makers-13f-options",
+      "source": "substack",
+      "source_id": "how-to-read-a-market-makers-13f-options",
+      "subtitle": "Susquehanna ranks it 21st of 3,053, in a book where two-thirds of names lean the same way.",
+      "title": "How to Read a Market Maker's 13F Options Line: Jane Street and Susquehanna's SpaceX Book, Ranked Against Their Own"
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/three-step-check-170161365",
+      "id": "r_73d12cc2855f28c9487840dc5c60c424fa61a110ae191bbc9f71ed547298461c",
+      "published_at": "2026-09-22",
+      "slug": "three-step-check-170161365",
+      "source": "patreon",
+      "source_id": "170161365",
+      "subtitle": "",
+      "title": "The Three-Step Check for a Market Maker's 13F Options Line: Jane Street and Susquehanna on SpaceX"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/thorp-traded-black-scholes-in-1967-merton-proved-it-in-1973-bet-ltcm-on-it-99824e5a20fc",
@@ -8081,5 +8105,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "4e7dd87b34591b8e3b3135358047967ddc9cf29c7f0256c8c40d46d83c922fc4"
+  "source_dataset_version": "cc6ef126c72f191d5bc354bc93e6dbedc851d13ec2659ffa630a92d02f91801a"
 }
