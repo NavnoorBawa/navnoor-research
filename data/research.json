@@ -1,6 +1,20 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "bridgewater",
+        "aqr"
+      ],
+      "id": "r_3519ce451c22581981779779a075700a548ae7523e27e38f7331b502cca2cd32",
+      "published": "2026-09-22T18:36:23Z",
+      "source": "medium",
+      "summary": "AQR’s own 2012 paper on risk parity cites Markowitz twice, the tangency portfolio 22 times, and Roy zero",
+      "title": "Markowitz Said A.D. Roy Deserved Half the Credit. Bridgewater and AQR Run on the Half Roy Wrote.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/markowitz-said-a-d-roy-deserved-half-the-credit-bridgewater-and-aqr-run-on-the-half-roy-wrote-654aaf91b9c4"
+    },
+    {
       "access": "public",
       "entities": [
         "jane-street",
@@ -7737,6 +7751,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "cc6ef126c72f191d5bc354bc93e6dbedc851d13ec2659ffa630a92d02f91801a",
-  "source_revision": "4eba55e2f7eb0d7d3936530f59c991c409e46b1c"
+  "source_dataset_version": "ca9b458006aae2e2350c3d08865872338a8f8b21348dac74c792adcacae25739",
+  "source_revision": "c3f32517ef933b1043e8a23cc2ec9b145dd08087"
 }

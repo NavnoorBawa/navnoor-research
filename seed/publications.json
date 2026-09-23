@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/markowitz-said-a-d-roy-deserved-half-the-credit-bridgewater-and-aqr-run-on-the-half-roy-wrote-654aaf91b9c4",
+      "id": "r_3519ce451c22581981779779a075700a548ae7523e27e38f7331b502cca2cd32",
+      "published_at": "2026-09-22T18:36:23Z",
+      "slug": "markowitz-said-a-d-roy-deserved-half-the-credit-bridgewater-and-aqr-run-on-the-half-roy-wrote-654aaf91b9c4",
+      "source": "medium",
+      "source_id": "654aaf91b9c4",
+      "subtitle": "AQR’s own 2012 paper on risk parity cites Markowitz twice, the tangency portfolio 22 times, and Roy zero.\n\nContinue reading on Medium »",
+      "title": "Markowitz Said A.D. Roy Deserved Half the Credit. Bridgewater and AQR Run on the Half Roy Wrote."
+    },
+    {
       "access": "public",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/how-to-read-a-market-makers-13f-options",
@@ -8105,5 +8117,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "cc6ef126c72f191d5bc354bc93e6dbedc851d13ec2659ffa630a92d02f91801a"
+  "source_dataset_version": "ca9b458006aae2e2350c3d08865872338a8f8b21348dac74c792adcacae25739"
 }
