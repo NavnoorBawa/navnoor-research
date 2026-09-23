@@ -3,6 +3,34 @@
     {
       "access": "unknown",
       "entities": [
+        "millennium",
+        "two-sigma",
+        "multi-strategy"
+      ],
+      "id": "r_a20c219b931819b413163b2bc2288fc2d5d202f5d2e093d401a60444b5a6cc27",
+      "published": "2026-09-23T15:15:51Z",
+      "source": "medium",
+      "summary": "A 1945 statistics proof says the noise on a 30-day Sharpe estimate is bigger than the skill gap multi-strategy platforms use it to judge",
+      "title": "Rao Proved the Cramér-Rao Bound in 1945. Millennium Fires PMs Inside It. Two Sigma Paid $90M in It.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/rao-proved-the-cram%C3%A9r-rao-bound-in-1945-millennium-fires-pms-inside-it-two-sigma-paid-90m-in-it-8bcc0014fb94"
+    },
+    {
+      "access": "public",
+      "entities": [
+        "renaissance"
+      ],
+      "id": "r_78495f2701146e4b37717d516f20886fc5488cf4ea77fd74940c45162f0d5dcb",
+      "published": "2026-09-23T13:31:09.000Z",
+      "source": "substack",
+      "summary": "Three separate reasons explain why real funds never run the formula at full strength, and only one of them is about nerve",
+      "title": "How Ed Thorp and Renaissance Actually Sized Their Bets: The Kelly Criterion Hedge Funds Still Use",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/how-ed-thorp-and-renaissance-actually"
+    },
+    {
+      "access": "unknown",
+      "entities": [
         "bridgewater",
         "aqr"
       ],
@@ -7751,6 +7779,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "ca9b458006aae2e2350c3d08865872338a8f8b21348dac74c792adcacae25739",
-  "source_revision": "b349194d0588f8455d8ca6489cfbd9696bd58833"
+  "source_dataset_version": "a770e333f834ea324bcba6fcb58991517d3d413dc89cb400c44f622dd519c0a7",
+  "source_revision": "d942db17c2d3e1041bbae879cd054c685df958d3"
 }

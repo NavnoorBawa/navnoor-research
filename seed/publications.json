@@ -4,6 +4,30 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/rao-proved-the-cram%C3%A9r-rao-bound-in-1945-millennium-fires-pms-inside-it-two-sigma-paid-90m-in-it-8bcc0014fb94",
+      "id": "r_a20c219b931819b413163b2bc2288fc2d5d202f5d2e093d401a60444b5a6cc27",
+      "published_at": "2026-09-23T15:15:51Z",
+      "slug": "rao-proved-the-cramér-rao-bound-in-1945-millennium-fires-pms-inside-it-two-sigma-paid-90m-in-it-8bcc0014fb94",
+      "source": "medium",
+      "source_id": "8bcc0014fb94",
+      "subtitle": "A 1945 statistics proof says the noise on a 30-day Sharpe estimate is bigger than the skill gap multi-strategy platforms use it to judge.\n\nContinue reading on Medium »",
+      "title": "Rao Proved the Cramér-Rao Bound in 1945. Millennium Fires PMs Inside It. Two Sigma Paid $90M in It."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/how-ed-thorp-and-renaissance-actually",
+      "id": "r_78495f2701146e4b37717d516f20886fc5488cf4ea77fd74940c45162f0d5dcb",
+      "published_at": "2026-09-23T13:31:09.000Z",
+      "slug": "how-ed-thorp-and-renaissance-actually",
+      "source": "substack",
+      "source_id": "how-ed-thorp-and-renaissance-actually",
+      "subtitle": "Three separate reasons explain why real funds never run the formula at full strength, and only one of them is about nerve",
+      "title": "How Ed Thorp and Renaissance Actually Sized Their Bets: The Kelly Criterion Hedge Funds Still Use"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/markowitz-said-a-d-roy-deserved-half-the-credit-bridgewater-and-aqr-run-on-the-half-roy-wrote-654aaf91b9c4",
       "id": "r_3519ce451c22581981779779a075700a548ae7523e27e38f7331b502cca2cd32",
       "published_at": "2026-09-22T18:36:23Z",
@@ -8117,5 +8141,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "ca9b458006aae2e2350c3d08865872338a8f8b21348dac74c792adcacae25739"
+  "source_dataset_version": "a770e333f834ea324bcba6fcb58991517d3d413dc89cb400c44f622dd519c0a7"
 }
