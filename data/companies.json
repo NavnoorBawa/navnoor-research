@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T21:39:56Z",
+  "checked_at": "2026-09-23T21:47:54Z",
   "items": [
     {
       "cik": "0001090872",
@@ -1368,6 +1368,14 @@
       "name": "Adaptive Biotechnologies Corp",
       "ticker": "ADPT",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001478320"
+    },
+    {
+      "cik": "0001802369",
+      "exchange": "",
+      "id": "5d1177897399e8f38cb5c7dd0853860baaa9ef76f028626f8e6a56711189cfb3",
+      "name": "ADARx Pharmaceuticals, Inc.",
+      "ticker": "ADRX",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001802369"
     },
     {
       "cik": "0001879248",
@@ -10915,8 +10923,8 @@
     },
     {
       "cik": "0002125355",
-      "exchange": "",
-      "id": "2548bba5448c33dc7574c77b6554a76675c1b2bb752ce6da0cef552cc18ec97d",
+      "exchange": "NYSE",
+      "id": "18ba3ff8a2b1516c4675f3befa6ea8ce4de701b72384e5b3b196c869435cca91",
       "name": "Bamboo Insurance Services, Inc.",
       "ticker": "BMB",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002125355"
@@ -34765,7 +34773,7 @@
       "cik": "0001948864",
       "exchange": "NYSE",
       "id": "5db7a9757363e00a25a275302ad7eaa6ef0b791c546687b1ff35bf793ac00882",
-      "name": "HEALTHY CHOICE WELLNESS CORP.",
+      "name": "Host Digital Inc.",
       "ticker": "HCWC",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001948864"
     },
@@ -35741,7 +35749,7 @@
       "cik": "0001948864",
       "exchange": "NYSE",
       "id": "32a2d825674e1f7599e4182f5244e0b3e276a40ef218b98fdbb5cde777f0565c",
-      "name": "HEALTHY CHOICE WELLNESS CORP.",
+      "name": "Host Digital Inc.",
       "ticker": "HOST",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001948864"
     },
@@ -36683,8 +36691,8 @@
     },
     {
       "cik": "0001413891",
-      "exchange": "",
-      "id": "95c2714b4c949c9489952be53f7b6fbd6dd28651d11288d0bcf1d2bdefcce987",
+      "exchange": "OTC",
+      "id": "b7410dab3dd2c5b32f7daf1b7223af7f5f403d43d13316112347063400fe4d56",
       "name": "HIGH WIRE NETWORKS, INC.",
       "ticker": "HWNI",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001413891"
@@ -53939,8 +53947,8 @@
     },
     {
       "cik": "0002131813",
-      "exchange": "",
-      "id": "4faf5ed42f2e754c7107c10d065611202c2ebe1fd401a14fdb09b502883e4d2b",
+      "exchange": "Nasdaq",
+      "id": "72b0db07c532e11e4700ba3bc7c9185e1416e9c2d368eef4f327e7c2c678fbf5",
       "name": "newcleo plc",
       "ticker": "NWCL",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002131813"
@@ -54280,6 +54288,14 @@
       "name": "NextCure, Inc.",
       "ticker": "NXTC",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001661059"
+    },
+    {
+      "cik": "0001193158",
+      "exchange": "OTC",
+      "id": "592e2c34f3253b73fc318189ac54ee90bfaed31c0735c6c8f7d012eecfc8acf5",
+      "name": "NEXT10, INC",
+      "ticker": "NXTN",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001193158"
     },
     {
       "cik": "0001789192",
@@ -58496,14 +58512,6 @@
       "name": "KONINKLIJKE PHILIPS NV",
       "ticker": "PHG",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000313216"
-    },
-    {
-      "cik": "0001739174",
-      "exchange": "NYSE",
-      "id": "54d47a589e0c8dcd141beddfb1aa94932923e3dc539c87b0e3a2b94981ab28d0",
-      "name": "Tessera Defense & Homeland Security Inc.",
-      "ticker": "PHGE",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001739174"
     },
     {
       "cik": "0000078150",
@@ -66771,8 +66779,8 @@
     },
     {
       "cik": "0001990950",
-      "exchange": "",
-      "id": "e1321768e82989f0d18d9c6f944dcd744f1aca66a80d93b796dcc4d55db417cb",
+      "exchange": "OTC",
+      "id": "75eea367441a7c9e28ef0ce6dd1eaad74fb07baa870506da215aec11ded83f80",
       "name": "Semilux International Ltd.",
       "ticker": "SELXF",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001990950"
@@ -71024,6 +71032,14 @@
       "name": "StoneCo Ltd.",
       "ticker": "STNE",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001745431"
+    },
+    {
+      "cik": "0002089160",
+      "exchange": "",
+      "id": "62c7a482c69c51c680bebfed06c6e07ed00909988708f889d4f910b5ca8c5d6a",
+      "name": "Santa Ana Global Enterprises, S.A.",
+      "ticker": "STNF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002089160"
     },
     {
       "cik": "0001483934",
