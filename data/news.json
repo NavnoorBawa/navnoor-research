@@ -5,6 +5,19 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_4362fad6e26cf1b24b7ac846a510fafbff852c4a350ca631c49f9f23514be652",
+      "published": "2026-09-24T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_5686e3104fc13d1d52b91e41107098fe1df8c46e421ecaf0ab55fa4bcc04fe62",
       "published": "2026-09-22T20:30:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1507,17 +1520,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 30,
+      "item_count": 31,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-24T12:12:45Z",
-      "last_success_at": "2026-09-24T12:12:45Z",
+      "last_attempt_at": "2026-09-24T17:33:18Z",
+      "last_success_at": "2026-09-24T17:33:18Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-24T12:12:45Z",
+      "last_attempt_at": "2026-09-24T17:33:18Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }

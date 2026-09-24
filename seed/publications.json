@@ -4,6 +4,42 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/gauss-didnt-publish-least-squares-first-legendre-did-d-e-shaw-and-pdt-built-stat-arb-on-it-2356b8965cfd",
+      "id": "r_fe4375695f224cffffb23d25a552fd7fa59248b3f7936240892a8c51159797f7",
+      "published_at": "2026-09-24T15:23:23Z",
+      "slug": "gauss-didnt-publish-least-squares-first-legendre-did-d-e-shaw-and-pdt-built-stat-arb-on-it-2356b8965cfd",
+      "source": "medium",
+      "source_id": "2356b8965cfd",
+      "subtitle": "Adrien-Marie Legendre published the method of least squares in 1805. Sixteen years later, Carl Friedrich Gauss proved why it works, and…\n\nContinue reading on Medium »",
+      "title": "Gauss Didn’t Publish Least Squares First. Legendre Did. D.E. Shaw and PDT Built Stat Arb on It."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/saba-holds-16-of-the-mexico-fund",
+      "id": "r_964465cdc8797f4fdc62849ac77da6af49eff679b39547abe62e3961b0099c34",
+      "published_at": "2026-09-24T13:31:51.065Z",
+      "slug": "saba-holds-16-of-the-mexico-fund",
+      "source": "substack",
+      "source_id": "saba-holds-16-of-the-mexico-fund",
+      "subtitle": "The June conditional tender tests net asset value return, where MXF trails the MSCI Mexico Index on one, three, five and ten years. Not market price, where it beats the index.",
+      "title": "Saba Holds 16% of The Mexico Fund. Its June Tender Is Graded on NAV, Where the Fund Trails by 3.6 Points."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/sabas-next-fund-170200166",
+      "id": "r_1b704d68ca375e6ac85145ab242fc9984a260be6a205ea2fd3cb786afcc70880",
+      "published_at": "2026-09-24",
+      "slug": "sabas-next-fund-170200166",
+      "source": "patreon",
+      "source_id": "170200166",
+      "subtitle": "",
+      "title": "Saba's Next Mexico Fund: The EDGAR Screen That Finds a Mis-Specified Tender Trigger"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/rao-proved-the-cram%C3%A9r-rao-bound-in-1945-millennium-fires-pms-inside-it-two-sigma-paid-90m-in-it-8bcc0014fb94",
       "id": "r_a20c219b931819b413163b2bc2288fc2d5d202f5d2e093d401a60444b5a6cc27",
       "published_at": "2026-09-23T15:15:51Z",
@@ -39,7 +75,9 @@
     },
     {
       "access": "public",
-      "alternate_urls": {},
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/how-to-read-a-market-makers-13f-options-line-jane-street-and-susquehanna-s-spacex-book-d33cf4e73af9"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/how-to-read-a-market-makers-13f-options",
       "id": "r_4e6836792e90999d51fd76a0f93e694583a43521acb4298546ca105601dfa789",
       "published_at": "2026-09-22T13:31:14.071Z",
@@ -8141,5 +8179,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "a770e333f834ea324bcba6fcb58991517d3d413dc89cb400c44f622dd519c0a7"
+  "source_dataset_version": "4bcfc7725e1b075c8a53c796b35a84d9fb065bdd48537c46a6d79356d081b3a7"
 }
