@@ -5,6 +5,19 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_ae574d1347db7223e6301f1e43cb15945aca5e8d7db2f757ddbf4dca21ef6150",
+      "published": "2026-09-24T18:30:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_4362fad6e26cf1b24b7ac846a510fafbff852c4a350ca631c49f9f23514be652",
       "published": "2026-09-24T15:00:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1520,17 +1533,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 31,
+      "item_count": 32,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-24T17:33:18Z",
-      "last_success_at": "2026-09-24T17:33:18Z",
+      "last_attempt_at": "2026-09-24T21:49:44Z",
+      "last_success_at": "2026-09-24T21:49:44Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-24T17:33:18Z",
+      "last_attempt_at": "2026-09-24T21:49:44Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
