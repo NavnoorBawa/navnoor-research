@@ -3,6 +3,21 @@
     {
       "access": "unknown",
       "entities": [
+        "spx",
+        "volatility",
+        "options"
+      ],
+      "id": "r_562056e8e73a0bf695285e9a4f0437199ffcf0eb9d017c2d7808b974ce90e8fa",
+      "published": "2026-09-25T15:05:45Z",
+      "source": "medium",
+      "summary": "All three fit one S&P 500 smile. Their standard deltas assume a skew stickiness ratio near 2; the index measured 1.44 from 2021 to 2026",
+      "title": "How Quants Price the Volatility Smile: Heston 1993, Dupire 1994, SABR 2002",
+      "topic": "volatility",
+      "url": "https://medium.com/@navnoorbawa/how-quants-price-the-volatility-smile-heston-1993-dupire-1994-sabr-2002-7d2517b589ff"
+    },
+    {
+      "access": "unknown",
+      "entities": [
         "de-shaw",
         "stat-arb"
       ],
@@ -7817,6 +7832,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "4bcfc7725e1b075c8a53c796b35a84d9fb065bdd48537c46a6d79356d081b3a7",
-  "source_revision": "73da96b12043f88a921ef0ea4a6fa5fee9769235"
+  "source_dataset_version": "f9d7276dc9686a5dc73b07347be4f08c7227fc73d3f27ee979ee9d0debfbcbc0",
+  "source_revision": "d46d119f10d6e6e04724aebb23068ffc286c0d15"
 }

@@ -4,6 +4,18 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/how-quants-price-the-volatility-smile-heston-1993-dupire-1994-sabr-2002-7d2517b589ff",
+      "id": "r_562056e8e73a0bf695285e9a4f0437199ffcf0eb9d017c2d7808b974ce90e8fa",
+      "published_at": "2026-09-25T15:05:45Z",
+      "slug": "how-quants-price-the-volatility-smile-heston-1993-dupire-1994-sabr-2002-7d2517b589ff",
+      "source": "medium",
+      "source_id": "7d2517b589ff",
+      "subtitle": "All three fit one S&P 500 smile. Their standard deltas assume a skew stickiness ratio near 2; the index measured 1.44 from 2021 to 2026.\n\nContinue reading on Medium »",
+      "title": "How Quants Price the Volatility Smile: Heston 1993, Dupire 1994, SABR 2002"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/gauss-didnt-publish-least-squares-first-legendre-did-d-e-shaw-and-pdt-built-stat-arb-on-it-2356b8965cfd",
       "id": "r_fe4375695f224cffffb23d25a552fd7fa59248b3f7936240892a8c51159797f7",
       "published_at": "2026-09-24T15:23:23Z",
@@ -8179,5 +8191,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "4bcfc7725e1b075c8a53c796b35a84d9fb065bdd48537c46a6d79356d081b3a7"
+  "source_dataset_version": "f9d7276dc9686a5dc73b07347be4f08c7227fc73d3f27ee979ee9d0debfbcbc0"
 }
