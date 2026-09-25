@@ -5,6 +5,19 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_39a285d2e0f7a36ee1081ee456c4397ca950f0b3cb5606e1e35d6db2435d4eea",
+      "published": "2026-09-25T20:30:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_ae574d1347db7223e6301f1e43cb15945aca5e8d7db2f757ddbf4dca21ef6150",
       "published": "2026-09-24T18:30:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1533,17 +1546,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 32,
+      "item_count": 33,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-25T17:32:55Z",
-      "last_success_at": "2026-09-25T17:32:55Z",
+      "last_attempt_at": "2026-09-25T21:50:10Z",
+      "last_success_at": "2026-09-25T21:50:10Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-25T17:32:55Z",
+      "last_attempt_at": "2026-09-25T21:50:10Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
