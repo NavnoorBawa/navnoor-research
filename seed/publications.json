@@ -4,6 +4,30 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-capped-medallion-at-10-billion-cfm-proved-the-law-that-forced-his-hand-4532bc40b940",
+      "id": "r_6e1fa7970bc100d1798258c3625e4212ea81036ca4e3927f64a8467f0833830e",
+      "published_at": "2026-09-27T14:21:57Z",
+      "slug": "jim-simons-capped-medallion-at-10-billion-cfm-proved-the-law-that-forced-his-hand-4532bc40b940",
+      "source": "medium",
+      "source_id": "4532bc40b940",
+      "subtitle": "A rival quant firm proved, with real trade data, the exact law that explains why Medallion hit a hard ceiling.\n\nContinue reading on Medium »",
+      "title": "Jim Simons Capped Medallion at $10 Billion. CFM Proved the Law That Forced His Hand."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/how-market-makers-like-citadel-securities",
+      "id": "r_3f6ebdf7424c11b08e89ab3ec3f9fd5357df7bb557b19966ea2147509796c27f",
+      "published_at": "2026-09-27T13:31:07.524Z",
+      "slug": "how-market-makers-like-citadel-securities",
+      "source": "substack",
+      "source_id": "how-market-makers-like-citadel-securities",
+      "subtitle": "Nearly half of Citadel Securities' retail options now expire the same day. In SPX, same day flow mostly nets. Single stocks are unmeasured.",
+      "title": "How Market Makers Like Citadel Securities Actually Make Money on 0DTE Options"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/how-quants-price-the-volatility-smile-heston-1993-dupire-1994-sabr-2002-7d2517b589ff",
       "id": "r_562056e8e73a0bf695285e9a4f0437199ffcf0eb9d017c2d7808b974ce90e8fa",
       "published_at": "2026-09-25T15:05:45Z",
@@ -8191,5 +8215,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "f9d7276dc9686a5dc73b07347be4f08c7227fc73d3f27ee979ee9d0debfbcbc0"
+  "source_dataset_version": "de8d77726fbb0d6564439e1e4e8848b9e33f0eed103bad2b25123a133f49f577"
 }
