@@ -2,6 +2,66 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/how-elliott-is-long-synopsys-with",
+      "id": "r_2039fcaf35a151a0e6b3a5488846acaaa2479c037d726cd94443d5e1a64faada",
+      "published_at": "2026-09-28T16:02:20.235Z",
+      "slug": "how-elliott-is-long-synopsys-with",
+      "source": "substack",
+      "source_id": "how-elliott-is-long-synopsys-with",
+      "subtitle": "The 13F shows Elliott's hedge and hides its stake. Read together, they give a pair that has run against Elliott since June.",
+      "title": "How Elliott Is Long Synopsys With Software Hedged, From Its Own 13F"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/how-jim-simons-won-being-right-50-75-the-information-ratio-ltcm-got-wrong-ba6fdbc2fb7e",
+      "id": "r_a1abf3ef3682b7a1f40ff024b0208ffb6796c91a23924e2d7a40827bec2e3b41",
+      "published_at": "2026-09-28T15:19:16Z",
+      "slug": "how-jim-simons-won-being-right-50-75-the-information-ratio-ltcm-got-wrong-ba6fdbc2fb7e",
+      "source": "medium",
+      "source_id": "ba6fdbc2fb7e",
+      "subtitle": "Grinold’s 1989 law turns a 50.75% hit rate into an IC of 0.015, which pays only across about 18,000 independent bets a year.\n\nContinue reading on Medium »",
+      "title": "How Jim Simons Won Being Right 50.75%: The Information Ratio LTCM Got Wrong"
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/where-citadel-170324717",
+      "id": "r_d4762b6dbe0d9a082182f2dbf868f678ae801370ba9607ecb4f63d81bc27a900",
+      "published_at": "2026-09-28",
+      "slug": "where-citadel-170324717",
+      "source": "patreon",
+      "source_id": "170324717",
+      "subtitle": "",
+      "title": "Where Citadel Securities' 0DTE Growth Sits: A Morning Gamma Screen for Nvidia's Same Day Options"
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/how-renaissance-170185098",
+      "id": "r_20e85a3b2c72df3636103bdffd96a3931340e818334e8286156caaa3ef30a757",
+      "published_at": "2026-09-28",
+      "slug": "how-renaissance-170185098",
+      "source": "patreon",
+      "source_id": "170185098",
+      "subtitle": "",
+      "title": "How Renaissance and Ed Thorp Actually Modeled Their Bet Sizing: The Kelly Fraction Model"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/elliotts-hedges-170803364",
+      "id": "r_29c276971ab79c1bdaffd0ff9be855ac82de19b73b945f55ae87a7465940732f",
+      "published_at": "2026-09-28",
+      "slug": "elliotts-hedges-170803364",
+      "source": "patreon",
+      "source_id": "170803364",
+      "subtitle": "",
+      "title": "Elliott's Campaign Hedges in Its 13F: the Screen That Dates Every Sector Put"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-capped-medallion-at-10-billion-cfm-proved-the-law-that-forced-his-hand-4532bc40b940",
@@ -15,7 +75,9 @@
     },
     {
       "access": "public",
-      "alternate_urls": {},
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/how-market-makers-like-citadel-securities-actually-make-money-on-0dte-options-a835b4a263ac"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/how-market-makers-like-citadel-securities",
       "id": "r_3f6ebdf7424c11b08e89ab3ec3f9fd5357df7bb557b19966ea2147509796c27f",
       "published_at": "2026-09-27T13:31:07.524Z",
@@ -46,8 +108,8 @@
       "slug": "gauss-didnt-publish-least-squares-first-legendre-did-d-e-shaw-and-pdt-built-stat-arb-on-it-2356b8965cfd",
       "source": "medium",
       "source_id": "2356b8965cfd",
-      "subtitle": "Adrien-Marie Legendre published the method of least squares in 1805. Sixteen years later, Carl Friedrich Gauss proved why it works, and…\n\nContinue reading on Medium »",
-      "title": "Gauss Didn’t Publish Least Squares First. Legendre Did. D.E. Shaw and PDT Built Stat Arb on It."
+      "subtitle": "PDT Built Stat Arb on It.\n\nContinue reading on Medium »",
+      "title": "Gauss Didn’t Publish Least Squares First. Legendre Did. D.E. Shaw and"
     },
     {
       "access": "restricted",
@@ -144,8 +206,8 @@
       "slug": "thorp-traded-black-scholes-in-1967-merton-proved-it-in-1973-bet-ltcm-on-it-99824e5a20fc",
       "source": "medium",
       "source_id": "99824e5a20fc",
-      "subtitle": "Black and Scholes derived their formula from the CAPM, a modeling choice rather than a proof; the actual proof, built on continuous time…\n\nContinue reading on Medium »",
-      "title": "Thorp Traded Black-Scholes in 1967. Merton Proved It in 1973, Bet LTCM on It."
+      "subtitle": "on It.\n\nContinue reading on Medium »",
+      "title": "Thorp Traded Black-Scholes in 1967. Merton Proved It in 1973, Bet LTCM"
     },
     {
       "access": "restricted",
@@ -8215,5 +8277,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "de8d77726fbb0d6564439e1e4e8848b9e33f0eed103bad2b25123a133f49f577"
+  "source_dataset_version": "6be5d1bdab168216c49eb98b5ec78f34518f5af0639f60c4f376b3fd51f401f8"
 }
