@@ -1,6 +1,43 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "renaissance",
+        "aqr"
+      ],
+      "id": "r_2b45ff68a4c04912368f2ef6c79410307c8f229559e2836aa307f95d18ecad27",
+      "published": "2026-09-29T15:03:17Z",
+      "source": "medium",
+      "summary": "Carmona pitched kernel regression to Simons in 1987. The kernel behind AQR’s 2024 model puts 65% of its weight on the last three months",
+      "title": "Kernel Regression Is From 1964. Simons’s Renaissance Ran It in 1988. AQR Proved a Cousin in 2024.",
+      "topic": "quant-methods",
+      "url": "https://medium.com/@navnoorbawa/kernel-regression-is-from-1964-86bb836be548"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "etf"
+      ],
+      "id": "r_f787021bd94657b2f255e42c2627479db4415b46497c32dc4a3093565d8a34a4",
+      "published": "2026-09-29T13:30:27.066Z",
+      "source": "substack",
+      "summary": "What a follower pays against Berkshire's filed and unfiled cost, and the pair that trades the gap against the home construction ETF.",
+      "title": "Berkshire Is Betting on Lennar Up to $82 Before Its 13F Shows the Buying",
+      "topic": "equities",
+      "url": "https://navnoorbawa.substack.com/p/berkshire-is-betting-on-lennar-up"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_101b4178cc696fc5598d4836c38f0d37ab29ff1a79b626173a49cdacc59d559c",
+      "published": "2026-09-29",
+      "source": "patreon",
+      "title": "Berkshire's HP Campaign, 2022 to 2024: A Reconstruction From Its Own Filings",
+      "topic": "general",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/berkshires-hp-to-170891960"
+    },
+    {
       "access": "restricted",
       "entities": [
         "elliott"
@@ -116,8 +153,8 @@
       "id": "r_fe4375695f224cffffb23d25a552fd7fa59248b3f7936240892a8c51159797f7",
       "published": "2026-09-24T15:23:23Z",
       "source": "medium",
-      "summary": "PDT Built Stat Arb on It",
-      "title": "Gauss Didn’t Publish Least Squares First. Legendre Did. D.E. Shaw and",
+      "summary": "Gauss-Markov never addressed the one thing that actually breaks a stat-arb hedge ratio in markets",
+      "title": "Gauss Didn’t Publish Least Squares First. Legendre Did. D.E. Shaw and PDT Built Stat Arb on It.",
       "topic": "hedge-funds",
       "url": "https://medium.com/@navnoorbawa/gauss-didnt-publish-least-squares-first-legendre-did-d-e-shaw-and-pdt-built-stat-arb-on-it-2356b8965cfd"
     },
@@ -225,8 +262,8 @@
       "id": "r_f182d30e44c051028c535c56b624c20c3bc7e8a731d1c1841589efe764d28e7b",
       "published": "2026-09-21T15:04:14Z",
       "source": "medium",
-      "summary": "on It",
-      "title": "Thorp Traded Black-Scholes in 1967. Merton Proved It in 1973, Bet LTCM",
+      "summary": "Black and Scholes used equilibrium math. Merton proved it with no assumptions at all, on a paper that never names him as an author",
+      "title": "Thorp Traded Black-Scholes in 1967. Merton Proved It in 1973, Bet LTCM on It.",
       "topic": "volatility",
       "url": "https://medium.com/@navnoorbawa/thorp-traded-black-scholes-in-1967-merton-proved-it-in-1973-bet-ltcm-on-it-99824e5a20fc"
     },
@@ -7924,6 +7961,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "6be5d1bdab168216c49eb98b5ec78f34518f5af0639f60c4f376b3fd51f401f8",
-  "source_revision": "13bd1de33da5d47c042b28e1557f96be0735cb38"
+  "source_dataset_version": "3cbdb0f0b7dd38a3ff8e50d34b9dfd4773aa4740f6ff5f26e619fe62a5b5b748",
+  "source_revision": "c0a3d8970a0a09a8ed1636ac5841bf57b5ba9924"
 }

@@ -2,6 +2,42 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/kernel-regression-is-from-1964-86bb836be548",
+      "id": "r_2b45ff68a4c04912368f2ef6c79410307c8f229559e2836aa307f95d18ecad27",
+      "published_at": "2026-09-29T15:03:17Z",
+      "slug": "kernel-regression-is-from-1964-86bb836be548",
+      "source": "medium",
+      "source_id": "86bb836be548",
+      "subtitle": "Carmona pitched kernel regression to Simons in 1987. The kernel behind AQR’s 2024 model puts 65% of its weight on the last three months.\n\nContinue reading on Medium »",
+      "title": "Kernel Regression Is From 1964. Simons’s Renaissance Ran It in 1988. AQR Proved a Cousin in 2024."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/berkshire-is-betting-on-lennar-up",
+      "id": "r_f787021bd94657b2f255e42c2627479db4415b46497c32dc4a3093565d8a34a4",
+      "published_at": "2026-09-29T13:30:27.066Z",
+      "slug": "berkshire-is-betting-on-lennar-up",
+      "source": "substack",
+      "source_id": "berkshire-is-betting-on-lennar-up",
+      "subtitle": "What a follower pays against Berkshire's filed and unfiled cost, and the pair that trades the gap against the home construction ETF.",
+      "title": "Berkshire Is Betting on Lennar Up to $82 Before Its 13F Shows the Buying"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/berkshires-hp-to-170891960",
+      "id": "r_101b4178cc696fc5598d4836c38f0d37ab29ff1a79b626173a49cdacc59d559c",
+      "published_at": "2026-09-29",
+      "slug": "berkshires-hp-to-170891960",
+      "source": "patreon",
+      "source_id": "170891960",
+      "subtitle": "",
+      "title": "Berkshire's HP Campaign, 2022 to 2024: A Reconstruction From Its Own Filings"
+    },
+    {
       "access": "restricted",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/how-elliott-is-long-synopsys-with",
@@ -108,8 +144,8 @@
       "slug": "gauss-didnt-publish-least-squares-first-legendre-did-d-e-shaw-and-pdt-built-stat-arb-on-it-2356b8965cfd",
       "source": "medium",
       "source_id": "2356b8965cfd",
-      "subtitle": "PDT Built Stat Arb on It.\n\nContinue reading on Medium »",
-      "title": "Gauss Didn’t Publish Least Squares First. Legendre Did. D.E. Shaw and"
+      "subtitle": "Gauss-Markov never addressed the one thing that actually breaks a stat-arb hedge ratio in markets.\n\nContinue reading on Medium »",
+      "title": "Gauss Didn’t Publish Least Squares First. Legendre Did. D.E. Shaw and PDT Built Stat Arb on It."
     },
     {
       "access": "restricted",
@@ -206,8 +242,8 @@
       "slug": "thorp-traded-black-scholes-in-1967-merton-proved-it-in-1973-bet-ltcm-on-it-99824e5a20fc",
       "source": "medium",
       "source_id": "99824e5a20fc",
-      "subtitle": "on It.\n\nContinue reading on Medium »",
-      "title": "Thorp Traded Black-Scholes in 1967. Merton Proved It in 1973, Bet LTCM"
+      "subtitle": "Black and Scholes used equilibrium math. Merton proved it with no assumptions at all, on a paper that never names him as an author.\n\nContinue reading on Medium »",
+      "title": "Thorp Traded Black-Scholes in 1967. Merton Proved It in 1973, Bet LTCM on It."
     },
     {
       "access": "restricted",
@@ -8277,5 +8313,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "6be5d1bdab168216c49eb98b5ec78f34518f5af0639f60c4f376b3fd51f401f8"
+  "source_dataset_version": "3cbdb0f0b7dd38a3ff8e50d34b9dfd4773aa4740f6ff5f26e619fe62a5b5b748"
 }
