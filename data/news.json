@@ -2,6 +2,17 @@
   "items": [
     {
       "attribution": "Federal Reserve Board",
+      "entities": [],
+      "id": "n_94f4c2579d3ff5b5c9fa920e37634206e5d8a1b838a80383eeff780d6bbc9171",
+      "published": "2026-09-29T20:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Agencies publish resolution plan feedback letters for 15 banking organizations",
+      "topic": "general",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
@@ -1546,17 +1557,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 33,
+      "item_count": 34,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-09-29T18:16:04Z",
-      "last_success_at": "2026-09-29T18:16:04Z",
+      "last_attempt_at": "2026-09-29T22:38:07Z",
+      "last_success_at": "2026-09-29T22:38:07Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-09-29T18:16:04Z",
+      "last_attempt_at": "2026-09-29T22:38:07Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
