@@ -6,6 +6,31 @@
         "renaissance",
         "aqr"
       ],
+      "id": "r_fb50f78c6d93ef4f5a9d96f026608c748c6dcbcf87773ed7158ef721cb471717",
+      "published": "2026-09-30T15:02:48Z",
+      "source": "medium",
+      "summary": "Medallion clears Harvey’s 3.0 bar at t near 11.6 gross over 31 years. AQR’s Style Premia fund sits at t 1.6 after 12.7 years",
+      "title": "Jim Simons’s Renaissance Medallion Clears Harvey’s Backtest Bar. AQR’s Fund Doesn’t.",
+      "topic": "quant-methods",
+      "url": "https://medium.com/@navnoorbawa/jim-simonss-renaissance-medallion-clears-harvey-s-backtest-bar-aqr-s-fund-doesn-t-530b3f705c87"
+    },
+    {
+      "access": "public",
+      "entities": [],
+      "id": "r_4ebe5c6ed0907c776d1652770781db9b3a205939099d8bf8041cf79fc32f59a5",
+      "published": "2026-09-30T13:31:09.989Z",
+      "source": "substack",
+      "summary": "Where the 10% line falls, and what the Forms 4 leave out.",
+      "title": "Most of Berkshire's Lennar Buying Since June Came Before Any Form",
+      "topic": "general",
+      "url": "https://navnoorbawa.substack.com/p/most-of-berkshires-lennar-buying"
+    },
+    {
+      "access": "unknown",
+      "entities": [
+        "renaissance",
+        "aqr"
+      ],
       "id": "r_2b45ff68a4c04912368f2ef6c79410307c8f229559e2836aa307f95d18ecad27",
       "published": "2026-09-29T15:03:17Z",
       "source": "medium",
@@ -7961,6 +7986,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "3cbdb0f0b7dd38a3ff8e50d34b9dfd4773aa4740f6ff5f26e619fe62a5b5b748",
-  "source_revision": "985a1babdf7e78ecee7da750f703ec4bcd4c90d5"
+  "source_dataset_version": "ce3b8be6dc93ae41231973c2774aa0cdf9f92dd3a2fb4ac16e6269804897d85f",
+  "source_revision": "09d79f65f257ea1122119ace936c4ae5ac695aa9"
 }
