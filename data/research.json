@@ -3,6 +3,44 @@
     {
       "access": "unknown",
       "entities": [
+        "ltcm"
+      ],
+      "id": "r_3a72eeab1b6ee63e2220335ccd3135a87913290cf9748343ee623e5b3e4dc256",
+      "published": "2026-10-01T15:01:24Z",
+      "source": "medium",
+      "summary": "A soldier’s 1940 manuscript, Robert Merton’s 1976 paper, and the firm betting the industry never really used either",
+      "title": "Merton Published the Jump Model in 1976. LTCM Never Used It. CFM Built $33B Doubting the Calculus.",
+      "topic": "blowups",
+      "url": "https://medium.com/@navnoorbawa/merton-published-the-jump-model-in-1976-ltcm-never-used-it-cfm-built-33b-doubting-the-calculus-f6ecc09d9da3"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "elliott"
+      ],
+      "id": "r_c40ed4b48da17999dfb3cc385048bc23e5f53e116faac49c963034bdb5b08f2c",
+      "published": "2026-10-01T13:30:54.087Z",
+      "source": "substack",
+      "summary": "Elliott still has Seadrill stock to place. The filing that says it is done is the one to trade on.",
+      "title": "Elliott Is Still Betting on Seadrill Through Swaps as It Sells the Shares",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/elliott-is-still-betting-on-seadrill"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "elliott"
+      ],
+      "id": "r_f7c17512676bc59afefaed6c2ed0d5b1c97d491b6866f5020e403898fd2a602c",
+      "published": "2026-10-01",
+      "source": "patreon",
+      "title": "Elliott's Seadrill Round Trip, 2023 to 2025: A Case Study From Its Own Filings",
+      "topic": "hedge-funds",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/elliotts-round-171043603"
+    },
+    {
+      "access": "unknown",
+      "entities": [
         "renaissance",
         "aqr"
       ],
@@ -7986,6 +8024,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "ce3b8be6dc93ae41231973c2774aa0cdf9f92dd3a2fb4ac16e6269804897d85f",
-  "source_revision": "afd69dcc6cb5ec8a89551b319b3c989978caf659"
+  "source_dataset_version": "a77b39fa89c9d0c3aecb3a3da04290fe69d48b094f93f964c12e00c881d41d35",
+  "source_revision": "d698b6921ba8fcca0c19a81b8a5a7a8e675c7c43"
 }
