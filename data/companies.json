@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T10:27:56Z",
+  "checked_at": "2026-10-02T13:11:58Z",
   "items": [
     {
       "cik": "0001090872",
@@ -675,8 +675,8 @@
     },
     {
       "cik": "0002141406",
-      "exchange": "",
-      "id": "810ac7ac88aaffce65817c5712b42d746467c5930f6bbd10a47388cabdd985d9",
+      "exchange": "Nasdaq",
+      "id": "375c51b88e50c7a8d921e7902df0b0770ed9333c4a3e3f9a1109610528de897c",
       "name": "Accelevation Holdings Corp.",
       "ticker": "ACCV",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002141406"
@@ -2010,6 +2010,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002087035"
     },
     {
+      "cik": "0002087035",
+      "exchange": "Nasdaq",
+      "id": "f4a4535cedb25cdb07f6f332196c4561b5b38979b9d2f610601fa69a801697fa",
+      "name": "AfterNext Acquisition I Corp.",
+      "ticker": "AFNXU",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002087035"
+    },
+    {
       "cik": "0001903870",
       "exchange": "Nasdaq",
       "id": "8a5ff423e56504e2c484c4df4f2c7acc990fcdef52104a15e1853a8ecb583725",
@@ -3029,7 +3037,7 @@
       "cik": "0001460702",
       "exchange": "Nasdaq",
       "id": "ec1350dd2f21a08bdca77fd8d3f1ecc51d700cad576328949fa0644af5f3283c",
-      "name": "AIxCrypto Holdings, Inc.",
+      "name": "FF EAI Robotics Ecosystem Inc.",
       "ticker": "AIXC",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001460702"
     },
@@ -5901,7 +5909,7 @@
       "cik": "0001847345",
       "exchange": "Nasdaq",
       "id": "91476ea017a077305cc018fe767a0a4d6180f5e583dd28a351d5f2a160ac940f",
-      "name": "Aspire Biopharma Holdings, Inc.",
+      "name": "Aspire-Lakewood Holdings, Inc.",
       "ticker": "ASBP",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001847345"
     },
@@ -5909,7 +5917,7 @@
       "cik": "0001847345",
       "exchange": "Nasdaq",
       "id": "6b58f11d8cd1bf9a8f6c412c277537d20f3abefad4ac11fec20fda9d46601b0b",
-      "name": "Aspire Biopharma Holdings, Inc.",
+      "name": "Aspire-Lakewood Holdings, Inc.",
       "ticker": "ASBPW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001847345"
     },
@@ -19018,6 +19026,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001106861"
     },
     {
+      "cik": "0002154056",
+      "exchange": "",
+      "id": "00d8eccb27f39ce869e22185a377dc9490a16287ae8faa86561eddcececdd485",
+      "name": "Calm Seas Acquisition Corp.",
+      "ticker": "CSEA",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002154056"
+    },
+    {
       "cik": "0002127852",
       "exchange": "OTC",
       "id": "2904ba82bf334f59372e42349494813a1170fa145dea3e8183f6afc05bad770f",
@@ -19163,8 +19179,8 @@
     },
     {
       "cik": "0001680132",
-      "exchange": "",
-      "id": "147b9c453e82463fcd6111718292e7e7eb3bcca9ff99406c239198a6359de838",
+      "exchange": "OTC",
+      "id": "64f6756d233af0bb467a3cd1e81b172f2e5152f10dce6b07bca2afc2b7c08478",
       "name": "CANNABIS SUISSE CORP.",
       "ticker": "CSUI",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001680132"
@@ -20794,14 +20810,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001453122"
     },
     {
-      "cik": "0002034300",
-      "exchange": "OTC",
-      "id": "cb0733dea6710de4128be155e48b186b16e578d74c2afc31cb7b2c024b31c2c4",
-      "name": "Digital Domain Holdings Limited/ADR",
-      "ticker": "DDHLY",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002034300"
-    },
-    {
       "cik": "0001799567",
       "exchange": "Nasdaq",
       "id": "31559191dbbfb8e1345cb85a7942bd6ad313227874d3cca0cfee472418cfc4c4",
@@ -21144,14 +21152,6 @@
       "name": "DIGI INTERNATIONAL INC",
       "ticker": "DGII",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000854775"
-    },
-    {
-      "cik": "0002034300",
-      "exchange": "OTC",
-      "id": "cfd0623810d628724b0fcfa6079edf00baa53055f1f49da0edc3a2c53ff4dc40",
-      "name": "Digital Domain Holdings Limited/ADR",
-      "ticker": "DGMDF",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002034300"
     },
     {
       "cik": "0001790693",
@@ -29683,8 +29683,8 @@
     },
     {
       "cik": "0002027262",
-      "exchange": "",
-      "id": "ff921bdfd07d96b9ef974f4ca27123d96955de41364cf48e1263c35c6e3ddebc",
+      "exchange": "OTC",
+      "id": "860a7a9fe4ef2c401deaf2e10bf7ef1f95fbbc743c33162693f106c85cc1683c",
       "name": "Fast Track Group",
       "ticker": "FTRKF",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002027262"
@@ -30491,8 +30491,8 @@
     },
     {
       "cik": "0001820872",
-      "exchange": "NYSE",
-      "id": "70e21584723149d7cc1a4e1b4ee1ba206cf0702e4582fefb936a0df24388c6e7",
+      "exchange": "OTC",
+      "id": "f15ba52d3e43f2133d1b646b8badb29dba665cd6889d8a35b683ef590b71ea6b",
       "name": "Global Business Travel Group, Inc.",
       "ticker": "GBTG",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001820872"
@@ -32147,8 +32147,8 @@
     },
     {
       "cik": "0001938338",
-      "exchange": "",
-      "id": "52504594eae2234bc8e101d9745a3c7be25dc85e3df117feb7416688cc126def",
+      "exchange": "OTC",
+      "id": "f96d738bc46a80a1ecfcfcb62a1e199cb94bdd53a3fb11d73a5b8962cbccd25f",
       "name": "GlobalTech Corp",
       "ticker": "GLTK",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001938338"
@@ -38783,14 +38783,6 @@
       "id": "3036489b515825e921d28dca4aa7eecbdfd8b236f448655a07179b4170ed7331",
       "name": "IonQ, Inc.",
       "ticker": "IONQ",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001824920"
-    },
-    {
-      "cik": "0001824920",
-      "exchange": "NYSE",
-      "id": "5b5dd1259722163be94f2e8a805752c215573b43f98aa57845651c17c9926283",
-      "name": "IonQ, Inc.",
-      "ticker": "IONQ-WT",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001824920"
     },
     {
@@ -52923,8 +52915,8 @@
     },
     {
       "cik": "0002067111",
-      "exchange": "",
-      "id": "660aabd3c80b32f68922019bd20c44b52861b516e30372f08001cf52e722524e",
+      "exchange": "NYSE",
+      "id": "0ce3b8a85c5e35bf9c60029528b59b815aaef38eb6c247c03f76748f1603d2c3",
       "name": "Bitwise NEAR ETF",
       "ticker": "NRR",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002067111"
@@ -56008,6 +56000,14 @@
       "name": "ORIX CORP",
       "ticker": "ORXCF",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001070304"
+    },
+    {
+      "cik": "0002155556",
+      "exchange": "",
+      "id": "8b600a1bfcaa51f2c9e7b903f95d9654608fad2b30ea17d62779f09d56e6ac97",
+      "name": "Orange Street Acquisition Corp",
+      "ticker": "OSAC",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002155556"
     },
     {
       "cik": "0000357173",
@@ -59616,6 +59616,14 @@
       "name": "PORTLAND GENERAL ELECTRIC CO /OR/",
       "ticker": "POR",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0000784977"
+    },
+    {
+      "cik": "0001865200",
+      "exchange": "NYSE",
+      "id": "cc502d8dda260cf4da450da22990c36786ee01a7923a85e7478c0b43bcd92eb5",
+      "name": "Angel Studios, Inc.",
+      "ticker": "PORT-UN",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001865200"
     },
     {
       "cik": "0000844985",
@@ -65842,6 +65850,14 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002015947"
     },
     {
+      "cik": "0002015947",
+      "exchange": "",
+      "id": "fbd2e28c03c3ec6ae032a5e9d69e802e0f596620d05c99a63b64aa0b393deef7",
+      "name": "SilverBox Corp IV",
+      "ticker": "SBXDF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002015947"
+    },
+    {
       "cik": "0002081909",
       "exchange": "NYSE",
       "id": "4c5d4034d9264289e3e66f82d4a9e1c06582cd66c41f5443e6ba9ecf66339d32",
@@ -70016,6 +70032,14 @@
       "name": "Stadler Rail AG/ADR",
       "ticker": "SRALY",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002134599"
+    },
+    {
+      "cik": "0002006028",
+      "exchange": "",
+      "id": "730644d3160caf376685df221359fec3f6f371a80dca5c00d55013376b116022",
+      "name": "Source Agriventures Inc.",
+      "ticker": "SRAV",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002006028"
     },
     {
       "cik": "0002075141",
