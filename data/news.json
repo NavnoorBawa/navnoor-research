@@ -3,6 +3,32 @@
     {
       "attribution": "Federal Reserve Board",
       "entities": [
+        "federal-reserve"
+      ],
+      "id": "n_8f9bf8f9d80dc8af113fb0991401a7dd67df4f85fbe90172d97c9ba875009515",
+      "published": "2026-10-02T20:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
+      "id": "n_b441ff6c63c6936c873ff36595ee920eda9c5ec7b142fa9ad6e34ae58ac37ee9",
+      "published": "2026-10-02T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
         "federal-reserve",
         "volatility"
       ],
@@ -1571,17 +1597,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 35,
+      "item_count": 37,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-02T13:11:59Z",
-      "last_success_at": "2026-10-02T13:11:59Z",
+      "last_attempt_at": "2026-10-02T20:07:43Z",
+      "last_success_at": "2026-10-02T20:07:43Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-02T13:11:59Z",
+      "last_attempt_at": "2026-10-02T20:07:43Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
