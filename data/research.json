@@ -2,6 +2,27 @@
   "research": [
     {
       "access": "unknown",
+      "entities": [],
+      "id": "r_8638d1f7cf979ff5fcc70d66ab2264993e3925f91c900911c13eb4eea63b024f",
+      "published": "2026-10-03T16:29:04Z",
+      "source": "medium",
+      "summary": "The open source recipe calls 41% of coin flips trending. Since 1990 the US market reads 0.541 against 0.548 for its own shuffled returns",
+      "title": "How Quants Tell Trend From Noise: The Hurst Exponent, Born on the Nile in 1951",
+      "topic": "general",
+      "url": "https://medium.com/@navnoorbawa/how-quants-tell-trend-from-noise-the-hurst-exponent-born-on-the-nile-in-1951-b42e666570fb"
+    },
+    {
+      "access": "public",
+      "entities": [],
+      "id": "r_b9a60ae96f988ee27a5202112722f2cd65502240d836480827ada293def3db93",
+      "published": "2026-10-03",
+      "source": "patreon",
+      "title": "Why Robinhood’s Stock Token Price Can Drift",
+      "topic": "crypto",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/why-robinhoods-171305977"
+    },
+    {
+      "access": "unknown",
       "entities": [
         "renaissance"
       ],
@@ -8049,6 +8070,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "772b6add9b5eaa8984ab61c9e846129e1c84b025770fd8d3b28f27ac7044056a",
-  "source_revision": "60da5ef018b4984ecf609b037b5319a6c8f47ead"
+  "source_dataset_version": "0b9672c742deea5694acfed085a8bbda9d9a9c2697783ecd247b51a8b58336d4",
+  "source_revision": "0d3d94f21c43798e3454a01a9ac2bfef5218c605"
 }

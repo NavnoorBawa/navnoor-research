@@ -4,6 +4,30 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/how-quants-tell-trend-from-noise-the-hurst-exponent-born-on-the-nile-in-1951-b42e666570fb",
+      "id": "r_8638d1f7cf979ff5fcc70d66ab2264993e3925f91c900911c13eb4eea63b024f",
+      "published_at": "2026-10-03T16:29:04Z",
+      "slug": "how-quants-tell-trend-from-noise-the-hurst-exponent-born-on-the-nile-in-1951-b42e666570fb",
+      "source": "medium",
+      "source_id": "b42e666570fb",
+      "subtitle": "The open source recipe calls 41% of coin flips trending. Since 1990 the US market reads 0.541 against 0.548 for its own shuffled returns.\n\nContinue reading on Medium »",
+      "title": "How Quants Tell Trend From Noise: The Hurst Exponent, Born on the Nile in 1951"
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/why-robinhoods-171305977",
+      "id": "r_b9a60ae96f988ee27a5202112722f2cd65502240d836480827ada293def3db93",
+      "published_at": "2026-10-03",
+      "slug": "why-robinhoods-171305977",
+      "source": "patreon",
+      "source_id": "171305977",
+      "subtitle": "",
+      "title": "Why Robinhood’s Stock Token Price Can Drift"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/how-ed-thorp-and-renaissance-actually-sized-their-bets-the-kelly-criterion-hedge-funds-still-use-0f9f7e3dc62b",
       "id": "r_504e4185c9a6351b007859eebaa0132b01d0bd5f2b9539c344387709c93ec22e",
       "published_at": "2026-10-02T21:38:56Z",
@@ -8397,5 +8421,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "772b6add9b5eaa8984ab61c9e846129e1c84b025770fd8d3b28f27ac7044056a"
+  "source_dataset_version": "0b9672c742deea5694acfed085a8bbda9d9a9c2697783ecd247b51a8b58336d4"
 }
