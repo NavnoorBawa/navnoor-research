@@ -5,6 +5,19 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_5d4b355ec3292efce1cfee3ee99357422466883ef75df1815bd4f5269a3bb0f2",
+      "published": "2026-10-02T20:45:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_8f9bf8f9d80dc8af113fb0991401a7dd67df4f85fbe90172d97c9ba875009515",
       "published": "2026-10-02T20:00:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1597,17 +1610,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 37,
+      "item_count": 38,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-02T20:07:43Z",
-      "last_success_at": "2026-10-02T20:07:43Z",
+      "last_attempt_at": "2026-10-03T00:44:36Z",
+      "last_success_at": "2026-10-03T00:44:36Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-02T20:07:43Z",
+      "last_attempt_at": "2026-10-03T00:44:36Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
