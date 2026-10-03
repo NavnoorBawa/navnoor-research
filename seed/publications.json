@@ -4,6 +4,30 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/how-ed-thorp-and-renaissance-actually-sized-their-bets-the-kelly-criterion-hedge-funds-still-use-0f9f7e3dc62b",
+      "id": "r_504e4185c9a6351b007859eebaa0132b01d0bd5f2b9539c344387709c93ec22e",
+      "published_at": "2026-10-02T21:38:56Z",
+      "slug": "how-ed-thorp-and-renaissance-actually-sized-their-bets-the-kelly-criterion-hedge-funds-still-use-0f9f7e3dc62b",
+      "source": "medium",
+      "source_id": "0f9f7e3dc62b",
+      "subtitle": "Ed Thorp ran Princeton Newport at a little over 19% a year for nineteen years, three losing months out of 230, without ever running the…\n\nContinue reading on Medium »",
+      "title": "How Ed Thorp and Renaissance Actually Sized Their Bets: The Kelly Criterion Hedge Funds Still Use"
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/who-finances-ai-171239798",
+      "id": "r_8165866c540341d72354d2a9db2cc176242e9d24736f6e077b1fd76b0b8bd551",
+      "published_at": "2026-10-02",
+      "slug": "who-finances-ai-171239798",
+      "source": "patreon",
+      "source_id": "171239798",
+      "subtitle": "",
+      "title": "Who Finances the AI Buildout?"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/merton-published-the-jump-model-in-1976-ltcm-never-used-it-cfm-built-33b-doubting-the-calculus-f6ecc09d9da3",
       "id": "r_3a72eeab1b6ee63e2220335ccd3135a87913290cf9748343ee623e5b3e4dc256",
       "published_at": "2026-10-01T15:01:24Z",
@@ -8373,5 +8397,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "a77b39fa89c9d0c3aecb3a3da04290fe69d48b094f93f964c12e00c881d41d35"
+  "source_dataset_version": "772b6add9b5eaa8984ab61c9e846129e1c84b025770fd8d3b28f27ac7044056a"
 }
