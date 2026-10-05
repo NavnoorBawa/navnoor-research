@@ -5,6 +5,19 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_1bc4132b3f0326c5bc0edadf09ef43f097d2e7aab8471ecf0dd51590bec7a875",
+      "published": "2026-10-05T20:30:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_5d4b355ec3292efce1cfee3ee99357422466883ef75df1815bd4f5269a3bb0f2",
       "published": "2026-10-02T20:45:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1610,17 +1623,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 38,
+      "item_count": 39,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-05T15:17:17Z",
-      "last_success_at": "2026-10-05T15:17:17Z",
+      "last_attempt_at": "2026-10-05T22:11:23Z",
+      "last_success_at": "2026-10-05T22:11:23Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-05T15:17:17Z",
+      "last_attempt_at": "2026-10-05T22:11:23Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }

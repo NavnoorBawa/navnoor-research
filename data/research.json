@@ -2,6 +2,44 @@
   "research": [
     {
       "access": "unknown",
+      "entities": [
+        "de-shaw",
+        "two-sigma"
+      ],
+      "id": "r_152fee48f3f01d164e2124c5bd7488beee49660b129c8eecac25243666d2627f",
+      "published": "2026-10-05T15:03:23Z",
+      "source": "medium",
+      "summary": "Barra sold Rosenberg’s 1974 risk model to every desk. On 494 stocks it was the one covariance whose risk forecast came true",
+      "title": "How PDT, D.E. Shaw, and Two Sigma Rebuilt Barr Rosenberg’s 1975 Factor Model",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/how-pdt-d-e-shaw-and-two-sigma-rebuilt-barr-rosenbergs-1975-factor-model-bf231d577696"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "aqr"
+      ],
+      "id": "r_e77a3267898ee2739f66f1a409563e44242769fcb3698536b3f61d71e04f1977",
+      "published": "2026-10-05",
+      "source": "patreon",
+      "title": "AQR's Treasury Short Across the Curve: The Month-End Flip Model, 2-Year to 30-Year",
+      "topic": "quant-methods",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/aqrs-treasury-2-171496086"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "elliott"
+      ],
+      "id": "r_15ae05d54b1e57ccc569ab5dac84d1bf8b0b6a7f0d41ef7d0e83bf4b35d7adb1",
+      "published": "2026-10-05",
+      "source": "patreon",
+      "title": "The Screen That Catches a Rotation Hiding Inside Elliott's Own 13D Filings",
+      "topic": "hedge-funds",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/screen-that-own-170227567"
+    },
+    {
+      "access": "unknown",
       "entities": [],
       "id": "r_8638d1f7cf979ff5fcc70d66ab2264993e3925f91c900911c13eb4eea63b024f",
       "published": "2026-10-03T16:29:04Z",
@@ -8070,6 +8108,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "0b9672c742deea5694acfed085a8bbda9d9a9c2697783ecd247b51a8b58336d4",
-  "source_revision": "9a54001f09d42d9f010f6651e5f4efc3f7ff3ee8"
+  "source_dataset_version": "e1a5cc0a39aadcc3b8ee382bc15557aa8c9b8c80f0183302a3a4a9854e279bde",
+  "source_revision": "2b942998c500360fda44bf1748c0eb809f1ea687"
 }

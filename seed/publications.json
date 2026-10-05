@@ -4,6 +4,42 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/how-pdt-d-e-shaw-and-two-sigma-rebuilt-barr-rosenbergs-1975-factor-model-bf231d577696",
+      "id": "r_152fee48f3f01d164e2124c5bd7488beee49660b129c8eecac25243666d2627f",
+      "published_at": "2026-10-05T15:03:23Z",
+      "slug": "how-pdt-d-e-shaw-and-two-sigma-rebuilt-barr-rosenbergs-1975-factor-model-bf231d577696",
+      "source": "medium",
+      "source_id": "bf231d577696",
+      "subtitle": "Barra sold Rosenberg’s 1974 risk model to every desk. On 494 stocks it was the one covariance whose risk forecast came true.\n\nContinue reading on Medium »",
+      "title": "How PDT, D.E. Shaw, and Two Sigma Rebuilt Barr Rosenberg’s 1975 Factor Model"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/screen-that-own-170227567",
+      "id": "r_15ae05d54b1e57ccc569ab5dac84d1bf8b0b6a7f0d41ef7d0e83bf4b35d7adb1",
+      "published_at": "2026-10-05",
+      "slug": "screen-that-own-170227567",
+      "source": "patreon",
+      "source_id": "170227567",
+      "subtitle": "",
+      "title": "The Screen That Catches a Rotation Hiding Inside Elliott's Own 13D Filings"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/aqrs-treasury-2-171496086",
+      "id": "r_e77a3267898ee2739f66f1a409563e44242769fcb3698536b3f61d71e04f1977",
+      "published_at": "2026-10-05",
+      "slug": "aqrs-treasury-2-171496086",
+      "source": "patreon",
+      "source_id": "171496086",
+      "subtitle": "",
+      "title": "AQR's Treasury Short Across the Curve: The Month-End Flip Model, 2-Year to 30-Year"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/how-quants-tell-trend-from-noise-the-hurst-exponent-born-on-the-nile-in-1951-b42e666570fb",
       "id": "r_8638d1f7cf979ff5fcc70d66ab2264993e3925f91c900911c13eb4eea63b024f",
       "published_at": "2026-10-03T16:29:04Z",
@@ -8421,5 +8457,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "0b9672c742deea5694acfed085a8bbda9d9a9c2697783ecd247b51a8b58336d4"
+  "source_dataset_version": "e1a5cc0a39aadcc3b8ee382bc15557aa8c9b8c80f0183302a3a4a9854e279bde"
 }
