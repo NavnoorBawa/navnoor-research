@@ -1612,15 +1612,15 @@
       "attribution": "Federal Reserve Board",
       "item_count": 38,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-05T00:10:18Z",
-      "last_success_at": "2026-10-05T00:10:18Z",
+      "last_attempt_at": "2026-10-05T06:14:15Z",
+      "last_success_at": "2026-10-05T06:14:15Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-05T00:10:18Z",
+      "last_attempt_at": "2026-10-05T06:14:15Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
