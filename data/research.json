@@ -1,6 +1,19 @@
 {
   "research": [
     {
+      "access": "restricted",
+      "entities": [
+        "aqr"
+      ],
+      "id": "r_4ec33f22f3009375b4b38b158ff3992003a74f86442bf8473260867f95970ecb",
+      "published": "2026-10-05T17:30:50.746Z",
+      "source": "substack",
+      "summary": "AQR's trend rule exits on the calendar, not on a rally, and every duration short leaning on trend money inherits that clock.",
+      "title": "AQR's Managed Futures Fund Bet Against Treasuries. AQR's Own Trend Rule Says When It Stops",
+      "topic": "quant-methods",
+      "url": "https://navnoorbawa.substack.com/p/aqrs-managed-futures-fund-bet-against"
+    },
+    {
       "access": "unknown",
       "entities": [
         "de-shaw",
@@ -8108,6 +8121,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "e1a5cc0a39aadcc3b8ee382bc15557aa8c9b8c80f0183302a3a4a9854e279bde",
-  "source_revision": "2b942998c500360fda44bf1748c0eb809f1ea687"
+  "source_dataset_version": "d3432d117d87cb44b89a4b998311779a7f70052c13938fad9b9563b57c417304",
+  "source_revision": "a7961510f73301f597dc7597cc285379c455185a"
 }

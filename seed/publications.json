@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/aqrs-managed-futures-fund-bet-against",
+      "id": "r_4ec33f22f3009375b4b38b158ff3992003a74f86442bf8473260867f95970ecb",
+      "published_at": "2026-10-05T17:30:50.746Z",
+      "slug": "aqrs-managed-futures-fund-bet-against",
+      "source": "substack",
+      "source_id": "aqrs-managed-futures-fund-bet-against",
+      "subtitle": "AQR's trend rule exits on the calendar, not on a rally, and every duration short leaning on trend money inherits that clock.",
+      "title": "AQR's Managed Futures Fund Bet Against Treasuries. AQR's Own Trend Rule Says When It Stops"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/how-pdt-d-e-shaw-and-two-sigma-rebuilt-barr-rosenbergs-1975-factor-model-bf231d577696",
@@ -8457,5 +8469,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "e1a5cc0a39aadcc3b8ee382bc15557aa8c9b8c80f0183302a3a4a9854e279bde"
+  "source_dataset_version": "d3432d117d87cb44b89a4b998311779a7f70052c13938fad9b9563b57c417304"
 }
