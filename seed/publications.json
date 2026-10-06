@@ -2,6 +2,42 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-hired-a-gchq-codebreaker-he-said-medallions-top-tool-was-high-school-math-01839f55293b",
+      "id": "r_2ddf80f78fd31fc2b5e2b4ee6ec964cb388c69a071a06d7ab409972ae775d86a",
+      "published_at": "2026-10-06T15:06:21Z",
+      "slug": "jim-simons-hired-a-gchq-codebreaker-he-said-medallions-top-tool-was-high-school-math-01839f55293b",
+      "source": "medium",
+      "source_id": "01839f55293b",
+      "subtitle": "Nick Patterson broke codes for two decades, joined Renaissance in 1993 and named its top tool: a one variable regression.\n\nContinue reading on Medium »",
+      "title": "Jim Simons Hired a GCHQ Codebreaker. He Said Medallion’s Top Tool Was High-School Math."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/brevan-howards-flagship-is-not-a",
+      "id": "r_22d217f64b8121b71347b393cf50f72a10764e0332df7b4890dea4a2005b288c",
+      "published_at": "2026-10-06T13:31:49.170Z",
+      "slug": "brevan-howards-flagship-is-not-a",
+      "source": "substack",
+      "source_id": "brevan-howards-flagship-is-not-a",
+      "subtitle": "Brevan sells itself on 150-plus portfolio managers. Its flagship's own reports show a fund that rests on about ten.",
+      "title": "Brevan Howard's Flagship Is Not a Pod Shop"
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/brevan-howards-171533899",
+      "id": "r_add7fa6677f26ef5717cf8a04bf0542f8ff91e779e54a3f4d300803e775485d3",
+      "published_at": "2026-10-06",
+      "slug": "brevan-howards-171533899",
+      "source": "patreon",
+      "source_id": "171533899",
+      "subtitle": "",
+      "title": "Brevan Howard's Flagship, Book by Book: The Monthly Concentration Screen"
+    },
+    {
       "access": "restricted",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/aqrs-managed-futures-fund-bet-against",
@@ -8469,5 +8505,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "d3432d117d87cb44b89a4b998311779a7f70052c13938fad9b9563b57c417304"
+  "source_dataset_version": "3b334b10dfa5aaa451476807799bc206e8ad10b9fb9104576216b148d1955694"
 }
