@@ -2,6 +2,17 @@
   "items": [
     {
       "attribution": "Federal Reserve Board",
+      "entities": [],
+      "id": "n_08dfdbdaa9ce20cc125a1535b707852e69dea75e45b358bd66354911512b6fc4",
+      "published": "2026-10-07T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
@@ -1623,17 +1634,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 39,
+      "item_count": 40,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-07T13:57:02Z",
-      "last_success_at": "2026-10-07T13:57:02Z",
+      "last_attempt_at": "2026-10-07T20:46:45Z",
+      "last_success_at": "2026-10-07T20:46:45Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-07T13:57:02Z",
+      "last_attempt_at": "2026-10-07T20:46:45Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
