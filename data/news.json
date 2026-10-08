@@ -1636,15 +1636,15 @@
       "attribution": "Federal Reserve Board",
       "item_count": 40,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-08T01:19:53Z",
-      "last_success_at": "2026-10-08T01:19:53Z",
+      "last_attempt_at": "2026-10-08T10:56:09Z",
+      "last_success_at": "2026-10-08T10:56:09Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-08T01:19:53Z",
+      "last_attempt_at": "2026-10-08T10:56:09Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
