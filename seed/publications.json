@@ -15,7 +15,9 @@
     },
     {
       "access": "public",
-      "alternate_urls": {},
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/brevan-howards-flagship-is-not-a-pod-shop-3aee7eb8f716"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/brevan-howards-flagship-is-not-a",
       "id": "r_22d217f64b8121b71347b393cf50f72a10764e0332df7b4890dea4a2005b288c",
       "published_at": "2026-10-06T13:31:49.170Z",
@@ -8505,5 +8507,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "3b334b10dfa5aaa451476807799bc206e8ad10b9fb9104576216b148d1955694"
+  "source_dataset_version": "d9bfe4801176652c1ec739dd3d69a0a23f9b95ca9f41615dd86557214fdc007c"
 }
