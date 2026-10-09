@@ -2,6 +2,19 @@
   "items": [
     {
       "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
+      "id": "n_8fbb18afd13a46e5b4eb26323d8bf8c2d68a4fb1e36ad4818efd87315f813800",
+      "published": "2026-10-08T20:30:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
       "entities": [],
       "id": "n_08dfdbdaa9ce20cc125a1535b707852e69dea75e45b358bd66354911512b6fc4",
       "published": "2026-10-07T18:00:00Z",
@@ -1634,17 +1647,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 40,
+      "item_count": 41,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-08T19:00:56Z",
-      "last_success_at": "2026-10-08T19:00:56Z",
+      "last_attempt_at": "2026-10-09T01:27:39Z",
+      "last_success_at": "2026-10-09T01:27:39Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-08T19:00:56Z",
+      "last_attempt_at": "2026-10-09T01:27:39Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
