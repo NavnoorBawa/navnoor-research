@@ -1,6 +1,21 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "bridgewater",
+        "aqr",
+        "leverage"
+      ],
+      "id": "r_7c61a4102c8d7b433eca95f0740dd9806eaed04826a1cd97920bdae84d748f47",
+      "published": "2026-10-09T15:07:05Z",
+      "source": "medium",
+      "summary": "Edward Qian coined it in a September 2005 white paper. All Weather launched in 1996; AQR’s 2012 leverage-aversion paper showed why it pays",
+      "title": "Ray Dalio Never Named Risk Parity. A PanAgora Quant Did. Bridgewater and AQR Built It.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/ray-dalio-never-named-risk-parity-a-panagora-quant-did-bridgewater-and-aqr-built-it-a1ef38ca0638"
+    },
+    {
       "access": "restricted",
       "entities": [],
       "id": "r_4d721159d3fadc113cb17de78b49aeaa38fd1d6de10b044ee421b94343579da4",
@@ -8180,6 +8195,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "9ddd8b99ccc503c1ae5e9b36fa4ca70d021414a5d7394c163e26b88a5af5542d",
-  "source_revision": "e544eab229c0e24ed4dd0d7d0ba1ab45c6e30e05"
+  "source_dataset_version": "a090aef347192f5f4799d1c8280710d04675506d5a6d14d7c1afc85875e41eb3",
+  "source_revision": "f3e2b7f85f0ac2e015fbc83397b2178a67924dd6"
 }

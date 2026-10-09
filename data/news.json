@@ -5,6 +5,19 @@
       "entities": [
         "federal-reserve"
       ],
+      "id": "n_0d84bbab316fddb29a8359e71c6716790cbc3267e1ab0a0a74ba0b55190e00b7",
+      "published": "2026-10-09T14:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
       "id": "n_8fbb18afd13a46e5b4eb26323d8bf8c2d68a4fb1e36ad4818efd87315f813800",
       "published": "2026-10-08T20:30:00Z",
       "publisher": "www.federalreserve.gov",
@@ -1647,17 +1660,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 41,
+      "item_count": 42,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-09T10:55:08Z",
-      "last_success_at": "2026-10-09T10:55:08Z",
+      "last_attempt_at": "2026-10-09T18:31:15Z",
+      "last_success_at": "2026-10-09T18:31:15Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-09T10:55:08Z",
+      "last_attempt_at": "2026-10-09T18:31:15Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }

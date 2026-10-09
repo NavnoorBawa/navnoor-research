@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/ray-dalio-never-named-risk-parity-a-panagora-quant-did-bridgewater-and-aqr-built-it-a1ef38ca0638",
+      "id": "r_7c61a4102c8d7b433eca95f0740dd9806eaed04826a1cd97920bdae84d748f47",
+      "published_at": "2026-10-09T15:07:05Z",
+      "slug": "ray-dalio-never-named-risk-parity-a-panagora-quant-did-bridgewater-and-aqr-built-it-a1ef38ca0638",
+      "source": "medium",
+      "source_id": "a1ef38ca0638",
+      "subtitle": "Edward Qian coined it in a September 2005 white paper. All Weather launched in 1996; AQR’s 2012 leverage-aversion paper showed why it pays.\n\nContinue reading on Medium »",
+      "title": "Ray Dalio Never Named Risk Parity. A PanAgora Quant Did. Bridgewater and AQR Built It."
+    },
+    {
       "access": "restricted",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/tiger-global-sold-37bn-of-stock-and",
@@ -8531,5 +8543,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "9ddd8b99ccc503c1ae5e9b36fa4ca70d021414a5d7394c163e26b88a5af5542d"
+  "source_dataset_version": "a090aef347192f5f4799d1c8280710d04675506d5a6d14d7c1afc85875e41eb3"
 }
