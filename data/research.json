@@ -1,6 +1,27 @@
 {
   "research": [
     {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_4d721159d3fadc113cb17de78b49aeaa38fd1d6de10b044ee421b94343579da4",
+      "published": "2026-10-08T20:05:52.293Z",
+      "source": "substack",
+      "summary": "Coleman sold Alphabet and app software, kept his chip money in chips, and built up one line worth pricing",
+      "title": "Tiger Global Sold $3.7bn of Stock, and Its 13F Shows One Chip Bet Built Up: Intel",
+      "topic": "equities",
+      "url": "https://navnoorbawa.substack.com/p/tiger-global-sold-37bn-of-stock-and"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_ccc8a910eb6f61ae213f631ddd656c71abdabd4f3ac162bce605adf02ec79513",
+      "published": "2026-10-08",
+      "source": "patreon",
+      "title": "Tiger Global's second quarter Intel buying: the 13F share column screen, rebuilt from EDGAR",
+      "topic": "general",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/tiger-globals-171813641"
+    },
+    {
       "access": "unknown",
       "entities": [
         "renaissance"
@@ -119,7 +140,6 @@
       "id": "r_504e4185c9a6351b007859eebaa0132b01d0bd5f2b9539c344387709c93ec22e",
       "published": "2026-10-02T21:38:56Z",
       "source": "medium",
-      "summary": "Ed Thorp ran Princeton Newport at a little over 19% a year for nineteen years, three losing months out of 230, without ever running the",
       "title": "How Ed Thorp and Renaissance Actually Sized Their Bets: The Kelly Criterion Hedge Funds Still Use",
       "topic": "hedge-funds",
       "url": "https://medium.com/@navnoorbawa/how-ed-thorp-and-renaissance-actually-sized-their-bets-the-kelly-criterion-hedge-funds-still-use-0f9f7e3dc62b"
@@ -8160,6 +8180,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "d9bfe4801176652c1ec739dd3d69a0a23f9b95ca9f41615dd86557214fdc007c",
-  "source_revision": "ef712180772ac98b75af0fcf3339ffec919886cb"
+  "source_dataset_version": "9ddd8b99ccc503c1ae5e9b36fa4ca70d021414a5d7394c163e26b88a5af5542d",
+  "source_revision": "e544eab229c0e24ed4dd0d7d0ba1ab45c6e30e05"
 }
