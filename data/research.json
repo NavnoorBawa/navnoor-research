@@ -2,6 +2,17 @@
   "research": [
     {
       "access": "unknown",
+      "entities": [],
+      "id": "r_99eb553c1d772886390bd3d4765f418b52c5d47496b46e474b3e97263ed3f2e3",
+      "published": "2026-10-10T15:04:02Z",
+      "source": "medium",
+      "summary": "Fisher published it in 1912 as an undergraduate. Abraham Wald’s 1943 proof needs conditions not known to hold for Hamilton’s regime model",
+      "title": "Fisher Could Not Prove Maximum Likelihood. Morgan Stanley and CFM Built Models on It.",
+      "topic": "quant-methods",
+      "url": "https://medium.com/@navnoorbawa/fisher-could-not-prove-maximum-likelihood-morgan-stanley-and-cfm-built-models-on-it-e9e2f4dfb5be"
+    },
+    {
+      "access": "unknown",
       "entities": [
         "bridgewater",
         "aqr",
@@ -8195,6 +8206,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "a090aef347192f5f4799d1c8280710d04675506d5a6d14d7c1afc85875e41eb3",
-  "source_revision": "715547b746892f5e78578982440bb3d7d567133f"
+  "source_dataset_version": "093cc11ee5961093cdac4a1c521c160e21771b8b8043f36130af24c8dcff07d9",
+  "source_revision": "a68bfe0597f353e1fc3da13286187f357f3545aa"
 }

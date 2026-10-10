@@ -4,6 +4,18 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/fisher-could-not-prove-maximum-likelihood-morgan-stanley-and-cfm-built-models-on-it-e9e2f4dfb5be",
+      "id": "r_99eb553c1d772886390bd3d4765f418b52c5d47496b46e474b3e97263ed3f2e3",
+      "published_at": "2026-10-10T15:04:02Z",
+      "slug": "fisher-could-not-prove-maximum-likelihood-morgan-stanley-and-cfm-built-models-on-it-e9e2f4dfb5be",
+      "source": "medium",
+      "source_id": "e9e2f4dfb5be",
+      "subtitle": "Fisher published it in 1912 as an undergraduate. Abraham Wald’s 1943 proof needs conditions not known to hold for Hamilton’s regime model.\n\nContinue reading on Medium »",
+      "title": "Fisher Could Not Prove Maximum Likelihood. Morgan Stanley and CFM Built Models on It."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/ray-dalio-never-named-risk-parity-a-panagora-quant-did-bridgewater-and-aqr-built-it-a1ef38ca0638",
       "id": "r_7c61a4102c8d7b433eca95f0740dd9806eaed04826a1cd97920bdae84d748f47",
       "published_at": "2026-10-09T15:07:05Z",
@@ -8543,5 +8555,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "a090aef347192f5f4799d1c8280710d04675506d5a6d14d7c1afc85875e41eb3"
+  "source_dataset_version": "093cc11ee5961093cdac4a1c521c160e21771b8b8043f36130af24c8dcff07d9"
 }
