@@ -1,6 +1,32 @@
 {
   "research": [
     {
+      "access": "public",
+      "entities": [
+        "man-group",
+        "treasuries"
+      ],
+      "id": "r_a9f037f43683a2dab6cd5cdb4cd007349d401d1a6f69930fcaba5e20eb3ee898",
+      "published": "2026-10-11T13:31:40.663Z",
+      "source": "substack",
+      "summary": "Man AHL's flagship is 157% net short in 10-year terms. What trend following earns while yields climb, and what a turn takes back.",
+      "title": "How Man AHL's Trend Following Makes Money When Bonds Sell Off",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/how-man-ahls-trend-following-makes"
+    },
+    {
+      "access": "public",
+      "entities": [
+        "man-group"
+      ],
+      "id": "r_503cc685417d6f8d187b0a7f3171483c50636c5523ead7dcf7ee9b22cbd3dc72",
+      "published": "2026-10-11",
+      "source": "patreon",
+      "title": "Man AHL's 2022 Bond Rout, Quarter by Quarter: The Reconstruction",
+      "topic": "hedge-funds",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/man-ahls-2022-by-171561043"
+    },
+    {
       "access": "unknown",
       "entities": [],
       "id": "r_99eb553c1d772886390bd3d4765f418b52c5d47496b46e474b3e97263ed3f2e3",
@@ -8206,6 +8232,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "093cc11ee5961093cdac4a1c521c160e21771b8b8043f36130af24c8dcff07d9",
-  "source_revision": "aed70dd647e1ec11d3ae23844584e22f02c74fab"
+  "source_dataset_version": "1154348b55332ba8e154b74fca1b0f06b596321508a167a0ae3eb0b29205690b",
+  "source_revision": "adfd39d058038ee3319bb21d92fd2ab44387e26d"
 }

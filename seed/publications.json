@@ -2,6 +2,30 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/how-man-ahls-trend-following-makes",
+      "id": "r_a9f037f43683a2dab6cd5cdb4cd007349d401d1a6f69930fcaba5e20eb3ee898",
+      "published_at": "2026-10-11T13:31:40.663Z",
+      "slug": "how-man-ahls-trend-following-makes",
+      "source": "substack",
+      "source_id": "how-man-ahls-trend-following-makes",
+      "subtitle": "Man AHL's flagship is 157% net short in 10-year terms. What trend following earns while yields climb, and what a turn takes back.",
+      "title": "How Man AHL's Trend Following Makes Money When Bonds Sell Off"
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/man-ahls-2022-by-171561043",
+      "id": "r_503cc685417d6f8d187b0a7f3171483c50636c5523ead7dcf7ee9b22cbd3dc72",
+      "published_at": "2026-10-11",
+      "slug": "man-ahls-2022-by-171561043",
+      "source": "patreon",
+      "source_id": "171561043",
+      "subtitle": "",
+      "title": "Man AHL's 2022 Bond Rout, Quarter by Quarter: The Reconstruction"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/fisher-could-not-prove-maximum-likelihood-morgan-stanley-and-cfm-built-models-on-it-e9e2f4dfb5be",
@@ -8555,5 +8579,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "093cc11ee5961093cdac4a1c521c160e21771b8b8043f36130af24c8dcff07d9"
+  "source_dataset_version": "1154348b55332ba8e154b74fca1b0f06b596321508a167a0ae3eb0b29205690b"
 }
