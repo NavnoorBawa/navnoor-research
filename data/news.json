@@ -2,6 +2,17 @@
   "items": [
     {
       "attribution": "Federal Reserve Board",
+      "entities": [],
+      "id": "n_ca688a27006cdc18bac09fd5edb687c617913c993eb5627f3893a13939502053",
+      "published": "2026-10-13T18:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
       "entities": [
         "federal-reserve"
       ],
@@ -1660,17 +1671,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 42,
+      "item_count": 43,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-13T11:07:30Z",
-      "last_success_at": "2026-10-13T11:07:30Z",
+      "last_attempt_at": "2026-10-13T19:32:36Z",
+      "last_success_at": "2026-10-13T19:32:36Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-13T11:07:30Z",
+      "last_attempt_at": "2026-10-13T19:32:36Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
