@@ -4,6 +4,54 @@
     {
       "access": "public",
       "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/how-bridgewater-trades-ai-in-its",
+      "id": "r_7cd1627d5d64cba4399eaad83c4561ea9e76ec817dd247a4db00418d7b4bdca1",
+      "published_at": "2026-10-13T17:00:28.362Z",
+      "slug": "how-bridgewater-trades-ai-in-its",
+      "source": "substack",
+      "source_id": "how-bridgewater-trades-ai-in-its",
+      "subtitle": "A $7bn chip sale reads like Bridgewater turning on AI. Six quarters of its 13F say it is sizing with a ceiling. The next filing tests it.",
+      "title": "How Bridgewater Trades AI in Its 13F: It Sold Micron and TSMC, Kept Most of Its Nvidia"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/jim-simonss-first-stock-fund-ran-on-stat-arb-a-quant-who-left-morgan-stanley-built-it-e96e590ab9a7",
+      "id": "r_5342767625c4ece1a5713ab924f440e9d36178dcea89acd34471a0d2f6714c45",
+      "published_at": "2026-10-13T15:03:23Z",
+      "slug": "jim-simonss-first-stock-fund-ran-on-stat-arb-a-quant-who-left-morgan-stanley-built-it-e96e590ab9a7",
+      "source": "medium",
+      "source_id": "e96e590ab9a7",
+      "subtitle": "Robert Frey left Morgan Stanley in 1988 to build Kepler, and Renaissance kept his prediction model when it rebuilt the fund.\n\nContinue reading on Medium »",
+      "title": "Jim Simons’s First Stock Fund Ran on Stat Arb. A Quant Who Left Morgan Stanley Built It."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/bridgewaters-ai-172244193",
+      "id": "r_747a4f71adb347854f654a913960b260b3d002b90f14206f6efd7d22358e452f",
+      "published_at": "2026-10-13",
+      "slug": "bridgewaters-ai-172244193",
+      "source": "patreon",
+      "source_id": "172244193",
+      "subtitle": "",
+      "title": "Bridgewater's third quarter 2025 AI cut: a case study of the refill, name by name"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/how-quants-shrink-a-covariance-matrix-steins-1955-paradox-and-a-credit-suisse-quant-37e6775d1f58",
+      "id": "r_d463bf7db19acd60bf785554e9ce11e3a715a3c7be2f6dd1e6ee67b0eec2117f",
+      "published_at": "2026-10-12T16:01:02Z",
+      "slug": "how-quants-shrink-a-covariance-matrix-steins-1955-paradox-and-a-credit-suisse-quant-37e6775d1f58",
+      "source": "medium",
+      "source_id": "37e6775d1f58",
+      "subtitle": "Pulling every estimate toward the average lowers expected total error, and it cut a textbook portfolio’s risk nearly in half.\n\nContinue reading on Medium »",
+      "title": "How Quants Shrink a Covariance Matrix: Stein’s 1955 Paradox and a Credit Suisse Quant"
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/how-man-ahls-trend-following-makes",
       "id": "r_a9f037f43683a2dab6cd5cdb4cd007349d401d1a6f69930fcaba5e20eb3ee898",
       "published_at": "2026-10-11T13:31:40.663Z",
@@ -8579,5 +8627,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "1154348b55332ba8e154b74fca1b0f06b596321508a167a0ae3eb0b29205690b"
+  "source_dataset_version": "b1215c9dd5e294e754a23d0de314985cc5da2c2a4102778a4e2c20996be6556b"
 }
