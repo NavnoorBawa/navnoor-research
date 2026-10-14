@@ -1,6 +1,45 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "ltcm",
+        "options"
+      ],
+      "id": "r_d92d54c6988442b1ca1236c2aa1e118477c567ca4d722de66893b0d13e604253",
+      "published": "2026-10-14T15:04:01Z",
+      "source": "medium",
+      "summary": "Before Fischer Black wrote the equation behind option pricing, he wrote LISP programs that answered questions on an IBM 7090",
+      "title": "The Black in Black-Scholes Was a LISP Programmer First. Scholes Co-Founded LTCM.",
+      "topic": "volatility",
+      "url": "https://medium.com/@navnoorbawa/the-black-in-black-scholes-was-a-lisp-programmer-first-scholes-co-founded-ltcm-bc6508de02f7"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "nasdaq-exchange",
+        "ndx",
+        "machine-learning"
+      ],
+      "id": "r_4ea14cf2d2288e2dc245464ff1c9b88df68cfd33cec7e39891925d7645b009c2",
+      "published": "2026-10-14T13:33:22.476Z",
+      "source": "substack",
+      "summary": "A PM long Micron, TSMC and high yield bonds holds what Tudor insured. One long only the Nasdaq-100 holds what it left alone.",
+      "title": "Paul Tudor Jones's Fund Is Insuring AI Chips and Junk Bonds: Tudor's Own 13F, With the Position",
+      "topic": "market-structure",
+      "url": "https://navnoorbawa.substack.com/p/paul-tudor-joness-fund-is-insuring"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_f592dbfa1cd9b8c47c342f4d8bf8491d49c7aa644850701d99852482b10e6b7d",
+      "published": "2026-10-14",
+      "source": "patreon",
+      "title": "Tudor's June Chip Puts: The Second Trade That Insures a Chip Book, With Its Cost and Stop",
+      "topic": "general",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/tudors-june-chip-172281384"
+    },
+    {
       "access": "public",
       "entities": [
         "bridgewater",
@@ -8284,6 +8323,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "b1215c9dd5e294e754a23d0de314985cc5da2c2a4102778a4e2c20996be6556b",
-  "source_revision": "6ebcc18fe52595975f64f4cb9bf52fa8b324861e"
+  "source_dataset_version": "33196251c323ea16f47c22308604757cff568b8265a92fe5295dd316aaa0f841",
+  "source_revision": "7fdfa709f0319f48426df981d812770355384e2c"
 }
