@@ -4,6 +4,42 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/cfm-and-aqr-proved-low-beta-stocks-beat-the-capm-jack-treynor-wrote-in-1962-870fb605a290",
+      "id": "r_b46ace3d41e86bc404202c88ceeee3aba9b87948f81b563d3ed64d007f22d4e6",
+      "published_at": "2026-10-15T15:11:22Z",
+      "slug": "cfm-and-aqr-proved-low-beta-stocks-beat-the-capm-jack-treynor-wrote-in-1962-870fb605a290",
+      "source": "medium",
+      "source_id": "870fb605a290",
+      "subtitle": "AQR in 2014 and CFM in 2015 proved low-beta stocks beat the CAPM; in big stocks, the standard factors take the whole edge.\n\nContinue reading on Medium »",
+      "title": "CFM and AQR Proved Low-Beta Stocks Beat the CAPM Jack Treynor Wrote in 1962."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/boaz-weinsteins-saba-is-betting-blackrock",
+      "id": "r_d2c67b3ce92987e5eabb2c5ccd504f1f21529e1b5317aa425eb890831ca13f61",
+      "published_at": "2026-10-15T13:31:01.085Z",
+      "slug": "boaz-weinsteins-saba-is-betting-blackrock",
+      "source": "substack",
+      "source_id": "boaz-weinsteins-saba-is-betting-blackrock",
+      "subtitle": "Whether TCPC holders ever collect the gap Pantheon exposed turns on a NAV print due 5 November, and on a route BlackRock has not named",
+      "title": "Boaz Weinstein's Saba Is Betting BlackRock Lets Holders Out of Its Private Credit Fund"
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/sabas-2025-exits-172404046",
+      "id": "r_16358638bff5fc5d2a629e6a8934674e9bef7f61d1458c9f4de16690e83018cf",
+      "published_at": "2026-10-15",
+      "slug": "sabas-2025-exits-172404046",
+      "source": "patreon",
+      "source_id": "172404046",
+      "subtitle": "",
+      "title": "Saba's 2025 BlackRock tender exits: a case study of what those terms are worth at a BDC"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/the-black-in-black-scholes-was-a-lisp-programmer-first-scholes-co-founded-ltcm-bc6508de02f7",
       "id": "r_d92d54c6988442b1ca1236c2aa1e118477c567ca4d722de66893b0d13e604253",
       "published_at": "2026-10-14T15:04:01Z",
@@ -87,7 +123,9 @@
     },
     {
       "access": "public",
-      "alternate_urls": {},
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/how-man-ahls-trend-following-makes-money-when-bonds-sell-off-8b12f09f7b40"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/how-man-ahls-trend-following-makes",
       "id": "r_a9f037f43683a2dab6cd5cdb4cd007349d401d1a6f69930fcaba5e20eb3ee898",
       "published_at": "2026-10-11T13:31:40.663Z",
@@ -8663,5 +8701,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "33196251c323ea16f47c22308604757cff568b8265a92fe5295dd316aaa0f841"
+  "source_dataset_version": "303eb5a84967a403d00ca4d894c65fda6a32e11488dc781b9ba545d10cc6230a"
 }

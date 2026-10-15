@@ -3,6 +3,42 @@
     {
       "access": "unknown",
       "entities": [
+        "aqr"
+      ],
+      "id": "r_b46ace3d41e86bc404202c88ceeee3aba9b87948f81b563d3ed64d007f22d4e6",
+      "published": "2026-10-15T15:11:22Z",
+      "source": "medium",
+      "summary": "AQR in 2014 and CFM in 2015 proved low-beta stocks beat the CAPM; in big stocks, the standard factors take the whole edge",
+      "title": "CFM and AQR Proved Low-Beta Stocks Beat the CAPM Jack Treynor Wrote in 1962.",
+      "topic": "quant-methods",
+      "url": "https://medium.com/@navnoorbawa/cfm-and-aqr-proved-low-beta-stocks-beat-the-capm-jack-treynor-wrote-in-1962-870fb605a290"
+    },
+    {
+      "access": "restricted",
+      "entities": [
+        "aum"
+      ],
+      "id": "r_d2c67b3ce92987e5eabb2c5ccd504f1f21529e1b5317aa425eb890831ca13f61",
+      "published": "2026-10-15T13:31:01.085Z",
+      "source": "substack",
+      "summary": "Whether TCPC holders ever collect the gap Pantheon exposed turns on a NAV print due 5 November, and on a route BlackRock has not named",
+      "title": "Boaz Weinstein's Saba Is Betting BlackRock Lets Holders Out of Its Private Credit Fund",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/boaz-weinsteins-saba-is-betting-blackrock"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_16358638bff5fc5d2a629e6a8934674e9bef7f61d1458c9f4de16690e83018cf",
+      "published": "2026-10-15",
+      "source": "patreon",
+      "title": "Saba's 2025 BlackRock tender exits: a case study of what those terms are worth at a BDC",
+      "topic": "general",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/sabas-2025-exits-172404046"
+    },
+    {
+      "access": "unknown",
+      "entities": [
         "ltcm",
         "options"
       ],
@@ -8323,6 +8359,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "33196251c323ea16f47c22308604757cff568b8265a92fe5295dd316aaa0f841",
-  "source_revision": "9b9aa31926e4087e5c8976560a4aee1e6f196dc0"
+  "source_dataset_version": "303eb5a84967a403d00ca4d894c65fda6a32e11488dc781b9ba545d10cc6230a",
+  "source_revision": "4b5ab45c9736b31c5b1e71c2badb2c2e35753bf1"
 }
