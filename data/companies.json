@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-14T21:56:53Z",
+  "checked_at": "2026-10-16T05:01:36Z",
   "items": [
     {
       "cik": "0001090872",
@@ -4339,8 +4339,8 @@
     },
     {
       "cik": "0002141616",
-      "exchange": "",
-      "id": "30449bd06f1f39003cf8924f26c001eccf1e0e346c544ce15373986ceee99374",
+      "exchange": "Nasdaq",
+      "id": "df9f01336b507643e6eb738a025587787e08d352261e736b1928701b2f446444",
       "name": "Amaero Inc.",
       "ticker": "AMRO",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002141616"
@@ -5168,6 +5168,14 @@
       "name": "ADAPTIN BIO, INC.",
       "ticker": "APTN",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001938571"
+    },
+    {
+      "cik": "0002159678",
+      "exchange": "",
+      "id": "1deb71b3cf718b94c8e611124f46458d9a7d62c18739cd9de088547be4bc835c",
+      "name": "Apex Treasury Corp II",
+      "ticker": "APTT",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002159678"
     },
     {
       "cik": "0001521332",
@@ -10447,14 +10455,6 @@
       "id": "2a42ce1b78b43b5c27b67056f6479daa6437a1429586f6e3049b490837658f2a",
       "name": "Bakkt, Inc.",
       "ticker": "BKKT",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001820302"
-    },
-    {
-      "cik": "0001820302",
-      "exchange": "NYSE",
-      "id": "bea4efe96c2aa369c83c42c2171d7f52c68d627b580c698b13c0eca0aa84a1bd",
-      "name": "Bakkt, Inc.",
-      "ticker": "BKKT-WT",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001820302"
     },
     {
@@ -20651,30 +20651,6 @@
     },
     {
       "cik": "0001679688",
-      "exchange": "NYSE",
-      "id": "3598a5deaf8f230201083fc99dab8e58cc5ec2e58402a72c2ec33f78b703c305",
-      "name": "DigitalBridge Group, Inc.",
-      "ticker": "DBRG-PH",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001679688"
-    },
-    {
-      "cik": "0001679688",
-      "exchange": "NYSE",
-      "id": "1083df82f0cff8431396571d3144c7686a803db240e0a7a3dfd5c77ca2ad2fbc",
-      "name": "DigitalBridge Group, Inc.",
-      "ticker": "DBRG-PI",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001679688"
-    },
-    {
-      "cik": "0001679688",
-      "exchange": "NYSE",
-      "id": "a137c8f7960d643d4cb7f623fae3c11e13df87e1e18d85c176b21edbc92e73e4",
-      "name": "DigitalBridge Group, Inc.",
-      "ticker": "DBRG-PJ",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001679688"
-    },
-    {
-      "cik": "0001679688",
       "exchange": "OTC",
       "id": "b35fa1f8a47e28b564abe0999857a8b89c2d819508c126deb0d6e371b5b42e25",
       "name": "DigitalBridge Group, Inc.",
@@ -30866,14 +30842,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001427901"
     },
     {
-      "cik": "0001858007",
-      "exchange": "",
-      "id": "eab94dea1acc179fcbf48d3ca65ad0de06ca1e65d86da93fa046a9320e4377f8",
-      "name": "Chi Special Acquisition Corp.",
-      "ticker": "GDST",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001858007"
-    },
-    {
       "cik": "0001873093",
       "exchange": "Nasdaq",
       "id": "1ad574ede86d52730a6ee4d64575d8c257963c7da27b7a0b926f5380546899a0",
@@ -34091,14 +34059,6 @@
     },
     {
       "cik": "0001819438",
-      "exchange": "NYSE",
-      "id": "039be74ffe4ba99f6725d7f33c2d7e91e77c28dd6671c6d5b77ba92b5642bc04",
-      "name": "ESS Tech, Inc.",
-      "ticker": "GWH",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001819438"
-    },
-    {
-      "cik": "0001819438",
       "exchange": "OTC",
       "id": "c5b94f7c9fd7cc13340ddc1b04da0f3f4d50f264ac2f0a4e2a861e1b87f55943",
       "name": "ESS Tech, Inc.",
@@ -36987,8 +36947,8 @@
     },
     {
       "cik": "0001997038",
-      "exchange": "",
-      "id": "fb8637e70ed4eb038cedb58c76aeee98b3e51b6b7ea13e1f786d21092374f749",
+      "exchange": "Nasdaq",
+      "id": "891845ef29af67e44842d66715e93ff749c77608a934cbcd7ee533cf0b082a05",
       "name": "Iambic Therapeutics, Inc.",
       "ticker": "IAM",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001997038"
@@ -39237,7 +39197,7 @@
       "cik": "0001662774",
       "exchange": "Nasdaq",
       "id": "0ce7700340a3348daaaae41e5467ad62bcd261d84cea7d523e166ef21f3ce564",
-      "name": "Quince Therapeutics, Inc.",
+      "name": "IRulya Therapeutics Inc.",
       "ticker": "IRLA",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001662774"
     },
@@ -40235,8 +40195,8 @@
     },
     {
       "cik": "0001517389",
-      "exchange": "OTC",
-      "id": "1b86603d6ce81bf42a1e48b14b7bdaaa2a6e39ec4d5376593f80b9cc25c11760",
+      "exchange": "",
+      "id": "ae52dfbcd73cea3757ed2b3df0e9b101965e7c50d505a00fba2d72f7751bc0dd",
       "name": "Jubilant Flame International, Ltd",
       "ticker": "JFILD",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001517389"
@@ -48029,7 +47989,7 @@
       "cik": "0001518557",
       "exchange": "NYSE",
       "id": "40d1ffddc29e14c69ab2b3f1475e447d666c4f1dded976b6c778b6f8643b9a8b",
-      "name": "NYLI MacKay DefinedTerm Muni Opportunities Fund",
+      "name": "NYLIM MacKay DefinedTerm Muni Opportunities Fund",
       "ticker": "MMD",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001518557"
     },
@@ -51883,6 +51843,14 @@
     },
     {
       "cik": "0002038166",
+      "exchange": "",
+      "id": "29fed7793c0b10943d86ff0aabec18fb14cf51ed825f5802141298418d6184c4",
+      "name": "Nok Therapeutics, Inc.",
+      "ticker": "NKTP",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002038166"
+    },
+    {
+      "cik": "0002038166",
       "exchange": "OTC",
       "id": "d64b64c5380151dfbfa24d5b3c5e7f54fe17b54cdccdeb09df24dcdeabe6b3d8",
       "name": "Nok Therapeutics, Inc.",
@@ -53064,14 +53032,6 @@
       "name": "Neostellar Capital Corp.",
       "ticker": "NSLRL",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001509470"
-    },
-    {
-      "cik": "0002027166",
-      "exchange": "OTC",
-      "id": "b0e9cc3b78a0bad7602e2b99303400a7997f568d097325c35a42bc7d08d12cc2",
-      "name": "Nissin Foods Holdings Co., Ltd./ADR",
-      "ticker": "NSNFY",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002027166"
     },
     {
       "cik": "0001000753",
@@ -58370,14 +58330,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001783183"
     },
     {
-      "cik": "0002086549",
-      "exchange": "",
-      "id": "aaab5c47b7cc157db770f6fa8a55d821263a22ef0a0dddbf0374067e3f478a0c",
-      "name": "Phalanx Acquisition Corp I",
-      "ticker": "PHAX",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002086549"
-    },
-    {
       "cik": "0002145424",
       "exchange": "OTC",
       "id": "a7dcfe5b21c218876349b5236597a456712b203079b4befb419a0fc12b99ffbd",
@@ -61461,7 +61413,7 @@
       "cik": "0001662774",
       "exchange": "Nasdaq",
       "id": "3292ba835c691486166466178b25dbcfc44c8913582c1cc401b68abb10e88ed4",
-      "name": "Quince Therapeutics, Inc.",
+      "name": "IRulya Therapeutics Inc.",
       "ticker": "QNCX",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001662774"
     },
@@ -61672,6 +61624,14 @@
       "name": "QT IMAGING HOLDINGS, INC.",
       "ticker": "QTIWW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001844505"
+    },
+    {
+      "cik": "0001518419",
+      "exchange": "OTC",
+      "id": "08604fb405ca0c267b9d14fa626269b6c7b45743e6c703e3c343f58c891e35f9",
+      "name": "Quarterhill Inc.",
+      "ticker": "QTRHF",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001518419"
     },
     {
       "cik": "0001503274",
@@ -72410,14 +72370,6 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001409036"
     },
     {
-      "cik": "0002102720",
-      "exchange": "",
-      "id": "7fc83f364c8a6942ae21b6ef9840ed8c5cdcbc5111b98bf0c5d59dcf7ce8a801",
-      "name": "Tarsier Pharma Ltd.",
-      "ticker": "TARX",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002102720"
-    },
-    {
       "cik": "0001829864",
       "exchange": "Nasdaq",
       "id": "1488b5cf4a84e704ffde650ff1027e5c75ad27325c529b71ab1080bacb3078a5",
@@ -78203,8 +78155,8 @@
     },
     {
       "cik": "0001309082",
-      "exchange": "",
-      "id": "28ba5d9e9a83ebef2c8d4a4e4032b6c4039892412e97401e2ba76de02dd8b2b7",
+      "exchange": "OTC",
+      "id": "4c2f7841a0af062d76a0aea5ca376d7c5d2bc5172c42fbb7f57bcc77aac4705c",
       "name": "Viking Global Technologies, Inc.",
       "ticker": "VGTK",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001309082"
@@ -79751,14 +79703,6 @@
       "id": "e8f905251bc5e733a7e6f973ffb239cb54dc72c1e36835f4abe516e690cdeb97",
       "name": "Waldencast plc",
       "ticker": "WALD",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0001840199"
-    },
-    {
-      "cik": "0001840199",
-      "exchange": "Nasdaq",
-      "id": "571609549f5a8599c6321acd175ad279c02f6a24f3ca8be7600263b402f968ed",
-      "name": "Waldencast plc",
-      "ticker": "WALDW",
       "url": "https://www.sec.gov/edgar/browse/?CIK=0001840199"
     },
     {
@@ -82138,12 +82082,12 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002039505"
     },
     {
-      "cik": "0002044009",
+      "cik": "0002092592",
       "exchange": "Nasdaq",
-      "id": "f5a3a04e8d2508d2fcc0d1ce42e75ec3b97a3bec8516841a453f2269bfd9bdfc",
-      "name": "Armada Acquisition Corp. II",
+      "id": "347b7e4e2e2da0cdc2b954e5daa75d861fb5c012fc1c45be962d6a0f202928b6",
+      "name": "Evernorth Holdings Inc.",
       "ticker": "XRPN",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002044009"
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002092592"
     },
     {
       "cik": "0002044009",
@@ -82154,12 +82098,12 @@
       "url": "https://www.sec.gov/edgar/browse/?CIK=0002044009"
     },
     {
-      "cik": "0002044009",
+      "cik": "0002092592",
       "exchange": "Nasdaq",
-      "id": "667b99ab603fdd4e7ae23c13fa18c5a0acba4b1c723568fde192f73bc29b19dc",
-      "name": "Armada Acquisition Corp. II",
+      "id": "747654156550fd385427524c097bf13a713e889f5b88149c03c0a0708b8cc147",
+      "name": "Evernorth Holdings Inc.",
       "ticker": "XRPNW",
-      "url": "https://www.sec.gov/edgar/browse/?CIK=0002044009"
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0002092592"
     },
     {
       "cik": "0002059438",
