@@ -38,26 +38,26 @@
       "bytes": 1348,
       "path": "snapshot_manifest.json",
       "role": "provenance",
-      "sha256": "bf7b58c0b51cda1fd18a52a6f78885cc1c820a7ac2d837f318b1edded10a79f0"
+      "sha256": "4c17bb1a0a9c5af88215355d0453c9496e823f4c4a0db412dc029274ae3d5633"
     }
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
   "source_checks": {
     "medium": {
-      "checked_at": "2026-10-16T03:30:53Z",
+      "checked_at": "2026-10-16T07:31:00Z",
       "included_count": 202,
       "newest": "2026-10-15T15:11:22Z",
       "status": "ok"
     },
     "patreon": {
-      "checked_at": "2026-10-16T03:30:56Z",
+      "checked_at": "2026-10-16T07:31:03Z",
       "included_count": 167,
       "newest": "2026-10-15",
       "status": "ok"
     },
     "substack": {
-      "checked_at": "2026-10-16T03:30:47Z",
+      "checked_at": "2026-10-16T07:30:55Z",
       "included_count": 313,
       "newest": "2026-10-15T13:31:01.085Z",
       "status": "ok"
@@ -67,12 +67,12 @@
     "article_count": 515,
     "catalog_count": 682,
     "catalog_latest_publication": "2026-10-15T15:11:22Z",
-    "checked_at": "2026-10-16T03:31:39Z",
+    "checked_at": "2026-10-16T07:31:45Z",
     "data_checksum": "303eb5a84967a403d00ca4d894c65fda6a32e11488dc781b9ba545d10cc6230a",
     "manifest_schema_version": 2,
     "observation_count_verified_but_omitted": 1169,
     "registry_count": 167,
     "repository": "https://github.com/navnoorthapar/substack-trades",
-    "revision": "c67a03088736d86a87565bde3fb026e11f3f8d93"
+    "revision": "c9c1bc1a837b603250933c036833590ea8b8e248"
   }
 }
