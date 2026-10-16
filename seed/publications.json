@@ -4,6 +4,30 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-said-trend-following-faded-by-the-1980s-currencies-say-1993-4ac5cac2e5ef",
+      "id": "r_f8f8356000c44756ce5a1f95ef3c0b4c73ef01f124bcfa83039b7958ac15a510",
+      "published_at": "2026-10-16T15:06:13Z",
+      "slug": "jim-simons-said-trend-following-faded-by-the-1980s-currencies-say-1993-4ac5cac2e5ef",
+      "source": "medium",
+      "source_id": "4ac5cac2e5ef",
+      "subtitle": "In currencies, the 20-day trend rule Jim Simons described paid every year through 1992 and stopped in 1993, a decade after his date.\n\nContinue reading on Medium »",
+      "title": "Jim Simons Said Trend Following Faded by the 1980s. Currencies Say 1993."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/hrts-large-since-172490917",
+      "id": "r_768d5d382fc466f7f5fa367b61cf3c35be22402896ef8f4bf22e68616ff44607",
+      "published_at": "2026-10-16",
+      "slug": "hrts-large-since-172490917",
+      "source": "patreon",
+      "source_id": "172490917",
+      "subtitle": "",
+      "title": "HRT's large-holder filings since 2023: a screen that keeps its dealer off holder lists"
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/cfm-and-aqr-proved-low-beta-stocks-beat-the-capm-jack-treynor-wrote-in-1962-870fb605a290",
       "id": "r_b46ace3d41e86bc404202c88ceeee3aba9b87948f81b563d3ed64d007f22d4e6",
       "published_at": "2026-10-15T15:11:22Z",
@@ -8701,5 +8725,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "303eb5a84967a403d00ca4d894c65fda6a32e11488dc781b9ba545d10cc6230a"
+  "source_dataset_version": "ce6a54bc4ef55c67645e0ac2df734ad2b939c357de3de415c097f70a7dab336f"
 }

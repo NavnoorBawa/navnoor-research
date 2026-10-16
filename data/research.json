@@ -2,6 +2,29 @@
   "research": [
     {
       "access": "unknown",
+      "entities": [],
+      "id": "r_f8f8356000c44756ce5a1f95ef3c0b4c73ef01f124bcfa83039b7958ac15a510",
+      "published": "2026-10-16T15:06:13Z",
+      "source": "medium",
+      "summary": "In currencies, the 20-day trend rule Jim Simons described paid every year through 1992 and stopped in 1993, a decade after his date",
+      "title": "Jim Simons Said Trend Following Faded by the 1980s. Currencies Say 1993.",
+      "topic": "general",
+      "url": "https://medium.com/@navnoorbawa/jim-simons-said-trend-following-faded-by-the-1980s-currencies-say-1993-4ac5cac2e5ef"
+    },
+    {
+      "access": "public",
+      "entities": [
+        "hrt"
+      ],
+      "id": "r_768d5d382fc466f7f5fa367b61cf3c35be22402896ef8f4bf22e68616ff44607",
+      "published": "2026-10-16",
+      "source": "patreon",
+      "title": "HRT's large-holder filings since 2023: a screen that keeps its dealer off holder lists",
+      "topic": "market-structure",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/hrts-large-since-172490917"
+    },
+    {
+      "access": "unknown",
       "entities": [
         "aqr"
       ],
@@ -8359,6 +8382,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "303eb5a84967a403d00ca4d894c65fda6a32e11488dc781b9ba545d10cc6230a",
-  "source_revision": "c9c1bc1a837b603250933c036833590ea8b8e248"
+  "source_dataset_version": "ce6a54bc4ef55c67645e0ac2df734ad2b939c357de3de415c097f70a7dab336f",
+  "source_revision": "e53a49100758a6ec73a0aa19faf0a3cfaa4cbdcd"
 }

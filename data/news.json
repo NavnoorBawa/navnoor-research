@@ -2,6 +2,19 @@
   "items": [
     {
       "attribution": "Federal Reserve Board",
+      "entities": [
+        "federal-reserve"
+      ],
+      "id": "n_e2834c74f4065e96c922c178a693a73131fab3f1a3291fc7994156b0f5d546e3",
+      "published": "2026-10-16T15:00:00Z",
+      "publisher": "www.federalreserve.gov",
+      "source_id": "federal-reserve-rss",
+      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "topic": "rates-macro",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm"
+    },
+    {
+      "attribution": "Federal Reserve Board",
       "entities": [],
       "id": "n_ca688a27006cdc18bac09fd5edb687c617913c993eb5627f3893a13939502053",
       "published": "2026-10-13T18:00:00Z",
@@ -1671,17 +1684,17 @@
   "sources": {
     "federal-reserve-rss": {
       "attribution": "Federal Reserve Board",
-      "item_count": 43,
+      "item_count": 44,
       "label": "Federal Reserve Board",
-      "last_attempt_at": "2026-10-16T11:54:53Z",
-      "last_success_at": "2026-10-16T11:54:53Z",
+      "last_attempt_at": "2026-10-16T16:58:00Z",
+      "last_success_at": "2026-10-16T16:58:00Z",
       "status": "ok"
     },
     "gdelt-doc-v2": {
       "attribution": "Discovery metadata: GDELT Project",
       "item_count": 100,
       "label": "GDELT Project",
-      "last_attempt_at": "2026-10-16T11:54:53Z",
+      "last_attempt_at": "2026-10-16T16:58:00Z",
       "last_success_at": "2026-08-23T14:15:06Z",
       "status": "error"
     }
