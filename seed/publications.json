@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/how-hudson-river-trading-beat-goldmans",
+      "id": "r_2831218ca9e70d30732701966f69373488a344cee9d233c07c9918a3ad2b4ec2",
+      "published_at": "2026-10-16T16:30:47.776Z",
+      "slug": "how-hudson-river-trading-beat-goldmans",
+      "source": "substack",
+      "source_id": "how-hudson-river-trading-beat-goldmans",
+      "subtitle": "HRT's own audited balance sheets put its unhedged position at a record $2.6bn, yet at the same share of its stock as before.",
+      "title": "How Hudson River Trading Beat Goldman's Desks, at What Risk"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-said-trend-following-faded-by-the-1980s-currencies-say-1993-4ac5cac2e5ef",
@@ -8725,5 +8737,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "ce6a54bc4ef55c67645e0ac2df734ad2b939c357de3de415c097f70a7dab336f"
+  "source_dataset_version": "3e65348d6248704fc040acdfc6d937022d6e7d1753a4162a022b21526c2c1630"
 }
