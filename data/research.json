@@ -1,6 +1,21 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "renaissance",
+        "options",
+        "leverage"
+      ],
+      "id": "r_8c2f367d5a426f4c4aba6a6a4a2188ed69512d7be87d9d3a15e8f4da3fe30cb7",
+      "published": "2026-10-17T15:01:02Z",
+      "source": "medium",
+      "summary": "Deutsche Bank and Barclays sold Medallion the barrier options behind its leverage, and the barrier made each option a loan",
+      "title": "Jim Simons Didn’t Build Medallion’s Leverage. Two Banks’ Barrier Options Did.",
+      "topic": "volatility",
+      "url": "https://medium.com/@navnoorbawa/jim-simons-didnt-build-medallion-s-leverage-two-banks-barrier-options-did-63f0357f6c45"
+    },
+    {
       "access": "public",
       "entities": [
         "hrt"
@@ -8395,6 +8410,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "3e65348d6248704fc040acdfc6d937022d6e7d1753a4162a022b21526c2c1630",
-  "source_revision": "489ad58b0c6e60b90251c9b36371da1aa1b1271b"
+  "source_dataset_version": "442b6effdecc63201331185c6944a35cb1c36e9d4d58c8b5c591b0aac24a7968",
+  "source_revision": "03f6a10fac3cdc32c7f3512b147ae4498850693c"
 }

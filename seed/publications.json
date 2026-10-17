@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-didnt-build-medallion-s-leverage-two-banks-barrier-options-did-63f0357f6c45",
+      "id": "r_8c2f367d5a426f4c4aba6a6a4a2188ed69512d7be87d9d3a15e8f4da3fe30cb7",
+      "published_at": "2026-10-17T15:01:02Z",
+      "slug": "jim-simons-didnt-build-medallion-s-leverage-two-banks-barrier-options-did-63f0357f6c45",
+      "source": "medium",
+      "source_id": "63f0357f6c45",
+      "subtitle": "Deutsche Bank and Barclays sold Medallion the barrier options behind its leverage, and the barrier made each option a loan.\n\nContinue reading on Medium »",
+      "title": "Jim Simons Didn’t Build Medallion’s Leverage. Two Banks’ Barrier Options Did."
+    },
+    {
       "access": "public",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/how-hudson-river-trading-beat-goldmans",
@@ -8737,5 +8749,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "3e65348d6248704fc040acdfc6d937022d6e7d1753a4162a022b21526c2c1630"
+  "source_dataset_version": "442b6effdecc63201331185c6944a35cb1c36e9d4d58c8b5c591b0aac24a7968"
 }
