@@ -1,6 +1,19 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "volatility"
+      ],
+      "id": "r_ad0f89f49d6829495fb5c92c5207cfff1f780e0429fe43487d671a1c6e8abe44",
+      "published": "2026-10-18T15:10:16Z",
+      "source": "medium",
+      "summary": "Robert Engle built ARCH in 1979 to test Milton Friedman on British inflation, and its heir GARCH is the volatility model quants learn",
+      "title": "How Quants Forecast Volatility: GARCH and the 1979 Test of Milton Friedman",
+      "topic": "volatility",
+      "url": "https://medium.com/@navnoorbawa/how-quants-forecast-volatility-garch-and-the-1979-test-of-milton-friedman-6030488647f4"
+    },
+    {
       "access": "restricted",
       "entities": [],
       "id": "r_024da0a02b1f73ff681c87304e3e252bf971834d6c033e06d4fa017a84973436",
@@ -8431,6 +8444,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "0cf121908c9053d094a7ec616bdbe957914eca20230f4ef1c4ff74d6c1603e5b",
-  "source_revision": "f7430da5cbe068f4cb3e2639c530576c6b347553"
+  "source_dataset_version": "1b46b6fb803c7014b23bdeb7f927a0a2e0ccbfa5859a7184983eb20dc5e6b9b3",
+  "source_revision": "ece8fc884828d744e8e97b87771cc2802c936ec6"
 }

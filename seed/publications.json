@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/how-quants-forecast-volatility-garch-and-the-1979-test-of-milton-friedman-6030488647f4",
+      "id": "r_ad0f89f49d6829495fb5c92c5207cfff1f780e0429fe43487d671a1c6e8abe44",
+      "published_at": "2026-10-18T15:10:16Z",
+      "slug": "how-quants-forecast-volatility-garch-and-the-1979-test-of-milton-friedman-6030488647f4",
+      "source": "medium",
+      "source_id": "6030488647f4",
+      "subtitle": "Robert Engle built ARCH in 1979 to test Milton Friedman on British inflation, and its heir GARCH is the volatility model quants learn.\n\nContinue reading on Medium »",
+      "title": "How Quants Forecast Volatility: GARCH and the 1979 Test of Milton Friedman"
+    },
+    {
       "access": "restricted",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/coatue-bet-on-micron-in-its-13f-and",
@@ -147,7 +159,9 @@
     },
     {
       "access": "public",
-      "alternate_urls": {},
+      "alternate_urls": {
+        "medium": "https://medium.com/@navnoorbawa/how-bridgewater-trades-ai-in-its-13f-it-sold-micron-and-tsmc-kept-most-of-its-nvidia-e574a5149291"
+      },
       "canonical_url": "https://navnoorbawa.substack.com/p/how-bridgewater-trades-ai-in-its",
       "id": "r_7cd1627d5d64cba4399eaad83c4561ea9e76ec817dd247a4db00418d7b4bdca1",
       "published_at": "2026-10-13T17:00:28.362Z",
@@ -8773,5 +8787,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "0cf121908c9053d094a7ec616bdbe957914eca20230f4ef1c4ff74d6c1603e5b"
+  "source_dataset_version": "1b46b6fb803c7014b23bdeb7f927a0a2e0ccbfa5859a7184983eb20dc5e6b9b3"
 }
