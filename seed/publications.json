@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/coatue-bet-on-micron-in-its-13f-and",
+      "id": "r_024da0a02b1f73ff681c87304e3e252bf971834d6c033e06d4fa017a84973436",
+      "published_at": "2026-10-17T18:59:22.610Z",
+      "slug": "coatue-bet-on-micron-in-its-13f-and",
+      "source": "substack",
+      "source_id": "coatue-bet-on-micron-in-its-13f-and",
+      "subtitle": "A copy of the filing pays Friday's price. The one printed Coatue cost is far lower, and two November documents decide what the firm kept.",
+      "title": "Coatue Bet on Micron in Its 13F, and Hedged It in the One Fund Whose Books Are Public"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/jim-simons-didnt-build-medallion-s-leverage-two-banks-barrier-options-did-63f0357f6c45",
@@ -12,6 +24,18 @@
       "source_id": "63f0357f6c45",
       "subtitle": "Deutsche Bank and Barclays sold Medallion the barrier options behind its leverage, and the barrier made each option a loan.\n\nContinue reading on Medium »",
       "title": "Jim Simons Didn’t Build Medallion’s Leverage. Two Banks’ Barrier Options Did."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/coatues-june-to-172644122",
+      "id": "r_fd60da293b21db06635988facb920f38fa2597e3ae98a0f8aa4ef9c34417f249",
+      "published_at": "2026-10-17",
+      "slug": "coatues-june-to-172644122",
+      "source": "patreon",
+      "source_id": "172644122",
+      "subtitle": "",
+      "title": "Coatue's June Chip Book Beside Three Tiger Cubs, Marked to 16 October: a Case Study"
     },
     {
       "access": "public",
@@ -8749,5 +8773,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "442b6effdecc63201331185c6944a35cb1c36e9d4d58c8b5c591b0aac24a7968"
+  "source_dataset_version": "0cf121908c9053d094a7ec616bdbe957914eca20230f4ef1c4ff74d6c1603e5b"
 }
