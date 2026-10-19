@@ -2,6 +2,45 @@
   "research": [
     {
       "access": "unknown",
+      "entities": [],
+      "id": "r_8eb9ee31865790f6d034bfa658a4bec58df3eccb3b5c740f3372df0f5fb9ea7c",
+      "published": "2026-10-19T15:04:22Z",
+      "source": "medium",
+      "summary": "At MIT in 1960, Claude Shannon handed Ed Thorp a betting rule that was Shannon’s own information rate, published by John Kelly",
+      "title": "Claude Shannon Handed Ed Thorp the Kelly Criterion in 1960. Thorp Built a Hedge Fund on It.",
+      "topic": "hedge-funds",
+      "url": "https://medium.com/@navnoorbawa/claude-shannon-handed-ed-thorp-the-kelly-criterion-in-1960-thorp-built-a-hedge-fund-on-it-a3acb7a8a28a"
+    },
+    {
+      "access": "public",
+      "entities": [
+        "millennium",
+        "balyasny"
+      ],
+      "id": "r_64aa23070a17467ed01bc0bb3ca659b1d96634a91ffb3f6487af41666d20ddb9",
+      "published": "2026-10-19T13:31:20.089Z",
+      "source": "substack",
+      "summary": "The ladder caps most pods' losses and spares the books that earn most. October's returns, due by 10 November, test it.",
+      "title": "Millennium and Balyasny's Stop-Loss: How Pod Shops Cut a Losing Trader in Stages",
+      "topic": "hedge-funds",
+      "url": "https://navnoorbawa.substack.com/p/millennium-and-balyasnys-stop-loss"
+    },
+    {
+      "access": "public",
+      "entities": [
+        "millennium",
+        "point72",
+        "balyasny"
+      ],
+      "id": "r_2c330515c283843f07925645d4ee85ab0f77effb699ff39bb4d48f234e85162c",
+      "published": "2026-10-19",
+      "source": "patreon",
+      "title": "Millennium, Point72 and Balyasny's June Chip Books Through July 2026: A Model",
+      "topic": "hedge-funds",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/millennium-and-172700821"
+    },
+    {
+      "access": "unknown",
       "entities": [
         "volatility"
       ],
@@ -8444,6 +8483,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "1b46b6fb803c7014b23bdeb7f927a0a2e0ccbfa5859a7184983eb20dc5e6b9b3",
-  "source_revision": "398c0c65dfcae99bfdfcb3772b99e62b5b694d8f"
+  "source_dataset_version": "bc91f8f2534efb561d1f9f48ebba00c6cd055046fc90375c7cb81d67061ed83a",
+  "source_revision": "4923a9cbbe0ff0b2e60de465eefb5af2bcf85162"
 }
