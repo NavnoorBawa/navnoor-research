@@ -3,6 +3,17 @@
     {
       "access": "unknown",
       "entities": [],
+      "id": "r_cdf3dfebc62d4ea0f2c05509fb0a17073bf28291f5342ebeb1e7f79a7c6ac1d4",
+      "published": "2026-10-20T15:05:55Z",
+      "source": "medium",
+      "summary": "Buffett’s partnership clears the luck test quants run on backtests; Berkshire’s stock since 2000 does not",
+      "title": "How Quants Bootstrap Warren Buffett for Luck: His Partnership Passes, Berkshire Since 2000 Fails.",
+      "topic": "equities",
+      "url": "https://medium.com/@navnoorbawa/how-quants-bootstrap-warren-buffett-for-luck-his-partnership-passes-berkshire-since-2000-fails-630299a08658"
+    },
+    {
+      "access": "unknown",
+      "entities": [],
       "id": "r_8eb9ee31865790f6d034bfa658a4bec58df3eccb3b5c740f3372df0f5fb9ea7c",
       "published": "2026-10-19T15:04:22Z",
       "source": "medium",
@@ -8483,6 +8494,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "bc91f8f2534efb561d1f9f48ebba00c6cd055046fc90375c7cb81d67061ed83a",
-  "source_revision": "1e583bd09832172bdb068385179c04fa623b4fc2"
+  "source_dataset_version": "51602e8a89daae4f473f70bb125ec2a86232c59aa77cafe75a6e6b8988a5a5a1",
+  "source_revision": "7933aff1edf5c31c3cbac0346c83267a32a2cd63"
 }

@@ -4,6 +4,18 @@
     {
       "access": "unknown",
       "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/how-quants-bootstrap-warren-buffett-for-luck-his-partnership-passes-berkshire-since-2000-fails-630299a08658",
+      "id": "r_cdf3dfebc62d4ea0f2c05509fb0a17073bf28291f5342ebeb1e7f79a7c6ac1d4",
+      "published_at": "2026-10-20T15:05:55Z",
+      "slug": "how-quants-bootstrap-warren-buffett-for-luck-his-partnership-passes-berkshire-since-2000-fails-630299a08658",
+      "source": "medium",
+      "source_id": "630299a08658",
+      "subtitle": "Buffett’s partnership clears the luck test quants run on backtests; Berkshire’s stock since 2000 does not.\n\nContinue reading on Medium »",
+      "title": "How Quants Bootstrap Warren Buffett for Luck: His Partnership Passes, Berkshire Since 2000 Fails."
+    },
+    {
+      "access": "unknown",
+      "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/claude-shannon-handed-ed-thorp-the-kelly-criterion-in-1960-thorp-built-a-hedge-fund-on-it-a3acb7a8a28a",
       "id": "r_8eb9ee31865790f6d034bfa658a4bec58df3eccb3b5c740f3372df0f5fb9ea7c",
       "published_at": "2026-10-19T15:04:22Z",
@@ -8823,5 +8835,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "bc91f8f2534efb561d1f9f48ebba00c6cd055046fc90375c7cb81d67061ed83a"
+  "source_dataset_version": "51602e8a89daae4f473f70bb125ec2a86232c59aa77cafe75a6e6b8988a5a5a1"
 }
