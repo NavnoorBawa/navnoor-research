@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/steve-cohens-point72-turion-fund",
+      "id": "r_b14a25ad78497c62139655c304ffa99a168fd58e02c6ca8931f4da4b2056fe72",
+      "published_at": "2026-10-20T19:24:30.133Z",
+      "slug": "steve-cohens-point72-turion-fund",
+      "source": "substack",
+      "source_id": "steve-cohens-point72-turion-fund",
+      "subtitle": "Morgan Stanley's richest clients can now buy Cohen's AI fund. UBS's books show whether they get the hedged Point72 or the AI trade.",
+      "title": "Steve Cohen's Point72 Turion Fund, Measured Against His Flagship"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/how-quants-bootstrap-warren-buffett-for-luck-his-partnership-passes-berkshire-since-2000-fails-630299a08658",
@@ -12,6 +24,18 @@
       "source_id": "630299a08658",
       "subtitle": "Buffett’s partnership clears the luck test quants run on backtests; Berkshire’s stock since 2000 does not.\n\nContinue reading on Medium »",
       "title": "How Quants Bootstrap Warren Buffett for Luck: His Partnership Passes, Berkshire Since 2000 Fails."
+    },
+    {
+      "access": "restricted",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/point72s-turion-172923139",
+      "id": "r_7efd9a704521dfa5530e10c27e0aa74df8ae0ab20b94372c46efec9e6ed4aaed",
+      "published_at": "2026-10-20",
+      "slug": "point72s-turion-172923139",
+      "source": "patreon",
+      "source_id": "172923139",
+      "subtitle": "",
+      "title": "Point72's Turion on UBS's June 2026 ledger: a screen for which hedge funds are equity beta"
     },
     {
       "access": "unknown",
@@ -8835,5 +8859,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "51602e8a89daae4f473f70bb125ec2a86232c59aa77cafe75a6e6b8988a5a5a1"
+  "source_dataset_version": "cfc50d87f4cd24c080cc9382359cba9b0e647678711e262f465d12b69122fd17"
 }
