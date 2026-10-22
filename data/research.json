@@ -2,6 +2,38 @@
   "research": [
     {
       "access": "restricted",
+      "entities": [],
+      "id": "r_cd562c8f7160e6a0f019e673615dedb332d682164752aa10d9115d534df71c7a",
+      "published": "2026-10-21T22:01:46.711Z",
+      "source": "substack",
+      "summary": "The fee Chris Rokos is raising keeps paying his firm while the fund sits below its high-water mark, and his investors pay it.",
+      "title": "Chris Rokos's Best Year Was Not His Firm's Best Payday",
+      "topic": "general",
+      "url": "https://navnoorbawa.substack.com/p/chris-rokoss-best-year-was-not-his"
+    },
+    {
+      "access": "unknown",
+      "entities": [],
+      "id": "r_ae59122914eb35153f07cc37c9511cf2363903669b77c415976f8198131b3537",
+      "published": "2026-10-21T17:36:09Z",
+      "source": "medium",
+      "summary": "Leonard Baum proved in 1970 that an EM pass never lowers the likelihood, and the 1977 paper that named EM said so in its own text",
+      "title": "Jim Simons’s First Hire Proved EM’s Maximum Likelihood Theorem. The 1977 Paper Admits It.",
+      "topic": "general",
+      "url": "https://medium.com/@navnoorbawa/jim-simonss-first-hire-proved-em-s-maximum-likelihood-theorem-the-1977-paper-admits-it-c8b89cfa85f3"
+    },
+    {
+      "access": "restricted",
+      "entities": [],
+      "id": "r_88382def9aa780bbc195b6bbdedf8f37ff2a7c7a45e371df4bcf6d16dbed3a06",
+      "published": "2026-10-21",
+      "source": "patreon",
+      "title": "Rokos's holders, 2019 to 2026: a case study of the fee saved by not selling below the mark",
+      "topic": "general",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/rokoss-holders-173024266"
+    },
+    {
+      "access": "restricted",
       "entities": [
         "point72",
         "machine-learning"
@@ -8520,6 +8552,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "cfc50d87f4cd24c080cc9382359cba9b0e647678711e262f465d12b69122fd17",
-  "source_revision": "ff988ef55557e471df0410a076f94dbd9e4a38a5"
+  "source_dataset_version": "0fffb2cf31854cb3d50eaa4e783f4b6c7c824bc88a8879ff5de06905776f1bd5",
+  "source_revision": "ca470c0caadd1c4b20b0bc5dd4e3e69c37a0bf8f"
 }
