@@ -1,6 +1,31 @@
 {
   "research": [
     {
+      "access": "unknown",
+      "entities": [
+        "options"
+      ],
+      "id": "r_9b01f3429593a6c31450d3d942b52d74dac499f192344036547ce93f832322f1",
+      "published": "2026-10-22T15:04:30Z",
+      "source": "medium",
+      "summary": "Buffett won his bet against Black-Scholes and lost the argument: the formula he mocked prices a hedge, and Berkshire did not hedge",
+      "title": "Warren Buffett Called Black-Scholes Prices Absurd in 2009. His Puts Proved Half of It.",
+      "topic": "volatility",
+      "url": "https://medium.com/@navnoorbawa/warren-buffett-called-black-scholes-prices-absurd-in-2009-his-puts-proved-half-of-it-af14ec633c36"
+    },
+    {
+      "access": "public",
+      "entities": [
+        "jane-street"
+      ],
+      "id": "r_60440e82bffb541e269846fc5e1b9a812768a899a204943bbd1f8fb0a24d6ef8",
+      "published": "2026-10-22",
+      "source": "patreon",
+      "title": "Jane Street's 2025 London accounts: a five line screen for where the trading year shows up",
+      "topic": "market-structure",
+      "url": "https://www.patreon.com/NavnoorBawa/posts/jane-streets-for-173083955"
+    },
+    {
       "access": "restricted",
       "entities": [],
       "id": "r_cd562c8f7160e6a0f019e673615dedb332d682164752aa10d9115d534df71c7a",
@@ -8552,6 +8577,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "0fffb2cf31854cb3d50eaa4e783f4b6c7c824bc88a8879ff5de06905776f1bd5",
-  "source_revision": "57dea140a0e9f2467014af5ff39155769099080b"
+  "source_dataset_version": "fcd58a89f6a3a703b9eab1558477448f5948106e8bde0baccd735e2bedf8d899",
+  "source_revision": "35d3cfc4feebb73e9c703f34755bfd123943cf3d"
 }

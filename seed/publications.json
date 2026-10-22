@@ -2,6 +2,30 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "unknown",
+      "alternate_urls": {},
+      "canonical_url": "https://medium.com/@navnoorbawa/warren-buffett-called-black-scholes-prices-absurd-in-2009-his-puts-proved-half-of-it-af14ec633c36",
+      "id": "r_9b01f3429593a6c31450d3d942b52d74dac499f192344036547ce93f832322f1",
+      "published_at": "2026-10-22T15:04:30Z",
+      "slug": "warren-buffett-called-black-scholes-prices-absurd-in-2009-his-puts-proved-half-of-it-af14ec633c36",
+      "source": "medium",
+      "source_id": "af14ec633c36",
+      "subtitle": "Buffett won his bet against Black-Scholes and lost the argument: the formula he mocked prices a hedge, and Berkshire did not hedge.\n\nContinue reading on Medium »",
+      "title": "Warren Buffett Called Black-Scholes Prices Absurd in 2009. His Puts Proved Half of It."
+    },
+    {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://www.patreon.com/NavnoorBawa/posts/jane-streets-for-173083955",
+      "id": "r_60440e82bffb541e269846fc5e1b9a812768a899a204943bbd1f8fb0a24d6ef8",
+      "published_at": "2026-10-22",
+      "slug": "jane-streets-for-173083955",
+      "source": "patreon",
+      "source_id": "173083955",
+      "subtitle": "",
+      "title": "Jane Street's 2025 London accounts: a five line screen for where the trading year shows up"
+    },
+    {
       "access": "restricted",
       "alternate_urls": {},
       "canonical_url": "https://navnoorbawa.substack.com/p/chris-rokoss-best-year-was-not-his",
@@ -8895,5 +8919,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "0fffb2cf31854cb3d50eaa4e783f4b6c7c824bc88a8879ff5de06905776f1bd5"
+  "source_dataset_version": "fcd58a89f6a3a703b9eab1558477448f5948106e8bde0baccd735e2bedf8d899"
 }
