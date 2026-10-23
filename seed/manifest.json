@@ -4,7 +4,7 @@
       "bytes": 494720,
       "path": "seed/publications.json",
       "record_count": 701,
-      "sha256": "0563b89b54b2c7b580dbff2b048817f1dc80cb84cda09eaaaa402b7cd9132778"
+      "sha256": "ee4e5cca9d662ef22e4cb7903be3f131948807a568abb77b9995253ba5c64666"
     }
   ],
   "counts": {
@@ -26,7 +26,7 @@
       "bytes": 1208627,
       "path": "articles_index.json",
       "role": "projected",
-      "sha256": "2b5bea48f8fbe0324044e35d361e0490b13336fdefb6cd7f354aa27a3d6fbeb4"
+      "sha256": "134be54882c91500a5556b64242ae343611ddaa9d9371e7003482c52c2579725"
     },
     {
       "bytes": 1221584,
@@ -38,26 +38,26 @@
       "bytes": 1356,
       "path": "snapshot_manifest.json",
       "role": "provenance",
-      "sha256": "cbcc8d4f4787fed02d5c5e3d7abbfdee031e6d7a6b79a2fd4e00a54c4e71bb08"
+      "sha256": "5893d4abdde31e57e2844df5ad79f4ee59e6a497d709705a933fb4b81a92032a"
     }
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
   "source_checks": {
     "medium": {
-      "checked_at": "2026-10-23T03:31:00Z",
+      "checked_at": "2026-10-23T07:31:06Z",
       "included_count": 209,
       "newest": "2026-10-22T15:04:30Z",
       "status": "ok"
     },
     "patreon": {
-      "checked_at": "2026-10-23T03:31:02Z",
+      "checked_at": "2026-10-23T07:31:09Z",
       "included_count": 173,
       "newest": "2026-10-22",
       "status": "ok"
     },
     "substack": {
-      "checked_at": "2026-10-23T03:30:48Z",
+      "checked_at": "2026-10-23T07:31:01Z",
       "included_count": 319,
       "newest": "2026-10-22T18:01:15.707Z",
       "status": "ok"
@@ -67,12 +67,12 @@
     "article_count": 528,
     "catalog_count": 701,
     "catalog_latest_publication": "2026-10-22T18:01:15.707Z",
-    "checked_at": "2026-10-23T03:31:41Z",
-    "data_checksum": "8f91bc723c24b1f1f8382962677fe808e310a4518ce708a37a8d279f982397f0",
+    "checked_at": "2026-10-23T07:31:44Z",
+    "data_checksum": "2b3d3718fb960e163698e129c894d9fb3a91152c18c1c0e00e15506d5e63e64a",
     "manifest_schema_version": 2,
     "observation_count_verified_but_omitted": 1189,
     "registry_count": 173,
     "repository": "https://github.com/navnoorthapar/substack-trades",
-    "revision": "ddcb53dbc15553b7b616db2eeefb4d31aa712648"
+    "revision": "614f0bc94653875a49bf43b8cc15f1d6612d1fda"
   }
 }
