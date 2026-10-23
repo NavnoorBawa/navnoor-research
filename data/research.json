@@ -1,6 +1,19 @@
 {
   "research": [
     {
+      "access": "public",
+      "entities": [
+        "jane-street"
+      ],
+      "id": "r_38f931810fe6b72c776dc0481b98c368e3718928908da21e6db1f9a43cf2185b",
+      "published": "2026-10-22T18:01:15.707Z",
+      "source": "substack",
+      "summary": "Jane Street's steady London return hides the trading year inside a bill whose formula no filing states.",
+      "title": "How Jane Street Pays Its London Market Makers Through a Partnership",
+      "topic": "market-structure",
+      "url": "https://navnoorbawa.substack.com/p/how-jane-street-pays-its-london-market"
+    },
+    {
       "access": "unknown",
       "entities": [
         "options"
@@ -8577,6 +8590,6 @@
     }
   ],
   "schema_version": 1,
-  "source_dataset_version": "fcd58a89f6a3a703b9eab1558477448f5948106e8bde0baccd735e2bedf8d899",
-  "source_revision": "35d3cfc4feebb73e9c703f34755bfd123943cf3d"
+  "source_dataset_version": "8f91bc723c24b1f1f8382962677fe808e310a4518ce708a37a8d279f982397f0",
+  "source_revision": "ddcb53dbc15553b7b616db2eeefb4d31aa712648"
 }

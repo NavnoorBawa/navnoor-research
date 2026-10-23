@@ -2,6 +2,18 @@
   "dataset": "navnoor-research-publications",
   "records": [
     {
+      "access": "public",
+      "alternate_urls": {},
+      "canonical_url": "https://navnoorbawa.substack.com/p/how-jane-street-pays-its-london-market",
+      "id": "r_38f931810fe6b72c776dc0481b98c368e3718928908da21e6db1f9a43cf2185b",
+      "published_at": "2026-10-22T18:01:15.707Z",
+      "slug": "how-jane-street-pays-its-london-market",
+      "source": "substack",
+      "source_id": "how-jane-street-pays-its-london-market",
+      "subtitle": "Jane Street's steady London return hides the trading year inside a bill whose formula no filing states.",
+      "title": "How Jane Street Pays Its London Market Makers Through a Partnership"
+    },
+    {
       "access": "unknown",
       "alternate_urls": {},
       "canonical_url": "https://medium.com/@navnoorbawa/warren-buffett-called-black-scholes-prices-absurd-in-2009-his-puts-proved-half-of-it-af14ec633c36",
@@ -8919,5 +8931,5 @@
   ],
   "rights_profile": "public-metadata-only-v1",
   "schema_version": 1,
-  "source_dataset_version": "fcd58a89f6a3a703b9eab1558477448f5948106e8bde0baccd735e2bedf8d899"
+  "source_dataset_version": "8f91bc723c24b1f1f8382962677fe808e310a4518ce708a37a8d279f982397f0"
 }
